@@ -11,7 +11,8 @@
           ( List
               { buffering_interval : Optional Natural
               , buffering_size : Optional Natural
-              , domain_arn : Text
+              , cluster_endpoint : Optional Text
+              , domain_arn : Optional Text
               , index_name : Text
               , index_rotation_period : Optional Text
               , retry_duration : Optional Natural
@@ -43,6 +44,15 @@
                                         )
                                   }
                               )
+                        }
+                    )
+              , vpc_config :
+                  Optional
+                    ( List
+                        { role_arn : Text
+                        , security_group_ids : List Text
+                        , subnet_ids : List Text
+                        , vpc_id : Optional Text
                         }
                     )
               }
@@ -328,7 +338,8 @@
         ( List
             { buffering_interval : Optional Natural
             , buffering_size : Optional Natural
-            , domain_arn : Text
+            , cluster_endpoint : Optional Text
+            , domain_arn : Optional Text
             , index_name : Text
             , index_rotation_period : Optional Text
             , retry_duration : Optional Natural
@@ -360,6 +371,15 @@
                                       )
                                 }
                             )
+                      }
+                  )
+            , vpc_config :
+                Optional
+                  ( List
+                      { role_arn : Text
+                      , security_group_ids : List Text
+                      , subnet_ids : List Text
+                      , vpc_id : Optional Text
                       }
                   )
             }

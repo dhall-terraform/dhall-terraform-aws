@@ -108,7 +108,21 @@
                                                           )
                                                     , ip_set_reference_statement :
                                                         Optional
-                                                          (List { arn : Text })
+                                                          ( List
+                                                              { arn : Text
+                                                              , ip_set_forwarded_ip_config :
+                                                                  Optional
+                                                                    ( List
+                                                                        { fallback_behavior :
+                                                                            Text
+                                                                        , header_name :
+                                                                            Text
+                                                                        , position :
+                                                                            Text
+                                                                        }
+                                                                    )
+                                                              }
+                                                          )
                                                     , regex_pattern_set_reference_statement :
                                                         Optional
                                                           ( List
@@ -394,7 +408,20 @@
                                               }
                                           )
                                     , ip_set_reference_statement :
-                                        Optional (List { arn : Text })
+                                        Optional
+                                          ( List
+                                              { arn : Text
+                                              , ip_set_forwarded_ip_config :
+                                                  Optional
+                                                    ( List
+                                                        { fallback_behavior :
+                                                            Text
+                                                        , header_name : Text
+                                                        , position : Text
+                                                        }
+                                                    )
+                                              }
+                                          )
                                     , not_statement :
                                         Optional
                                           ( List
@@ -478,7 +505,21 @@
                                                           )
                                                     , ip_set_reference_statement :
                                                         Optional
-                                                          (List { arn : Text })
+                                                          ( List
+                                                              { arn : Text
+                                                              , ip_set_forwarded_ip_config :
+                                                                  Optional
+                                                                    ( List
+                                                                        { fallback_behavior :
+                                                                            Text
+                                                                        , header_name :
+                                                                            Text
+                                                                        , position :
+                                                                            Text
+                                                                        }
+                                                                    )
+                                                              }
+                                                          )
                                                     , regex_pattern_set_reference_statement :
                                                         Optional
                                                           ( List
@@ -793,7 +834,21 @@
                                                           )
                                                     , ip_set_reference_statement :
                                                         Optional
-                                                          (List { arn : Text })
+                                                          ( List
+                                                              { arn : Text
+                                                              , ip_set_forwarded_ip_config :
+                                                                  Optional
+                                                                    ( List
+                                                                        { fallback_behavior :
+                                                                            Text
+                                                                        , header_name :
+                                                                            Text
+                                                                        , position :
+                                                                            Text
+                                                                        }
+                                                                    )
+                                                              }
+                                                          )
                                                     , regex_pattern_set_reference_statement :
                                                         Optional
                                                           ( List
@@ -1217,7 +1272,19 @@
                               }
                           )
                     , ip_set_reference_statement :
-                        Optional (List { arn : Text })
+                        Optional
+                          ( List
+                              { arn : Text
+                              , ip_set_forwarded_ip_config :
+                                  Optional
+                                    ( List
+                                        { fallback_behavior : Text
+                                        , header_name : Text
+                                        , position : Text
+                                        }
+                                    )
+                              }
+                          )
                     , not_statement :
                         Optional
                           ( List
@@ -1306,7 +1373,21 @@
                                                           )
                                                     , ip_set_reference_statement :
                                                         Optional
-                                                          (List { arn : Text })
+                                                          ( List
+                                                              { arn : Text
+                                                              , ip_set_forwarded_ip_config :
+                                                                  Optional
+                                                                    ( List
+                                                                        { fallback_behavior :
+                                                                            Text
+                                                                        , header_name :
+                                                                            Text
+                                                                        , position :
+                                                                            Text
+                                                                        }
+                                                                    )
+                                                              }
+                                                          )
                                                     , regex_pattern_set_reference_statement :
                                                         Optional
                                                           ( List
@@ -1592,7 +1673,20 @@
                                               }
                                           )
                                     , ip_set_reference_statement :
-                                        Optional (List { arn : Text })
+                                        Optional
+                                          ( List
+                                              { arn : Text
+                                              , ip_set_forwarded_ip_config :
+                                                  Optional
+                                                    ( List
+                                                        { fallback_behavior :
+                                                            Text
+                                                        , header_name : Text
+                                                        , position : Text
+                                                        }
+                                                    )
+                                              }
+                                          )
                                     , not_statement :
                                         Optional
                                           ( List
@@ -1676,7 +1770,21 @@
                                                           )
                                                     , ip_set_reference_statement :
                                                         Optional
-                                                          (List { arn : Text })
+                                                          ( List
+                                                              { arn : Text
+                                                              , ip_set_forwarded_ip_config :
+                                                                  Optional
+                                                                    ( List
+                                                                        { fallback_behavior :
+                                                                            Text
+                                                                        , header_name :
+                                                                            Text
+                                                                        , position :
+                                                                            Text
+                                                                        }
+                                                                    )
+                                                              }
+                                                          )
                                                     , regex_pattern_set_reference_statement :
                                                         Optional
                                                           ( List
@@ -1991,7 +2099,21 @@
                                                           )
                                                     , ip_set_reference_statement :
                                                         Optional
-                                                          (List { arn : Text })
+                                                          ( List
+                                                              { arn : Text
+                                                              , ip_set_forwarded_ip_config :
+                                                                  Optional
+                                                                    ( List
+                                                                        { fallback_behavior :
+                                                                            Text
+                                                                        , header_name :
+                                                                            Text
+                                                                        , position :
+                                                                            Text
+                                                                        }
+                                                                    )
+                                                              }
+                                                          )
                                                     , regex_pattern_set_reference_statement :
                                                         Optional
                                                           ( List
@@ -2465,7 +2587,21 @@
                                                           )
                                                     , ip_set_reference_statement :
                                                         Optional
-                                                          (List { arn : Text })
+                                                          ( List
+                                                              { arn : Text
+                                                              , ip_set_forwarded_ip_config :
+                                                                  Optional
+                                                                    ( List
+                                                                        { fallback_behavior :
+                                                                            Text
+                                                                        , header_name :
+                                                                            Text
+                                                                        , position :
+                                                                            Text
+                                                                        }
+                                                                    )
+                                                              }
+                                                          )
                                                     , regex_pattern_set_reference_statement :
                                                         Optional
                                                           ( List
@@ -2751,7 +2887,20 @@
                                               }
                                           )
                                     , ip_set_reference_statement :
-                                        Optional (List { arn : Text })
+                                        Optional
+                                          ( List
+                                              { arn : Text
+                                              , ip_set_forwarded_ip_config :
+                                                  Optional
+                                                    ( List
+                                                        { fallback_behavior :
+                                                            Text
+                                                        , header_name : Text
+                                                        , position : Text
+                                                        }
+                                                    )
+                                              }
+                                          )
                                     , not_statement :
                                         Optional
                                           ( List
@@ -2835,7 +2984,21 @@
                                                           )
                                                     , ip_set_reference_statement :
                                                         Optional
-                                                          (List { arn : Text })
+                                                          ( List
+                                                              { arn : Text
+                                                              , ip_set_forwarded_ip_config :
+                                                                  Optional
+                                                                    ( List
+                                                                        { fallback_behavior :
+                                                                            Text
+                                                                        , header_name :
+                                                                            Text
+                                                                        , position :
+                                                                            Text
+                                                                        }
+                                                                    )
+                                                              }
+                                                          )
                                                     , regex_pattern_set_reference_statement :
                                                         Optional
                                                           ( List
@@ -3150,7 +3313,21 @@
                                                           )
                                                     , ip_set_reference_statement :
                                                         Optional
-                                                          (List { arn : Text })
+                                                          ( List
+                                                              { arn : Text
+                                                              , ip_set_forwarded_ip_config :
+                                                                  Optional
+                                                                    ( List
+                                                                        { fallback_behavior :
+                                                                            Text
+                                                                        , header_name :
+                                                                            Text
+                                                                        , position :
+                                                                            Text
+                                                                        }
+                                                                    )
+                                                              }
+                                                          )
                                                     , regex_pattern_set_reference_statement :
                                                         Optional
                                                           ( List
@@ -3749,7 +3926,21 @@
                                                         )
                                                   , ip_set_reference_statement :
                                                       Optional
-                                                        (List { arn : Text })
+                                                        ( List
+                                                            { arn : Text
+                                                            , ip_set_forwarded_ip_config :
+                                                                Optional
+                                                                  ( List
+                                                                      { fallback_behavior :
+                                                                          Text
+                                                                      , header_name :
+                                                                          Text
+                                                                      , position :
+                                                                          Text
+                                                                      }
+                                                                  )
+                                                            }
+                                                        )
                                                   , regex_pattern_set_reference_statement :
                                                       Optional
                                                         ( List
@@ -4028,7 +4219,19 @@
                                             }
                                         )
                                   , ip_set_reference_statement :
-                                      Optional (List { arn : Text })
+                                      Optional
+                                        ( List
+                                            { arn : Text
+                                            , ip_set_forwarded_ip_config :
+                                                Optional
+                                                  ( List
+                                                      { fallback_behavior : Text
+                                                      , header_name : Text
+                                                      , position : Text
+                                                      }
+                                                  )
+                                            }
+                                        )
                                   , not_statement :
                                       Optional
                                         ( List
@@ -4111,7 +4314,21 @@
                                                         )
                                                   , ip_set_reference_statement :
                                                       Optional
-                                                        (List { arn : Text })
+                                                        ( List
+                                                            { arn : Text
+                                                            , ip_set_forwarded_ip_config :
+                                                                Optional
+                                                                  ( List
+                                                                      { fallback_behavior :
+                                                                          Text
+                                                                      , header_name :
+                                                                          Text
+                                                                      , position :
+                                                                          Text
+                                                                      }
+                                                                  )
+                                                            }
+                                                        )
                                                   , regex_pattern_set_reference_statement :
                                                       Optional
                                                         ( List
@@ -4421,7 +4638,21 @@
                                                         )
                                                   , ip_set_reference_statement :
                                                       Optional
-                                                        (List { arn : Text })
+                                                        ( List
+                                                            { arn : Text
+                                                            , ip_set_forwarded_ip_config :
+                                                                Optional
+                                                                  ( List
+                                                                      { fallback_behavior :
+                                                                          Text
+                                                                      , header_name :
+                                                                          Text
+                                                                      , position :
+                                                                          Text
+                                                                      }
+                                                                  )
+                                                            }
+                                                        )
                                                   , regex_pattern_set_reference_statement :
                                                       Optional
                                                         ( List
@@ -4831,7 +5062,20 @@
                                   )
                             }
                         )
-                  , ip_set_reference_statement : Optional (List { arn : Text })
+                  , ip_set_reference_statement :
+                      Optional
+                        ( List
+                            { arn : Text
+                            , ip_set_forwarded_ip_config :
+                                Optional
+                                  ( List
+                                      { fallback_behavior : Text
+                                      , header_name : Text
+                                      , position : Text
+                                      }
+                                  )
+                            }
+                        )
                   , not_statement :
                       Optional
                         ( List
@@ -4919,7 +5163,21 @@
                                                         )
                                                   , ip_set_reference_statement :
                                                       Optional
-                                                        (List { arn : Text })
+                                                        ( List
+                                                            { arn : Text
+                                                            , ip_set_forwarded_ip_config :
+                                                                Optional
+                                                                  ( List
+                                                                      { fallback_behavior :
+                                                                          Text
+                                                                      , header_name :
+                                                                          Text
+                                                                      , position :
+                                                                          Text
+                                                                      }
+                                                                  )
+                                                            }
+                                                        )
                                                   , regex_pattern_set_reference_statement :
                                                       Optional
                                                         ( List
@@ -5198,7 +5456,19 @@
                                             }
                                         )
                                   , ip_set_reference_statement :
-                                      Optional (List { arn : Text })
+                                      Optional
+                                        ( List
+                                            { arn : Text
+                                            , ip_set_forwarded_ip_config :
+                                                Optional
+                                                  ( List
+                                                      { fallback_behavior : Text
+                                                      , header_name : Text
+                                                      , position : Text
+                                                      }
+                                                  )
+                                            }
+                                        )
                                   , not_statement :
                                       Optional
                                         ( List
@@ -5281,7 +5551,21 @@
                                                         )
                                                   , ip_set_reference_statement :
                                                       Optional
-                                                        (List { arn : Text })
+                                                        ( List
+                                                            { arn : Text
+                                                            , ip_set_forwarded_ip_config :
+                                                                Optional
+                                                                  ( List
+                                                                      { fallback_behavior :
+                                                                          Text
+                                                                      , header_name :
+                                                                          Text
+                                                                      , position :
+                                                                          Text
+                                                                      }
+                                                                  )
+                                                            }
+                                                        )
                                                   , regex_pattern_set_reference_statement :
                                                       Optional
                                                         ( List
@@ -5591,7 +5875,21 @@
                                                         )
                                                   , ip_set_reference_statement :
                                                       Optional
-                                                        (List { arn : Text })
+                                                        ( List
+                                                            { arn : Text
+                                                            , ip_set_forwarded_ip_config :
+                                                                Optional
+                                                                  ( List
+                                                                      { fallback_behavior :
+                                                                          Text
+                                                                      , header_name :
+                                                                          Text
+                                                                      , position :
+                                                                          Text
+                                                                      }
+                                                                  )
+                                                            }
+                                                        )
                                                   , regex_pattern_set_reference_statement :
                                                       Optional
                                                         ( List
@@ -6052,7 +6350,21 @@
                                                         )
                                                   , ip_set_reference_statement :
                                                       Optional
-                                                        (List { arn : Text })
+                                                        ( List
+                                                            { arn : Text
+                                                            , ip_set_forwarded_ip_config :
+                                                                Optional
+                                                                  ( List
+                                                                      { fallback_behavior :
+                                                                          Text
+                                                                      , header_name :
+                                                                          Text
+                                                                      , position :
+                                                                          Text
+                                                                      }
+                                                                  )
+                                                            }
+                                                        )
                                                   , regex_pattern_set_reference_statement :
                                                       Optional
                                                         ( List
@@ -6331,7 +6643,19 @@
                                             }
                                         )
                                   , ip_set_reference_statement :
-                                      Optional (List { arn : Text })
+                                      Optional
+                                        ( List
+                                            { arn : Text
+                                            , ip_set_forwarded_ip_config :
+                                                Optional
+                                                  ( List
+                                                      { fallback_behavior : Text
+                                                      , header_name : Text
+                                                      , position : Text
+                                                      }
+                                                  )
+                                            }
+                                        )
                                   , not_statement :
                                       Optional
                                         ( List
@@ -6414,7 +6738,21 @@
                                                         )
                                                   , ip_set_reference_statement :
                                                       Optional
-                                                        (List { arn : Text })
+                                                        ( List
+                                                            { arn : Text
+                                                            , ip_set_forwarded_ip_config :
+                                                                Optional
+                                                                  ( List
+                                                                      { fallback_behavior :
+                                                                          Text
+                                                                      , header_name :
+                                                                          Text
+                                                                      , position :
+                                                                          Text
+                                                                      }
+                                                                  )
+                                                            }
+                                                        )
                                                   , regex_pattern_set_reference_statement :
                                                       Optional
                                                         ( List
@@ -6724,7 +7062,21 @@
                                                         )
                                                   , ip_set_reference_statement :
                                                       Optional
-                                                        (List { arn : Text })
+                                                        ( List
+                                                            { arn : Text
+                                                            , ip_set_forwarded_ip_config :
+                                                                Optional
+                                                                  ( List
+                                                                      { fallback_behavior :
+                                                                          Text
+                                                                      , header_name :
+                                                                          Text
+                                                                      , position :
+                                                                          Text
+                                                                      }
+                                                                  )
+                                                            }
+                                                        )
                                                   , regex_pattern_set_reference_statement :
                                                       Optional
                                                         ( List

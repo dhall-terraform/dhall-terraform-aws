@@ -24,6 +24,7 @@
                   Optional (List { type : Text, values : List Text })
               }
           )
+    , insight_selector : Optional (List { insight_type : Text })
     }
 , default =
   { arn = None Text
@@ -49,5 +50,6 @@
                 Optional (List { type : Text, values : List Text })
             }
         )
+  , insight_selector = None (List { insight_type : Text })
   }
 }

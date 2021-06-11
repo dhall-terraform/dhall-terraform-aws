@@ -5,6 +5,7 @@
     , gateway_id : Optional Text
     , id : Optional Text
     , instance_id : Optional Text
+    , local_gateway_id : Optional Text
     , nat_gateway_id : Optional Text
     , network_interface_id : Optional Text
     , route_table_id : Text
@@ -18,6 +19,7 @@
   , gateway_id = None Text
   , id = None Text
   , instance_id = None Text
+  , local_gateway_id = None Text
   , nat_gateway_id = None Text
   , network_interface_id = None Text
   , transit_gateway_id = None Text

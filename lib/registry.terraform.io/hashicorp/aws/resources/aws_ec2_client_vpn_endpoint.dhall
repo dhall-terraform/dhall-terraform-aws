@@ -14,6 +14,7 @@
         List
           { active_directory_id : Optional Text
           , root_certificate_chain_arn : Optional Text
+          , saml_provider_arn : Optional Text
           , type : Text
           }
     , connection_log_options :

@@ -38,6 +38,63 @@
     , bootstrap_action :
         Optional
           (List { args : Optional (List Text), name : Text, path : Text })
+    , core_instance_fleet :
+        Optional
+          ( List
+              { id : Optional Text
+              , name : Optional Text
+              , provisioned_on_demand_capacity : Optional Natural
+              , provisioned_spot_capacity : Optional Natural
+              , target_on_demand_capacity : Optional Natural
+              , target_spot_capacity : Optional Natural
+              , instance_type_configs :
+                  Optional
+                    ( List
+                        { bid_price : Optional Text
+                        , bid_price_as_percentage_of_on_demand_price :
+                            Optional Natural
+                        , instance_type : Text
+                        , weighted_capacity : Optional Natural
+                        , configurations :
+                            Optional
+                              ( List
+                                  { classification : Optional Text
+                                  , properties :
+                                      Optional
+                                        ( List
+                                            { mapKey : Text, mapValue : Text }
+                                        )
+                                  }
+                              )
+                        , ebs_config :
+                            Optional
+                              ( List
+                                  { iops : Optional Natural
+                                  , size : Natural
+                                  , type : Text
+                                  , volumes_per_instance : Optional Natural
+                                  }
+                              )
+                        }
+                    )
+              , launch_specifications :
+                  Optional
+                    ( List
+                        { on_demand_specification :
+                            Optional (List { allocation_strategy : Text })
+                        , spot_specification :
+                            Optional
+                              ( List
+                                  { allocation_strategy : Text
+                                  , block_duration_minutes : Optional Natural
+                                  , timeout_action : Text
+                                  , timeout_duration_minutes : Natural
+                                  }
+                              )
+                        }
+                    )
+              }
+          )
     , core_instance_group :
         Optional
           ( List
@@ -79,6 +136,63 @@
               , cross_realm_trust_principal_password : Optional Text
               , kdc_admin_password : Text
               , realm : Text
+              }
+          )
+    , master_instance_fleet :
+        Optional
+          ( List
+              { id : Optional Text
+              , name : Optional Text
+              , provisioned_on_demand_capacity : Optional Natural
+              , provisioned_spot_capacity : Optional Natural
+              , target_on_demand_capacity : Optional Natural
+              , target_spot_capacity : Optional Natural
+              , instance_type_configs :
+                  Optional
+                    ( List
+                        { bid_price : Optional Text
+                        , bid_price_as_percentage_of_on_demand_price :
+                            Optional Natural
+                        , instance_type : Text
+                        , weighted_capacity : Optional Natural
+                        , configurations :
+                            Optional
+                              ( List
+                                  { classification : Optional Text
+                                  , properties :
+                                      Optional
+                                        ( List
+                                            { mapKey : Text, mapValue : Text }
+                                        )
+                                  }
+                              )
+                        , ebs_config :
+                            Optional
+                              ( List
+                                  { iops : Optional Natural
+                                  , size : Natural
+                                  , type : Text
+                                  , volumes_per_instance : Optional Natural
+                                  }
+                              )
+                        }
+                    )
+              , launch_specifications :
+                  Optional
+                    ( List
+                        { on_demand_specification :
+                            Optional (List { allocation_strategy : Text })
+                        , spot_specification :
+                            Optional
+                              ( List
+                                  { allocation_strategy : Text
+                                  , block_duration_minutes : Optional Natural
+                                  , timeout_action : Text
+                                  , timeout_duration_minutes : Natural
+                                  }
+                              )
+                        }
+                    )
               }
           )
     , master_instance_group :
@@ -137,6 +251,61 @@
   , visible_to_all_users = None Bool
   , bootstrap_action =
       None (List { args : Optional (List Text), name : Text, path : Text })
+  , core_instance_fleet =
+      None
+        ( List
+            { id : Optional Text
+            , name : Optional Text
+            , provisioned_on_demand_capacity : Optional Natural
+            , provisioned_spot_capacity : Optional Natural
+            , target_on_demand_capacity : Optional Natural
+            , target_spot_capacity : Optional Natural
+            , instance_type_configs :
+                Optional
+                  ( List
+                      { bid_price : Optional Text
+                      , bid_price_as_percentage_of_on_demand_price :
+                          Optional Natural
+                      , instance_type : Text
+                      , weighted_capacity : Optional Natural
+                      , configurations :
+                          Optional
+                            ( List
+                                { classification : Optional Text
+                                , properties :
+                                    Optional
+                                      (List { mapKey : Text, mapValue : Text })
+                                }
+                            )
+                      , ebs_config :
+                          Optional
+                            ( List
+                                { iops : Optional Natural
+                                , size : Natural
+                                , type : Text
+                                , volumes_per_instance : Optional Natural
+                                }
+                            )
+                      }
+                  )
+            , launch_specifications :
+                Optional
+                  ( List
+                      { on_demand_specification :
+                          Optional (List { allocation_strategy : Text })
+                      , spot_specification :
+                          Optional
+                            ( List
+                                { allocation_strategy : Text
+                                , block_duration_minutes : Optional Natural
+                                , timeout_action : Text
+                                , timeout_duration_minutes : Natural
+                                }
+                            )
+                      }
+                  )
+            }
+        )
   , core_instance_group =
       None
         ( List
@@ -178,6 +347,61 @@
             , cross_realm_trust_principal_password : Optional Text
             , kdc_admin_password : Text
             , realm : Text
+            }
+        )
+  , master_instance_fleet =
+      None
+        ( List
+            { id : Optional Text
+            , name : Optional Text
+            , provisioned_on_demand_capacity : Optional Natural
+            , provisioned_spot_capacity : Optional Natural
+            , target_on_demand_capacity : Optional Natural
+            , target_spot_capacity : Optional Natural
+            , instance_type_configs :
+                Optional
+                  ( List
+                      { bid_price : Optional Text
+                      , bid_price_as_percentage_of_on_demand_price :
+                          Optional Natural
+                      , instance_type : Text
+                      , weighted_capacity : Optional Natural
+                      , configurations :
+                          Optional
+                            ( List
+                                { classification : Optional Text
+                                , properties :
+                                    Optional
+                                      (List { mapKey : Text, mapValue : Text })
+                                }
+                            )
+                      , ebs_config :
+                          Optional
+                            ( List
+                                { iops : Optional Natural
+                                , size : Natural
+                                , type : Text
+                                , volumes_per_instance : Optional Natural
+                                }
+                            )
+                      }
+                  )
+            , launch_specifications :
+                Optional
+                  ( List
+                      { on_demand_specification :
+                          Optional (List { allocation_strategy : Text })
+                      , spot_specification :
+                          Optional
+                            ( List
+                                { allocation_strategy : Text
+                                , block_duration_minutes : Optional Natural
+                                , timeout_action : Text
+                                , timeout_duration_minutes : Natural
+                                }
+                            )
+                      }
+                  )
             }
         )
   , master_instance_group =
