@@ -34,6 +34,14 @@
               { allocation_strategy : Optional Text
               , instance_interruption_behavior : Optional Text
               , instance_pools_to_use_count : Optional Natural
+              , maintenance_strategies :
+                  Optional
+                    ( List
+                        { capacity_rebalance :
+                            Optional
+                              (List { replacement_strategy : Optional Text })
+                        }
+                    )
               }
           )
     , target_capacity_specification :
@@ -65,6 +73,14 @@
             { allocation_strategy : Optional Text
             , instance_interruption_behavior : Optional Text
             , instance_pools_to_use_count : Optional Natural
+            , maintenance_strategies :
+                Optional
+                  ( List
+                      { capacity_rebalance :
+                          Optional
+                            (List { replacement_strategy : Optional Text })
+                      }
+                  )
             }
         )
   , timeouts =

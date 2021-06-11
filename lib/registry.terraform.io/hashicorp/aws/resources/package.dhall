@@ -81,6 +81,7 @@
 , aws_autoscaling_policy = ./aws_autoscaling_policy.dhall
 , aws_autoscaling_schedule = ./aws_autoscaling_schedule.dhall
 , aws_backup_plan = ./aws_backup_plan.dhall
+, aws_backup_region_settings = ./aws_backup_region_settings.dhall
 , aws_backup_selection = ./aws_backup_selection.dhall
 , aws_backup_vault = ./aws_backup_vault.dhall
 , aws_backup_vault_notifications = ./aws_backup_vault_notifications.dhall
@@ -382,6 +383,8 @@
 , aws_imagebuilder_component = ./aws_imagebuilder_component.dhall
 , aws_imagebuilder_distribution_configuration =
     ./aws_imagebuilder_distribution_configuration.dhall
+, aws_imagebuilder_image_pipeline = ./aws_imagebuilder_image_pipeline.dhall
+, aws_imagebuilder_image_recipe = ./aws_imagebuilder_image_recipe.dhall
 , aws_imagebuilder_infrastructure_configuration =
     ./aws_imagebuilder_infrastructure_configuration.dhall
 , aws_inspector_assessment_target = ./aws_inspector_assessment_target.dhall
@@ -460,6 +463,7 @@
 , aws_mq_configuration = ./aws_mq_configuration.dhall
 , aws_msk_cluster = ./aws_msk_cluster.dhall
 , aws_msk_configuration = ./aws_msk_configuration.dhall
+, aws_msk_scram_secret_association = ./aws_msk_scram_secret_association.dhall
 , aws_nat_gateway = ./aws_nat_gateway.dhall
 , aws_neptune_cluster = ./aws_neptune_cluster.dhall
 , aws_neptune_cluster_instance = ./aws_neptune_cluster_instance.dhall
@@ -476,6 +480,8 @@
     ./aws_networkfirewall_firewall_policy.dhall
 , aws_networkfirewall_logging_configuration =
     ./aws_networkfirewall_logging_configuration.dhall
+, aws_networkfirewall_resource_policy =
+    ./aws_networkfirewall_resource_policy.dhall
 , aws_networkfirewall_rule_group = ./aws_networkfirewall_rule_group.dhall
 , aws_network_interface_attachment = ./aws_network_interface_attachment.dhall
 , aws_network_interface = ./aws_network_interface.dhall
@@ -599,6 +605,8 @@
     ./aws_securityhub_product_subscription.dhall
 , aws_securityhub_standards_subscription =
     ./aws_securityhub_standards_subscription.dhall
+, aws_serverlessapplicationrepository_cloudformation_stack =
+    ./aws_serverlessapplicationrepository_cloudformation_stack.dhall
 , aws_servicecatalog_portfolio = ./aws_servicecatalog_portfolio.dhall
 , aws_service_discovery_http_namespace =
     ./aws_service_discovery_http_namespace.dhall

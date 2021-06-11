@@ -1,6 +1,7 @@
 { Type =
     { arn : Optional Text
     , bootstrap_brokers : Optional Text
+    , bootstrap_brokers_sasl_scram : Optional Text
     , bootstrap_brokers_tls : Optional Text
     , cluster_name : Text
     , id : Optional Text
@@ -12,6 +13,7 @@
 , default =
   { arn = None Text
   , bootstrap_brokers = None Text
+  , bootstrap_brokers_sasl_scram = None Text
   , bootstrap_brokers_tls = None Text
   , id = None Text
   , kafka_version = None Text

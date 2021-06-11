@@ -1,6 +1,7 @@
 { Type =
     { arn : Optional Text
     , availability_zones : Optional (List Text)
+    , capacity_rebalance : Optional Bool
     , default_cooldown : Optional Natural
     , desired_capacity : Optional Natural
     , enabled_metrics : Optional (List Text)
@@ -87,6 +88,7 @@
 , default =
   { arn = None Text
   , availability_zones = None (List Text)
+  , capacity_rebalance = None Bool
   , default_cooldown = None Natural
   , desired_capacity = None Natural
   , enabled_metrics = None (List Text)

@@ -1,6 +1,7 @@
 { Type =
     { arn : Optional Text
     , bootstrap_brokers : Optional Text
+    , bootstrap_brokers_sasl_scram : Optional Text
     , bootstrap_brokers_tls : Optional Text
     , cluster_name : Text
     , current_version : Optional Text
@@ -21,7 +22,8 @@
     , client_authentication :
         Optional
           ( List
-              { tls :
+              { sasl : Optional (List { scram : Optional Bool })
+              , tls :
                   Optional
                     (List { certificate_authority_arns : Optional (List Text) })
               }
@@ -82,6 +84,7 @@
 , default =
   { arn = None Text
   , bootstrap_brokers = None Text
+  , bootstrap_brokers_sasl_scram = None Text
   , bootstrap_brokers_tls = None Text
   , current_version = None Text
   , enhanced_monitoring = None Text
@@ -91,7 +94,8 @@
   , client_authentication =
       None
         ( List
-            { tls :
+            { sasl : Optional (List { scram : Optional Bool })
+            , tls :
                 Optional
                   (List { certificate_authority_arns : Optional (List Text) })
             }

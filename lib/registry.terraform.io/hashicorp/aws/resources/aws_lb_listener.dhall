@@ -3,7 +3,7 @@
     , certificate_arn : Optional Text
     , id : Optional Text
     , load_balancer_arn : Text
-    , port : Natural
+    , port : Optional Natural
     , protocol : Optional Text
     , ssl_policy : Optional Text
     , default_action :
@@ -78,6 +78,7 @@
   { arn = None Text
   , certificate_arn = None Text
   , id = None Text
+  , port = None Natural
   , protocol = None Text
   , ssl_policy = None Text
   , timeouts = None { read : Optional Text }

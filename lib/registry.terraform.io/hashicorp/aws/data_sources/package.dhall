@@ -117,6 +117,8 @@
 , aws_imagebuilder_component = ./aws_imagebuilder_component.dhall
 , aws_imagebuilder_distribution_configuration =
     ./aws_imagebuilder_distribution_configuration.dhall
+, aws_imagebuilder_image_pipeline = ./aws_imagebuilder_image_pipeline.dhall
+, aws_imagebuilder_image_recipe = ./aws_imagebuilder_image_recipe.dhall
 , aws_imagebuilder_infrastructure_configuration =
     ./aws_imagebuilder_infrastructure_configuration.dhall
 , aws_inspector_rules_packages = ./aws_inspector_rules_packages.dhall
@@ -197,6 +199,8 @@
 , aws_secretsmanager_secret_version = ./aws_secretsmanager_secret_version.dhall
 , aws_security_group = ./aws_security_group.dhall
 , aws_security_groups = ./aws_security_groups.dhall
+, aws_serverlessapplicationrepository_application =
+    ./aws_serverlessapplicationrepository_application.dhall
 , aws_servicequotas_service = ./aws_servicequotas_service.dhall
 , aws_servicequotas_service_quota = ./aws_servicequotas_service_quota.dhall
 , aws_sfn_activity = ./aws_sfn_activity.dhall

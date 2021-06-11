@@ -88,6 +88,13 @@
                     )
               }
           )
+    , spot_maintenance_strategies :
+        Optional
+          ( List
+              { capacity_rebalance :
+                  Optional (List { replacement_strategy : Optional Text })
+              }
+          )
     , timeouts : Optional { create : Optional Text, delete : Optional Text }
     }
 , default =
@@ -176,6 +183,13 @@
                       , weighted_capacity : Optional Natural
                       }
                   )
+            }
+        )
+  , spot_maintenance_strategies =
+      None
+        ( List
+            { capacity_rebalance :
+                Optional (List { replacement_strategy : Optional Text })
             }
         )
   , timeouts = None { create : Optional Text, delete : Optional Text }
