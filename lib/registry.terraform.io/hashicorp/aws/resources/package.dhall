@@ -163,6 +163,7 @@
 , aws_db_instance_role_association = ./aws_db_instance_role_association.dhall
 , aws_db_option_group = ./aws_db_option_group.dhall
 , aws_db_parameter_group = ./aws_db_parameter_group.dhall
+, aws_db_proxy_default_target_group = ./aws_db_proxy_default_target_group.dhall
 , aws_db_proxy = ./aws_db_proxy.dhall
 , aws_db_security_group = ./aws_db_security_group.dhall
 , aws_db_snapshot = ./aws_db_snapshot.dhall
