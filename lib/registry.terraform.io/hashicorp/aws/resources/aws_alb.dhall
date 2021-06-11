@@ -24,7 +24,13 @@
               { bucket : Text, enabled : Optional Bool, prefix : Optional Text }
           )
     , subnet_mapping :
-        Optional (List { allocation_id : Optional Text, subnet_id : Text })
+        Optional
+          ( List
+              { allocation_id : Optional Text
+              , private_ipv4_address : Optional Text
+              , subnet_id : Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -58,7 +64,13 @@
             { bucket : Text, enabled : Optional Bool, prefix : Optional Text }
         )
   , subnet_mapping =
-      None (List { allocation_id : Optional Text, subnet_id : Text })
+      None
+        ( List
+            { allocation_id : Optional Text
+            , private_ipv4_address : Optional Text
+            , subnet_id : Text
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

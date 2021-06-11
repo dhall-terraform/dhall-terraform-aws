@@ -1,6 +1,7 @@
 { Type =
     { allowed_pattern : Optional Text
     , arn : Optional Text
+    , data_type : Optional Text
     , description : Optional Text
     , id : Optional Text
     , key_id : Optional Text
@@ -15,6 +16,7 @@
 , default =
   { allowed_pattern = None Text
   , arn = None Text
+  , data_type = None Text
   , description = None Text
   , id = None Text
   , key_id = None Text

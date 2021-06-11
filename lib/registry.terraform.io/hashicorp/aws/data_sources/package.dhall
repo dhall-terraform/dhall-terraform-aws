@@ -60,6 +60,7 @@
     ./aws_ec2_local_gateway_virtual_interface_group.dhall
 , aws_ec2_local_gateway_virtual_interface_groups =
     ./aws_ec2_local_gateway_virtual_interface_groups.dhall
+, aws_ec2_spot_price = ./aws_ec2_spot_price.dhall
 , aws_ec2_transit_gateway = ./aws_ec2_transit_gateway.dhall
 , aws_ec2_transit_gateway_dx_gateway_attachment =
     ./aws_ec2_transit_gateway_dx_gateway_attachment.dhall

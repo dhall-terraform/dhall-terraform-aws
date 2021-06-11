@@ -497,6 +497,8 @@
 , aws_route53_resolver_rule_association =
     ./aws_route53_resolver_rule_association.dhall
 , aws_route53_resolver_rule = ./aws_route53_resolver_rule.dhall
+, aws_route53_vpc_association_authorization =
+    ./aws_route53_vpc_association_authorization.dhall
 , aws_route53_zone_association = ./aws_route53_zone_association.dhall
 , aws_route53_zone = ./aws_route53_zone.dhall
 , aws_route = ./aws_route.dhall
