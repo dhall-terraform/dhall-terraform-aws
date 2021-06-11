@@ -114,6 +114,11 @@
 , aws_iam_role = ./aws_iam_role.dhall
 , aws_iam_server_certificate = ./aws_iam_server_certificate.dhall
 , aws_iam_user = ./aws_iam_user.dhall
+, aws_imagebuilder_component = ./aws_imagebuilder_component.dhall
+, aws_imagebuilder_distribution_configuration =
+    ./aws_imagebuilder_distribution_configuration.dhall
+, aws_imagebuilder_infrastructure_configuration =
+    ./aws_imagebuilder_infrastructure_configuration.dhall
 , aws_inspector_rules_packages = ./aws_inspector_rules_packages.dhall
 , aws_instance = ./aws_instance.dhall
 , aws_instances = ./aws_instances.dhall

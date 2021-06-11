@@ -30,6 +30,8 @@
                     ( List
                         { comment : Optional Text
                         , name : Text
+                        , parameters :
+                            Optional (List { mapKey : Text, mapValue : Text })
                         , type : Optional Text
                         }
                     )
@@ -85,6 +87,8 @@
                   ( List
                       { comment : Optional Text
                       , name : Text
+                      , parameters :
+                          Optional (List { mapKey : Text, mapValue : Text })
                       , type : Optional Text
                       }
                   )

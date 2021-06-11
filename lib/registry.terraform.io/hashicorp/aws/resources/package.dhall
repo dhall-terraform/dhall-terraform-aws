@@ -35,6 +35,7 @@
 , aws_api_gateway_request_validator = ./aws_api_gateway_request_validator.dhall
 , aws_api_gateway_resource = ./aws_api_gateway_resource.dhall
 , aws_api_gateway_rest_api = ./aws_api_gateway_rest_api.dhall
+, aws_api_gateway_rest_api_policy = ./aws_api_gateway_rest_api_policy.dhall
 , aws_api_gateway_stage = ./aws_api_gateway_stage.dhall
 , aws_api_gateway_usage_plan = ./aws_api_gateway_usage_plan.dhall
 , aws_api_gateway_usage_plan_key = ./aws_api_gateway_usage_plan_key.dhall
@@ -83,6 +84,7 @@
 , aws_backup_selection = ./aws_backup_selection.dhall
 , aws_backup_vault = ./aws_backup_vault.dhall
 , aws_backup_vault_notifications = ./aws_backup_vault_notifications.dhall
+, aws_backup_vault_policy = ./aws_backup_vault_policy.dhall
 , aws_batch_compute_environment = ./aws_batch_compute_environment.dhall
 , aws_batch_job_definition = ./aws_batch_job_definition.dhall
 , aws_batch_job_queue = ./aws_batch_job_queue.dhall
@@ -333,6 +335,7 @@
 , aws_glue_crawler = ./aws_glue_crawler.dhall
 , aws_glue_data_catalog_encryption_settings =
     ./aws_glue_data_catalog_encryption_settings.dhall
+, aws_glue_dev_endpoint = ./aws_glue_dev_endpoint.dhall
 , aws_glue_job = ./aws_glue_job.dhall
 , aws_glue_ml_transform = ./aws_glue_ml_transform.dhall
 , aws_glue_partition = ./aws_glue_partition.dhall
@@ -376,6 +379,11 @@
 , aws_iam_user_policy_attachment = ./aws_iam_user_policy_attachment.dhall
 , aws_iam_user_policy = ./aws_iam_user_policy.dhall
 , aws_iam_user_ssh_key = ./aws_iam_user_ssh_key.dhall
+, aws_imagebuilder_component = ./aws_imagebuilder_component.dhall
+, aws_imagebuilder_distribution_configuration =
+    ./aws_imagebuilder_distribution_configuration.dhall
+, aws_imagebuilder_infrastructure_configuration =
+    ./aws_imagebuilder_infrastructure_configuration.dhall
 , aws_inspector_assessment_target = ./aws_inspector_assessment_target.dhall
 , aws_inspector_assessment_template = ./aws_inspector_assessment_template.dhall
 , aws_inspector_resource_group = ./aws_inspector_resource_group.dhall
@@ -462,6 +470,12 @@
 , aws_neptune_subnet_group = ./aws_neptune_subnet_group.dhall
 , aws_network_acl = ./aws_network_acl.dhall
 , aws_network_acl_rule = ./aws_network_acl_rule.dhall
+, aws_networkfirewall_firewall = ./aws_networkfirewall_firewall.dhall
+, aws_networkfirewall_firewall_policy =
+    ./aws_networkfirewall_firewall_policy.dhall
+, aws_networkfirewall_logging_configuration =
+    ./aws_networkfirewall_logging_configuration.dhall
+, aws_networkfirewall_rule_group = ./aws_networkfirewall_rule_group.dhall
 , aws_network_interface_attachment = ./aws_network_interface_attachment.dhall
 , aws_network_interface = ./aws_network_interface.dhall
 , aws_network_interface_sg_attachment =

@@ -128,6 +128,7 @@
               , mediastoredata : Optional Text
               , mq : Optional Text
               , neptune : Optional Text
+              , networkfirewall : Optional Text
               , networkmanager : Optional Text
               , opsworks : Optional Text
               , organizations : Optional Text
@@ -315,6 +316,7 @@
             , mediastoredata : Optional Text
             , mq : Optional Text
             , neptune : Optional Text
+            , networkfirewall : Optional Text
             , networkmanager : Optional Text
             , opsworks : Optional Text
             , organizations : Optional Text

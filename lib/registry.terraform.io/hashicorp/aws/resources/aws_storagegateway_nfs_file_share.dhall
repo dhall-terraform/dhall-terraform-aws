@@ -2,6 +2,7 @@
     { arn : Optional Text
     , client_list : List Text
     , default_storage_class : Optional Text
+    , file_share_name : Optional Text
     , fileshare_id : Optional Text
     , gateway_arn : Text
     , guess_mime_type_enabled : Optional Bool
@@ -37,6 +38,7 @@
 , default =
   { arn = None Text
   , default_storage_class = None Text
+  , file_share_name = None Text
   , fileshare_id = None Text
   , guess_mime_type_enabled = None Bool
   , id = None Text

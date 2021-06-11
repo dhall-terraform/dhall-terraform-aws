@@ -1,5 +1,6 @@
 { Type =
-    { endpoint_group_region : Optional Text
+    { arn : Optional Text
+    , endpoint_group_region : Optional Text
     , health_check_interval_seconds : Optional Natural
     , health_check_path : Optional Text
     , health_check_port : Optional Natural
@@ -16,9 +17,12 @@
               , weight : Optional Natural
               }
           )
+    , port_override :
+        Optional (List { endpoint_port : Natural, listener_port : Natural })
     }
 , default =
-  { endpoint_group_region = None Text
+  { arn = None Text
+  , endpoint_group_region = None Text
   , health_check_interval_seconds = None Natural
   , health_check_path = None Text
   , health_check_port = None Natural
@@ -34,5 +38,7 @@
             , weight : Optional Natural
             }
         )
+  , port_override =
+      None (List { endpoint_port : Natural, listener_port : Natural })
   }
 }
