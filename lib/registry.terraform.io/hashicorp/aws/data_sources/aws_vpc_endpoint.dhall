@@ -1,5 +1,6 @@
 { Type =
-    { cidr_blocks : Optional (List Text)
+    { arn : Optional Text
+    , cidr_blocks : Optional (List Text)
     , dns_entry : Optional (List { dns_name : Text, hosted_zone_id : Text })
     , id : Optional Text
     , network_interface_ids : Optional (List Text)
@@ -19,7 +20,8 @@
     , filter : Optional (List { name : Text, values : List Text })
     }
 , default =
-  { cidr_blocks = None (List Text)
+  { arn = None Text
+  , cidr_blocks = None (List Text)
   , dns_entry = None (List { dns_name : Text, hosted_zone_id : Text })
   , id = None Text
   , network_interface_ids = None (List Text)

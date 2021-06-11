@@ -1,5 +1,6 @@
 { Type =
-    { data_encryption_key_id : Optional Text
+    { arn : Optional Text
+    , data_encryption_key_id : Optional Text
     , description : Optional Text
     , encrypted : Optional Bool
     , id : Optional Text
@@ -18,7 +19,8 @@
     , filter : Optional (List { name : Text, values : List Text })
     }
 , default =
-  { data_encryption_key_id = None Text
+  { arn = None Text
+  , data_encryption_key_id = None Text
   , description = None Text
   , encrypted = None Bool
   , id = None Text

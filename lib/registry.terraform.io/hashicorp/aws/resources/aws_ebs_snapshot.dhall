@@ -1,5 +1,6 @@
 { Type =
-    { data_encryption_key_id : Optional Text
+    { arn : Optional Text
+    , data_encryption_key_id : Optional Text
     , description : Optional Text
     , encrypted : Optional Bool
     , id : Optional Text
@@ -12,7 +13,8 @@
     , timeouts : Optional { create : Optional Text, delete : Optional Text }
     }
 , default =
-  { data_encryption_key_id = None Text
+  { arn = None Text
+  , data_encryption_key_id = None Text
   , description = None Text
   , encrypted = None Bool
   , id = None Text

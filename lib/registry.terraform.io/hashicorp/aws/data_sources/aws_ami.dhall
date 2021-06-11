@@ -1,5 +1,6 @@
 { Type =
     { architecture : Optional Text
+    , arn : Optional Text
     , block_device_mappings :
         Optional
           ( List
@@ -41,6 +42,7 @@
     }
 , default =
   { architecture = None Text
+  , arn = None Text
   , block_device_mappings =
       None
         ( List

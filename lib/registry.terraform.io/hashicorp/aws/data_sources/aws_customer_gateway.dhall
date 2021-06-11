@@ -1,5 +1,6 @@
 { Type =
-    { bgp_asn : Optional Natural
+    { arn : Optional Text
+    , bgp_asn : Optional Natural
     , id : Optional Text
     , ip_address : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -7,7 +8,8 @@
     , filter : Optional (List { name : Text, values : List Text })
     }
 , default =
-  { bgp_asn = None Natural
+  { arn = None Text
+  , bgp_asn = None Natural
   , id = None Text
   , ip_address = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })

@@ -47,6 +47,15 @@
                     ( List
                         { file_system_id : Text
                         , root_directory : Optional Text
+                        , transit_encryption : Optional Text
+                        , transit_encryption_port : Optional Natural
+                        , authorization_config :
+                            Optional
+                              ( List
+                                  { access_point_id : Optional Text
+                                  , iam : Optional Text
+                                  }
+                              )
                         }
                     )
               }
@@ -97,7 +106,18 @@
             , efs_volume_configuration :
                 Optional
                   ( List
-                      { file_system_id : Text, root_directory : Optional Text }
+                      { file_system_id : Text
+                      , root_directory : Optional Text
+                      , transit_encryption : Optional Text
+                      , transit_encryption_port : Optional Natural
+                      , authorization_config :
+                          Optional
+                            ( List
+                                { access_point_id : Optional Text
+                                , iam : Optional Text
+                                }
+                            )
+                      }
                   )
             }
         )

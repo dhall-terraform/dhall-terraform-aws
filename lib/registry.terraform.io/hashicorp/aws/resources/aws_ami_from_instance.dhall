@@ -1,5 +1,6 @@
 { Type =
     { architecture : Optional Text
+    , arn : Optional Text
     , description : Optional Text
     , ena_support : Optional Bool
     , id : Optional Text
@@ -39,6 +40,7 @@
     }
 , default =
   { architecture = None Text
+  , arn = None Text
   , description = None Text
   , ena_support = None Bool
   , id = None Text

@@ -1,6 +1,7 @@
 { Type =
     { acceptance_required : Bool
     , allowed_principals : Optional (List Text)
+    , arn : Optional Text
     , availability_zones : Optional (List Text)
     , base_endpoint_dns_names : Optional (List Text)
     , id : Optional Text
@@ -14,6 +15,7 @@
     }
 , default =
   { allowed_principals = None (List Text)
+  , arn = None Text
   , availability_zones = None (List Text)
   , base_endpoint_dns_names = None (List Text)
   , id = None Text

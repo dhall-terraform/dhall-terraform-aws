@@ -1,5 +1,6 @@
 { Type =
-    { egress :
+    { arn : Optional Text
+    , egress :
         Optional
           ( List
               { action : Text
@@ -35,7 +36,8 @@
     , vpc_id : Text
     }
 , default =
-  { egress =
+  { arn = None Text
+  , egress =
       None
         ( List
             { action : Text

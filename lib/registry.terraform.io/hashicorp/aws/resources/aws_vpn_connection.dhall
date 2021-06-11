@@ -1,5 +1,6 @@
 { Type =
-    { customer_gateway_configuration : Optional Text
+    { arn : Optional Text
+    , customer_gateway_configuration : Optional Text
     , customer_gateway_id : Text
     , id : Optional Text
     , routes :
@@ -37,7 +38,8 @@
     , vpn_gateway_id : Optional Text
     }
 , default =
-  { customer_gateway_configuration = None Text
+  { arn = None Text
+  , customer_gateway_configuration = None Text
   , id = None Text
   , routes =
       None (List { destination_cidr_block : Text, source : Text, state : Text })

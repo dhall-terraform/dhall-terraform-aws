@@ -1,5 +1,6 @@
 { Type =
-    { auto_accept : Optional Bool
+    { arn : Optional Text
+    , auto_accept : Optional Bool
     , cidr_blocks : Optional (List Text)
     , dns_entry : Optional (List { dns_name : Text, hosted_zone_id : Text })
     , id : Optional Text
@@ -25,7 +26,8 @@
           }
     }
 , default =
-  { auto_accept = None Bool
+  { arn = None Text
+  , auto_accept = None Bool
   , cidr_blocks = None (List Text)
   , dns_entry = None (List { dns_name : Text, hosted_zone_id : Text })
   , id = None Text

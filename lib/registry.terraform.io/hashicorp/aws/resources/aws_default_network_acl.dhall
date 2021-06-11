@@ -1,5 +1,6 @@
 { Type =
-    { default_network_acl_id : Text
+    { arn : Optional Text
+    , default_network_acl_id : Text
     , id : Optional Text
     , owner_id : Optional Text
     , subnet_ids : Optional (List Text)
@@ -35,7 +36,8 @@
           )
     }
 , default =
-  { id = None Text
+  { arn = None Text
+  , id = None Text
   , owner_id = None Text
   , subnet_ids = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })

@@ -1,5 +1,6 @@
 { Type =
     { amazon_side_asn : Optional Text
+    , arn : Optional Text
     , attached_vpc_id : Optional Text
     , availability_zone : Optional Text
     , id : Optional Text
@@ -9,6 +10,7 @@
     }
 , default =
   { amazon_side_asn = None Text
+  , arn = None Text
   , attached_vpc_id = None Text
   , availability_zone = None Text
   , id = None Text

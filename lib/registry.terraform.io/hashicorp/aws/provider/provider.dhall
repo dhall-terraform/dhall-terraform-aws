@@ -136,6 +136,7 @@
               , rds : Optional Text
               , redshift : Optional Text
               , resourcegroups : Optional Text
+              , resourcegroupstaggingapi : Optional Text
               , route53 : Optional Text
               , route53domains : Optional Text
               , route53resolver : Optional Text
@@ -314,6 +315,7 @@
             , rds : Optional Text
             , redshift : Optional Text
             , resourcegroups : Optional Text
+            , resourcegroupstaggingapi : Optional Text
             , route53 : Optional Text
             , route53domains : Optional Text
             , route53resolver : Optional Text

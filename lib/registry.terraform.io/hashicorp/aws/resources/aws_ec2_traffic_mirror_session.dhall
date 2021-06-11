@@ -1,5 +1,6 @@
 { Type =
-    { description : Optional Text
+    { arn : Optional Text
+    , description : Optional Text
     , id : Optional Text
     , network_interface_id : Text
     , packet_length : Optional Natural
@@ -10,7 +11,8 @@
     , virtual_network_id : Optional Natural
     }
 , default =
-  { description = None Text
+  { arn = None Text
+  , description = None Text
   , id = None Text
   , packet_length = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })

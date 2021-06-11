@@ -14,7 +14,7 @@
     , propagate_tags : Optional Text
     , scheduling_strategy : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
-    , task_definition : Text
+    , task_definition : Optional Text
     , capacity_provider_strategy :
         Optional
           ( List
@@ -72,6 +72,7 @@
   , propagate_tags = None Text
   , scheduling_strategy = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , task_definition = None Text
   , capacity_provider_strategy =
       None
         ( List

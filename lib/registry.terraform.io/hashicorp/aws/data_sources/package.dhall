@@ -79,6 +79,7 @@
 , aws_ecs_service = ./aws_ecs_service.dhall
 , aws_ecs_task_definition = ./aws_ecs_task_definition.dhall
 , aws_efs_access_point = ./aws_efs_access_point.dhall
+, aws_efs_access_points = ./aws_efs_access_points.dhall
 , aws_efs_file_system = ./aws_efs_file_system.dhall
 , aws_efs_mount_target = ./aws_efs_mount_target.dhall
 , aws_eip = ./aws_eip.dhall

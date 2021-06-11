@@ -1,5 +1,6 @@
 { Type =
     { acceptance_required : Optional Bool
+    , arn : Optional Text
     , availability_zones : Optional (List Text)
     , base_endpoint_dns_names : Optional (List Text)
     , id : Optional Text
@@ -16,6 +17,7 @@
     }
 , default =
   { acceptance_required = None Bool
+  , arn = None Text
   , availability_zones = None (List Text)
   , base_endpoint_dns_names = None (List Text)
   , id = None Text
