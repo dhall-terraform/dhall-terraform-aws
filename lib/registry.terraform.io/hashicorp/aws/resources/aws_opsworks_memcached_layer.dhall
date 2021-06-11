@@ -1,5 +1,6 @@
 { Type =
     { allocated_memory : Optional Natural
+    , arn : Optional Text
     , auto_assign_elastic_ips : Optional Bool
     , auto_assign_public_ips : Optional Bool
     , auto_healing : Optional Bool
@@ -19,6 +20,7 @@
     , name : Optional Text
     , stack_id : Text
     , system_packages : Optional (List Text)
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , use_ebs_optimized_instances : Optional Bool
     , ebs_volume :
         Optional
@@ -35,6 +37,7 @@
     }
 , default =
   { allocated_memory = None Natural
+  , arn = None Text
   , auto_assign_elastic_ips = None Bool
   , auto_assign_public_ips = None Bool
   , auto_healing = None Bool
@@ -53,6 +56,7 @@
   , instance_shutdown_timeout = None Natural
   , name = None Text
   , system_packages = None (List Text)
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , use_ebs_optimized_instances = None Bool
   , ebs_volume =
       None

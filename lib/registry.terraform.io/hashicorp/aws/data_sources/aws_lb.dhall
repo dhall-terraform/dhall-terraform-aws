@@ -4,6 +4,7 @@
     , arn : Optional Text
     , arn_suffix : Optional Text
     , dns_name : Optional Text
+    , drop_invalid_header_fields : Optional Bool
     , enable_deletion_protection : Optional Bool
     , id : Optional Text
     , idle_timeout : Optional Natural
@@ -23,6 +24,7 @@
   , arn = None Text
   , arn_suffix = None Text
   , dns_name = None Text
+  , drop_invalid_header_fields = None Bool
   , enable_deletion_protection = None Bool
   , id = None Text
   , idle_timeout = None Natural

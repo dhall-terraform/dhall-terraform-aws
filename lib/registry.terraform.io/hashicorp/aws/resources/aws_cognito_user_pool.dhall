@@ -40,6 +40,7 @@
         Optional
           ( List
               { email_sending_account : Optional Text
+              , from_email_address : Optional Text
               , reply_to_email_address : Optional Text
               , source_arn : Optional Text
               }
@@ -96,6 +97,7 @@
         Optional (List { external_id : Text, sns_caller_arn : Text })
     , software_token_mfa_configuration : Optional (List { enabled : Bool })
     , user_pool_add_ons : Optional (List { advanced_security_mode : Text })
+    , username_configuration : Optional (List { case_sensitive : Bool })
     , verification_message_template :
         Optional
           ( List
@@ -149,6 +151,7 @@
       None
         ( List
             { email_sending_account : Optional Text
+            , from_email_address : Optional Text
             , reply_to_email_address : Optional Text
             , source_arn : Optional Text
             }
@@ -203,6 +206,7 @@
       None (List { external_id : Text, sns_caller_arn : Text })
   , software_token_mfa_configuration = None (List { enabled : Bool })
   , user_pool_add_ons = None (List { advanced_security_mode : Text })
+  , username_configuration = None (List { case_sensitive : Bool })
   , verification_message_template =
       None
         ( List

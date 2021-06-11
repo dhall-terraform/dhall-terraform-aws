@@ -1,6 +1,7 @@
 { Type =
     { app_server : Optional Text
     , app_server_version : Optional Text
+    , arn : Optional Text
     , auto_assign_elastic_ips : Optional Bool
     , auto_assign_public_ips : Optional Bool
     , auto_healing : Optional Bool
@@ -23,6 +24,7 @@
     , name : Optional Text
     , stack_id : Text
     , system_packages : Optional (List Text)
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , use_ebs_optimized_instances : Optional Bool
     , ebs_volume :
         Optional
@@ -40,6 +42,7 @@
 , default =
   { app_server = None Text
   , app_server_version = None Text
+  , arn = None Text
   , auto_assign_elastic_ips = None Bool
   , auto_assign_public_ips = None Bool
   , auto_healing = None Bool
@@ -61,6 +64,7 @@
   , jvm_version = None Text
   , name = None Text
   , system_packages = None (List Text)
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , use_ebs_optimized_instances = None Bool
   , ebs_volume =
       None

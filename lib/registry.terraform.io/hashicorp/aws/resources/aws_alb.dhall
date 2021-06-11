@@ -2,6 +2,7 @@
     { arn : Optional Text
     , arn_suffix : Optional Text
     , dns_name : Optional Text
+    , drop_invalid_header_fields : Optional Bool
     , enable_cross_zone_load_balancing : Optional Bool
     , enable_deletion_protection : Optional Bool
     , enable_http2 : Optional Bool
@@ -35,6 +36,7 @@
   { arn = None Text
   , arn_suffix = None Text
   , dns_name = None Text
+  , drop_invalid_header_fields = None Bool
   , enable_cross_zone_load_balancing = None Bool
   , enable_deletion_protection = None Bool
   , enable_http2 = None Bool

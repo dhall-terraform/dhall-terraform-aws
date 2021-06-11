@@ -1,5 +1,6 @@
 { Type =
-    { auto_assign_elastic_ips : Optional Bool
+    { arn : Optional Text
+    , auto_assign_elastic_ips : Optional Bool
     , auto_assign_public_ips : Optional Bool
     , auto_healing : Optional Bool
     , custom_configure_recipes : Optional (List Text)
@@ -20,6 +21,7 @@
     , root_password_on_all_instances : Optional Bool
     , stack_id : Text
     , system_packages : Optional (List Text)
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , use_ebs_optimized_instances : Optional Bool
     , ebs_volume :
         Optional
@@ -35,7 +37,8 @@
           )
     }
 , default =
-  { auto_assign_elastic_ips = None Bool
+  { arn = None Text
+  , auto_assign_elastic_ips = None Bool
   , auto_assign_public_ips = None Bool
   , auto_healing = None Bool
   , custom_configure_recipes = None (List Text)
@@ -55,6 +58,7 @@
   , root_password = None Text
   , root_password_on_all_instances = None Bool
   , system_packages = None (List Text)
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , use_ebs_optimized_instances = None Bool
   , ebs_volume =
       None

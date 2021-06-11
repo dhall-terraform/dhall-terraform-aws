@@ -11,6 +11,7 @@
     , permissions_boundary : Optional Text
     , role_id : Optional Text
     , role_name : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , unique_id : Optional Text
     }
 , default =
@@ -25,6 +26,7 @@
   , permissions_boundary = None Text
   , role_id = None Text
   , role_name = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , unique_id = None Text
   }
 }

@@ -334,6 +334,7 @@
 , aws_kinesis_firehose_delivery_stream =
     ./aws_kinesis_firehose_delivery_stream.dhall
 , aws_kinesis_stream = ./aws_kinesis_stream.dhall
+, aws_kinesis_video_stream = ./aws_kinesis_video_stream.dhall
 , aws_kms_alias = ./aws_kms_alias.dhall
 , aws_kms_ciphertext = ./aws_kms_ciphertext.dhall
 , aws_kms_external_key = ./aws_kms_external_key.dhall
@@ -494,6 +495,7 @@
 , aws_security_group = ./aws_security_group.dhall
 , aws_security_group_rule = ./aws_security_group_rule.dhall
 , aws_securityhub_account = ./aws_securityhub_account.dhall
+, aws_securityhub_member = ./aws_securityhub_member.dhall
 , aws_securityhub_product_subscription =
     ./aws_securityhub_product_subscription.dhall
 , aws_securityhub_standards_subscription =
