@@ -8,6 +8,7 @@
     , owner_alias : Optional Text
     , owner_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , volume_id : Text
     , volume_size : Optional Natural
     , timeouts : Optional { create : Optional Text, delete : Optional Text }
@@ -22,6 +23,7 @@
   , owner_alias = None Text
   , owner_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , volume_size = None Natural
   , timeouts = None { create : Optional Text, delete : Optional Text }
   }

@@ -18,6 +18,7 @@
     , period : Optional Natural
     , statistic : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , threshold : Optional Natural
     , threshold_metric_id : Optional Text
     , treat_missing_data : Optional Text
@@ -61,6 +62,7 @@
   , period = None Natural
   , statistic = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , threshold = None Natural
   , threshold_metric_id = None Text
   , treat_missing_data = None Text

@@ -11,6 +11,7 @@
     , stream_label : Optional Text
     , stream_view_type : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , write_capacity : Optional Natural
     , attribute : List { name : Text, type : Text }
     , global_secondary_index :
@@ -45,7 +46,14 @@
           , delete : Optional Text
           , update : Optional Text
           }
-    , ttl : Optional (List { attribute_name : Text, enabled : Optional Bool })
+    , ttl :
+        Optional
+          ( List
+              { attribute_name : Text
+              , enabled : Optional Bool
+              , kms_key_arn : Optional Text
+              }
+          )
     }
 , default =
   { arn = None Text
@@ -58,6 +66,7 @@
   , stream_label = None Text
   , stream_view_type = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , write_capacity = None Natural
   , global_secondary_index =
       None
@@ -90,6 +99,13 @@
         , delete : Optional Text
         , update : Optional Text
         }
-  , ttl = None (List { attribute_name : Text, enabled : Optional Bool })
+  , ttl =
+      None
+        ( List
+            { attribute_name : Text
+            , enabled : Optional Bool
+            , kms_key_arn : Optional Text
+            }
+        )
   }
 }

@@ -7,6 +7,7 @@
     , max_concurrent_runs : Optional Natural
     , name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { arn = None Text
@@ -16,5 +17,6 @@
   , max_concurrent_runs = None Natural
   , name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

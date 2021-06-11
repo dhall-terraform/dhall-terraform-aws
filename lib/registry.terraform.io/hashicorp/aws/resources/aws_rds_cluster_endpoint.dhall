@@ -8,6 +8,7 @@
     , id : Optional Text
     , static_members : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { arn = None Text
@@ -16,5 +17,6 @@
   , id = None Text
   , static_members = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

@@ -12,6 +12,7 @@
     , schema_definition : Text
     , schema_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { arn = None Text
@@ -23,5 +24,6 @@
   , registry_name = None Text
   , schema_checkpoint = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

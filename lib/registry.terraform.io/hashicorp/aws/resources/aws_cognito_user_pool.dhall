@@ -13,6 +13,7 @@
     , sms_authentication_message : Optional Text
     , sms_verification_message : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , username_attributes : Optional (List Text)
     , account_recovery_setting :
         Optional
@@ -129,6 +130,7 @@
   , sms_authentication_message = None Text
   , sms_verification_message = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , username_attributes = None (List Text)
   , account_recovery_setting =
       None

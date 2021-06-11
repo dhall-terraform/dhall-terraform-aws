@@ -6,6 +6,7 @@
     , name : Optional Text
     , security_group_ids : List Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , ip_address :
         List { ip : Optional Text, ip_id : Optional Text, subnet_id : Text }
     , timeouts :
@@ -21,6 +22,7 @@
   , id = None Text
   , name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None
         { create : Optional Text

@@ -10,6 +10,7 @@
     , size : Optional Natural
     , snapshot_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , throughput : Optional Natural
     , type : Optional Text
     }
@@ -24,6 +25,7 @@
   , size = None Natural
   , snapshot_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , throughput = None Natural
   , type = None Text
   }

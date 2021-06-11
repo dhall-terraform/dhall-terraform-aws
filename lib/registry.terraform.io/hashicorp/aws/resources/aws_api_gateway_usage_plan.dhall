@@ -5,6 +5,7 @@
     , name : Text
     , product_code : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , api_stages : Optional (List { api_id : Text, stage : Text })
     , quota_settings :
         Optional
@@ -21,6 +22,7 @@
   , id = None Text
   , product_code = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , api_stages = None (List { api_id : Text, stage : Text })
   , quota_settings =
       None (List { limit : Natural, offset : Optional Natural, period : Text })

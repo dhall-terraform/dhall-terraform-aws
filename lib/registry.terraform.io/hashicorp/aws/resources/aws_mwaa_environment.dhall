@@ -28,6 +28,7 @@
     , source_bucket_arn : Text
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , webserver_access_mode : Optional Text
     , webserver_url : Optional Text
     , weekly_maintenance_window_start : Optional Text
@@ -105,6 +106,7 @@
   , service_role_arn = None Text
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , webserver_access_mode = None Text
   , webserver_url = None Text
   , weekly_maintenance_window_start = None Text

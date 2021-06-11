@@ -10,6 +10,7 @@
     , rotation_enabled : Optional Bool
     , rotation_lambda_arn : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , rotation_rules : Optional (List { automatically_after_days : Natural })
     }
 , default =
@@ -24,6 +25,7 @@
   , rotation_enabled = None Bool
   , rotation_lambda_arn = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , rotation_rules = None (List { automatically_after_days : Natural })
   }
 }

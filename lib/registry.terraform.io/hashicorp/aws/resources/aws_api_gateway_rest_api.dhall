@@ -14,6 +14,7 @@
     , policy : Optional Text
     , root_resource_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , endpoint_configuration :
         Optional
           (List { types : List Text, vpc_endpoint_ids : Optional (List Text) })
@@ -33,6 +34,7 @@
   , policy = None Text
   , root_resource_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , endpoint_configuration =
       None (List { types : List Text, vpc_endpoint_ids : Optional (List Text) })
   }

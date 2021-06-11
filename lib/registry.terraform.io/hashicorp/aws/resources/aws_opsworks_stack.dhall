@@ -20,6 +20,7 @@
     , service_role_arn : Text
     , stack_endpoint : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , use_custom_cookbooks : Optional Bool
     , use_opsworks_security_groups : Optional Bool
     , vpc_id : Optional Text
@@ -53,6 +54,7 @@
   , manage_berkshelf = None Bool
   , stack_endpoint = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , use_custom_cookbooks = None Bool
   , use_opsworks_security_groups = None Bool
   , vpc_id = None Text

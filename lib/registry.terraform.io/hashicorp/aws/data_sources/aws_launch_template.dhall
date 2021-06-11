@@ -84,6 +84,7 @@
               , availability_zone : Text
               , group_name : Text
               , host_id : Text
+              , host_resource_group_arn : Text
               , partition_number : Natural
               , spread_domain : Text
               , tenancy : Text
@@ -189,6 +190,7 @@
             , availability_zone : Text
             , group_name : Text
             , host_id : Text
+            , host_resource_group_arn : Text
             , partition_number : Natural
             , spread_domain : Text
             , tenancy : Text

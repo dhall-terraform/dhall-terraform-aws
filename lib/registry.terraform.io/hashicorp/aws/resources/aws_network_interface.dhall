@@ -13,6 +13,7 @@
     , source_dest_check : Optional Bool
     , subnet_id : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , attachment :
         Optional
           ( List
@@ -36,6 +37,7 @@
   , security_groups = None (List Text)
   , source_dest_check = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , attachment =
       None
         ( List

@@ -32,6 +32,7 @@
     , source_dest_check : Optional Bool
     , subnet_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , tenancy : Optional Text
     , user_data : Optional Text
     , user_data_base64 : Optional Text
@@ -133,6 +134,7 @@
   , source_dest_check = None Bool
   , subnet_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , tenancy = None Text
   , user_data = None Text
   , user_data_base64 = None Text

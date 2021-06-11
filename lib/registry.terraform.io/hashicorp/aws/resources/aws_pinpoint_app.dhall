@@ -5,6 +5,7 @@
     , name : Optional Text
     , name_prefix : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , campaign_hook :
         Optional
           ( List
@@ -32,6 +33,7 @@
   , name = None Text
   , name_prefix = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , campaign_hook =
       None
         ( List

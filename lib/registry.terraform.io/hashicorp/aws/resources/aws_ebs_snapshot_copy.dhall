@@ -10,6 +10,7 @@
     , source_region : Text
     , source_snapshot_id : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , volume_id : Optional Text
     , volume_size : Optional Natural
     }
@@ -23,6 +24,7 @@
   , owner_alias = None Text
   , owner_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , volume_id = None Text
   , volume_size = None Natural
   }

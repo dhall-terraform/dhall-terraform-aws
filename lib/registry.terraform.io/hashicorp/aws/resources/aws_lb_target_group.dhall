@@ -14,6 +14,7 @@
     , proxy_protocol_v2 : Optional Bool
     , slow_start : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , target_type : Optional Text
     , vpc_id : Optional Text
     , health_check :
@@ -55,6 +56,7 @@
   , proxy_protocol_v2 = None Bool
   , slow_start = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , target_type = None Text
   , vpc_id = None Text
   , health_check =

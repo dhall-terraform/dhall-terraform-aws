@@ -14,6 +14,7 @@
     , route_key : Optional Text
     , route_selection_expression : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , target : Optional Text
     , version : Optional Text
     , cors_configuration :
@@ -42,6 +43,7 @@
   , route_key = None Text
   , route_selection_expression = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , target = None Text
   , version = None Text
   , cors_configuration =

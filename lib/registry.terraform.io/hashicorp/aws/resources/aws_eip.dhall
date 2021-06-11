@@ -1,5 +1,6 @@
 { Type =
-    { allocation_id : Optional Text
+    { address : Optional Text
+    , allocation_id : Optional Text
     , associate_with_private_ip : Optional Text
     , association_id : Optional Text
     , carrier_ip : Optional Text
@@ -16,6 +17,7 @@
     , public_ip : Optional Text
     , public_ipv4_pool : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , vpc : Optional Bool
     , timeouts :
         Optional
@@ -25,7 +27,8 @@
           }
     }
 , default =
-  { allocation_id = None Text
+  { address = None Text
+  , allocation_id = None Text
   , associate_with_private_ip = None Text
   , association_id = None Text
   , carrier_ip = None Text
@@ -42,6 +45,7 @@
   , public_ip = None Text
   , public_ipv4_pool = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , vpc = None Bool
   , timeouts =
       None

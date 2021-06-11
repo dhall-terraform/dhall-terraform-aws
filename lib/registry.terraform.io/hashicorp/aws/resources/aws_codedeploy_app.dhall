@@ -7,6 +7,7 @@
     , linked_to_github : Optional Bool
     , name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { application_id = None Text
@@ -16,5 +17,6 @@
   , id = None Text
   , linked_to_github = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

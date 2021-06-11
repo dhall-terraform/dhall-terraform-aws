@@ -41,6 +41,7 @@
     , storage_class : Optional Text
     , tagging_directive : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , version_id : Optional Text
     , website_redirect : Optional Text
     , grant :
@@ -94,6 +95,7 @@
   , storage_class = None Text
   , tagging_directive = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , version_id = None Text
   , website_redirect = None Text
   , grant =

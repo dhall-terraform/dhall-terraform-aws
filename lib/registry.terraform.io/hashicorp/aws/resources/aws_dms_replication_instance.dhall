@@ -17,6 +17,7 @@
     , replication_instance_public_ips : Optional (List Text)
     , replication_subnet_group_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_security_group_ids : Optional (List Text)
     , timeouts :
         Optional
@@ -42,6 +43,7 @@
   , replication_instance_public_ips = None (List Text)
   , replication_subnet_group_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , vpc_security_group_ids = None (List Text)
   , timeouts =
       None

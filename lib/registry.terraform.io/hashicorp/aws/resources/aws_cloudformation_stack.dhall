@@ -11,6 +11,7 @@
     , policy_body : Optional Text
     , policy_url : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , template_body : Optional Text
     , template_url : Optional Text
     , timeout_in_minutes : Optional Natural
@@ -33,6 +34,7 @@
   , policy_body = None Text
   , policy_url = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , template_body = None Text
   , template_url = None Text
   , timeout_in_minutes = None Natural

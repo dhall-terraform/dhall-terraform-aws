@@ -16,6 +16,7 @@
     , status : Optional Text
     , success_retention_period : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , timeline :
         Optional
           ( List
@@ -58,6 +59,7 @@
   , status = None Text
   , success_retention_period = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , timeline =
       None
         ( List

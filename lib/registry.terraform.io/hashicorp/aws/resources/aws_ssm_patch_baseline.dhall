@@ -10,6 +10,7 @@
     , rejected_patches : Optional (List Text)
     , rejected_patches_action : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , approval_rule :
         Optional
           ( List
@@ -36,6 +37,7 @@
   , rejected_patches = None (List Text)
   , rejected_patches_action = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , approval_rule =
       None
         ( List

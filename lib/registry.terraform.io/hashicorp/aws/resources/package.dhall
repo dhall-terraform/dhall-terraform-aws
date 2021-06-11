@@ -99,6 +99,7 @@
 , aws_cloudformation_stack_set = ./aws_cloudformation_stack_set.dhall
 , aws_cloudformation_stack_set_instance =
     ./aws_cloudformation_stack_set_instance.dhall
+, aws_cloudformation_type = ./aws_cloudformation_type.dhall
 , aws_cloudfront_cache_policy = ./aws_cloudfront_cache_policy.dhall
 , aws_cloudfront_distribution = ./aws_cloudfront_distribution.dhall
 , aws_cloudfront_key_group = ./aws_cloudfront_key_group.dhall
@@ -150,6 +151,7 @@
 , aws_codepipeline_webhook = ./aws_codepipeline_webhook.dhall
 , aws_codestarconnections_connection =
     ./aws_codestarconnections_connection.dhall
+, aws_codestarconnections_host = ./aws_codestarconnections_host.dhall
 , aws_codestarnotifications_notification_rule =
     ./aws_codestarnotifications_notification_rule.dhall
 , aws_cognito_identity_pool = ./aws_cognito_identity_pool.dhall
@@ -201,6 +203,7 @@
 , aws_db_parameter_group = ./aws_db_parameter_group.dhall
 , aws_db_proxy_default_target_group = ./aws_db_proxy_default_target_group.dhall
 , aws_db_proxy = ./aws_db_proxy.dhall
+, aws_db_proxy_endpoint = ./aws_db_proxy_endpoint.dhall
 , aws_db_proxy_target = ./aws_db_proxy_target.dhall
 , aws_db_security_group = ./aws_db_security_group.dhall
 , aws_db_snapshot = ./aws_db_snapshot.dhall
@@ -492,6 +495,7 @@
     ./aws_load_balancer_backend_server_policy.dhall
 , aws_load_balancer_listener_policy = ./aws_load_balancer_listener_policy.dhall
 , aws_load_balancer_policy = ./aws_load_balancer_policy.dhall
+, aws_macie2_account = ./aws_macie2_account.dhall
 , aws_macie_member_account_association =
     ./aws_macie_member_account_association.dhall
 , aws_macie_s3_bucket_association = ./aws_macie_s3_bucket_association.dhall
@@ -600,6 +604,10 @@
 , aws_route53_resolver_endpoint = ./aws_route53_resolver_endpoint.dhall
 , aws_route53_resolver_firewall_domain_list =
     ./aws_route53_resolver_firewall_domain_list.dhall
+, aws_route53_resolver_firewall_rule =
+    ./aws_route53_resolver_firewall_rule.dhall
+, aws_route53_resolver_firewall_rule_group_association =
+    ./aws_route53_resolver_firewall_rule_group_association.dhall
 , aws_route53_resolver_firewall_rule_group =
     ./aws_route53_resolver_firewall_rule_group.dhall
 , aws_route53_resolver_query_log_config_association =
@@ -672,6 +680,7 @@
 , aws_serverlessapplicationrepository_cloudformation_stack =
     ./aws_serverlessapplicationrepository_cloudformation_stack.dhall
 , aws_servicecatalog_portfolio = ./aws_servicecatalog_portfolio.dhall
+, aws_servicecatalog_product = ./aws_servicecatalog_product.dhall
 , aws_service_discovery_http_namespace =
     ./aws_service_discovery_http_namespace.dhall
 , aws_service_discovery_private_dns_namespace =

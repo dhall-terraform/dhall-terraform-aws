@@ -4,6 +4,7 @@
     , kms_key_arn : Optional Text
     , name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , data_capture_config :
         Optional
           ( List
@@ -37,6 +38,7 @@
   , kms_key_arn = None Text
   , name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , data_capture_config =
       None
         ( List

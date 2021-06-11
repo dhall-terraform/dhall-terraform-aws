@@ -39,6 +39,7 @@
               , acmpca : Optional Text
               , amplify : Optional Text
               , apigateway : Optional Text
+              , appconfig : Optional Text
               , applicationautoscaling : Optional Text
               , applicationinsights : Optional Text
               , appmesh : Optional Text
@@ -236,6 +237,7 @@
             , acmpca : Optional Text
             , amplify : Optional Text
             , apigateway : Optional Text
+            , appconfig : Optional Text
             , applicationautoscaling : Optional Text
             , applicationinsights : Optional Text
             , appmesh : Optional Text

@@ -8,6 +8,7 @@
     , media_type : Optional Text
     , name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , version : Optional Text
     , timeouts :
         Optional
@@ -25,6 +26,7 @@
   , kms_key_id = None Text
   , media_type = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , version = None Text
   , timeouts =
       None

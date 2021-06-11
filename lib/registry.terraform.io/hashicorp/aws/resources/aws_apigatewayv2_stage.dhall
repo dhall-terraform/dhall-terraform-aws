@@ -11,6 +11,7 @@
     , name : Text
     , stage_variables : Optional (List { mapKey : Text, mapValue : Text })
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , access_log_settings :
         Optional (List { destination_arn : Text, format : Text })
     , default_route_settings :
@@ -46,6 +47,7 @@
   , invoke_url = None Text
   , stage_variables = None (List { mapKey : Text, mapValue : Text })
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , access_log_settings = None (List { destination_arn : Text, format : Text })
   , default_route_settings =
       None

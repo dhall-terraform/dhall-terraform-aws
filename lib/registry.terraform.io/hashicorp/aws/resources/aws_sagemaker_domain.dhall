@@ -9,6 +9,7 @@
     , single_sign_on_managed_application_instance_id : Optional Text
     , subnet_ids : List Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , url : Optional Text
     , vpc_id : Text
     , default_user_settings :
@@ -77,6 +78,7 @@
   , kms_key_id = None Text
   , single_sign_on_managed_application_instance_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , url = None Text
   }
 }

@@ -18,6 +18,7 @@
     , status : Optional Text
     , subject_alternative_names : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , validation_emails : Optional (List Text)
     , validation_method : Optional Text
     , options :
@@ -44,6 +45,7 @@
   , status = None Text
   , subject_alternative_names = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , validation_emails = None (List Text)
   , validation_method = None Text
   , options =

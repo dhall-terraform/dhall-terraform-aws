@@ -5,6 +5,7 @@
     , ipv6_support : Optional Text
     , subnet_ids : List Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , transit_gateway_default_route_table_association : Optional Bool
     , transit_gateway_default_route_table_propagation : Optional Bool
     , transit_gateway_id : Text
@@ -17,6 +18,7 @@
   , id = None Text
   , ipv6_support = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , transit_gateway_default_route_table_association = None Bool
   , transit_gateway_default_route_table_propagation = None Bool
   , vpc_owner_id = None Text

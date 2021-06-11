@@ -9,6 +9,7 @@
     , require_tls : Optional Bool
     , role_arn : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_security_group_ids : Optional (List Text)
     , vpc_subnet_ids : List Text
     , auth :
@@ -33,6 +34,7 @@
   , idle_client_timeout = None Natural
   , require_tls = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , vpc_security_group_ids = None (List Text)
   , timeouts =
       None

@@ -14,6 +14,7 @@
     , mtu : Optional Natural
     , name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , vlan : Natural
     , timeouts :
         Optional
@@ -33,6 +34,7 @@
   , jumbo_frame_capable = None Bool
   , mtu = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None
         { create : Optional Text

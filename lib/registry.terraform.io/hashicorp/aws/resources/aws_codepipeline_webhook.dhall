@@ -3,6 +3,7 @@
     , id : Optional Text
     , name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , target_action : Text
     , target_pipeline : Text
     , url : Optional Text
@@ -16,6 +17,7 @@
 , default =
   { id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , url = None Text
   , authentication_configuration =
       None

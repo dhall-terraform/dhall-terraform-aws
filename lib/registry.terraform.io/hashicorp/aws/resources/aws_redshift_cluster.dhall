@@ -33,6 +33,7 @@
     , snapshot_cluster_identifier : Optional Text
     , snapshot_identifier : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_security_group_ids : Optional (List Text)
     , logging :
         Optional
@@ -90,6 +91,7 @@
   , snapshot_cluster_identifier = None Text
   , snapshot_identifier = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , vpc_security_group_ids = None (List Text)
   , logging =
       None

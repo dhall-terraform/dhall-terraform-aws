@@ -16,6 +16,7 @@
     , state : Optional Text
     , subnet_ids : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_endpoint_type : Optional Text
     , vpc_id : Text
     , timeouts :
@@ -42,6 +43,7 @@
   , state = None Text
   , subnet_ids = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , vpc_endpoint_type = None Text
   , timeouts =
       None

@@ -6,6 +6,7 @@
     , name : Text
     , provider_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -20,6 +21,7 @@
   , id = None Text
   , provider_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None
         { create : Optional Text

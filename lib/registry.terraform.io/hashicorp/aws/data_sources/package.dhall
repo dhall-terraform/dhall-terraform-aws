@@ -28,6 +28,7 @@
 , aws_canonical_user_id = ./aws_canonical_user_id.dhall
 , aws_cloudformation_export = ./aws_cloudformation_export.dhall
 , aws_cloudformation_stack = ./aws_cloudformation_stack.dhall
+, aws_cloudformation_type = ./aws_cloudformation_type.dhall
 , aws_cloudfront_cache_policy = ./aws_cloudfront_cache_policy.dhall
 , aws_cloudfront_distribution = ./aws_cloudfront_distribution.dhall
 , aws_cloudfront_origin_request_policy =
@@ -148,6 +149,7 @@
 , aws_kms_alias = ./aws_kms_alias.dhall
 , aws_kms_ciphertext = ./aws_kms_ciphertext.dhall
 , aws_kms_key = ./aws_kms_key.dhall
+, aws_kms_public_key = ./aws_kms_public_key.dhall
 , aws_kms_secret = ./aws_kms_secret.dhall
 , aws_kms_secrets = ./aws_kms_secrets.dhall
 , aws_lakeformation_data_lake_settings =
@@ -202,6 +204,8 @@
 , aws_redshift_service_account = ./aws_redshift_service_account.dhall
 , aws_region = ./aws_region.dhall
 , aws_regions = ./aws_regions.dhall
+, aws_resourcegroupstaggingapi_resources =
+    ./aws_resourcegroupstaggingapi_resources.dhall
 , aws_route53_delegation_set = ./aws_route53_delegation_set.dhall
 , aws_route53_resolver_endpoint = ./aws_route53_resolver_endpoint.dhall
 , aws_route53_resolver_rule = ./aws_route53_resolver_rule.dhall

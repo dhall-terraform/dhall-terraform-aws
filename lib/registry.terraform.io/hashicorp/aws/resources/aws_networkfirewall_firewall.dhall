@@ -18,6 +18,7 @@
     , name : Text
     , subnet_change_protection : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , update_token : Optional Text
     , vpc_id : Text
     , subnet_mapping : List { subnet_id : Text }
@@ -40,6 +41,7 @@
   , id = None Text
   , subnet_change_protection = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , update_token = None Text
   }
 }

@@ -9,6 +9,7 @@
     , source_endpoint_arn : Text
     , table_mappings : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , target_endpoint_arn : Text
     }
 , default =
@@ -17,5 +18,6 @@
   , replication_task_arn = None Text
   , replication_task_settings = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

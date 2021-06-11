@@ -39,6 +39,7 @@
     , source_region : Optional Text
     , storage_encrypted : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_security_group_ids : Optional (List Text)
     , restore_to_point_in_time :
         Optional
@@ -117,6 +118,7 @@
   , source_region = None Text
   , storage_encrypted = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , vpc_security_group_ids = None (List Text)
   , restore_to_point_in_time =
       None

@@ -6,6 +6,7 @@
     , peer_region : Optional Text
     , peer_vpc_id : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_id : Text
     , accepter :
         Optional
@@ -37,6 +38,7 @@
   , peer_owner_id = None Text
   , peer_region = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , accepter =
       None
         ( List

@@ -26,6 +26,7 @@
     , stack_id : Text
     , system_packages : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , use_ebs_optimized_instances : Optional Bool
     , ebs_volume :
         Optional
@@ -67,6 +68,7 @@
   , rubygems_version = None Text
   , system_packages = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , use_ebs_optimized_instances = None Bool
   , ebs_volume =
       None

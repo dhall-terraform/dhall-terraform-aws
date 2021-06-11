@@ -14,6 +14,7 @@
     , security_groups : Optional (List Text)
     , subnet_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , url : Optional Text
     , volume_size : Optional Natural
     }
@@ -30,6 +31,7 @@
   , security_groups = None (List Text)
   , subnet_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , url = None Text
   , volume_size = None Natural
   }

@@ -19,6 +19,7 @@
     , resource_path : Optional Text
     , search_string : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , type : Text
     }
 , default =
@@ -42,5 +43,6 @@
   , resource_path = None Text
   , search_string = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

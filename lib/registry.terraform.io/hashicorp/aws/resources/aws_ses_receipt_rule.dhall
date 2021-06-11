@@ -41,7 +41,11 @@
               , topic_arn : Optional Text
               }
           )
-    , sns_action : Optional (List { position : Natural, topic_arn : Text })
+    , sns_action :
+        Optional
+          ( List
+              { encoding : Optional Text, position : Natural, topic_arn : Text }
+          )
     , stop_action :
         Optional
           (List { position : Natural, scope : Text, topic_arn : Optional Text })
@@ -95,7 +99,11 @@
             , topic_arn : Optional Text
             }
         )
-  , sns_action = None (List { position : Natural, topic_arn : Text })
+  , sns_action =
+      None
+        ( List
+            { encoding : Optional Text, position : Natural, topic_arn : Text }
+        )
   , stop_action =
       None
         (List { position : Natural, scope : Text, topic_arn : Optional Text })

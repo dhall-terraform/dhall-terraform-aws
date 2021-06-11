@@ -13,6 +13,7 @@
           (List { destination_cidr_block : Text, source : Text, state : Text })
     , static_routes_only : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , transit_gateway_attachment_id : Optional Text
     , transit_gateway_id : Optional Text
     , tunnel1_address : Optional Text
@@ -88,6 +89,7 @@
       None (List { destination_cidr_block : Text, source : Text, state : Text })
   , static_routes_only = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , transit_gateway_attachment_id = None Text
   , transit_gateway_id = None Text
   , tunnel1_address = None Text

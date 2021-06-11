@@ -5,6 +5,7 @@
     , name : Text
     , recovery_points : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { arn = None Text
@@ -12,5 +13,6 @@
   , kms_key_arn = None Text
   , recovery_points = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

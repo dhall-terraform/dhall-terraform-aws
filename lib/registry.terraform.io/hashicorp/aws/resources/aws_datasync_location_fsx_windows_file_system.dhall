@@ -8,6 +8,7 @@
     , security_group_arns : List Text
     , subdirectory : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , uri : Optional Text
     , user : Text
     }
@@ -18,6 +19,7 @@
   , id = None Text
   , subdirectory = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , uri = None Text
   }
 }

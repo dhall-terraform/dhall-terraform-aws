@@ -9,6 +9,7 @@
     , path : Optional Text
     , private_key : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , upload_date : Optional Text
     }
 , default =
@@ -20,6 +21,7 @@
   , name_prefix = None Text
   , path = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , upload_date = None Text
   }
 }

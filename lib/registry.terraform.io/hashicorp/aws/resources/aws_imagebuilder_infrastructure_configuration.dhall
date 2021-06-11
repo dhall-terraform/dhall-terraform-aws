@@ -13,6 +13,7 @@
     , sns_topic_arn : Optional Text
     , subnet_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , terminate_instance_on_failure : Optional Bool
     , logging :
         Optional
@@ -35,6 +36,7 @@
   , sns_topic_arn = None Text
   , subnet_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , terminate_instance_on_failure = None Bool
   , logging =
       None

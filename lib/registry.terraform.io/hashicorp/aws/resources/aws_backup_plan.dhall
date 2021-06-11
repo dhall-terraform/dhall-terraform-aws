@@ -3,6 +3,7 @@
     , id : Optional Text
     , name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , version : Optional Text
     , advanced_backup_setting :
         Optional
@@ -47,6 +48,7 @@
   { arn = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , version = None Text
   , advanced_backup_setting =
       None

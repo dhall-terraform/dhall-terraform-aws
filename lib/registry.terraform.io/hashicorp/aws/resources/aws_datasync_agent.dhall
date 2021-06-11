@@ -5,6 +5,7 @@
     , ip_address : Optional Text
     , name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , timeouts : Optional { create : Optional Text }
     }
 , default =
@@ -14,6 +15,7 @@
   , ip_address = None Text
   , name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , timeouts = None { create : Optional Text }
   }
 }

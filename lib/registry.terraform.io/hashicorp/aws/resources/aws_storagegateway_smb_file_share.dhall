@@ -23,6 +23,7 @@
     , role_arn : Text
     , smb_acl_enabled : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , valid_user_list : Optional (List Text)
     , cache_attributes :
         Optional (List { cache_stale_timeout_in_seconds : Optional Natural })
@@ -55,6 +56,7 @@
   , requester_pays = None Bool
   , smb_acl_enabled = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , valid_user_list = None (List Text)
   , cache_attributes =
       None (List { cache_stale_timeout_in_seconds : Optional Natural })

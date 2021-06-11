@@ -4,6 +4,7 @@
     , name : Text
     , role_arn : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , artifact_store :
         List
           { location : Text
@@ -36,5 +37,6 @@
   { arn = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

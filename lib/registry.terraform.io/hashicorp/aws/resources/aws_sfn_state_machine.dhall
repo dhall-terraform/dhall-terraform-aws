@@ -7,6 +7,7 @@
     , role_arn : Text
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , type : Optional Text
     , logging_configuration :
         Optional
@@ -23,6 +24,7 @@
   , id = None Text
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , type = None Text
   , logging_configuration =
       None

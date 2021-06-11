@@ -5,6 +5,7 @@
     , name : Text
     , schema : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , uris : Optional (List { mapKey : Text, mapValue : Text })
     , xray_enabled : Optional Bool
     , additional_authentication_provider :
@@ -62,6 +63,7 @@
   , id = None Text
   , schema = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , uris = None (List { mapKey : Text, mapValue : Text })
   , xray_enabled = None Bool
   , additional_authentication_provider =

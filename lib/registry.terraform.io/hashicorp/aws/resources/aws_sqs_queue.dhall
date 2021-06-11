@@ -14,6 +14,7 @@
     , receive_wait_time_seconds : Optional Natural
     , redrive_policy : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , visibility_timeout_seconds : Optional Natural
     }
 , default =
@@ -32,6 +33,7 @@
   , receive_wait_time_seconds = None Natural
   , redrive_policy = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , visibility_timeout_seconds = None Natural
   }
 }

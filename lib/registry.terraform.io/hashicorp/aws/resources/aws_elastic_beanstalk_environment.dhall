@@ -21,6 +21,7 @@
     , queues : Optional (List Text)
     , solution_stack_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , template_name : Optional Text
     , tier : Optional Text
     , triggers : Optional (List Text)
@@ -55,6 +56,7 @@
   , queues = None (List Text)
   , solution_stack_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , template_name = None Text
   , tier = None Text
   , triggers = None (List Text)

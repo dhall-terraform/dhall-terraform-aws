@@ -9,6 +9,7 @@
     , start_application : Optional Bool
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , version : Optional Natural
     , cloudwatch_logging_options :
         Optional
@@ -126,6 +127,7 @@
   , start_application = None Bool
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , version = None Natural
   , cloudwatch_logging_options =
       None (List { id : Optional Text, log_stream_arn : Text, role_arn : Text })

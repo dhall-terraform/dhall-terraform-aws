@@ -12,6 +12,7 @@
     , requires_compatibilities : Optional (List Text)
     , revision : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , task_role_arn : Optional Text
     , inference_accelerator :
         Optional (List { device_name : Text, device_type : Text })
@@ -73,6 +74,7 @@
   , requires_compatibilities = None (List Text)
   , revision = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , task_role_arn = None Text
   , inference_accelerator =
       None (List { device_name : Text, device_type : Text })

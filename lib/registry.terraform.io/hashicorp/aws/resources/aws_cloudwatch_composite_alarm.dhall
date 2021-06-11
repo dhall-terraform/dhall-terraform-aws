@@ -9,6 +9,7 @@
     , insufficient_data_actions : Optional (List Text)
     , ok_actions : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { actions_enabled = None Bool
@@ -19,5 +20,6 @@
   , insufficient_data_actions = None (List Text)
   , ok_actions = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

@@ -23,6 +23,7 @@
           )
     , platform : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , version : Optional Text
     , image_tests_configuration :
         Optional
@@ -56,6 +57,7 @@
         )
   , platform = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , version = None Text
   , image_tests_configuration =
       None

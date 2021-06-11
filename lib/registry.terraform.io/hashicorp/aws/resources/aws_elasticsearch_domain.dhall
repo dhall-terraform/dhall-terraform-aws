@@ -9,6 +9,7 @@
     , id : Optional Text
     , kibana_endpoint : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , advanced_security_options :
         Optional
           ( List
@@ -102,6 +103,7 @@
   , id = None Text
   , kibana_endpoint = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , advanced_security_options =
       None
         ( List

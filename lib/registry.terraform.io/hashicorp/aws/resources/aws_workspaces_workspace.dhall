@@ -7,6 +7,7 @@
     , root_volume_encryption_enabled : Optional Bool
     , state : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , user_name : Text
     , user_volume_encryption_enabled : Optional Bool
     , volume_encryption_key : Optional Text
@@ -34,6 +35,7 @@
   , root_volume_encryption_enabled = None Bool
   , state = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , user_volume_encryption_enabled = None Bool
   , volume_encryption_key = None Text
   , timeouts =

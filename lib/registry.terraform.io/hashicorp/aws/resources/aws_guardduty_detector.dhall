@@ -5,6 +5,7 @@
     , finding_publishing_frequency : Optional Text
     , id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { account_id = None Text
@@ -13,5 +14,6 @@
   , finding_publishing_frequency = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

@@ -22,6 +22,7 @@
     , source : Optional Text
     , storage_class : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , version_id : Optional Text
     , website_redirect : Optional Text
     }
@@ -47,6 +48,7 @@
   , source = None Text
   , storage_class = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , version_id = None Text
   , website_redirect = None Text
   }

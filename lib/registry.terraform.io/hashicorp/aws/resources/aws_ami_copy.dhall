@@ -24,6 +24,7 @@
     , source_ami_region : Text
     , sriov_net_support : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , usage_operation : Optional Text
     , virtualization_type : Optional Text
     , ebs_block_device :
@@ -72,6 +73,7 @@
   , root_snapshot_id = None Text
   , sriov_net_support = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , usage_operation = None Text
   , virtualization_type = None Text
   , ebs_block_device =

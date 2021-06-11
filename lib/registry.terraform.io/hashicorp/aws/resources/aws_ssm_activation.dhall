@@ -9,6 +9,7 @@
     , registration_count : Optional Natural
     , registration_limit : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { activation_code = None Text
@@ -20,5 +21,6 @@
   , registration_count = None Natural
   , registration_limit = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

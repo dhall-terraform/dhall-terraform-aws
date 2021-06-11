@@ -11,6 +11,7 @@
     , registration_code : Optional Text
     , subnet_ids : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , workspace_security_group_id : Optional Text
     , self_service_permissions :
         Optional
@@ -57,6 +58,7 @@
   , registration_code = None Text
   , subnet_ids = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , workspace_security_group_id = None Text
   , self_service_permissions =
       None

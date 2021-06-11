@@ -17,6 +17,7 @@
     , configuration_endpoint : Optional Text
     , engine : Optional Text
     , engine_version : Optional Text
+    , engine_version_actual : Optional Text
     , final_snapshot_identifier : Optional Text
     , id : Optional Text
     , maintenance_window : Optional Text
@@ -35,6 +36,7 @@
     , snapshot_window : Optional Text
     , subnet_group_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { apply_immediately = None Bool
@@ -54,6 +56,7 @@
   , configuration_endpoint = None Text
   , engine = None Text
   , engine_version = None Text
+  , engine_version_actual = None Text
   , final_snapshot_identifier = None Text
   , id = None Text
   , maintenance_window = None Text
@@ -72,5 +75,6 @@
   , snapshot_window = None Text
   , subnet_group_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

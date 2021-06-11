@@ -15,6 +15,7 @@
           )
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , version : Optional Text
     , version_arn : Optional Text
     , signature_validity_period :
@@ -36,6 +37,7 @@
         )
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , version = None Text
   , version_arn = None Text
   , signature_validity_period = None (List { type : Text, value : Natural })

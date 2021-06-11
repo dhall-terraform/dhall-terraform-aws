@@ -11,6 +11,7 @@
     , role_arn : Text
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , version : Optional Text
     , encryption_config :
         Optional
@@ -45,6 +46,7 @@
   , platform_version = None Text
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , version = None Text
   , encryption_config =
       None (List { resources : List Text, provider : List { key_arn : Text } })

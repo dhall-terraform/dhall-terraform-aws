@@ -23,6 +23,7 @@
     , publicly_accessible : Optional Bool
     , storage_encrypted : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , writer : Optional Bool
     , timeouts :
         Optional
@@ -54,6 +55,7 @@
   , publicly_accessible = None Bool
   , storage_encrypted = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , writer = None Bool
   , timeouts =
       None

@@ -10,6 +10,7 @@
     , kafka_version : Text
     , number_of_broker_nodes : Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , zookeeper_connect_string : Optional Text
     , broker_node_group_info :
         List
@@ -90,6 +91,7 @@
   , enhanced_monitoring = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , zookeeper_connect_string = None Text
   , client_authentication =
       None

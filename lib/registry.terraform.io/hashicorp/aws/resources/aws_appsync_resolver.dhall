@@ -5,8 +5,8 @@
     , field : Text
     , id : Optional Text
     , kind : Optional Text
-    , request_template : Text
-    , response_template : Text
+    , request_template : Optional Text
+    , response_template : Optional Text
     , type : Text
     , caching_config :
         Optional
@@ -18,6 +18,8 @@
   , data_source = None Text
   , id = None Text
   , kind = None Text
+  , request_template = None Text
+  , response_template = None Text
   , caching_config =
       None
         (List { caching_keys : Optional (List Text), ttl : Optional Natural })

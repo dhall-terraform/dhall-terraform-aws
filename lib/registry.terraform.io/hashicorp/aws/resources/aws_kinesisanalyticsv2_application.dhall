@@ -11,6 +11,7 @@
     , start_application : Optional Bool
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , version_id : Optional Natural
     , application_configuration :
         Optional
@@ -249,6 +250,7 @@
   , start_application = None Bool
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , version_id = None Natural
   , application_configuration =
       None

@@ -27,6 +27,7 @@
     , schema_version : Optional Text
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , target_type : Optional Text
     , version_name : Optional Text
     , attachments_source :
@@ -58,6 +59,7 @@
   , schema_version = None Text
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , target_type = None Text
   , version_name = None Text
   , attachments_source =

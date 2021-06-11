@@ -20,6 +20,7 @@
     , status : Optional Text
     , subnet_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_id : Optional Text
     , worker_type : Optional Text
     , yarn_endpoint_address : Optional Text
@@ -45,6 +46,7 @@
   , status = None Text
   , subnet_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , vpc_id = None Text
   , worker_type = None Text
   , yarn_endpoint_address = None Text

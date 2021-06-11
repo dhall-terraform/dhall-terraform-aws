@@ -10,6 +10,7 @@
     , configuration_endpoint_address : Optional Text
     , engine : Optional Text
     , engine_version : Optional Text
+    , engine_version_actual : Optional Text
     , final_snapshot_identifier : Optional Text
     , global_replication_group_id : Optional Text
     , id : Optional Text
@@ -34,6 +35,7 @@
     , snapshot_window : Optional Text
     , subnet_group_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , transit_encryption_enabled : Optional Bool
     , cluster_mode :
         Optional
@@ -59,6 +61,7 @@
   , configuration_endpoint_address = None Text
   , engine = None Text
   , engine_version = None Text
+  , engine_version_actual = None Text
   , final_snapshot_identifier = None Text
   , global_replication_group_id = None Text
   , id = None Text
@@ -81,6 +84,7 @@
   , snapshot_window = None Text
   , subnet_group_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , transit_encryption_enabled = None Bool
   , cluster_mode =
       None

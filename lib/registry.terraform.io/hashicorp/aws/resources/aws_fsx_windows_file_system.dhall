@@ -19,6 +19,7 @@
     , storage_type : Optional Text
     , subnet_ids : List Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , throughput_capacity : Natural
     , vpc_id : Optional Text
     , weekly_maintenance_start_time : Optional Text
@@ -59,6 +60,7 @@
   , skip_final_backup = None Bool
   , storage_type = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , vpc_id = None Text
   , weekly_maintenance_start_time = None Text
   , self_managed_active_directory =

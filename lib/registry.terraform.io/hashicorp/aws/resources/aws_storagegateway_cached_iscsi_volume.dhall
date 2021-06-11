@@ -11,6 +11,7 @@
     , snapshot_id : Optional Text
     , source_volume_arn : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , target_arn : Optional Text
     , target_name : Text
     , volume_arn : Optional Text
@@ -28,6 +29,7 @@
   , snapshot_id = None Text
   , source_volume_arn = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , target_arn = None Text
   , volume_arn = None Text
   , volume_id = None Text

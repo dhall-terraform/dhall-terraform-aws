@@ -5,6 +5,7 @@
     , id : Optional Text
     , name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , version_id : Optional Text
     , elasticsearch_configuration :
         Optional
@@ -387,6 +388,7 @@
   , destination_id = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , version_id = None Text
   , elasticsearch_configuration =
       None

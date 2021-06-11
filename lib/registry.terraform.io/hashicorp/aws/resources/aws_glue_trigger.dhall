@@ -7,6 +7,7 @@
     , schedule : Optional Text
     , state : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , type : Text
     , workflow_name : Optional Text
     , actions :
@@ -43,6 +44,7 @@
   , schedule = None Text
   , state = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , workflow_name = None Text
   , predicate =
       None

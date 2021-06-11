@@ -12,6 +12,7 @@
     , new_game_session_protection_policy : Optional Text
     , operating_system : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , ec2_inbound_permission :
         Optional
           ( List
@@ -56,6 +57,7 @@
   , new_game_session_protection_policy = None Text
   , operating_system = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , ec2_inbound_permission =
       None
         ( List

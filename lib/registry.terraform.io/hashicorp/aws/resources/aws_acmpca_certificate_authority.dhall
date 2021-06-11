@@ -11,6 +11,7 @@
     , serial : Optional Text
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , type : Optional Text
     , certificate_authority_configuration :
         List
@@ -62,6 +63,7 @@
   , serial = None Text
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , type = None Text
   , revocation_configuration =
       None

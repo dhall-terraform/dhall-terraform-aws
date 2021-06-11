@@ -3,6 +3,7 @@
     , id : Optional Text
     , name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , auto_scaling_group_provider :
         List
           { auto_scaling_group_arn : Text
@@ -23,5 +24,6 @@
   { arn = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

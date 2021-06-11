@@ -12,6 +12,7 @@
     , service_name : Text
     , service_type : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , url_path : Text
     , version : Natural
     }
@@ -21,5 +22,6 @@
   , id = None Text
   , rule_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

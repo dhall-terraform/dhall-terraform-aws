@@ -21,6 +21,7 @@
     , status : Optional Text
     , subnet_ids : List Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , version : Optional Text
     , launch_template :
         Optional
@@ -60,6 +61,7 @@
         )
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , version = None Text
   , launch_template =
       None (List { id : Optional Text, name : Optional Text, version : Text })

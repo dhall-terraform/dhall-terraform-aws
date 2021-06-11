@@ -7,6 +7,7 @@
     , parameters : Optional (List { mapKey : Text, mapValue : Text })
     , semantic_version : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -20,6 +21,7 @@
   , parameters = None (List { mapKey : Text, mapValue : Text })
   , semantic_version = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None
         { create : Optional Text

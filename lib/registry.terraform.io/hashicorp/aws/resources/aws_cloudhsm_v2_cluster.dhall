@@ -17,6 +17,7 @@
     , source_backup_identifier : Optional Text
     , subnet_ids : List Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_id : Optional Text
     , timeouts :
         Optional
@@ -42,6 +43,7 @@
   , security_group_id = None Text
   , source_backup_identifier = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , vpc_id = None Text
   , timeouts =
       None

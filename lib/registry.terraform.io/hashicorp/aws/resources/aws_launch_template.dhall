@@ -16,6 +16,7 @@
     , ram_disk_id : Optional Text
     , security_group_names : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , update_default_version : Optional Bool
     , user_data : Optional Text
     , vpc_security_group_ids : Optional (List Text)
@@ -114,6 +115,7 @@
               , availability_zone : Optional Text
               , group_name : Optional Text
               , host_id : Optional Text
+              , host_resource_group_arn : Optional Text
               , partition_number : Optional Natural
               , spread_domain : Optional Text
               , tenancy : Optional Text
@@ -145,6 +147,7 @@
   , ram_disk_id = None Text
   , security_group_names = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , update_default_version = None Bool
   , user_data = None Text
   , vpc_security_group_ids = None (List Text)
@@ -242,6 +245,7 @@
             , availability_zone : Optional Text
             , group_name : Optional Text
             , host_id : Optional Text
+            , host_resource_group_arn : Optional Text
             , partition_number : Optional Natural
             , spread_domain : Optional Text
             , tenancy : Optional Text

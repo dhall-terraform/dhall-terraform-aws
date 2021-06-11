@@ -9,6 +9,7 @@
     , split_tunnel : Optional Bool
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , transport_protocol : Optional Text
     , authentication_options :
         List
@@ -33,6 +34,7 @@
   , split_tunnel = None Bool
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , transport_protocol = None Text
   }
 }

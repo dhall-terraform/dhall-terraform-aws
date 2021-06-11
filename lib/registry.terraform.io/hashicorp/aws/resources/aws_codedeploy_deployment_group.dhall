@@ -9,6 +9,7 @@
     , id : Optional Text
     , service_role_arn : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , alarm_configuration :
         Optional
           ( List
@@ -112,6 +113,7 @@
   , deployment_group_id = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , alarm_configuration =
       None
         ( List

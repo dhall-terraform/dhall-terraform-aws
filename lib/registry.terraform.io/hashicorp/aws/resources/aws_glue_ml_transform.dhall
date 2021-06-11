@@ -11,6 +11,7 @@
     , role_arn : Text
     , schema : Optional (List { data_type : Text, name : Text })
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , timeout : Optional Natural
     , worker_type : Optional Text
     , input_record_tables :
@@ -43,6 +44,7 @@
   , number_of_workers = None Natural
   , schema = None (List { data_type : Text, name : Text })
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , timeout = None Natural
   , worker_type = None Text
   }

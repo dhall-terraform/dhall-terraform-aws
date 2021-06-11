@@ -26,6 +26,7 @@
     , source_code_hash : Optional Text
     , source_code_size : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , timeout : Optional Natural
     , version : Optional Text
     , dead_letter_config : Optional (List { target_arn : Text })
@@ -81,6 +82,7 @@
   , source_code_hash = None Text
   , source_code_size = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , timeout = None Natural
   , version = None Text
   , dead_letter_config = None (List { target_arn : Text })

@@ -10,6 +10,7 @@
     , permission_model : Optional Text
     , stack_set_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , template_body : Optional Text
     , template_url : Optional Text
     , auto_deployment :
@@ -32,6 +33,7 @@
   , permission_model = None Text
   , stack_set_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , template_body = None Text
   , template_url = None Text
   , auto_deployment =

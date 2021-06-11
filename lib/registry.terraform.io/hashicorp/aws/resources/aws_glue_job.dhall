@@ -14,6 +14,7 @@
     , role_arn : Text
     , security_configuration : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , timeout : Optional Natural
     , worker_type : Optional Text
     , command :
@@ -40,6 +41,7 @@
   , number_of_workers = None Natural
   , security_configuration = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , timeout = None Natural
   , worker_type = None Text
   , execution_property = None (List { max_concurrent_runs : Optional Natural })

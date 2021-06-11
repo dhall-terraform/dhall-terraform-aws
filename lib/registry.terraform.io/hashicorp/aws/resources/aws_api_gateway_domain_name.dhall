@@ -16,6 +16,7 @@
     , regional_zone_id : Optional Text
     , security_policy : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , endpoint_configuration : Optional (List { types : List Text })
     , mutual_tls_authentication :
         Optional
@@ -38,6 +39,7 @@
   , regional_zone_id = None Text
   , security_policy = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , endpoint_configuration = None (List { types : List Text })
   , mutual_tls_authentication =
       None (List { truststore_uri : Text, truststore_version : Optional Text })

@@ -9,6 +9,7 @@
     , supported_login_providers :
         Optional (List { mapKey : Text, mapValue : Text })
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , cognito_identity_providers :
         Optional
           ( List
@@ -27,6 +28,7 @@
   , saml_provider_arns = None (List Text)
   , supported_login_providers = None (List { mapKey : Text, mapValue : Text })
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , cognito_identity_providers =
       None
         ( List

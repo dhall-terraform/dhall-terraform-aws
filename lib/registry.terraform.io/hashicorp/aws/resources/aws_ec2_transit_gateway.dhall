@@ -11,6 +11,7 @@
     , owner_id : Optional Text
     , propagation_default_route_table_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , vpn_ecmp_support : Optional Text
     }
 , default =
@@ -26,6 +27,7 @@
   , owner_id = None Text
   , propagation_default_route_table_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , vpn_ecmp_support = None Text
   }
 }

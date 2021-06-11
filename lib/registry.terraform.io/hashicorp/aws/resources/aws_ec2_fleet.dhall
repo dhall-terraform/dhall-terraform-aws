@@ -3,6 +3,7 @@
     , id : Optional Text
     , replace_unhealthy_instances : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , terminate_instances : Optional Bool
     , terminate_instances_with_expiration : Optional Bool
     , type : Optional Text
@@ -63,6 +64,7 @@
   , id = None Text
   , replace_unhealthy_instances = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , terminate_instances = None Bool
   , terminate_instances_with_expiration = None Bool
   , type = None Text

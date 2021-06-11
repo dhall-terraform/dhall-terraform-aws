@@ -9,6 +9,7 @@
     , resolve_conflicts : Optional Text
     , service_account_role_arn : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { addon_version = None Text
@@ -19,5 +20,6 @@
   , resolve_conflicts = None Text
   , service_account_role_arn = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

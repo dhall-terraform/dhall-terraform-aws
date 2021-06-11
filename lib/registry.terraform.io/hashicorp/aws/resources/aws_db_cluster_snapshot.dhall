@@ -15,6 +15,7 @@
     , status : Optional Text
     , storage_encrypted : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_id : Optional Text
     , timeouts : Optional { create : Optional Text }
     }
@@ -33,6 +34,7 @@
   , status = None Text
   , storage_encrypted = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , vpc_id = None Text
   , timeouts = None { create : Optional Text }
   }

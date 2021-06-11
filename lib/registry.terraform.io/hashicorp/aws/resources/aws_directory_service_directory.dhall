@@ -12,6 +12,7 @@
     , short_name : Optional Text
     , size : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , type : Optional Text
     , connect_settings :
         Optional
@@ -45,6 +46,7 @@
   , short_name = None Text
   , size = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , type = None Text
   , connect_settings =
       None

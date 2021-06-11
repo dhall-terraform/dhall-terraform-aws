@@ -4,6 +4,7 @@
     , server_hostname : Text
     , subdirectory : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , uri : Optional Text
     , on_prem_config : List { agent_arns : List Text }
     }
@@ -11,6 +12,7 @@
   { arn = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , uri = None Text
   }
 }

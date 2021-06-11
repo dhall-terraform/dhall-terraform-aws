@@ -9,6 +9,7 @@
     , shard_count : Natural
     , shard_level_metrics : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -25,6 +26,7 @@
   , retention_period = None Natural
   , shard_level_metrics = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None
         { create : Optional Text

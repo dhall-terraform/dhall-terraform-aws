@@ -7,6 +7,7 @@
     , name : Text
     , rule_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , scope :
         Optional
           ( List
@@ -38,6 +39,7 @@
   , maximum_execution_frequency = None Text
   , rule_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , scope =
       None
         ( List

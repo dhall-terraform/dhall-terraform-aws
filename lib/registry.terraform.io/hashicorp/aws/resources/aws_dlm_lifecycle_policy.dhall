@@ -5,6 +5,7 @@
     , id : Optional Text
     , state : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , policy_details :
         List
           { resource_types : List Text
@@ -30,5 +31,6 @@
   , id = None Text
   , state = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

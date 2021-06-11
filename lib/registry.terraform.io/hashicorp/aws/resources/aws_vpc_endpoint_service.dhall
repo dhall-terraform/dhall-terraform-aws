@@ -15,6 +15,7 @@
     , service_type : Optional Text
     , state : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { allowed_principals = None (List Text)
@@ -32,5 +33,6 @@
   , service_type = None Text
   , state = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

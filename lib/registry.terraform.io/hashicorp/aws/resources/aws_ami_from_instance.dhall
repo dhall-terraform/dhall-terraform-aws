@@ -22,6 +22,7 @@
     , source_instance_id : Text
     , sriov_net_support : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , usage_operation : Optional Text
     , virtualization_type : Optional Text
     , ebs_block_device :
@@ -69,6 +70,7 @@
   , snapshot_without_reboot = None Bool
   , sriov_net_support = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , usage_operation = None Text
   , virtualization_type = None Text
   , ebs_block_device =

@@ -12,6 +12,7 @@
     , platform : Text
     , supported_os_versions : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , type : Optional Text
     , uri : Optional Text
     , version : Text
@@ -28,6 +29,7 @@
   , owner = None Text
   , supported_os_versions = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , type = None Text
   , uri = None Text
   }

@@ -8,6 +8,7 @@
     , parent_image : Text
     , platform : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , version : Text
     , working_directory : Optional Text
     , block_device_mapping :
@@ -40,6 +41,7 @@
   , owner = None Text
   , platform = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , working_directory = None Text
   , block_device_mapping =
       None

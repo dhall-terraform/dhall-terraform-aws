@@ -6,6 +6,7 @@
     , name : Text
     , scope : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , regular_expression : Optional (List { regex_string : Text })
     }
 , default =
@@ -14,6 +15,7 @@
   , id = None Text
   , lock_token = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , regular_expression = None (List { regex_string : Text })
   }
 }

@@ -15,6 +15,7 @@
     , s3_key_prefix : Optional Text
     , sns_topic_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , event_selector :
         Optional
           ( List
@@ -41,6 +42,7 @@
   , s3_key_prefix = None Text
   , sns_topic_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , event_selector =
       None
         ( List

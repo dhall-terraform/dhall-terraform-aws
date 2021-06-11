@@ -12,6 +12,7 @@
     , preserve_existing_data : Bool
     , snapshot_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , target_arn : Optional Text
     , target_name : Text
     , volume_attachment_status : Optional Text
@@ -30,6 +31,7 @@
   , network_interface_port = None Natural
   , snapshot_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , target_arn = None Text
   , volume_attachment_status = None Text
   , volume_id = None Text

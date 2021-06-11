@@ -34,6 +34,7 @@
     , owner_id : Optional Text
     , revoke_rules_on_delete : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_id : Optional Text
     }
 , default =
@@ -72,6 +73,7 @@
   , owner_id = None Text
   , revoke_rules_on_delete = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , vpc_id = None Text
   }
 }

@@ -6,6 +6,7 @@
     , name : Text
     , name_servers : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , zone_id : Optional Text
     , vpc : Optional (List { vpc_id : Text, vpc_region : Optional Text })
     }
@@ -16,6 +17,7 @@
   , id = None Text
   , name_servers = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , zone_id = None Text
   , vpc = None (List { vpc_id : Text, vpc_region : Optional Text })
   }

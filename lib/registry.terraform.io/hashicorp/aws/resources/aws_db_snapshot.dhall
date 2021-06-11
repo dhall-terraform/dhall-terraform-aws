@@ -19,6 +19,7 @@
     , status : Optional Text
     , storage_type : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_id : Optional Text
     , timeouts : Optional { read : Optional Text }
     }
@@ -41,6 +42,7 @@
   , status = None Text
   , storage_type = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , vpc_id = None Text
   , timeouts = None { read : Optional Text }
   }

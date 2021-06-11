@@ -6,6 +6,7 @@
     , name : Text
     , rules : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , type : Text
     , update_token : Optional Text
     , rule_group :
@@ -142,6 +143,7 @@
   , id = None Text
   , rules = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , update_token = None Text
   , rule_group =
       None

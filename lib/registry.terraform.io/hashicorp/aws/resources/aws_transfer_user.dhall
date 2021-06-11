@@ -7,6 +7,7 @@
     , role : Text
     , server_id : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , user_name : Text
     , home_directory_mappings : Optional (List { entry : Text, target : Text })
     }
@@ -17,6 +18,7 @@
   , id = None Text
   , policy = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , home_directory_mappings = None (List { entry : Text, target : Text })
   }
 }

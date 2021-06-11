@@ -3,6 +3,7 @@
     , badge_enabled : Optional Bool
     , badge_url : Optional Text
     , build_timeout : Optional Natural
+    , concurrent_build_limit : Optional Natural
     , description : Optional Text
     , encryption_key : Optional Text
     , id : Optional Text
@@ -11,6 +12,7 @@
     , service_role : Text
     , source_version : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , artifacts :
         List
           { artifact_identifier : Optional Text
@@ -23,6 +25,21 @@
           , path : Optional Text
           , type : Text
           }
+    , build_batch_config :
+        Optional
+          ( List
+              { combine_artifacts : Optional Bool
+              , service_role : Text
+              , timeout_in_mins : Optional Natural
+              , restrictions :
+                  Optional
+                    ( List
+                        { compute_types_allowed : Optional (List Text)
+                        , maximum_builds_allowed : Optional Natural
+                        }
+                    )
+              }
+          )
     , cache :
         Optional
           ( List
@@ -91,6 +108,11 @@
               , source_identifier : Text
               , type : Text
               , auth : Optional (List { resource : Optional Text, type : Text })
+              , build_status_config :
+                  Optional
+                    ( List
+                        { context : Optional Text, target_url : Optional Text }
+                    )
               , git_submodules_config :
                   Optional (List { fetch_submodules : Bool })
               }
@@ -104,6 +126,9 @@
           , report_build_status : Optional Bool
           , type : Text
           , auth : Optional (List { resource : Optional Text, type : Text })
+          , build_status_config :
+              Optional
+                (List { context : Optional Text, target_url : Optional Text })
           , git_submodules_config : Optional (List { fetch_submodules : Bool })
           }
     , vpc_config :
@@ -120,12 +145,29 @@
   , badge_enabled = None Bool
   , badge_url = None Text
   , build_timeout = None Natural
+  , concurrent_build_limit = None Natural
   , description = None Text
   , encryption_key = None Text
   , id = None Text
   , queued_timeout = None Natural
   , source_version = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
+  , build_batch_config =
+      None
+        ( List
+            { combine_artifacts : Optional Bool
+            , service_role : Text
+            , timeout_in_mins : Optional Natural
+            , restrictions :
+                Optional
+                  ( List
+                      { compute_types_allowed : Optional (List Text)
+                      , maximum_builds_allowed : Optional Natural
+                      }
+                  )
+            }
+        )
   , cache =
       None
         ( List
@@ -180,6 +222,9 @@
             , source_identifier : Text
             , type : Text
             , auth : Optional (List { resource : Optional Text, type : Text })
+            , build_status_config :
+                Optional
+                  (List { context : Optional Text, target_url : Optional Text })
             , git_submodules_config :
                 Optional (List { fetch_submodules : Bool })
             }

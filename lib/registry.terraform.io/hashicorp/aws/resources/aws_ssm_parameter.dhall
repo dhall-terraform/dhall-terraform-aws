@@ -8,6 +8,7 @@
     , name : Text
     , overwrite : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , tier : Optional Text
     , type : Text
     , value : Text
@@ -22,6 +23,7 @@
   , key_id = None Text
   , overwrite = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , tier = None Text
   , version = None Natural
   }

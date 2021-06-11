@@ -14,6 +14,7 @@
     , service_access_role : Optional Text
     , ssl_mode : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , username : Optional Text
     , elasticsearch_settings :
         Optional
@@ -71,6 +72,7 @@
   , service_access_role = None Text
   , ssl_mode = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , username = None Text
   , elasticsearch_settings =
       None

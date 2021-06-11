@@ -13,6 +13,7 @@
     , region : Optional Text
     , request_payer : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , website_domain : Optional Text
     , website_endpoint : Optional Text
     , cors_rule :
@@ -163,6 +164,7 @@
   , region = None Text
   , request_payer = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , website_domain = None Text
   , website_endpoint = None Text
   , cors_rule =

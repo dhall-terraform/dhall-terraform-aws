@@ -10,6 +10,7 @@
     , invocation_role : Optional Text
     , logging_role : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , url : Optional Text
     , endpoint_details :
         Optional
@@ -33,6 +34,7 @@
   , invocation_role = None Text
   , logging_role = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , url = None Text
   , endpoint_details =
       None

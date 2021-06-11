@@ -12,6 +12,7 @@
     , schedule_timezone : Optional Text
     , start_date : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { allow_unassociated_targets = None Bool
@@ -23,5 +24,6 @@
   , schedule_timezone = None Text
   , start_date = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

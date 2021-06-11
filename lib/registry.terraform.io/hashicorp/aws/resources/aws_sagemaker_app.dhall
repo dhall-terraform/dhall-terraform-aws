@@ -5,6 +5,7 @@
     , domain_id : Text
     , id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , user_profile_name : Text
     , resource_spec :
         Optional
@@ -18,6 +19,7 @@
   { arn = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , resource_spec =
       None
         ( List

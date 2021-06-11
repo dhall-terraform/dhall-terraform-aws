@@ -6,6 +6,7 @@
     , pricing_plan : Optional Text
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , reservation_plan_settings :
         Optional
           ( List
@@ -22,6 +23,7 @@
   , pricing_plan = None Text
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , reservation_plan_settings =
       None
         ( List

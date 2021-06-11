@@ -6,6 +6,7 @@
     , name_prefix : Optional Text
     , retention_in_days : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { arn = None Text
@@ -15,5 +16,6 @@
   , name_prefix = None Text
   , retention_in_days = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

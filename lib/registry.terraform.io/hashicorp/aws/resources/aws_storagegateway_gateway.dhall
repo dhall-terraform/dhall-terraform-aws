@@ -20,6 +20,7 @@
     , smb_guest_password : Optional Text
     , smb_security_strategy : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , tape_drive_type : Optional Text
     , smb_active_directory_settings :
         Optional
@@ -55,6 +56,7 @@
   , smb_guest_password = None Text
   , smb_security_strategy = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , tape_drive_type = None Text
   , smb_active_directory_settings =
       None

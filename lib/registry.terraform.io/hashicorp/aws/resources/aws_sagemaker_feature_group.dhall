@@ -7,6 +7,7 @@
     , record_identifier_feature_name : Text
     , role_arn : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , feature_definition :
         List { feature_name : Optional Text, feature_type : Optional Text }
     , offline_store_config :
@@ -38,6 +39,7 @@
   , description = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , offline_store_config =
       None
         ( List

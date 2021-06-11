@@ -15,6 +15,7 @@
     , public_ip_address : Optional Text
     , ram_size : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , user_data : Optional Text
     , username : Optional Text
     }
@@ -31,6 +32,7 @@
   , public_ip_address = None Text
   , ram_size = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , user_data = None Text
   , username = None Text
   }

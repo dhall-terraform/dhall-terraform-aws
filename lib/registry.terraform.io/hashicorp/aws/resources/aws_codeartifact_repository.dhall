@@ -7,6 +7,7 @@
     , id : Optional Text
     , repository : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , external_connections :
         Optional
           ( List
@@ -24,6 +25,7 @@
   , domain_owner = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , external_connections =
       None
         ( List

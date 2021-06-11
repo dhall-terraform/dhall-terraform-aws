@@ -21,6 +21,7 @@
     , storage_type : Optional Text
     , subnet_ids : List Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_id : Optional Text
     , weekly_maintenance_start_time : Optional Text
     , timeouts : Optional { create : Optional Text, delete : Optional Text }
@@ -46,6 +47,7 @@
   , security_group_ids = None (List Text)
   , storage_type = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , vpc_id = None Text
   , weekly_maintenance_start_time = None Text
   , timeouts = None { create : Optional Text, delete : Optional Text }

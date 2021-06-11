@@ -17,6 +17,7 @@
     , security_groups : Optional (List Text)
     , subnets : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_id : Optional Text
     , zone_id : Optional Text
     , access_logs :
@@ -60,6 +61,7 @@
   , security_groups = None (List Text)
   , subnets = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , vpc_id = None Text
   , zone_id = None Text
   , access_logs =

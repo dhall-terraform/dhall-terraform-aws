@@ -12,6 +12,7 @@
     , path : Optional Text
     , permissions_boundary : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , unique_id : Optional Text
     , inline_policy :
         Optional (List { name : Optional Text, policy : Optional Text })
@@ -29,6 +30,7 @@
   , path = None Text
   , permissions_boundary = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , unique_id = None Text
   , inline_policy = None (List { name : Optional Text, policy : Optional Text })
   }

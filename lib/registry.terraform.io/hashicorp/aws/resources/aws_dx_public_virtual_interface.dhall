@@ -12,6 +12,7 @@
     , name : Text
     , route_filter_prefixes : List Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , vlan : Natural
     , timeouts : Optional { create : Optional Text, delete : Optional Text }
     }
@@ -24,6 +25,7 @@
   , customer_address = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , timeouts = None { create : Optional Text, delete : Optional Text }
   }
 }

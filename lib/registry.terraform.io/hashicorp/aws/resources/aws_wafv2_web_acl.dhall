@@ -7,6 +7,7 @@
     , name : Text
     , scope : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , default_action :
         List { allow : Optional (List {}), block : Optional (List {}) }
     , rule :
@@ -17104,6 +17105,7 @@
   , id = None Text
   , lock_token = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , rule =
       None
         ( List

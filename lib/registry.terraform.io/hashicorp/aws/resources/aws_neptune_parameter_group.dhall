@@ -5,6 +5,7 @@
     , id : Optional Text
     , name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , parameter :
         Optional
           (List { apply_method : Optional Text, name : Text, value : Text })
@@ -14,6 +15,7 @@
   , description = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , parameter =
       None (List { apply_method : Optional Text, name : Text, value : Text })
   }

@@ -33,6 +33,7 @@
           )
     , step_concurrency_level : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , termination_protection : Optional Bool
     , visible_to_all_users : Optional Bool
     , bootstrap_action :
@@ -248,6 +249,7 @@
         )
   , step_concurrency_level = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , termination_protection = None Bool
   , visible_to_all_users = None Bool
   , bootstrap_action =

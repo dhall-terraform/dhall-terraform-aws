@@ -17,6 +17,7 @@
     , retain_on_delete : Optional Bool
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , trusted_key_groups :
         Optional
           ( List
@@ -191,6 +192,7 @@
   , retain_on_delete = None Bool
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , trusted_key_groups =
       None
         ( List

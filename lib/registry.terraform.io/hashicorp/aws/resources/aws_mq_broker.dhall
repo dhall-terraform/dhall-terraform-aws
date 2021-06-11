@@ -19,6 +19,7 @@
     , storage_type : Optional Text
     , subnet_ids : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , configuration :
         Optional (List { id : Optional Text, revision : Optional Natural })
     , encryption_options :
@@ -42,7 +43,7 @@
               , user_search_subtree : Optional Bool
               }
           )
-    , logs : Optional (List { audit : Optional Bool, general : Optional Bool })
+    , logs : Optional (List { audit : Optional Text, general : Optional Bool })
     , maintenance_window_start_time :
         Optional
           (List { day_of_week : Text, time_of_day : Text, time_zone : Text })
@@ -69,6 +70,7 @@
   , storage_type = None Text
   , subnet_ids = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , configuration =
       None (List { id : Optional Text, revision : Optional Natural })
   , encryption_options =
@@ -90,7 +92,7 @@
             , user_search_subtree : Optional Bool
             }
         )
-  , logs = None (List { audit : Optional Bool, general : Optional Bool })
+  , logs = None (List { audit : Optional Text, general : Optional Bool })
   , maintenance_window_start_time =
       None (List { day_of_week : Text, time_of_day : Text, time_zone : Text })
   }

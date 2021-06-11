@@ -7,6 +7,7 @@
     , ip_sets : Optional (List { ip_addresses : List Text, ip_family : Text })
     , name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , attributes :
         Optional
           ( List
@@ -25,6 +26,7 @@
   , ip_address_type = None Text
   , ip_sets = None (List { ip_addresses : List Text, ip_family : Text })
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , attributes =
       None
         ( List

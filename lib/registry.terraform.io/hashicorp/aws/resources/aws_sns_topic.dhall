@@ -22,6 +22,7 @@
     , sqs_success_feedback_role_arn : Optional Text
     , sqs_success_feedback_sample_rate : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { application_failure_feedback_role_arn = None Text
@@ -47,5 +48,6 @@
   , sqs_success_feedback_role_arn = None Text
   , sqs_success_feedback_sample_rate = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

@@ -6,6 +6,7 @@
     , single_sign_on_user_identifier : Optional Text
     , single_sign_on_user_value : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , user_profile_name : Text
     , user_settings :
         Optional
@@ -68,6 +69,7 @@
   , single_sign_on_user_identifier = None Text
   , single_sign_on_user_value = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , user_settings =
       None
         ( List

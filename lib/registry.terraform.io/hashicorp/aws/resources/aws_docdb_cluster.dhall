@@ -28,6 +28,7 @@
     , snapshot_identifier : Optional Text
     , storage_encrypted : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_security_group_ids : Optional (List Text)
     , timeouts :
         Optional
@@ -66,6 +67,7 @@
   , snapshot_identifier = None Text
   , storage_encrypted = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , vpc_security_group_ids = None (List Text)
   , timeouts =
       None

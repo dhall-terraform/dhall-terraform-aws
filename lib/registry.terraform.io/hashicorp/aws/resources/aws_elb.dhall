@@ -16,6 +16,7 @@
     , source_security_group_id : Optional Text
     , subnets : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , zone_id : Optional Text
     , access_logs :
         Optional
@@ -63,6 +64,7 @@
   , source_security_group_id = None Text
   , subnets = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , zone_id = None Text
   , access_logs =
       None

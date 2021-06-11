@@ -25,6 +25,7 @@
     , security_group_ids : Optional (List Text)
     , subnet_group_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , server_side_encryption : Optional (List { enabled : Optional Bool })
     , timeouts :
         Optional
@@ -56,6 +57,7 @@
   , security_group_ids = None (List Text)
   , subnet_group_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , server_side_encryption = None (List { enabled : Optional Bool })
   , timeouts =
       None

@@ -8,6 +8,7 @@
     , name : Text
     , resource_owner : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , spec :
         List
           { listener :
@@ -22,5 +23,6 @@
   , mesh_owner = None Text
   , resource_owner = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   }
 }

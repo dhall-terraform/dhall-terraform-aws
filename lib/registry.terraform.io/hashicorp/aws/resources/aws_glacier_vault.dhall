@@ -5,6 +5,7 @@
     , location : Optional Text
     , name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , notification : Optional (List { events : List Text, sns_topic : Text })
     }
 , default =
@@ -13,6 +14,7 @@
   , id = None Text
   , location = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , notification = None (List { events : List Text, sns_topic : Text })
   }
 }
