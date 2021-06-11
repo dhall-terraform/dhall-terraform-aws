@@ -10,6 +10,7 @@
     , platform_version : Optional Text
     , role_arn : Text
     , status : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , version : Optional Text
     , timeouts :
         Optional
@@ -36,6 +37,7 @@
   , identity = None (List { oidc : List { issuer : Text } })
   , platform_version = None Text
   , status = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , version = None Text
   , timeouts =
       None

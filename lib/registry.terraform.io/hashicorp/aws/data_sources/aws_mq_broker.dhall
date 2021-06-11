@@ -5,6 +5,8 @@
     , broker_name : Optional Text
     , configuration : Optional (List { id : Text, revision : Natural })
     , deployment_mode : Optional Text
+    , encryption_options :
+        Optional (List { kms_key_id : Text, use_aws_owned_key : Bool })
     , engine_type : Optional Text
     , engine_version : Optional Text
     , host_instance_type : Optional Text
@@ -33,6 +35,8 @@
   , broker_name = None Text
   , configuration = None (List { id : Text, revision : Natural })
   , deployment_mode = None Text
+  , encryption_options =
+      None (List { kms_key_id : Text, use_aws_owned_key : Bool })
   , engine_type = None Text
   , engine_version = None Text
   , host_instance_type = None Text

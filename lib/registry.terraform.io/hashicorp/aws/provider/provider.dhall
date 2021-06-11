@@ -82,6 +82,7 @@
               , es : Optional Text
               , firehose : Optional Text
               , fms : Optional Text
+              , forecast : Optional Text
               , fsx : Optional Text
               , gamelift : Optional Text
               , glacier : Optional Text
@@ -238,6 +239,7 @@
             , es : Optional Text
             , firehose : Optional Text
             , fms : Optional Text
+            , forecast : Optional Text
             , fsx : Optional Text
             , gamelift : Optional Text
             , glacier : Optional Text

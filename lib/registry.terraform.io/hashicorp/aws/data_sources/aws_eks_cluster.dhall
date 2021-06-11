@@ -10,6 +10,7 @@
     , platform_version : Optional Text
     , role_arn : Optional Text
     , status : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , version : Optional Text
     , vpc_config :
         Optional
@@ -33,6 +34,7 @@
   , platform_version = None Text
   , role_arn = None Text
   , status = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , version = None Text
   , vpc_config =
       None
