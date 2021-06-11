@@ -29,10 +29,12 @@
           ( List
               { acm : Optional Text
               , acmpca : Optional Text
+              , amplify : Optional Text
               , apigateway : Optional Text
               , applicationautoscaling : Optional Text
               , applicationinsights : Optional Text
               , appmesh : Optional Text
+              , appstream : Optional Text
               , appsync : Optional Text
               , athena : Optional Text
               , autoscaling : Optional Text
@@ -89,6 +91,8 @@
               , iam : Optional Text
               , inspector : Optional Text
               , iot : Optional Text
+              , iotanalytics : Optional Text
+              , iotevents : Optional Text
               , kafka : Optional Text
               , kinesis : Optional Text
               , kinesis_analytics : Optional Text
@@ -112,6 +116,7 @@
               , neptune : Optional Text
               , opsworks : Optional Text
               , organizations : Optional Text
+              , personalize : Optional Text
               , pinpoint : Optional Text
               , pricing : Optional Text
               , quicksight : Optional Text
@@ -180,10 +185,12 @@
         ( List
             { acm : Optional Text
             , acmpca : Optional Text
+            , amplify : Optional Text
             , apigateway : Optional Text
             , applicationautoscaling : Optional Text
             , applicationinsights : Optional Text
             , appmesh : Optional Text
+            , appstream : Optional Text
             , appsync : Optional Text
             , athena : Optional Text
             , autoscaling : Optional Text
@@ -240,6 +247,8 @@
             , iam : Optional Text
             , inspector : Optional Text
             , iot : Optional Text
+            , iotanalytics : Optional Text
+            , iotevents : Optional Text
             , kafka : Optional Text
             , kinesis : Optional Text
             , kinesis_analytics : Optional Text
@@ -263,6 +272,7 @@
             , neptune : Optional Text
             , opsworks : Optional Text
             , organizations : Optional Text
+            , personalize : Optional Text
             , pinpoint : Optional Text
             , pricing : Optional Text
             , quicksight : Optional Text

@@ -277,6 +277,7 @@
                     )
               }
           )
+    , server_side_encryption : Optional (List { enabled : Optional Bool })
     , splunk_configuration :
         Optional
           ( List
@@ -592,6 +593,7 @@
                   )
             }
         )
+  , server_side_encryption = None (List { enabled : Optional Bool })
   , splunk_configuration =
       None
         ( List
