@@ -65,6 +65,7 @@
 , aws_elastic_beanstalk_hosted_zone = ./aws_elastic_beanstalk_hosted_zone.dhall
 , aws_elastic_beanstalk_solution_stack =
     ./aws_elastic_beanstalk_solution_stack.dhall
+, aws_elasticsearch_domain = ./aws_elasticsearch_domain.dhall
 , aws_elb = ./aws_elb.dhall
 , aws_elb_hosted_zone_id = ./aws_elb_hosted_zone_id.dhall
 , aws_elb_service_account = ./aws_elb_service_account.dhall
