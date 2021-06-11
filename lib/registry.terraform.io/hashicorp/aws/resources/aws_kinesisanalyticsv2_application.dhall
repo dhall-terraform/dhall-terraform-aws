@@ -2,11 +2,13 @@
     { arn : Optional Text
     , create_timestamp : Optional Text
     , description : Optional Text
+    , force_stop : Optional Bool
     , id : Optional Text
     , last_update_timestamp : Optional Text
     , name : Text
     , runtime_environment : Text
     , service_execution_role : Text
+    , start_application : Optional Bool
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , version_id : Optional Natural
@@ -76,6 +78,23 @@
                               )
                         }
                     )
+              , run_configuration :
+                  Optional
+                    ( List
+                        { application_restore_configuration :
+                            Optional
+                              ( List
+                                  { application_restore_type : Optional Text
+                                  , snapshot_name : Optional Text
+                                  }
+                              )
+                        , flink_run_configuration :
+                            Optional
+                              ( List
+                                  { allow_non_restored_state : Optional Bool }
+                              )
+                        }
+                    )
               , sql_application_configuration :
                   Optional
                     ( List
@@ -84,11 +103,6 @@
                               ( List
                                   { in_app_stream_names : Optional (List Text)
                                   , input_id : Optional Text
-                                  , input_starting_position_configuration :
-                                      Optional
-                                        ( List
-                                            { input_starting_position : Text }
-                                        )
                                   , name_prefix : Text
                                   , input_parallelism :
                                       Optional
@@ -133,6 +147,13 @@
                                                     }
                                               }
                                         }
+                                  , input_starting_position_configuration :
+                                      Optional
+                                        ( List
+                                            { input_starting_position :
+                                                Optional Text
+                                            }
+                                        )
                                   , kinesis_firehose_input :
                                       Optional (List { resource_arn : Text })
                                   , kinesis_streams_input :
@@ -222,8 +243,10 @@
   { arn = None Text
   , create_timestamp = None Text
   , description = None Text
+  , force_stop = None Bool
   , id = None Text
   , last_update_timestamp = None Text
+  , start_application = None Bool
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , version_id = None Natural
@@ -293,6 +316,21 @@
                             )
                       }
                   )
+            , run_configuration :
+                Optional
+                  ( List
+                      { application_restore_configuration :
+                          Optional
+                            ( List
+                                { application_restore_type : Optional Text
+                                , snapshot_name : Optional Text
+                                }
+                            )
+                      , flink_run_configuration :
+                          Optional
+                            (List { allow_non_restored_state : Optional Bool })
+                      }
+                  )
             , sql_application_configuration :
                 Optional
                   ( List
@@ -301,9 +339,6 @@
                             ( List
                                 { in_app_stream_names : Optional (List Text)
                                 , input_id : Optional Text
-                                , input_starting_position_configuration :
-                                    Optional
-                                      (List { input_starting_position : Text })
                                 , name_prefix : Text
                                 , input_parallelism :
                                     Optional (List { count : Optional Natural })
@@ -347,6 +382,13 @@
                                                   }
                                             }
                                       }
+                                , input_starting_position_configuration :
+                                    Optional
+                                      ( List
+                                          { input_starting_position :
+                                              Optional Text
+                                          }
+                                      )
                                 , kinesis_firehose_input :
                                     Optional (List { resource_arn : Text })
                                 , kinesis_streams_input :

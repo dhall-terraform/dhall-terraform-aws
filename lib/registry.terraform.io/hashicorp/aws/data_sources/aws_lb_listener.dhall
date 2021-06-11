@@ -1,5 +1,6 @@
 { Type =
-    { arn : Optional Text
+    { alpn_policy : Optional Text
+    , arn : Optional Text
     , certificate_arn : Optional Text
     , default_action :
         Optional
@@ -63,7 +64,8 @@
     , ssl_policy : Optional Text
     }
 , default =
-  { arn = None Text
+  { alpn_policy = None Text
+  , arn = None Text
   , certificate_arn = None Text
   , default_action =
       None

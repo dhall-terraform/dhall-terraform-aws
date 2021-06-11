@@ -127,7 +127,8 @@
           ( List
               { rule :
                   List
-                    { apply_server_side_encryption_by_default :
+                    { bucket_key_enabled : Optional Bool
+                    , apply_server_side_encryption_by_default :
                         List
                           { kms_master_key_id : Optional Text
                           , sse_algorithm : Text
@@ -276,7 +277,8 @@
         ( List
             { rule :
                 List
-                  { apply_server_side_encryption_by_default :
+                  { bucket_key_enabled : Optional Bool
+                  , apply_server_side_encryption_by_default :
                       List
                         { kms_master_key_id : Optional Text
                         , sse_algorithm : Text

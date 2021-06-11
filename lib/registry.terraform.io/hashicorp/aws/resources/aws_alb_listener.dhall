@@ -1,5 +1,6 @@
 { Type =
-    { arn : Optional Text
+    { alpn_policy : Optional Text
+    , arn : Optional Text
     , certificate_arn : Optional Text
     , id : Optional Text
     , load_balancer_arn : Text
@@ -75,7 +76,8 @@
     , timeouts : Optional { read : Optional Text }
     }
 , default =
-  { arn = None Text
+  { alpn_policy = None Text
+  , arn = None Text
   , certificate_arn = None Text
   , id = None Text
   , port = None Natural

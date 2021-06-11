@@ -1,6 +1,7 @@
 { Type =
     { acl : Optional Text
     , bucket : Text
+    , bucket_key_enabled : Optional Bool
     , cache_control : Optional Text
     , content : Optional Text
     , content_base64 : Optional Text
@@ -26,6 +27,7 @@
     }
 , default =
   { acl = None Text
+  , bucket_key_enabled = None Bool
   , cache_control = None Text
   , content = None Text
   , content_base64 = None Text

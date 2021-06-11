@@ -101,6 +101,7 @@
     ./aws_cloudformation_stack_set_instance.dhall
 , aws_cloudfront_cache_policy = ./aws_cloudfront_cache_policy.dhall
 , aws_cloudfront_distribution = ./aws_cloudfront_distribution.dhall
+, aws_cloudfront_key_group = ./aws_cloudfront_key_group.dhall
 , aws_cloudfront_origin_access_identity =
     ./aws_cloudfront_origin_access_identity.dhall
 , aws_cloudfront_origin_request_policy =
@@ -299,6 +300,8 @@
     ./aws_ec2_transit_gateway_vpc_attachment.dhall
 , aws_ecr_lifecycle_policy = ./aws_ecr_lifecycle_policy.dhall
 , aws_ecrpublic_repository = ./aws_ecrpublic_repository.dhall
+, aws_ecr_registry_policy = ./aws_ecr_registry_policy.dhall
+, aws_ecr_replication_configuration = ./aws_ecr_replication_configuration.dhall
 , aws_ecr_repository = ./aws_ecr_repository.dhall
 , aws_ecr_repository_policy = ./aws_ecr_repository_policy.dhall
 , aws_ecs_capacity_provider = ./aws_ecs_capacity_provider.dhall
@@ -433,6 +436,8 @@
 , aws_kinesis_analytics_application = ./aws_kinesis_analytics_application.dhall
 , aws_kinesisanalyticsv2_application =
     ./aws_kinesisanalyticsv2_application.dhall
+, aws_kinesisanalyticsv2_application_snapshot =
+    ./aws_kinesisanalyticsv2_application_snapshot.dhall
 , aws_kinesis_firehose_delivery_stream =
     ./aws_kinesis_firehose_delivery_stream.dhall
 , aws_kinesis_stream_consumer = ./aws_kinesis_stream_consumer.dhall
@@ -499,6 +504,7 @@
 , aws_msk_cluster = ./aws_msk_cluster.dhall
 , aws_msk_configuration = ./aws_msk_configuration.dhall
 , aws_msk_scram_secret_association = ./aws_msk_scram_secret_association.dhall
+, aws_mwaa_environment = ./aws_mwaa_environment.dhall
 , aws_nat_gateway = ./aws_nat_gateway.dhall
 , aws_neptune_cluster = ./aws_neptune_cluster.dhall
 , aws_neptune_cluster_instance = ./aws_neptune_cluster_instance.dhall
@@ -591,6 +597,8 @@
 , aws_route53_resolver_dnssec_config =
     ./aws_route53_resolver_dnssec_config.dhall
 , aws_route53_resolver_endpoint = ./aws_route53_resolver_endpoint.dhall
+, aws_route53_resolver_firewall_rule_group =
+    ./aws_route53_resolver_firewall_rule_group.dhall
 , aws_route53_resolver_query_log_config_association =
     ./aws_route53_resolver_query_log_config_association.dhall
 , aws_route53_resolver_query_log_config =
