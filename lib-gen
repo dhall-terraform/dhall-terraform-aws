@@ -1,0 +1,52 @@
+#!/bin/bash
+generate_main_tf () {
+    export DTF_SHORT_NAME="${DTF_SHORT_NAME:=aws}"
+    export DTF_SHORT_REPOSITORY_PATH="${DTF_SHORT_REPOSITORY_PATH:=hashicorp/aws}"
+    export DTF_PROVIDER_VERSION="${DTF_PROVIDER_VERSION:=~> 1.0}"
+    echo $DTF_SHORT_NAME
+    echo $DTF_SHORT_REPOSITORY_PATH
+    echo $DTF_PROVIDER_VERSION
+    dhall text --file init-files/tf/main.tf.dhall --output main.tf
+    terraform init
+}
+
+generate_schema_tf () {
+    terraform providers schema -json | jq > schema.json
+}
+
+generate_libs_tf () {
+    dhall-terraform -f schema.json -p "registry.terraform.io/$DTF_SHORT_REPOSITORY_PATH"
+}
+
+generate_all () {
+    generate_main_tf && generate_schema_tf && generate_libs_tf
+}
+
+clean_libs_tf() {
+    rm -rf ./lib
+}
+
+clean_main_tf() {
+    rm -rf ./main.tf ./schema.json
+}
+
+clean_terraform_tf () {
+    rm -rf .terraform/ .terraform.lock.hcl
+}
+
+clean_functions () {
+    unset -f clean_libs_tf clean_main_tf clean_terraform_tf generate_libs_tf \
+    generate_main_tf generate_schema_tf 
+}
+
+clean_leave_libs() {
+    clean_main_tf && clean_terraform_tf
+}
+
+clean_all() {
+    clean_libs_tf && clean_leave_libs
+}
+
+close() {
+    clean_functions
+}
