@@ -2,6 +2,8 @@
     { all_availability_zones : Optional Bool
     , blacklisted_names : Optional (List Text)
     , blacklisted_zone_ids : Optional (List Text)
+    , exclude_names : Optional (List Text)
+    , exclude_zone_ids : Optional (List Text)
     , group_names : Optional (List Text)
     , id : Optional Text
     , names : Optional (List Text)
@@ -13,6 +15,8 @@
   { all_availability_zones = None Bool
   , blacklisted_names = None (List Text)
   , blacklisted_zone_ids = None (List Text)
+  , exclude_names = None (List Text)
+  , exclude_zone_ids = None (List Text)
   , group_names = None (List Text)
   , id = None Text
   , names = None (List Text)

@@ -1,6 +1,6 @@
 { Type =
     { arn : Optional Text
-    , bgp_asn : Natural
+    , bgp_asn : Text
     , id : Optional Text
     , ip_address : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })

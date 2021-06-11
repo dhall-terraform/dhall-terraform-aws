@@ -9,6 +9,21 @@
     , id : Optional Text
     , kibana_endpoint : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , advanced_security_options :
+        Optional
+          ( List
+              { enabled : Bool
+              , internal_user_database_enabled : Optional Bool
+              , master_user_options :
+                  Optional
+                    ( List
+                        { master_user_arn : Optional Text
+                        , master_user_name : Optional Text
+                        , master_user_password : Optional Text
+                        }
+                    )
+              }
+          )
     , cluster_config :
         Optional
           ( List
@@ -80,6 +95,21 @@
   , id = None Text
   , kibana_endpoint = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , advanced_security_options =
+      None
+        ( List
+            { enabled : Bool
+            , internal_user_database_enabled : Optional Bool
+            , master_user_options :
+                Optional
+                  ( List
+                      { master_user_arn : Optional Text
+                      , master_user_name : Optional Text
+                      , master_user_password : Optional Text
+                      }
+                  )
+            }
+        )
   , cluster_config =
       None
         ( List

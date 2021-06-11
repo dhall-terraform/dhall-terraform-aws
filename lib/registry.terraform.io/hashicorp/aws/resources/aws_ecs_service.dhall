@@ -56,6 +56,7 @@
               , registry_arn : Text
               }
           )
+    , timeouts : Optional { delete : Optional Text }
     }
 , default =
   { cluster = None Text
@@ -113,5 +114,6 @@
             , registry_arn : Text
             }
         )
+  , timeouts = None { delete : Optional Text }
   }
 }

@@ -1,6 +1,9 @@
 { Type =
     { access_policies : Optional Text
     , advanced_options : Optional (List { mapKey : Text, mapValue : Text })
+    , advanced_security_options :
+        Optional
+          (List { enabled : Bool, internal_user_database_enabled : Bool })
     , arn : Optional Text
     , cluster_config :
         Optional
@@ -71,6 +74,8 @@
 , default =
   { access_policies = None Text
   , advanced_options = None (List { mapKey : Text, mapValue : Text })
+  , advanced_security_options =
+      None (List { enabled : Bool, internal_user_database_enabled : Bool })
   , arn = None Text
   , cluster_config =
       None
