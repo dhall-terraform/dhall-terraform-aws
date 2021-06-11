@@ -413,6 +413,7 @@
 , aws_placement_group = ./aws_placement_group.dhall
 , aws_proxy_protocol_policy = ./aws_proxy_protocol_policy.dhall
 , aws_quicksight_group = ./aws_quicksight_group.dhall
+, aws_quicksight_user = ./aws_quicksight_user.dhall
 , aws_ram_principal_association = ./aws_ram_principal_association.dhall
 , aws_ram_resource_association = ./aws_ram_resource_association.dhall
 , aws_ram_resource_share_accepter = ./aws_ram_resource_share_accepter.dhall

@@ -1,6 +1,17 @@
 { Type =
     { id : Optional Text
     , name : Text
+    , csv_classifier :
+        Optional
+          ( List
+              { allow_single_column : Optional Bool
+              , contains_header : Optional Text
+              , delimiter : Optional Text
+              , disable_value_trimming : Optional Bool
+              , header : Optional (List Text)
+              , quote_symbol : Optional Text
+              }
+          )
     , grok_classifier :
         Optional
           ( List
@@ -14,6 +25,17 @@
     }
 , default =
   { id = None Text
+  , csv_classifier =
+      None
+        ( List
+            { allow_single_column : Optional Bool
+            , contains_header : Optional Text
+            , delimiter : Optional Text
+            , disable_value_trimming : Optional Bool
+            , header : Optional (List Text)
+            , quote_symbol : Optional Text
+            }
+        )
   , grok_classifier =
       None
         ( List
