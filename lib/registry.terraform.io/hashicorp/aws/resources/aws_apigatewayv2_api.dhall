@@ -2,6 +2,7 @@
     { api_endpoint : Optional Text
     , api_key_selection_expression : Optional Text
     , arn : Optional Text
+    , body : Optional Text
     , credentials_arn : Optional Text
     , description : Optional Text
     , execution_arn : Optional Text
@@ -29,6 +30,7 @@
   { api_endpoint = None Text
   , api_key_selection_expression = None Text
   , arn = None Text
+  , body = None Text
   , credentials_arn = None Text
   , description = None Text
   , execution_arn = None Text

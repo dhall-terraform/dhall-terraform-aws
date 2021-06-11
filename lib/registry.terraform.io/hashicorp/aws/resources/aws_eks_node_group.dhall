@@ -21,6 +21,9 @@
     , subnet_ids : List Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , version : Optional Text
+    , launch_template :
+        Optional
+          (List { id : Optional Text, name : Optional Text, version : Text })
     , remote_access :
         Optional
           ( List
@@ -56,6 +59,8 @@
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , version = None Text
+  , launch_template =
+      None (List { id : Optional Text, name : Optional Text, version : Text })
   , remote_access =
       None
         ( List

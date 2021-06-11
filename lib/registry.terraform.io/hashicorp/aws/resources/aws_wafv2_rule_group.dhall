@@ -95,6 +95,15 @@
                                                           ( List
                                                               { country_codes :
                                                                   List Text
+                                                              , forwarded_ip_config :
+                                                                  Optional
+                                                                    ( List
+                                                                        { fallback_behavior :
+                                                                            Text
+                                                                        , header_name :
+                                                                            Text
+                                                                        }
+                                                                    )
                                                               }
                                                           )
                                                     , ip_set_reference_statement :
@@ -372,7 +381,18 @@
                                           )
                                     , geo_match_statement :
                                         Optional
-                                          (List { country_codes : List Text })
+                                          ( List
+                                              { country_codes : List Text
+                                              , forwarded_ip_config :
+                                                  Optional
+                                                    ( List
+                                                        { fallback_behavior :
+                                                            Text
+                                                        , header_name : Text
+                                                        }
+                                                    )
+                                              }
+                                          )
                                     , ip_set_reference_statement :
                                         Optional (List { arn : Text })
                                     , not_statement :
@@ -445,6 +465,15 @@
                                                           ( List
                                                               { country_codes :
                                                                   List Text
+                                                              , forwarded_ip_config :
+                                                                  Optional
+                                                                    ( List
+                                                                        { fallback_behavior :
+                                                                            Text
+                                                                        , header_name :
+                                                                            Text
+                                                                        }
+                                                                    )
                                                               }
                                                           )
                                                     , ip_set_reference_statement :
@@ -751,6 +780,15 @@
                                                           ( List
                                                               { country_codes :
                                                                   List Text
+                                                              , forwarded_ip_config :
+                                                                  Optional
+                                                                    ( List
+                                                                        { fallback_behavior :
+                                                                            Text
+                                                                        , header_name :
+                                                                            Text
+                                                                        }
+                                                                    )
                                                               }
                                                           )
                                                     , ip_set_reference_statement :
@@ -1166,7 +1204,18 @@
                               }
                           )
                     , geo_match_statement :
-                        Optional (List { country_codes : List Text })
+                        Optional
+                          ( List
+                              { country_codes : List Text
+                              , forwarded_ip_config :
+                                  Optional
+                                    ( List
+                                        { fallback_behavior : Text
+                                        , header_name : Text
+                                        }
+                                    )
+                              }
+                          )
                     , ip_set_reference_statement :
                         Optional (List { arn : Text })
                     , not_statement :
@@ -1244,6 +1293,15 @@
                                                           ( List
                                                               { country_codes :
                                                                   List Text
+                                                              , forwarded_ip_config :
+                                                                  Optional
+                                                                    ( List
+                                                                        { fallback_behavior :
+                                                                            Text
+                                                                        , header_name :
+                                                                            Text
+                                                                        }
+                                                                    )
                                                               }
                                                           )
                                                     , ip_set_reference_statement :
@@ -1521,7 +1579,18 @@
                                           )
                                     , geo_match_statement :
                                         Optional
-                                          (List { country_codes : List Text })
+                                          ( List
+                                              { country_codes : List Text
+                                              , forwarded_ip_config :
+                                                  Optional
+                                                    ( List
+                                                        { fallback_behavior :
+                                                            Text
+                                                        , header_name : Text
+                                                        }
+                                                    )
+                                              }
+                                          )
                                     , ip_set_reference_statement :
                                         Optional (List { arn : Text })
                                     , not_statement :
@@ -1594,6 +1663,15 @@
                                                           ( List
                                                               { country_codes :
                                                                   List Text
+                                                              , forwarded_ip_config :
+                                                                  Optional
+                                                                    ( List
+                                                                        { fallback_behavior :
+                                                                            Text
+                                                                        , header_name :
+                                                                            Text
+                                                                        }
+                                                                    )
                                                               }
                                                           )
                                                     , ip_set_reference_statement :
@@ -1900,6 +1978,15 @@
                                                           ( List
                                                               { country_codes :
                                                                   List Text
+                                                              , forwarded_ip_config :
+                                                                  Optional
+                                                                    ( List
+                                                                        { fallback_behavior :
+                                                                            Text
+                                                                        , header_name :
+                                                                            Text
+                                                                        }
+                                                                    )
                                                               }
                                                           )
                                                     , ip_set_reference_statement :
@@ -2365,6 +2452,15 @@
                                                           ( List
                                                               { country_codes :
                                                                   List Text
+                                                              , forwarded_ip_config :
+                                                                  Optional
+                                                                    ( List
+                                                                        { fallback_behavior :
+                                                                            Text
+                                                                        , header_name :
+                                                                            Text
+                                                                        }
+                                                                    )
                                                               }
                                                           )
                                                     , ip_set_reference_statement :
@@ -2642,7 +2738,18 @@
                                           )
                                     , geo_match_statement :
                                         Optional
-                                          (List { country_codes : List Text })
+                                          ( List
+                                              { country_codes : List Text
+                                              , forwarded_ip_config :
+                                                  Optional
+                                                    ( List
+                                                        { fallback_behavior :
+                                                            Text
+                                                        , header_name : Text
+                                                        }
+                                                    )
+                                              }
+                                          )
                                     , ip_set_reference_statement :
                                         Optional (List { arn : Text })
                                     , not_statement :
@@ -2715,6 +2822,15 @@
                                                           ( List
                                                               { country_codes :
                                                                   List Text
+                                                              , forwarded_ip_config :
+                                                                  Optional
+                                                                    ( List
+                                                                        { fallback_behavior :
+                                                                            Text
+                                                                        , header_name :
+                                                                            Text
+                                                                        }
+                                                                    )
                                                               }
                                                           )
                                                     , ip_set_reference_statement :
@@ -3021,6 +3137,15 @@
                                                           ( List
                                                               { country_codes :
                                                                   List Text
+                                                              , forwarded_ip_config :
+                                                                  Optional
+                                                                    ( List
+                                                                        { fallback_behavior :
+                                                                            Text
+                                                                        , header_name :
+                                                                            Text
+                                                                        }
+                                                                    )
                                                               }
                                                           )
                                                     , ip_set_reference_statement :
@@ -3611,6 +3736,15 @@
                                                         ( List
                                                             { country_codes :
                                                                 List Text
+                                                            , forwarded_ip_config :
+                                                                Optional
+                                                                  ( List
+                                                                      { fallback_behavior :
+                                                                          Text
+                                                                      , header_name :
+                                                                          Text
+                                                                      }
+                                                                  )
                                                             }
                                                         )
                                                   , ip_set_reference_statement :
@@ -3882,7 +4016,17 @@
                                         )
                                   , geo_match_statement :
                                       Optional
-                                        (List { country_codes : List Text })
+                                        ( List
+                                            { country_codes : List Text
+                                            , forwarded_ip_config :
+                                                Optional
+                                                  ( List
+                                                      { fallback_behavior : Text
+                                                      , header_name : Text
+                                                      }
+                                                  )
+                                            }
+                                        )
                                   , ip_set_reference_statement :
                                       Optional (List { arn : Text })
                                   , not_statement :
@@ -3954,6 +4098,15 @@
                                                         ( List
                                                             { country_codes :
                                                                 List Text
+                                                            , forwarded_ip_config :
+                                                                Optional
+                                                                  ( List
+                                                                      { fallback_behavior :
+                                                                          Text
+                                                                      , header_name :
+                                                                          Text
+                                                                      }
+                                                                  )
                                                             }
                                                         )
                                                   , ip_set_reference_statement :
@@ -4255,6 +4408,15 @@
                                                         ( List
                                                             { country_codes :
                                                                 List Text
+                                                            , forwarded_ip_config :
+                                                                Optional
+                                                                  ( List
+                                                                      { fallback_behavior :
+                                                                          Text
+                                                                      , header_name :
+                                                                          Text
+                                                                      }
+                                                                  )
                                                             }
                                                         )
                                                   , ip_set_reference_statement :
@@ -4657,7 +4819,18 @@
                             }
                         )
                   , geo_match_statement :
-                      Optional (List { country_codes : List Text })
+                      Optional
+                        ( List
+                            { country_codes : List Text
+                            , forwarded_ip_config :
+                                Optional
+                                  ( List
+                                      { fallback_behavior : Text
+                                      , header_name : Text
+                                      }
+                                  )
+                            }
+                        )
                   , ip_set_reference_statement : Optional (List { arn : Text })
                   , not_statement :
                       Optional
@@ -4733,6 +4906,15 @@
                                                         ( List
                                                             { country_codes :
                                                                 List Text
+                                                            , forwarded_ip_config :
+                                                                Optional
+                                                                  ( List
+                                                                      { fallback_behavior :
+                                                                          Text
+                                                                      , header_name :
+                                                                          Text
+                                                                      }
+                                                                  )
                                                             }
                                                         )
                                                   , ip_set_reference_statement :
@@ -5004,7 +5186,17 @@
                                         )
                                   , geo_match_statement :
                                       Optional
-                                        (List { country_codes : List Text })
+                                        ( List
+                                            { country_codes : List Text
+                                            , forwarded_ip_config :
+                                                Optional
+                                                  ( List
+                                                      { fallback_behavior : Text
+                                                      , header_name : Text
+                                                      }
+                                                  )
+                                            }
+                                        )
                                   , ip_set_reference_statement :
                                       Optional (List { arn : Text })
                                   , not_statement :
@@ -5076,6 +5268,15 @@
                                                         ( List
                                                             { country_codes :
                                                                 List Text
+                                                            , forwarded_ip_config :
+                                                                Optional
+                                                                  ( List
+                                                                      { fallback_behavior :
+                                                                          Text
+                                                                      , header_name :
+                                                                          Text
+                                                                      }
+                                                                  )
                                                             }
                                                         )
                                                   , ip_set_reference_statement :
@@ -5377,6 +5578,15 @@
                                                         ( List
                                                             { country_codes :
                                                                 List Text
+                                                            , forwarded_ip_config :
+                                                                Optional
+                                                                  ( List
+                                                                      { fallback_behavior :
+                                                                          Text
+                                                                      , header_name :
+                                                                          Text
+                                                                      }
+                                                                  )
                                                             }
                                                         )
                                                   , ip_set_reference_statement :
@@ -5829,6 +6039,15 @@
                                                         ( List
                                                             { country_codes :
                                                                 List Text
+                                                            , forwarded_ip_config :
+                                                                Optional
+                                                                  ( List
+                                                                      { fallback_behavior :
+                                                                          Text
+                                                                      , header_name :
+                                                                          Text
+                                                                      }
+                                                                  )
                                                             }
                                                         )
                                                   , ip_set_reference_statement :
@@ -6100,7 +6319,17 @@
                                         )
                                   , geo_match_statement :
                                       Optional
-                                        (List { country_codes : List Text })
+                                        ( List
+                                            { country_codes : List Text
+                                            , forwarded_ip_config :
+                                                Optional
+                                                  ( List
+                                                      { fallback_behavior : Text
+                                                      , header_name : Text
+                                                      }
+                                                  )
+                                            }
+                                        )
                                   , ip_set_reference_statement :
                                       Optional (List { arn : Text })
                                   , not_statement :
@@ -6172,6 +6401,15 @@
                                                         ( List
                                                             { country_codes :
                                                                 List Text
+                                                            , forwarded_ip_config :
+                                                                Optional
+                                                                  ( List
+                                                                      { fallback_behavior :
+                                                                          Text
+                                                                      , header_name :
+                                                                          Text
+                                                                      }
+                                                                  )
                                                             }
                                                         )
                                                   , ip_set_reference_statement :
@@ -6473,6 +6711,15 @@
                                                         ( List
                                                             { country_codes :
                                                                 List Text
+                                                            , forwarded_ip_config :
+                                                                Optional
+                                                                  ( List
+                                                                      { fallback_behavior :
+                                                                          Text
+                                                                      , header_name :
+                                                                          Text
+                                                                      }
+                                                                  )
                                                             }
                                                         )
                                                   , ip_set_reference_statement :

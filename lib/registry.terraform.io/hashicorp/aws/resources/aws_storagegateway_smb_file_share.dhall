@@ -1,5 +1,6 @@
 { Type =
     { arn : Optional Text
+    , audit_destination_arn : Optional Text
     , authentication : Optional Text
     , default_storage_class : Optional Text
     , fileshare_id : Optional Text
@@ -15,6 +16,7 @@
     , read_only : Optional Bool
     , requester_pays : Optional Bool
     , role_arn : Text
+    , smb_acl_enabled : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , valid_user_list : Optional (List Text)
     , timeouts :
@@ -26,6 +28,7 @@
     }
 , default =
   { arn = None Text
+  , audit_destination_arn = None Text
   , authentication = None Text
   , default_storage_class = None Text
   , fileshare_id = None Text
@@ -38,6 +41,7 @@
   , path = None Text
   , read_only = None Bool
   , requester_pays = None Bool
+  , smb_acl_enabled = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
   , valid_user_list = None (List Text)
   , timeouts =

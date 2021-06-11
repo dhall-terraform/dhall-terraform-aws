@@ -1,5 +1,6 @@
 { Type =
     { allocated_storage : Optional Natural
+    , allow_major_version_upgrade : Optional Bool
     , apply_immediately : Optional Bool
     , auto_minor_version_upgrade : Optional Bool
     , availability_zone : Optional Text
@@ -26,6 +27,7 @@
     }
 , default =
   { allocated_storage = None Natural
+  , allow_major_version_upgrade = None Bool
   , apply_immediately = None Bool
   , auto_minor_version_upgrade = None Bool
   , availability_zone = None Text
