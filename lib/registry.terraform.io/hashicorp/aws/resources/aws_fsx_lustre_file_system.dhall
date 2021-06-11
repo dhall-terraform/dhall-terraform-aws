@@ -1,5 +1,6 @@
 { Type =
     { arn : Optional Text
+    , deployment_type : Optional Text
     , dns_name : Optional Text
     , export_path : Optional Text
     , id : Optional Text
@@ -7,6 +8,7 @@
     , imported_file_chunk_size : Optional Natural
     , network_interface_ids : Optional (List Text)
     , owner_id : Optional Text
+    , per_unit_storage_throughput : Optional Natural
     , security_group_ids : Optional (List Text)
     , storage_capacity : Natural
     , subnet_ids : List Text
@@ -17,6 +19,7 @@
     }
 , default =
   { arn = None Text
+  , deployment_type = None Text
   , dns_name = None Text
   , export_path = None Text
   , id = None Text
@@ -24,6 +27,7 @@
   , imported_file_chunk_size = None Natural
   , network_interface_ids = None (List Text)
   , owner_id = None Text
+  , per_unit_storage_throughput = None Natural
   , security_group_ids = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
   , vpc_id = None Text

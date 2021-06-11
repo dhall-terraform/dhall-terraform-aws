@@ -1,7 +1,5 @@
 { Type =
-    { active_trusted_signers :
-        Optional (List { mapKey : Text, mapValue : Text })
-    , aliases : Optional (List Text)
+    { aliases : Optional (List Text)
     , arn : Optional Text
     , caller_reference : Optional Text
     , comment : Optional Text
@@ -19,44 +17,16 @@
     , retain_on_delete : Optional Bool
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
-    , wait_for_deployment : Optional Bool
-    , web_acl_id : Optional Text
-    , cache_behavior :
+    , trusted_signers :
         Optional
           ( List
-              { allowed_methods : List Text
-              , cached_methods : List Text
-              , compress : Optional Bool
-              , default_ttl : Optional Natural
-              , field_level_encryption_id : Optional Text
-              , max_ttl : Optional Natural
-              , min_ttl : Optional Natural
-              , path_pattern : Text
-              , smooth_streaming : Optional Bool
-              , target_origin_id : Text
-              , trusted_signers : Optional (List Text)
-              , viewer_protocol_policy : Text
-              , forwarded_values :
-                  List
-                    { headers : Optional (List Text)
-                    , query_string : Bool
-                    , query_string_cache_keys : Optional (List Text)
-                    , cookies :
-                        List
-                          { forward : Text
-                          , whitelisted_names : Optional (List Text)
-                          }
-                    }
-              , lambda_function_association :
-                  Optional
-                    ( List
-                        { event_type : Text
-                        , include_body : Optional Bool
-                        , lambda_arn : Text
-                        }
-                    )
+              { enabled : Bool
+              , items :
+                  List { aws_account_number : Text, key_pair_ids : List Text }
               }
           )
+    , wait_for_deployment : Optional Bool
+    , web_acl_id : Optional Text
     , custom_error_response :
         Optional
           ( List
@@ -185,8 +155,7 @@
           }
     }
 , default =
-  { active_trusted_signers = None (List { mapKey : Text, mapValue : Text })
-  , aliases = None (List Text)
+  { aliases = None (List Text)
   , arn = None Text
   , caller_reference = None Text
   , comment = None Text
@@ -203,44 +172,16 @@
   , retain_on_delete = None Bool
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
-  , wait_for_deployment = None Bool
-  , web_acl_id = None Text
-  , cache_behavior =
+  , trusted_signers =
       None
         ( List
-            { allowed_methods : List Text
-            , cached_methods : List Text
-            , compress : Optional Bool
-            , default_ttl : Optional Natural
-            , field_level_encryption_id : Optional Text
-            , max_ttl : Optional Natural
-            , min_ttl : Optional Natural
-            , path_pattern : Text
-            , smooth_streaming : Optional Bool
-            , target_origin_id : Text
-            , trusted_signers : Optional (List Text)
-            , viewer_protocol_policy : Text
-            , forwarded_values :
-                List
-                  { headers : Optional (List Text)
-                  , query_string : Bool
-                  , query_string_cache_keys : Optional (List Text)
-                  , cookies :
-                      List
-                        { forward : Text
-                        , whitelisted_names : Optional (List Text)
-                        }
-                  }
-            , lambda_function_association :
-                Optional
-                  ( List
-                      { event_type : Text
-                      , include_body : Optional Bool
-                      , lambda_arn : Text
-                      }
-                  )
+            { enabled : Bool
+            , items :
+                List { aws_account_number : Text, key_pair_ids : List Text }
             }
         )
+  , wait_for_deployment = None Bool
+  , web_acl_id = None Text
   , custom_error_response =
       None
         ( List

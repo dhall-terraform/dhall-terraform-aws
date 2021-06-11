@@ -45,8 +45,6 @@
         Optional (List { field : Optional Text, type : Text })
     , placement_constraints :
         Optional (List { expression : Optional Text, type : Text })
-    , placement_strategy :
-        Optional (List { field : Optional Text, type : Text })
     , service_registries :
         Optional
           ( List
@@ -104,7 +102,6 @@
       None (List { field : Optional Text, type : Text })
   , placement_constraints =
       None (List { expression : Optional Text, type : Text })
-  , placement_strategy = None (List { field : Optional Text, type : Text })
   , service_registries =
       None
         ( List

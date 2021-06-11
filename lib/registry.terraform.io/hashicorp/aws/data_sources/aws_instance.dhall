@@ -63,6 +63,7 @@
               , volume_type : Text
               }
           )
+    , secondary_private_ips : Optional (List Text)
     , security_groups : Optional (List Text)
     , source_dest_check : Optional Bool
     , subnet_id : Optional Text
@@ -137,6 +138,7 @@
             , volume_type : Text
             }
         )
+  , secondary_private_ips = None (List Text)
   , security_groups = None (List Text)
   , source_dest_check = None Bool
   , subnet_id = None Text

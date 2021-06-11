@@ -18,7 +18,6 @@
         Optional
           ( List
               { allow_admin_create_user_only : Optional Bool
-              , unused_account_validity_days : Optional Natural
               , invite_message_template :
                   Optional
                     ( List
@@ -129,7 +128,6 @@
       None
         ( List
             { allow_admin_create_user_only : Optional Bool
-            , unused_account_validity_days : Optional Natural
             , invite_message_template :
                 Optional
                   ( List

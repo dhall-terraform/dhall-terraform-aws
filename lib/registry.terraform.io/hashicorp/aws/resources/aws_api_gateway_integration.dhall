@@ -10,7 +10,6 @@
     , integration_http_method : Optional Text
     , passthrough_behavior : Optional Text
     , request_parameters : Optional (List { mapKey : Text, mapValue : Text })
-    , request_parameters_in_json : Optional Text
     , request_templates : Optional (List { mapKey : Text, mapValue : Text })
     , resource_id : Text
     , rest_api_id : Text
@@ -29,7 +28,6 @@
   , integration_http_method = None Text
   , passthrough_behavior = None Text
   , request_parameters = None (List { mapKey : Text, mapValue : Text })
-  , request_parameters_in_json = None Text
   , request_templates = None (List { mapKey : Text, mapValue : Text })
   , timeout_milliseconds = None Natural
   , uri = None Text

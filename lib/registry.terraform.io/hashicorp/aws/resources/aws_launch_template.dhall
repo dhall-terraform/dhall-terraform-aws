@@ -91,7 +91,7 @@
         Optional
           ( List
               { associate_public_ip_address : Optional Text
-              , delete_on_termination : Optional Bool
+              , delete_on_termination : Optional Text
               , description : Optional Text
               , device_index : Optional Natural
               , ipv4_address_count : Optional Natural
@@ -216,7 +216,7 @@
       None
         ( List
             { associate_public_ip_address : Optional Text
-            , delete_on_termination : Optional Bool
+            , delete_on_termination : Optional Text
             , description : Optional Text
             , device_index : Optional Natural
             , ipv4_address_count : Optional Natural

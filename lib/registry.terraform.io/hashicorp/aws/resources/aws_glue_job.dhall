@@ -1,6 +1,5 @@
 { Type =
-    { allocated_capacity : Optional Natural
-    , arn : Optional Text
+    { arn : Optional Text
     , connections : Optional (List Text)
     , default_arguments : Optional (List { mapKey : Text, mapValue : Text })
     , description : Optional Text
@@ -27,8 +26,7 @@
         Optional (List { notify_delay_after : Optional Natural })
     }
 , default =
-  { allocated_capacity = None Natural
-  , arn = None Text
+  { arn = None Text
   , connections = None (List Text)
   , default_arguments = None (List { mapKey : Text, mapValue : Text })
   , description = None Text

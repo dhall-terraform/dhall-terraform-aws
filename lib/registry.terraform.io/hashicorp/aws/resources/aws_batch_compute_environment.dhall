@@ -2,7 +2,6 @@
     { arn : Optional Text
     , compute_environment_name : Optional Text
     , compute_environment_name_prefix : Optional Text
-    , ecc_cluster_arn : Optional Text
     , ecs_cluster_arn : Optional Text
     , id : Optional Text
     , service_role : Text
@@ -42,7 +41,6 @@
   { arn = None Text
   , compute_environment_name = None Text
   , compute_environment_name_prefix = None Text
-  , ecc_cluster_arn = None Text
   , ecs_cluster_arn = None Text
   , id = None Text
   , state = None Text

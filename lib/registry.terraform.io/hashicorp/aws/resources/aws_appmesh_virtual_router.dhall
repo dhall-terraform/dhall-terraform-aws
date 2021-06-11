@@ -8,8 +8,7 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , spec :
         List
-          { service_names : Optional (List Text)
-          , listener :
+          { listener :
               List { port_mapping : List { port : Natural, protocol : Text } }
           }
     }

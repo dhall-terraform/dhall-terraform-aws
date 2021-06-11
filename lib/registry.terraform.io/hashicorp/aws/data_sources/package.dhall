@@ -203,4 +203,5 @@
 , aws_wafv2_web_acl = ./aws_wafv2_web_acl.dhall
 , aws_waf_web_acl = ./aws_waf_web_acl.dhall
 , aws_workspaces_bundle = ./aws_workspaces_bundle.dhall
+, aws_workspaces_directory = ./aws_workspaces_directory.dhall
 }

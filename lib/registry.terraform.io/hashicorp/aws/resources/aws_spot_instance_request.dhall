@@ -22,7 +22,6 @@
     , key_name : Optional Text
     , launch_group : Optional Text
     , monitoring : Optional Bool
-    , network_interface_id : Optional Text
     , outpost_arn : Optional Text
     , password_data : Optional Text
     , placement_group : Optional Text
@@ -31,6 +30,7 @@
     , private_ip : Optional Text
     , public_dns : Optional Text
     , public_ip : Optional Text
+    , secondary_private_ips : Optional (List Text)
     , security_groups : Optional (List Text)
     , source_dest_check : Optional Bool
     , spot_bid_status : Optional Text
@@ -124,7 +124,6 @@
   , key_name = None Text
   , launch_group = None Text
   , monitoring = None Bool
-  , network_interface_id = None Text
   , outpost_arn = None Text
   , password_data = None Text
   , placement_group = None Text
@@ -133,6 +132,7 @@
   , private_ip = None Text
   , public_dns = None Text
   , public_ip = None Text
+  , secondary_private_ips = None (List Text)
   , security_groups = None (List Text)
   , source_dest_check = None Bool
   , spot_bid_status = None Text

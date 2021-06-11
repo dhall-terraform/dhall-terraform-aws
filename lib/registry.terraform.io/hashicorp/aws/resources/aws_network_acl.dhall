@@ -30,7 +30,6 @@
               }
           )
     , owner_id : Optional Text
-    , subnet_id : Optional Text
     , subnet_ids : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_id : Text
@@ -67,7 +66,6 @@
             }
         )
   , owner_id = None Text
-  , subnet_id = None Text
   , subnet_ids = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
   }

@@ -8,8 +8,7 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , spec :
         List
-          { backends : Optional (List Text)
-          , backend :
+          { backend :
               Optional
                 ( List
                     { virtual_service :
@@ -55,11 +54,7 @@
                               , service_name : Text
                               }
                           )
-                    , dns :
-                        Optional
-                          ( List
-                              { hostname : Text, service_name : Optional Text }
-                          )
+                    , dns : Optional (List { hostname : Text })
                     }
                 )
           }

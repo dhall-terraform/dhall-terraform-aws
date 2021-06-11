@@ -18,10 +18,14 @@
     , assume_role :
         Optional
           ( List
-              { external_id : Optional Text
+              { duration_seconds : Optional Natural
+              , external_id : Optional Text
               , policy : Optional Text
+              , policy_arns : Optional (List Text)
               , role_arn : Optional Text
               , session_name : Optional Text
+              , tags : Optional (List { mapKey : Text, mapValue : Text })
+              , transitive_tag_keys : Optional (List Text)
               }
           )
     , endpoints :
@@ -101,7 +105,6 @@
               , iotevents : Optional Text
               , kafka : Optional Text
               , kinesis : Optional Text
-              , kinesis_analytics : Optional Text
               , kinesisanalytics : Optional Text
               , kinesisanalyticsv2 : Optional Text
               , kinesisvideo : Optional Text
@@ -131,7 +134,6 @@
               , pricing : Optional Text
               , qldb : Optional Text
               , quicksight : Optional Text
-              , r53 : Optional Text
               , ram : Optional Text
               , rds : Optional Text
               , redshift : Optional Text
@@ -197,10 +199,14 @@
   , assume_role =
       None
         ( List
-            { external_id : Optional Text
+            { duration_seconds : Optional Natural
+            , external_id : Optional Text
             , policy : Optional Text
+            , policy_arns : Optional (List Text)
             , role_arn : Optional Text
             , session_name : Optional Text
+            , tags : Optional (List { mapKey : Text, mapValue : Text })
+            , transitive_tag_keys : Optional (List Text)
             }
         )
   , endpoints =
@@ -280,7 +286,6 @@
             , iotevents : Optional Text
             , kafka : Optional Text
             , kinesis : Optional Text
-            , kinesis_analytics : Optional Text
             , kinesisanalytics : Optional Text
             , kinesisanalyticsv2 : Optional Text
             , kinesisvideo : Optional Text
@@ -310,7 +315,6 @@
             , pricing : Optional Text
             , qldb : Optional Text
             , quicksight : Optional Text
-            , r53 : Optional Text
             , ram : Optional Text
             , rds : Optional Text
             , redshift : Optional Text

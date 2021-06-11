@@ -6,6 +6,7 @@
     , dns_name : Optional Text
     , drop_invalid_header_fields : Optional Bool
     , enable_deletion_protection : Optional Bool
+    , enable_http2 : Optional Bool
     , id : Optional Text
     , idle_timeout : Optional Natural
     , internal : Optional Bool
@@ -27,6 +28,7 @@
   , dns_name = None Text
   , drop_invalid_header_fields = None Bool
   , enable_deletion_protection = None Bool
+  , enable_http2 = None Bool
   , id = None Text
   , idle_timeout = None Natural
   , internal = None Bool

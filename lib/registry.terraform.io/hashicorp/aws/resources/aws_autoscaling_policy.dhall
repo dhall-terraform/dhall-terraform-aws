@@ -7,7 +7,6 @@
     , id : Optional Text
     , metric_aggregation_type : Optional Text
     , min_adjustment_magnitude : Optional Natural
-    , min_adjustment_step : Optional Natural
     , name : Text
     , policy_type : Optional Text
     , scaling_adjustment : Optional Natural
@@ -53,7 +52,6 @@
   , id = None Text
   , metric_aggregation_type = None Text
   , min_adjustment_magnitude = None Natural
-  , min_adjustment_step = None Natural
   , policy_type = None Text
   , scaling_adjustment = None Natural
   , step_adjustment =

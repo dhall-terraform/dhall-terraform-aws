@@ -2,7 +2,6 @@
     { apply_immediately : Optional Bool
     , arn : Optional Text
     , availability_zone : Optional Text
-    , availability_zones : Optional (List Text)
     , az_mode : Optional Text
     , cache_nodes :
         Optional
@@ -40,7 +39,6 @@
   { apply_immediately = None Bool
   , arn = None Text
   , availability_zone = None Text
-  , availability_zones = None (List Text)
   , az_mode = None Text
   , cache_nodes =
       None

@@ -1,23 +1,11 @@
 { Type =
-    { adjustment_type : Optional Text
-    , arn : Optional Text
-    , cooldown : Optional Natural
+    { arn : Optional Text
     , id : Optional Text
-    , metric_aggregation_type : Optional Text
-    , min_adjustment_magnitude : Optional Natural
     , name : Text
     , policy_type : Optional Text
     , resource_id : Text
     , scalable_dimension : Text
     , service_namespace : Text
-    , step_adjustment :
-        Optional
-          ( List
-              { metric_interval_lower_bound : Optional Text
-              , metric_interval_upper_bound : Optional Text
-              , scaling_adjustment : Natural
-              }
-          )
     , step_scaling_policy_configuration :
         Optional
           ( List
@@ -64,21 +52,9 @@
           )
     }
 , default =
-  { adjustment_type = None Text
-  , arn = None Text
-  , cooldown = None Natural
+  { arn = None Text
   , id = None Text
-  , metric_aggregation_type = None Text
-  , min_adjustment_magnitude = None Natural
   , policy_type = None Text
-  , step_adjustment =
-      None
-        ( List
-            { metric_interval_lower_bound : Optional Text
-            , metric_interval_upper_bound : Optional Text
-            , scaling_adjustment : Natural
-            }
-        )
   , step_scaling_policy_configuration =
       None
         ( List

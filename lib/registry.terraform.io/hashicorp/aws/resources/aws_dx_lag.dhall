@@ -7,7 +7,6 @@
     , jumbo_frame_capable : Optional Bool
     , location : Text
     , name : Text
-    , number_of_connections : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
@@ -16,7 +15,6 @@
   , has_logical_redundancy = None Text
   , id = None Text
   , jumbo_frame_capable = None Bool
-  , number_of_connections = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
   }
 }

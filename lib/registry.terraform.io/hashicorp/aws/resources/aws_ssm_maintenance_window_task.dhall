@@ -9,14 +9,6 @@
     , task_arn : Text
     , task_type : Text
     , window_id : Text
-    , logging_info :
-        Optional
-          ( List
-              { s3_bucket_name : Text
-              , s3_bucket_prefix : Optional Text
-              , s3_region : Text
-              }
-          )
     , targets : List { key : Text, values : List Text }
     , task_invocation_parameters :
         Optional
@@ -64,21 +56,12 @@
                     (List { input : Optional Text, name : Optional Text })
               }
           )
-    , task_parameters : Optional (List { name : Text, values : List Text })
     }
 , default =
   { description = None Text
   , id = None Text
   , name = None Text
   , priority = None Natural
-  , logging_info =
-      None
-        ( List
-            { s3_bucket_name : Text
-            , s3_bucket_prefix : Optional Text
-            , s3_region : Text
-            }
-        )
   , task_invocation_parameters =
       None
         ( List
@@ -124,6 +107,5 @@
                 Optional (List { input : Optional Text, name : Optional Text })
             }
         )
-  , task_parameters = None (List { name : Text, values : List Text })
   }
 }

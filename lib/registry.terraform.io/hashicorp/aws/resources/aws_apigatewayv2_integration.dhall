@@ -12,9 +12,11 @@
     , integration_uri : Optional Text
     , passthrough_behavior : Optional Text
     , payload_format_version : Optional Text
+    , request_parameters : Optional (List { mapKey : Text, mapValue : Text })
     , request_templates : Optional (List { mapKey : Text, mapValue : Text })
     , template_selection_expression : Optional Text
     , timeout_milliseconds : Optional Natural
+    , tls_config : Optional (List { server_name_to_verify : Optional Text })
     }
 , default =
   { connection_id = None Text
@@ -28,8 +30,10 @@
   , integration_uri = None Text
   , passthrough_behavior = None Text
   , payload_format_version = None Text
+  , request_parameters = None (List { mapKey : Text, mapValue : Text })
   , request_templates = None (List { mapKey : Text, mapValue : Text })
   , template_selection_expression = None Text
   , timeout_milliseconds = None Natural
+  , tls_config = None (List { server_name_to_verify : Optional Text })
   }
 }
