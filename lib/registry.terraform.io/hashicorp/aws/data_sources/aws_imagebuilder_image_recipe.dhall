@@ -28,6 +28,7 @@
     , platform : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , version : Optional Text
+    , working_directory : Optional Text
     }
 , default =
   { block_device_mapping =
@@ -58,5 +59,6 @@
   , platform = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , version = None Text
+  , working_directory = None Text
   }
 }

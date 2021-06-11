@@ -8,6 +8,7 @@
     , number_cache_clusters : Optional Natural
     , port : Optional Natural
     , primary_endpoint_address : Optional Text
+    , reader_endpoint_address : Optional Text
     , replication_group_description : Optional Text
     , replication_group_id : Text
     , snapshot_retention_limit : Optional Natural
@@ -23,6 +24,7 @@
   , number_cache_clusters = None Natural
   , port = None Natural
   , primary_endpoint_address = None Text
+  , reader_endpoint_address = None Text
   , replication_group_description = None Text
   , snapshot_retention_limit = None Natural
   , snapshot_window = None Text

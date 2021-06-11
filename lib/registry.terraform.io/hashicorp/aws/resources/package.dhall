@@ -597,6 +597,7 @@
 , aws_sagemaker_endpoint_configuration =
     ./aws_sagemaker_endpoint_configuration.dhall
 , aws_sagemaker_endpoint = ./aws_sagemaker_endpoint.dhall
+, aws_sagemaker_image = ./aws_sagemaker_image.dhall
 , aws_sagemaker_model = ./aws_sagemaker_model.dhall
 , aws_sagemaker_notebook_instance = ./aws_sagemaker_notebook_instance.dhall
 , aws_sagemaker_notebook_instance_lifecycle_configuration =
@@ -672,6 +673,11 @@
 , aws_ssm_patch_baseline = ./aws_ssm_patch_baseline.dhall
 , aws_ssm_patch_group = ./aws_ssm_patch_group.dhall
 , aws_ssm_resource_data_sync = ./aws_ssm_resource_data_sync.dhall
+, aws_ssoadmin_managed_policy_attachment =
+    ./aws_ssoadmin_managed_policy_attachment.dhall
+, aws_ssoadmin_permission_set = ./aws_ssoadmin_permission_set.dhall
+, aws_ssoadmin_permission_set_inline_policy =
+    ./aws_ssoadmin_permission_set_inline_policy.dhall
 , aws_storagegateway_cache = ./aws_storagegateway_cache.dhall
 , aws_storagegateway_cached_iscsi_volume =
     ./aws_storagegateway_cached_iscsi_volume.dhall

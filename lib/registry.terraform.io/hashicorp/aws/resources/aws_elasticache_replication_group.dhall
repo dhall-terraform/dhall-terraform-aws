@@ -5,6 +5,7 @@
     , auto_minor_version_upgrade : Optional Bool
     , automatic_failover_enabled : Optional Bool
     , availability_zones : Optional (List Text)
+    , cluster_enabled : Optional Bool
     , configuration_endpoint_address : Optional Text
     , engine : Optional Text
     , engine_version : Optional Text
@@ -18,6 +19,7 @@
     , parameter_group_name : Optional Text
     , port : Optional Natural
     , primary_endpoint_address : Optional Text
+    , reader_endpoint_address : Optional Text
     , replication_group_description : Text
     , replication_group_id : Text
     , security_group_ids : Optional (List Text)
@@ -48,6 +50,7 @@
   , auto_minor_version_upgrade = None Bool
   , automatic_failover_enabled = None Bool
   , availability_zones = None (List Text)
+  , cluster_enabled = None Bool
   , configuration_endpoint_address = None Text
   , engine = None Text
   , engine_version = None Text
@@ -61,6 +64,7 @@
   , parameter_group_name = None Text
   , port = None Natural
   , primary_endpoint_address = None Text
+  , reader_endpoint_address = None Text
   , security_group_ids = None (List Text)
   , security_group_names = None (List Text)
   , snapshot_arns = None (List Text)

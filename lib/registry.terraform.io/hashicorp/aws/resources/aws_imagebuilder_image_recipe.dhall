@@ -9,6 +9,7 @@
     , platform : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , version : Text
+    , working_directory : Optional Text
     , block_device_mapping :
         Optional
           ( List
@@ -39,6 +40,7 @@
   , owner = None Text
   , platform = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , working_directory = None Text
   , block_device_mapping =
       None
         ( List

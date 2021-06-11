@@ -29,11 +29,14 @@
               , path : Text
               }
           )
+    , lineage_configuration :
+        Optional (List { crawler_lineage_settings : Optional Text })
     , mongodb_target :
         Optional
           ( List
               { connection_name : Text, path : Text, scan_all : Optional Bool }
           )
+    , recrawl_policy : Optional (List { recrawl_behavior : Optional Text })
     , s3_target :
         Optional
           ( List
@@ -77,9 +80,12 @@
             , path : Text
             }
         )
+  , lineage_configuration =
+      None (List { crawler_lineage_settings : Optional Text })
   , mongodb_target =
       None
         (List { connection_name : Text, path : Text, scan_all : Optional Bool })
+  , recrawl_policy = None (List { recrawl_behavior : Optional Text })
   , s3_target =
       None
         ( List

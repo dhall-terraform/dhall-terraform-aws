@@ -9,6 +9,8 @@
     , manages_vpc_endpoints : Optional Bool
     , network_load_balancer_arns : Optional (List Text)
     , private_dns_name : Optional Text
+    , private_dns_name_configuration :
+        Optional (List { name : Text, state : Text, type : Text, value : Text })
     , service_name : Optional Text
     , service_type : Optional Text
     , state : Optional Text
@@ -24,6 +26,8 @@
   , manages_vpc_endpoints = None Bool
   , network_load_balancer_arns = None (List Text)
   , private_dns_name = None Text
+  , private_dns_name_configuration =
+      None (List { name : Text, state : Text, type : Text, value : Text })
   , service_name = None Text
   , service_type = None Text
   , state = None Text
