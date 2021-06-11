@@ -21,6 +21,7 @@
                     Optional (List { mapKey : Text, mapValue : Text })
                 , input_artifacts : Optional (List Text)
                 , name : Text
+                , namespace : Optional Text
                 , output_artifacts : Optional (List Text)
                 , owner : Text
                 , provider : Text

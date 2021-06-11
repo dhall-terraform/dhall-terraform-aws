@@ -60,7 +60,7 @@
     , network_interfaces :
         Optional
           ( List
-              { associate_public_ip_address : Bool
+              { associate_public_ip_address : Text
               , delete_on_termination : Bool
               , description : Text
               , device_index : Natural
@@ -161,7 +161,7 @@
   , network_interfaces =
       None
         ( List
-            { associate_public_ip_address : Bool
+            { associate_public_ip_address : Text
             , delete_on_termination : Bool
             , description : Text
             , device_index : Natural

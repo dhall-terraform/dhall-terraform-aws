@@ -39,6 +39,7 @@
 , aws_api_gateway_usage_plan = ./aws_api_gateway_usage_plan.dhall
 , aws_api_gateway_usage_plan_key = ./aws_api_gateway_usage_plan_key.dhall
 , aws_apigatewayv2_api = ./aws_apigatewayv2_api.dhall
+, aws_apigatewayv2_api_mapping = ./aws_apigatewayv2_api_mapping.dhall
 , aws_apigatewayv2_authorizer = ./aws_apigatewayv2_authorizer.dhall
 , aws_apigatewayv2_deployment = ./aws_apigatewayv2_deployment.dhall
 , aws_apigatewayv2_domain_name = ./aws_apigatewayv2_domain_name.dhall
@@ -49,6 +50,7 @@
 , aws_apigatewayv2_route = ./aws_apigatewayv2_route.dhall
 , aws_apigatewayv2_route_response = ./aws_apigatewayv2_route_response.dhall
 , aws_apigatewayv2_stage = ./aws_apigatewayv2_stage.dhall
+, aws_apigatewayv2_vpc_link = ./aws_apigatewayv2_vpc_link.dhall
 , aws_api_gateway_vpc_link = ./aws_api_gateway_vpc_link.dhall
 , aws_appautoscaling_policy = ./aws_appautoscaling_policy.dhall
 , aws_appautoscaling_scheduled_action =

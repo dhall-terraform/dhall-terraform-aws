@@ -32,7 +32,12 @@
           )
     , log_config :
         Optional
-          (List { cloudwatch_logs_role_arn : Text, field_log_level : Text })
+          ( List
+              { cloudwatch_logs_role_arn : Text
+              , exclude_verbose_content : Optional Bool
+              , field_log_level : Text
+              }
+          )
     , openid_connect_config :
         Optional
           ( List
@@ -83,7 +88,13 @@
             }
         )
   , log_config =
-      None (List { cloudwatch_logs_role_arn : Text, field_log_level : Text })
+      None
+        ( List
+            { cloudwatch_logs_role_arn : Text
+            , exclude_verbose_content : Optional Bool
+            , field_log_level : Text
+            }
+        )
   , openid_connect_config =
       None
         ( List
