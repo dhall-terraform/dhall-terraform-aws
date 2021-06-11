@@ -38,6 +38,14 @@
     , user_data_base64 : Optional Text
     , volume_tags : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_security_group_ids : Optional (List Text)
+    , capacity_reservation_specification :
+        Optional
+          ( List
+              { capacity_reservation_preference : Optional Text
+              , capacity_reservation_target :
+                  Optional (List { capacity_reservation_id : Optional Text })
+              }
+          )
     , credit_specification : Optional (List { cpu_credits : Optional Text })
     , ebs_block_device :
         Optional
@@ -140,6 +148,14 @@
   , user_data_base64 = None Text
   , volume_tags = None (List { mapKey : Text, mapValue : Text })
   , vpc_security_group_ids = None (List Text)
+  , capacity_reservation_specification =
+      None
+        ( List
+            { capacity_reservation_preference : Optional Text
+            , capacity_reservation_target :
+                Optional (List { capacity_reservation_id : Optional Text })
+            }
+        )
   , credit_specification = None (List { cpu_credits : Optional Text })
   , ebs_block_device =
       None

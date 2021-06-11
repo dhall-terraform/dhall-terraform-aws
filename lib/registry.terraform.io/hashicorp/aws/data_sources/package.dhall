@@ -235,6 +235,8 @@
 , aws_security_groups = ./aws_security_groups.dhall
 , aws_serverlessapplicationrepository_application =
     ./aws_serverlessapplicationrepository_application.dhall
+, aws_service_discovery_dns_namespace =
+    ./aws_service_discovery_dns_namespace.dhall
 , aws_servicequotas_service = ./aws_servicequotas_service.dhall
 , aws_servicequotas_service_quota = ./aws_servicequotas_service_quota.dhall
 , aws_sfn_activity = ./aws_sfn_activity.dhall

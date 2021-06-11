@@ -10,6 +10,40 @@
     , name : Text
     , policy_type : Optional Text
     , scaling_adjustment : Optional Natural
+    , predictive_scaling_configuration :
+        Optional
+          ( List
+              { max_capacity_breach_behavior : Optional Text
+              , max_capacity_buffer : Optional Text
+              , mode : Optional Text
+              , scheduling_buffer_time : Optional Text
+              , metric_specification :
+                  List
+                    { target_value : Natural
+                    , predefined_load_metric_specification :
+                        Optional
+                          ( List
+                              { predefined_metric_type : Text
+                              , resource_label : Text
+                              }
+                          )
+                    , predefined_metric_pair_specification :
+                        Optional
+                          ( List
+                              { predefined_metric_type : Text
+                              , resource_label : Text
+                              }
+                          )
+                    , predefined_scaling_metric_specification :
+                        Optional
+                          ( List
+                              { predefined_metric_type : Text
+                              , resource_label : Text
+                              }
+                          )
+                    }
+              }
+          )
     , step_adjustment :
         Optional
           ( List
@@ -54,6 +88,40 @@
   , min_adjustment_magnitude = None Natural
   , policy_type = None Text
   , scaling_adjustment = None Natural
+  , predictive_scaling_configuration =
+      None
+        ( List
+            { max_capacity_breach_behavior : Optional Text
+            , max_capacity_buffer : Optional Text
+            , mode : Optional Text
+            , scheduling_buffer_time : Optional Text
+            , metric_specification :
+                List
+                  { target_value : Natural
+                  , predefined_load_metric_specification :
+                      Optional
+                        ( List
+                            { predefined_metric_type : Text
+                            , resource_label : Text
+                            }
+                        )
+                  , predefined_metric_pair_specification :
+                      Optional
+                        ( List
+                            { predefined_metric_type : Text
+                            , resource_label : Text
+                            }
+                        )
+                  , predefined_scaling_metric_specification :
+                      Optional
+                        ( List
+                            { predefined_metric_type : Text
+                            , resource_label : Text
+                            }
+                        )
+                  }
+            }
+        )
   , step_adjustment =
       None
         ( List

@@ -138,6 +138,7 @@
 , aws_cloudwatch_log_subscription_filter =
     ./aws_cloudwatch_log_subscription_filter.dhall
 , aws_cloudwatch_metric_alarm = ./aws_cloudwatch_metric_alarm.dhall
+, aws_cloudwatch_metric_stream = ./aws_cloudwatch_metric_stream.dhall
 , aws_cloudwatch_query_definition = ./aws_cloudwatch_query_definition.dhall
 , aws_codeartifact_domain = ./aws_codeartifact_domain.dhall
 , aws_codeartifact_domain_permissions_policy =
@@ -697,12 +698,16 @@
     ./aws_securityhub_standards_subscription.dhall
 , aws_serverlessapplicationrepository_cloudformation_stack =
     ./aws_serverlessapplicationrepository_cloudformation_stack.dhall
+, aws_servicecatalog_constraint = ./aws_servicecatalog_constraint.dhall
 , aws_servicecatalog_organizations_access =
     ./aws_servicecatalog_organizations_access.dhall
 , aws_servicecatalog_portfolio = ./aws_servicecatalog_portfolio.dhall
 , aws_servicecatalog_portfolio_share =
     ./aws_servicecatalog_portfolio_share.dhall
 , aws_servicecatalog_product = ./aws_servicecatalog_product.dhall
+, aws_servicecatalog_product_portfolio_association =
+    ./aws_servicecatalog_product_portfolio_association.dhall
+, aws_servicecatalog_service_action = ./aws_servicecatalog_service_action.dhall
 , aws_servicecatalog_tag_option = ./aws_servicecatalog_tag_option.dhall
 , aws_service_discovery_http_namespace =
     ./aws_service_discovery_http_namespace.dhall

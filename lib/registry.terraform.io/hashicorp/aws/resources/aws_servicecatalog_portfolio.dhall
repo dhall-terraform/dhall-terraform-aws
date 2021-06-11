@@ -4,7 +4,7 @@
     , description : Optional Text
     , id : Optional Text
     , name : Text
-    , provider_name : Optional Text
+    , provider_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , timeouts :
@@ -19,7 +19,6 @@
   , created_time = None Text
   , description = None Text
   , id = None Text
-  , provider_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , tags_all = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
