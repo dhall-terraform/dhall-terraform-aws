@@ -120,6 +120,7 @@
               , personalize : Optional Text
               , pinpoint : Optional Text
               , pricing : Optional Text
+              , qldb : Optional Text
               , quicksight : Optional Text
               , r53 : Optional Text
               , ram : Optional Text
@@ -277,6 +278,7 @@
             , personalize : Optional Text
             , pinpoint : Optional Text
             , pricing : Optional Text
+            , qldb : Optional Text
             , quicksight : Optional Text
             , r53 : Optional Text
             , ram : Optional Text

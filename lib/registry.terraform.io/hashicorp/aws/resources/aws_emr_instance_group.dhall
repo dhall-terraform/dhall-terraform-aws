@@ -2,6 +2,7 @@
     { autoscaling_policy : Optional Text
     , bid_price : Optional Text
     , cluster_id : Text
+    , configurations_json : Optional Text
     , ebs_optimized : Optional Bool
     , id : Optional Text
     , instance_count : Optional Natural
@@ -22,6 +23,7 @@
 , default =
   { autoscaling_policy = None Text
   , bid_price = None Text
+  , configurations_json = None Text
   , ebs_optimized = None Bool
   , id = None Text
   , instance_count = None Natural
