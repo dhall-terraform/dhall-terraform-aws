@@ -5,6 +5,7 @@
     , pgp_key : Optional Text
     , secret : Optional Text
     , ses_smtp_password : Optional Text
+    , ses_smtp_password_v4 : Optional Text
     , status : Optional Text
     , user : Text
     }
@@ -15,6 +16,7 @@
   , pgp_key = None Text
   , secret = None Text
   , ses_smtp_password = None Text
+  , ses_smtp_password_v4 = None Text
   , status = None Text
   }
 }

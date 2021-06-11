@@ -92,6 +92,7 @@
 , aws_kms_key = ./aws_kms_key.dhall
 , aws_kms_secret = ./aws_kms_secret.dhall
 , aws_kms_secrets = ./aws_kms_secrets.dhall
+, aws_lambda_alias = ./aws_lambda_alias.dhall
 , aws_lambda_function = ./aws_lambda_function.dhall
 , aws_lambda_invocation = ./aws_lambda_invocation.dhall
 , aws_lambda_layer_version = ./aws_lambda_layer_version.dhall

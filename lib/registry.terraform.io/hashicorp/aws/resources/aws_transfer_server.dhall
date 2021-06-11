@@ -3,6 +3,8 @@
     , endpoint : Optional Text
     , endpoint_type : Optional Text
     , force_destroy : Optional Bool
+    , host_key : Optional Text
+    , host_key_fingerprint : Optional Text
     , id : Optional Text
     , identity_provider_type : Optional Text
     , invocation_role : Optional Text
@@ -16,6 +18,8 @@
   , endpoint = None Text
   , endpoint_type = None Text
   , force_destroy = None Bool
+  , host_key = None Text
+  , host_key_fingerprint = None Text
   , id = None Text
   , identity_provider_type = None Text
   , invocation_role = None Text

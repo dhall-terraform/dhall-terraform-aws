@@ -9,7 +9,8 @@
     , virtual_router_name : Text
     , spec :
         List
-          { http_route :
+          { priority : Optional Natural
+          , http_route :
               Optional
                 ( List
                     { action :
@@ -17,7 +18,35 @@
                           { weighted_target :
                               List { virtual_node : Text, weight : Natural }
                           }
-                    , match : List { prefix : Text }
+                    , match :
+                        List
+                          { method : Optional Text
+                          , prefix : Text
+                          , scheme : Optional Text
+                          , header :
+                              Optional
+                                ( List
+                                    { invert : Optional Bool
+                                    , name : Text
+                                    , match :
+                                        Optional
+                                          ( List
+                                              { exact : Optional Text
+                                              , prefix : Optional Text
+                                              , regex : Optional Text
+                                              , suffix : Optional Text
+                                              , range :
+                                                  Optional
+                                                    ( List
+                                                        { end : Natural
+                                                        , start : Natural
+                                                        }
+                                                    )
+                                              }
+                                          )
+                                    }
+                                )
+                          }
                     }
                 )
           , tcp_route :
