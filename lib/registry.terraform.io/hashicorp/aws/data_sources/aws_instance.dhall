@@ -14,6 +14,7 @@
               , iops : Natural
               , kms_key_id : Text
               , snapshot_id : Text
+              , tags : List { mapKey : Text, mapValue : Text }
               , throughput : Natural
               , volume_id : Text
               , volume_size : Natural
@@ -60,6 +61,7 @@
               , encrypted : Bool
               , iops : Natural
               , kms_key_id : Text
+              , tags : List { mapKey : Text, mapValue : Text }
               , throughput : Natural
               , volume_id : Text
               , volume_size : Natural
@@ -93,6 +95,7 @@
             , iops : Natural
             , kms_key_id : Text
             , snapshot_id : Text
+            , tags : List { mapKey : Text, mapValue : Text }
             , throughput : Natural
             , volume_id : Text
             , volume_size : Natural
@@ -138,6 +141,7 @@
             , encrypted : Bool
             , iops : Natural
             , kms_key_id : Text
+            , tags : List { mapKey : Text, mapValue : Text }
             , throughput : Natural
             , volume_id : Text
             , volume_size : Natural
