@@ -10,7 +10,8 @@
           , managed_scaling :
               Optional
                 ( List
-                    { maximum_scaling_step_size : Optional Natural
+                    { instance_warmup_period : Optional Natural
+                    , maximum_scaling_step_size : Optional Natural
                     , minimum_scaling_step_size : Optional Natural
                     , status : Optional Text
                     , target_capacity : Optional Natural

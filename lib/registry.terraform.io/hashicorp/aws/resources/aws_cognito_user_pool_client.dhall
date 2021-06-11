@@ -19,9 +19,10 @@
     , analytics_configuration :
         Optional
           ( List
-              { application_id : Text
-              , external_id : Text
-              , role_arn : Text
+              { application_arn : Optional Text
+              , application_id : Optional Text
+              , external_id : Optional Text
+              , role_arn : Optional Text
               , user_data_shared : Optional Bool
               }
           )
@@ -45,9 +46,10 @@
   , analytics_configuration =
       None
         ( List
-            { application_id : Text
-            , external_id : Text
-            , role_arn : Text
+            { application_arn : Optional Text
+            , application_id : Optional Text
+            , external_id : Optional Text
+            , role_arn : Optional Text
             , user_data_shared : Optional Bool
             }
         )

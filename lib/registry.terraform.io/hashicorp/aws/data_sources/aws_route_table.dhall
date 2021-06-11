@@ -1,5 +1,6 @@
 { Type =
-    { associations :
+    { arn : Optional Text
+    , associations :
         Optional
           ( List
               { gateway_id : Text
@@ -16,7 +17,8 @@
     , routes :
         Optional
           ( List
-              { cidr_block : Text
+              { carrier_gateway_id : Text
+              , cidr_block : Text
               , egress_only_gateway_id : Text
               , gateway_id : Text
               , instance_id : Text
@@ -35,7 +37,8 @@
     , filter : Optional (List { name : Text, values : List Text })
     }
 , default =
-  { associations =
+  { arn = None Text
+  , associations =
       None
         ( List
             { gateway_id : Text
@@ -52,7 +55,8 @@
   , routes =
       None
         ( List
-            { cidr_block : Text
+            { carrier_gateway_id : Text
+            , cidr_block : Text
             , egress_only_gateway_id : Text
             , gateway_id : Text
             , instance_id : Text

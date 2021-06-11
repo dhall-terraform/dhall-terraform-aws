@@ -7,12 +7,7 @@
     , id : Optional Text
     , ip_address : Optional Text
     , subnet_id : Optional Text
-    , timeouts :
-        Optional
-          { create : Optional Text
-          , delete : Optional Text
-          , update : Optional Text
-          }
+    , timeouts : Optional { create : Optional Text, delete : Optional Text }
     }
 , default =
   { availability_zone = None Text
@@ -22,11 +17,6 @@
   , id = None Text
   , ip_address = None Text
   , subnet_id = None Text
-  , timeouts =
-      None
-        { create : Optional Text
-        , delete : Optional Text
-        , update : Optional Text
-        }
+  , timeouts = None { create : Optional Text, delete : Optional Text }
   }
 }

@@ -3,6 +3,7 @@
     , assign_ipv6_address_on_creation : Optional Bool
     , availability_zone : Optional Text
     , availability_zone_id : Optional Text
+    , available_ip_address_count : Optional Natural
     , cidr_block : Optional Text
     , customer_owned_ipv4_pool : Optional Text
     , default_for_az : Optional Bool
@@ -23,6 +24,7 @@
   , assign_ipv6_address_on_creation = None Bool
   , availability_zone = None Text
   , availability_zone_id = None Text
+  , available_ip_address_count = None Natural
   , cidr_block = None Text
   , customer_owned_ipv4_pool = None Text
   , default_for_az = None Bool

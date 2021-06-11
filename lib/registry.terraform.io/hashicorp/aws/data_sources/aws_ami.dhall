@@ -12,6 +12,7 @@
           )
     , creation_date : Optional Text
     , description : Optional Text
+    , ena_support : Optional Bool
     , executable_users : Optional (List Text)
     , hypervisor : Optional Text
     , id : Optional Text
@@ -26,6 +27,7 @@
     , owner_id : Optional Text
     , owners : List Text
     , platform : Optional Text
+    , platform_details : Optional Text
     , product_codes :
         Optional (List { product_code_id : Text, product_code_type : Text })
     , public : Optional Bool
@@ -37,6 +39,7 @@
     , state : Optional Text
     , state_reason : Optional (List { mapKey : Text, mapValue : Text })
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , usage_operation : Optional Text
     , virtualization_type : Optional Text
     , filter : Optional (List { name : Text, values : List Text })
     }
@@ -54,6 +57,7 @@
         )
   , creation_date = None Text
   , description = None Text
+  , ena_support = None Bool
   , executable_users = None (List Text)
   , hypervisor = None Text
   , id = None Text
@@ -67,6 +71,7 @@
   , name_regex = None Text
   , owner_id = None Text
   , platform = None Text
+  , platform_details = None Text
   , product_codes =
       None (List { product_code_id : Text, product_code_type : Text })
   , public = None Bool
@@ -78,6 +83,7 @@
   , state = None Text
   , state_reason = None (List { mapKey : Text, mapValue : Text })
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , usage_operation = None Text
   , virtualization_type = None Text
   , filter = None (List { name : Text, values : List Text })
   }

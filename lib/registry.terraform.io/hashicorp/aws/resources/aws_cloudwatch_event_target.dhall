@@ -16,6 +16,7 @@
               , job_name : Text
               }
           )
+    , dead_letter_config : Optional (List { arn : Optional Text })
     , ecs_target :
         Optional
           ( List
@@ -42,6 +43,13 @@
               }
           )
     , kinesis_target : Optional (List { partition_key_path : Optional Text })
+    , retry_policy :
+        Optional
+          ( List
+              { maximum_event_age_in_seconds : Optional Natural
+              , maximum_retry_attempts : Optional Natural
+              }
+          )
     , run_command_targets : Optional (List { key : Text, values : List Text })
     , sqs_target : Optional (List { message_group_id : Optional Text })
     }
@@ -61,6 +69,7 @@
             , job_name : Text
             }
         )
+  , dead_letter_config = None (List { arn : Optional Text })
   , ecs_target =
       None
         ( List
@@ -87,6 +96,13 @@
             }
         )
   , kinesis_target = None (List { partition_key_path : Optional Text })
+  , retry_policy =
+      None
+        ( List
+            { maximum_event_age_in_seconds : Optional Natural
+            , maximum_retry_attempts : Optional Natural
+            }
+        )
   , run_command_targets = None (List { key : Text, values : List Text })
   , sqs_target = None (List { message_group_id : Optional Text })
   }

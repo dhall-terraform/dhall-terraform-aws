@@ -110,6 +110,7 @@
 , aws_cloudtrail = ./aws_cloudtrail.dhall
 , aws_cloudwatch_composite_alarm = ./aws_cloudwatch_composite_alarm.dhall
 , aws_cloudwatch_dashboard = ./aws_cloudwatch_dashboard.dhall
+, aws_cloudwatch_event_archive = ./aws_cloudwatch_event_archive.dhall
 , aws_cloudwatch_event_bus = ./aws_cloudwatch_event_bus.dhall
 , aws_cloudwatch_event_permission = ./aws_cloudwatch_event_permission.dhall
 , aws_cloudwatch_event_rule = ./aws_cloudwatch_event_rule.dhall
@@ -308,6 +309,8 @@
 , aws_eks_fargate_profile = ./aws_eks_fargate_profile.dhall
 , aws_eks_node_group = ./aws_eks_node_group.dhall
 , aws_elasticache_cluster = ./aws_elasticache_cluster.dhall
+, aws_elasticache_global_replication_group =
+    ./aws_elasticache_global_replication_group.dhall
 , aws_elasticache_parameter_group = ./aws_elasticache_parameter_group.dhall
 , aws_elasticache_replication_group = ./aws_elasticache_replication_group.dhall
 , aws_elasticache_security_group = ./aws_elasticache_security_group.dhall
@@ -608,6 +611,7 @@
 , aws_s3control_bucket_lifecycle_configuration =
     ./aws_s3control_bucket_lifecycle_configuration.dhall
 , aws_s3control_bucket_policy = ./aws_s3control_bucket_policy.dhall
+, aws_s3_object_copy = ./aws_s3_object_copy.dhall
 , aws_s3outposts_endpoint = ./aws_s3outposts_endpoint.dhall
 , aws_sagemaker_app_image_config = ./aws_sagemaker_app_image_config.dhall
 , aws_sagemaker_code_repository = ./aws_sagemaker_code_repository.dhall
@@ -633,6 +637,7 @@
 , aws_security_group_rule = ./aws_security_group_rule.dhall
 , aws_securityhub_account = ./aws_securityhub_account.dhall
 , aws_securityhub_action_target = ./aws_securityhub_action_target.dhall
+, aws_securityhub_invite_accepter = ./aws_securityhub_invite_accepter.dhall
 , aws_securityhub_member = ./aws_securityhub_member.dhall
 , aws_securityhub_organization_admin_account =
     ./aws_securityhub_organization_admin_account.dhall

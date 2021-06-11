@@ -14,12 +14,7 @@
     , name : Text
     , owner_account_id : Text
     , vlan : Natural
-    , timeouts :
-        Optional
-          { create : Optional Text
-          , delete : Optional Text
-          , update : Optional Text
-          }
+    , timeouts : Optional { create : Optional Text, delete : Optional Text }
     }
 , default =
   { amazon_address = None Text
@@ -31,11 +26,6 @@
   , id = None Text
   , jumbo_frame_capable = None Bool
   , mtu = None Natural
-  , timeouts =
-      None
-        { create : Optional Text
-        , delete : Optional Text
-        , update : Optional Text
-        }
+  , timeouts = None { create : Optional Text, delete : Optional Text }
   }
 }

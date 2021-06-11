@@ -8,6 +8,7 @@
     , dx_gateway_owner_account_id : Optional Text
     , id : Optional Text
     , proposal_id : Optional Text
+    , vpn_gateway_id : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -24,6 +25,7 @@
   , dx_gateway_owner_account_id = None Text
   , id = None Text
   , proposal_id = None Text
+  , vpn_gateway_id = None Text
   , timeouts =
       None
         { create : Optional Text
