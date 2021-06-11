@@ -30,6 +30,8 @@
 , aws_cloudwatch_log_group = ./aws_cloudwatch_log_group.dhall
 , aws_codeartifact_authorization_token =
     ./aws_codeartifact_authorization_token.dhall
+, aws_codeartifact_repository_endpoint =
+    ./aws_codeartifact_repository_endpoint.dhall
 , aws_codecommit_repository = ./aws_codecommit_repository.dhall
 , aws_cognito_user_pools = ./aws_cognito_user_pools.dhall
 , aws_cur_report_definition = ./aws_cur_report_definition.dhall

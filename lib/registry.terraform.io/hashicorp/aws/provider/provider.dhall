@@ -146,6 +146,7 @@
               , route53resolver : Optional Text
               , s3 : Optional Text
               , s3control : Optional Text
+              , s3outposts : Optional Text
               , sagemaker : Optional Text
               , sdb : Optional Text
               , secretsmanager : Optional Text
@@ -331,6 +332,7 @@
             , route53resolver : Optional Text
             , s3 : Optional Text
             , s3control : Optional Text
+            , s3outposts : Optional Text
             , sagemaker : Optional Text
             , sdb : Optional Text
             , secretsmanager : Optional Text

@@ -22,6 +22,16 @@
     , subnet_ids : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , workspace_security_group_id : Optional Text
+    , workspace_creation_properties :
+        Optional
+          ( List
+              { custom_security_group_id : Optional Text
+              , default_ou : Optional Text
+              , enable_internet_access : Optional Bool
+              , enable_maintenance_mode : Optional Bool
+              , user_enabled_as_local_administrator : Optional Bool
+              }
+          )
     }
 , default =
   { alias = None Text
@@ -46,5 +56,15 @@
   , subnet_ids = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
   , workspace_security_group_id = None Text
+  , workspace_creation_properties =
+      None
+        ( List
+            { custom_security_group_id : Optional Text
+            , default_ou : Optional Text
+            , enable_internet_access : Optional Bool
+            , enable_maintenance_mode : Optional Bool
+            , user_enabled_as_local_administrator : Optional Bool
+            }
+        )
   }
 }

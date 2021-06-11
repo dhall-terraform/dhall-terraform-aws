@@ -22,6 +22,16 @@
               , switch_running_mode : Optional Bool
               }
           )
+    , workspace_creation_properties :
+        Optional
+          ( List
+              { custom_security_group_id : Optional Text
+              , default_ou : Optional Text
+              , enable_internet_access : Optional Bool
+              , enable_maintenance_mode : Optional Bool
+              , user_enabled_as_local_administrator : Optional Bool
+              }
+          )
     }
 , default =
   { alias = None Text
@@ -44,6 +54,16 @@
             , rebuild_workspace : Optional Bool
             , restart_workspace : Optional Bool
             , switch_running_mode : Optional Bool
+            }
+        )
+  , workspace_creation_properties =
+      None
+        ( List
+            { custom_security_group_id : Optional Text
+            , default_ou : Optional Text
+            , enable_internet_access : Optional Bool
+            , enable_maintenance_mode : Optional Bool
+            , user_enabled_as_local_administrator : Optional Bool
             }
         )
   }

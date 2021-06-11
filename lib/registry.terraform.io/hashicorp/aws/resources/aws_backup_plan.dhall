@@ -4,6 +4,14 @@
     , name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , version : Optional Text
+    , advanced_backup_setting :
+        Optional
+          ( List
+              { backup_options :
+                  Optional (List { mapKey : Text, mapValue : Text })
+              , resource_type : Optional Text
+              }
+          )
     , rule :
         List
           { completion_window : Optional Natural
@@ -40,5 +48,13 @@
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , version = None Text
+  , advanced_backup_setting =
+      None
+        ( List
+            { backup_options :
+                Optional (List { mapKey : Text, mapValue : Text })
+            , resource_type : Optional Text
+            }
+        )
   }
 }

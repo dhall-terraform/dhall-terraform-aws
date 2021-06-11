@@ -57,8 +57,10 @@
     ./aws_appautoscaling_scheduled_action.dhall
 , aws_appautoscaling_target = ./aws_appautoscaling_target.dhall
 , aws_app_cookie_stickiness_policy = ./aws_app_cookie_stickiness_policy.dhall
+, aws_appmesh_gateway_route = ./aws_appmesh_gateway_route.dhall
 , aws_appmesh_mesh = ./aws_appmesh_mesh.dhall
 , aws_appmesh_route = ./aws_appmesh_route.dhall
+, aws_appmesh_virtual_gateway = ./aws_appmesh_virtual_gateway.dhall
 , aws_appmesh_virtual_node = ./aws_appmesh_virtual_node.dhall
 , aws_appmesh_virtual_router = ./aws_appmesh_virtual_router.dhall
 , aws_appmesh_virtual_service = ./aws_appmesh_virtual_service.dhall
