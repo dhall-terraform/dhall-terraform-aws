@@ -15,6 +15,7 @@
     , scheduling_strategy : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , task_definition : Optional Text
+    , wait_for_steady_state : Optional Bool
     , capacity_provider_strategy :
         Optional
           ( List
@@ -72,6 +73,7 @@
   , scheduling_strategy = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , task_definition = None Text
+  , wait_for_steady_state = None Bool
   , capacity_provider_strategy =
       None
         ( List

@@ -336,6 +336,7 @@
 , aws_glue_job = ./aws_glue_job.dhall
 , aws_glue_ml_transform = ./aws_glue_ml_transform.dhall
 , aws_glue_partition = ./aws_glue_partition.dhall
+, aws_glue_resource_policy = ./aws_glue_resource_policy.dhall
 , aws_glue_security_configuration = ./aws_glue_security_configuration.dhall
 , aws_glue_trigger = ./aws_glue_trigger.dhall
 , aws_glue_user_defined_function = ./aws_glue_user_defined_function.dhall
@@ -556,6 +557,12 @@
 , aws_s3_bucket_ownership_controls = ./aws_s3_bucket_ownership_controls.dhall
 , aws_s3_bucket_policy = ./aws_s3_bucket_policy.dhall
 , aws_s3_bucket_public_access_block = ./aws_s3_bucket_public_access_block.dhall
+, aws_s3control_bucket = ./aws_s3control_bucket.dhall
+, aws_s3control_bucket_lifecycle_configuration =
+    ./aws_s3control_bucket_lifecycle_configuration.dhall
+, aws_s3control_bucket_policy = ./aws_s3control_bucket_policy.dhall
+, aws_s3outposts_endpoint = ./aws_s3outposts_endpoint.dhall
+, aws_sagemaker_code_repository = ./aws_sagemaker_code_repository.dhall
 , aws_sagemaker_endpoint_configuration =
     ./aws_sagemaker_endpoint_configuration.dhall
 , aws_sagemaker_endpoint = ./aws_sagemaker_endpoint.dhall
@@ -635,6 +642,7 @@
 , aws_storagegateway_smb_file_share = ./aws_storagegateway_smb_file_share.dhall
 , aws_storagegateway_stored_iscsi_volume =
     ./aws_storagegateway_stored_iscsi_volume.dhall
+, aws_storagegateway_tape_pool = ./aws_storagegateway_tape_pool.dhall
 , aws_storagegateway_upload_buffer = ./aws_storagegateway_upload_buffer.dhall
 , aws_storagegateway_working_storage =
     ./aws_storagegateway_working_storage.dhall

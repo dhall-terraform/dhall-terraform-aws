@@ -1,6 +1,7 @@
 { Type =
     { arn : Optional Text
     , description : Optional Text
+    , event_bus_name : Optional Text
     , event_pattern : Optional Text
     , id : Optional Text
     , is_enabled : Optional Bool
@@ -13,6 +14,7 @@
 , default =
   { arn = None Text
   , description = None Text
+  , event_bus_name = None Text
   , event_pattern = None Text
   , id = None Text
   , is_enabled = None Bool
