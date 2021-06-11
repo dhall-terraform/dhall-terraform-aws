@@ -158,6 +158,7 @@
               , transfer : Optional Text
               , waf : Optional Text
               , wafregional : Optional Text
+              , wafv2 : Optional Text
               , worklink : Optional Text
               , workspaces : Optional Text
               , xray : Optional Text
@@ -323,6 +324,7 @@
             , transfer : Optional Text
             , waf : Optional Text
             , wafregional : Optional Text
+            , wafv2 : Optional Text
             , worklink : Optional Text
             , workspaces : Optional Text
             , xray : Optional Text

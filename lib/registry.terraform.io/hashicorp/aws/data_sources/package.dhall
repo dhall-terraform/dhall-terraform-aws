@@ -32,6 +32,7 @@
 , aws_db_event_categories = ./aws_db_event_categories.dhall
 , aws_db_instance = ./aws_db_instance.dhall
 , aws_db_snapshot = ./aws_db_snapshot.dhall
+, aws_directory_service_directory = ./aws_directory_service_directory.dhall
 , aws_dx_gateway = ./aws_dx_gateway.dhall
 , aws_dynamodb_table = ./aws_dynamodb_table.dhall
 , aws_ebs_default_kms_key = ./aws_ebs_default_kms_key.dhall

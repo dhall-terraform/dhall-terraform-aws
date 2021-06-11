@@ -1,5 +1,6 @@
 { Type =
-    { associate_public_ip_address : Optional Bool
+    { arn : Optional Text
+    , associate_public_ip_address : Optional Bool
     , ebs_block_device :
         Optional
           ( List
@@ -40,7 +41,8 @@
     , vpc_classic_link_security_groups : Optional (List Text)
     }
 , default =
-  { associate_public_ip_address = None Bool
+  { arn = None Text
+  , associate_public_ip_address = None Bool
   , ebs_block_device =
       None
         ( List

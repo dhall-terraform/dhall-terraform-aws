@@ -1,5 +1,6 @@
 { Type =
     { apply_immediately : Optional Bool
+    , arn : Optional Text
     , availability_zone : Optional Text
     , availability_zones : Optional (List Text)
     , az_mode : Optional Text
@@ -37,6 +38,7 @@
     }
 , default =
   { apply_immediately = None Bool
+  , arn = None Text
   , availability_zone = None Text
   , availability_zones = None (List Text)
   , az_mode = None Text

@@ -608,6 +608,7 @@
 , aws_worklink_fleet = ./aws_worklink_fleet.dhall
 , aws_worklink_website_certificate_authority_association =
     ./aws_worklink_website_certificate_authority_association.dhall
+, aws_workspaces_directory = ./aws_workspaces_directory.dhall
 , aws_workspaces_ip_group = ./aws_workspaces_ip_group.dhall
 , aws_xray_sampling_rule = ./aws_xray_sampling_rule.dhall
 }

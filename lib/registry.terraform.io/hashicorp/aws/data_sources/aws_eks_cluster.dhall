@@ -18,6 +18,7 @@
               { cluster_security_group_id : Text
               , endpoint_private_access : Bool
               , endpoint_public_access : Bool
+              , public_access_cidrs : List Text
               , security_group_ids : List Text
               , subnet_ids : List Text
               , vpc_id : Text
@@ -43,6 +44,7 @@
             { cluster_security_group_id : Text
             , endpoint_private_access : Bool
             , endpoint_public_access : Bool
+            , public_access_cidrs : List Text
             , security_group_ids : List Text
             , subnet_ids : List Text
             , vpc_id : Text

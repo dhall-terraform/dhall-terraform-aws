@@ -1,5 +1,6 @@
 { Type =
-    { associate_public_ip_address : Optional Bool
+    { arn : Optional Text
+    , associate_public_ip_address : Optional Bool
     , ebs_optimized : Optional Bool
     , enable_monitoring : Optional Bool
     , iam_instance_profile : Optional Text
@@ -43,7 +44,8 @@
           )
     }
 , default =
-  { associate_public_ip_address = None Bool
+  { arn = None Text
+  , associate_public_ip_address = None Bool
   , ebs_optimized = None Bool
   , enable_monitoring = None Bool
   , iam_instance_profile = None Text

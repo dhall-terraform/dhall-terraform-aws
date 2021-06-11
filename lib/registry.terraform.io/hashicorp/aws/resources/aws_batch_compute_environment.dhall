@@ -1,6 +1,7 @@
 { Type =
     { arn : Optional Text
-    , compute_environment_name : Text
+    , compute_environment_name : Optional Text
+    , compute_environment_name_prefix : Optional Text
     , ecc_cluster_arn : Optional Text
     , ecs_cluster_arn : Optional Text
     , id : Optional Text
@@ -12,7 +13,8 @@
     , compute_resources :
         Optional
           ( List
-              { bid_percentage : Optional Natural
+              { allocation_strategy : Optional Text
+              , bid_percentage : Optional Natural
               , desired_vcpus : Optional Natural
               , ec2_key_pair : Optional Text
               , image_id : Optional Text
@@ -38,6 +40,8 @@
     }
 , default =
   { arn = None Text
+  , compute_environment_name = None Text
+  , compute_environment_name_prefix = None Text
   , ecc_cluster_arn = None Text
   , ecs_cluster_arn = None Text
   , id = None Text
@@ -47,7 +51,8 @@
   , compute_resources =
       None
         ( List
-            { bid_percentage : Optional Natural
+            { allocation_strategy : Optional Text
+            , bid_percentage : Optional Natural
             , desired_vcpus : Optional Natural
             , ec2_key_pair : Optional Text
             , image_id : Optional Text
