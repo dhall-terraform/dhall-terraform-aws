@@ -1,5 +1,6 @@
 { Type =
     { after : Optional Text
+    , arn : Optional Text
     , enabled : Optional Bool
     , id : Optional Text
     , name : Text
@@ -55,6 +56,7 @@
     }
 , default =
   { after = None Text
+  , arn = None Text
   , enabled = None Bool
   , id = None Text
   , recipients = None (List Text)

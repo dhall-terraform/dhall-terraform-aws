@@ -25,6 +25,7 @@
 , aws_canonical_user_id = ./aws_canonical_user_id.dhall
 , aws_cloudformation_export = ./aws_cloudformation_export.dhall
 , aws_cloudformation_stack = ./aws_cloudformation_stack.dhall
+, aws_cloudfront_cache_policy = ./aws_cloudfront_cache_policy.dhall
 , aws_cloudfront_distribution = ./aws_cloudfront_distribution.dhall
 , aws_cloudfront_origin_request_policy =
     ./aws_cloudfront_origin_request_policy.dhall

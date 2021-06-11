@@ -10,6 +10,7 @@
     , instance_match_criteria : Optional Text
     , instance_platform : Text
     , instance_type : Text
+    , owner_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , tenancy : Optional Text
     }
@@ -21,6 +22,7 @@
   , ephemeral_storage = None Bool
   , id = None Text
   , instance_match_criteria = None Text
+  , owner_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , tenancy = None Text
   }

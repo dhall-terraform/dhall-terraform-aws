@@ -39,6 +39,7 @@
     , default_cache_behavior :
         List
           { allowed_methods : List Text
+          , cache_policy_id : Optional Text
           , cached_methods : List Text
           , compress : Optional Bool
           , default_ttl : Optional Natural
@@ -46,21 +47,24 @@
           , max_ttl : Optional Natural
           , min_ttl : Optional Natural
           , origin_request_policy_id : Optional Text
+          , realtime_log_config_arn : Optional Text
           , smooth_streaming : Optional Bool
           , target_origin_id : Text
           , trusted_signers : Optional (List Text)
           , viewer_protocol_policy : Text
           , forwarded_values :
-              List
-                { headers : Optional (List Text)
-                , query_string : Bool
-                , query_string_cache_keys : Optional (List Text)
-                , cookies :
-                    List
-                      { forward : Text
-                      , whitelisted_names : Optional (List Text)
-                      }
-                }
+              Optional
+                ( List
+                    { headers : Optional (List Text)
+                    , query_string : Bool
+                    , query_string_cache_keys : Optional (List Text)
+                    , cookies :
+                        List
+                          { forward : Text
+                          , whitelisted_names : Optional (List Text)
+                          }
+                    }
+                )
           , lambda_function_association :
               Optional
                 ( List
@@ -82,6 +86,7 @@
         Optional
           ( List
               { allowed_methods : List Text
+              , cache_policy_id : Optional Text
               , cached_methods : List Text
               , compress : Optional Bool
               , default_ttl : Optional Natural
@@ -90,21 +95,24 @@
               , min_ttl : Optional Natural
               , origin_request_policy_id : Optional Text
               , path_pattern : Text
+              , realtime_log_config_arn : Optional Text
               , smooth_streaming : Optional Bool
               , target_origin_id : Text
               , trusted_signers : Optional (List Text)
               , viewer_protocol_policy : Text
               , forwarded_values :
-                  List
-                    { headers : Optional (List Text)
-                    , query_string : Bool
-                    , query_string_cache_keys : Optional (List Text)
-                    , cookies :
-                        List
-                          { forward : Text
-                          , whitelisted_names : Optional (List Text)
-                          }
-                    }
+                  Optional
+                    ( List
+                        { headers : Optional (List Text)
+                        , query_string : Bool
+                        , query_string_cache_keys : Optional (List Text)
+                        , cookies :
+                            List
+                              { forward : Text
+                              , whitelisted_names : Optional (List Text)
+                              }
+                        }
+                    )
               , lambda_function_association :
                   Optional
                     ( List
@@ -205,6 +213,7 @@
       None
         ( List
             { allowed_methods : List Text
+            , cache_policy_id : Optional Text
             , cached_methods : List Text
             , compress : Optional Bool
             , default_ttl : Optional Natural
@@ -213,21 +222,24 @@
             , min_ttl : Optional Natural
             , origin_request_policy_id : Optional Text
             , path_pattern : Text
+            , realtime_log_config_arn : Optional Text
             , smooth_streaming : Optional Bool
             , target_origin_id : Text
             , trusted_signers : Optional (List Text)
             , viewer_protocol_policy : Text
             , forwarded_values :
-                List
-                  { headers : Optional (List Text)
-                  , query_string : Bool
-                  , query_string_cache_keys : Optional (List Text)
-                  , cookies :
-                      List
-                        { forward : Text
-                        , whitelisted_names : Optional (List Text)
-                        }
-                  }
+                Optional
+                  ( List
+                      { headers : Optional (List Text)
+                      , query_string : Bool
+                      , query_string_cache_keys : Optional (List Text)
+                      , cookies :
+                          List
+                            { forward : Text
+                            , whitelisted_names : Optional (List Text)
+                            }
+                      }
+                  )
             , lambda_function_association :
                 Optional
                   ( List

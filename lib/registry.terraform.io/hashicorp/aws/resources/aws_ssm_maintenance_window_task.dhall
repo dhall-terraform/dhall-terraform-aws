@@ -5,11 +5,11 @@
     , max_errors : Text
     , name : Optional Text
     , priority : Optional Natural
-    , service_role_arn : Text
+    , service_role_arn : Optional Text
     , task_arn : Text
     , task_type : Text
     , window_id : Text
-    , targets : List { key : Text, values : List Text }
+    , targets : Optional (List { key : Text, values : List Text })
     , task_invocation_parameters :
         Optional
           ( List
@@ -35,10 +35,18 @@
                         { comment : Optional Text
                         , document_hash : Optional Text
                         , document_hash_type : Optional Text
+                        , document_version : Optional Text
                         , output_s3_bucket : Optional Text
                         , output_s3_key_prefix : Optional Text
                         , service_role_arn : Optional Text
                         , timeout_seconds : Optional Natural
+                        , cloudwatch_config :
+                            Optional
+                              ( List
+                                  { cloudwatch_log_group_name : Optional Text
+                                  , cloudwatch_output_enabled : Optional Bool
+                                  }
+                              )
                         , notification_config :
                             Optional
                               ( List
@@ -62,6 +70,8 @@
   , id = None Text
   , name = None Text
   , priority = None Natural
+  , service_role_arn = None Text
+  , targets = None (List { key : Text, values : List Text })
   , task_invocation_parameters =
       None
         ( List
@@ -87,10 +97,18 @@
                       { comment : Optional Text
                       , document_hash : Optional Text
                       , document_hash_type : Optional Text
+                      , document_version : Optional Text
                       , output_s3_bucket : Optional Text
                       , output_s3_key_prefix : Optional Text
                       , service_role_arn : Optional Text
                       , timeout_seconds : Optional Natural
+                      , cloudwatch_config :
+                          Optional
+                            ( List
+                                { cloudwatch_log_group_name : Optional Text
+                                , cloudwatch_output_enabled : Optional Bool
+                                }
+                            )
                       , notification_config :
                           Optional
                             ( List

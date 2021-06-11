@@ -1,6 +1,7 @@
 { Type =
     { arn : Optional Text
     , created : Optional Text
+    , delete_reports : Optional Bool
     , id : Optional Text
     , name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -23,6 +24,7 @@
 , default =
   { arn = None Text
   , created = None Text
+  , delete_reports = None Bool
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   }

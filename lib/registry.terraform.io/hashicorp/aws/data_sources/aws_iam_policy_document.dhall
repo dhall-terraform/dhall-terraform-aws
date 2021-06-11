@@ -2,8 +2,10 @@
     { id : Optional Text
     , json : Optional Text
     , override_json : Optional Text
+    , override_policy_documents : Optional (List Text)
     , policy_id : Optional Text
     , source_json : Optional Text
+    , source_policy_documents : Optional (List Text)
     , version : Optional Text
     , statement :
         Optional
@@ -28,8 +30,10 @@
   { id = None Text
   , json = None Text
   , override_json = None Text
+  , override_policy_documents = None (List Text)
   , policy_id = None Text
   , source_json = None Text
+  , source_policy_documents = None (List Text)
   , version = None Text
   , statement =
       None

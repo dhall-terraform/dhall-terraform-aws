@@ -7,7 +7,8 @@
     , policy_update_token : Optional Text
     , remediation_enabled : Optional Bool
     , resource_tags : Optional (List { mapKey : Text, mapValue : Text })
-    , resource_type_list : List Text
+    , resource_type : Optional Text
+    , resource_type_list : Optional (List Text)
     , exclude_map :
         Optional
           ( List
@@ -28,6 +29,8 @@
   , policy_update_token = None Text
   , remediation_enabled = None Bool
   , resource_tags = None (List { mapKey : Text, mapValue : Text })
+  , resource_type = None Text
+  , resource_type_list = None (List Text)
   , exclude_map =
       None
         ( List

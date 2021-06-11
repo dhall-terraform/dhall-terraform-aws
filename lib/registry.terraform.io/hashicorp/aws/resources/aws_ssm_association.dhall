@@ -1,5 +1,6 @@
 { Type =
-    { association_id : Optional Text
+    { apply_only_at_cron_interval : Optional Bool
+    , association_id : Optional Text
     , association_name : Optional Text
     , automation_target_parameter_name : Optional Text
     , compliance_severity : Optional Text
@@ -16,7 +17,8 @@
     , targets : Optional (List { key : Text, values : List Text })
     }
 , default =
-  { association_id = None Text
+  { apply_only_at_cron_interval = None Bool
+  , association_id = None Text
   , association_name = None Text
   , automation_target_parameter_name = None Text
   , compliance_severity = None Text

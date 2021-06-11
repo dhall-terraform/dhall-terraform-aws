@@ -16,6 +16,7 @@
     , starting_position_timestamp : Optional Text
     , state : Optional Text
     , state_transition_reason : Optional Text
+    , topics : Optional (List Text)
     , uuid : Optional Text
     , destination_config :
         Optional
@@ -37,6 +38,7 @@
   , starting_position_timestamp = None Text
   , state = None Text
   , state_transition_reason = None Text
+  , topics = None (List Text)
   , uuid = None Text
   , destination_config =
       None (List { on_failure : Optional (List { destination_arn : Text }) })

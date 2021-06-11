@@ -96,12 +96,15 @@
 , aws_cloudformation_stack_set = ./aws_cloudformation_stack_set.dhall
 , aws_cloudformation_stack_set_instance =
     ./aws_cloudformation_stack_set_instance.dhall
+, aws_cloudfront_cache_policy = ./aws_cloudfront_cache_policy.dhall
 , aws_cloudfront_distribution = ./aws_cloudfront_distribution.dhall
 , aws_cloudfront_origin_access_identity =
     ./aws_cloudfront_origin_access_identity.dhall
 , aws_cloudfront_origin_request_policy =
     ./aws_cloudfront_origin_request_policy.dhall
 , aws_cloudfront_public_key = ./aws_cloudfront_public_key.dhall
+, aws_cloudfront_realtime_log_config =
+    ./aws_cloudfront_realtime_log_config.dhall
 , aws_cloudhsm_v2_cluster = ./aws_cloudhsm_v2_cluster.dhall
 , aws_cloudhsm_v2_hsm = ./aws_cloudhsm_v2_hsm.dhall
 , aws_cloudtrail = ./aws_cloudtrail.dhall
@@ -160,6 +163,7 @@
 , aws_config_configuration_recorder = ./aws_config_configuration_recorder.dhall
 , aws_config_configuration_recorder_status =
     ./aws_config_configuration_recorder_status.dhall
+, aws_config_conformance_pack = ./aws_config_conformance_pack.dhall
 , aws_config_delivery_channel = ./aws_config_delivery_channel.dhall
 , aws_config_organization_custom_rule =
     ./aws_config_organization_custom_rule.dhall
@@ -615,6 +619,7 @@
 , aws_sagemaker_image = ./aws_sagemaker_image.dhall
 , aws_sagemaker_image_version = ./aws_sagemaker_image_version.dhall
 , aws_sagemaker_model = ./aws_sagemaker_model.dhall
+, aws_sagemaker_model_package_group = ./aws_sagemaker_model_package_group.dhall
 , aws_sagemaker_notebook_instance = ./aws_sagemaker_notebook_instance.dhall
 , aws_sagemaker_notebook_instance_lifecycle_configuration =
     ./aws_sagemaker_notebook_instance_lifecycle_configuration.dhall
@@ -629,6 +634,8 @@
 , aws_securityhub_account = ./aws_securityhub_account.dhall
 , aws_securityhub_action_target = ./aws_securityhub_action_target.dhall
 , aws_securityhub_member = ./aws_securityhub_member.dhall
+, aws_securityhub_organization_admin_account =
+    ./aws_securityhub_organization_admin_account.dhall
 , aws_securityhub_product_subscription =
     ./aws_securityhub_product_subscription.dhall
 , aws_securityhub_standards_subscription =
@@ -710,6 +717,7 @@
     ./aws_storagegateway_working_storage.dhall
 , aws_subnet = ./aws_subnet.dhall
 , aws_swf_domain = ./aws_swf_domain.dhall
+, aws_synthetics_canary = ./aws_synthetics_canary.dhall
 , aws_transfer_server = ./aws_transfer_server.dhall
 , aws_transfer_ssh_key = ./aws_transfer_ssh_key.dhall
 , aws_transfer_user = ./aws_transfer_user.dhall

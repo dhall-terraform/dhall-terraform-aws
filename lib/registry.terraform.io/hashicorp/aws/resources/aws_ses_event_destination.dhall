@@ -1,5 +1,6 @@
 { Type =
-    { configuration_set_name : Text
+    { arn : Optional Text
+    , configuration_set_name : Text
     , enabled : Optional Bool
     , id : Optional Text
     , matching_types : List Text
@@ -17,7 +18,8 @@
     , sns_destination : Optional (List { topic_arn : Text })
     }
 , default =
-  { enabled = None Bool
+  { arn = None Text
+  , enabled = None Bool
   , id = None Text
   , cloudwatch_destination =
       None

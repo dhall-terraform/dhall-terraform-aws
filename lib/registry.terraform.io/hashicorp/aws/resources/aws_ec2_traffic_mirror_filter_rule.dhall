@@ -1,5 +1,6 @@
 { Type =
-    { description : Optional Text
+    { arn : Optional Text
+    , description : Optional Text
     , destination_cidr_block : Text
     , id : Optional Text
     , protocol : Optional Natural
@@ -16,7 +17,8 @@
           (List { from_port : Optional Natural, to_port : Optional Natural })
     }
 , default =
-  { description = None Text
+  { arn = None Text
+  , description = None Text
   , id = None Text
   , protocol = None Natural
   , destination_port_range =

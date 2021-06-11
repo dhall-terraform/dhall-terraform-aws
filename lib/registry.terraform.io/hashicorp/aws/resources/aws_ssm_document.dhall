@@ -28,6 +28,7 @@
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , target_type : Optional Text
+    , version_name : Optional Text
     , attachments_source :
         Optional (List { key : Text, name : Optional Text, values : List Text })
     }
@@ -58,6 +59,7 @@
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , target_type = None Text
+  , version_name = None Text
   , attachments_source =
       None (List { key : Text, name : Optional Text, values : List Text })
   }

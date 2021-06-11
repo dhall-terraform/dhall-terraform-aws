@@ -8,6 +8,7 @@
     , id : Optional Text
     , protocol : Text
     , raw_message_delivery : Optional Bool
+    , redrive_policy : Optional Text
     , topic_arn : Text
     }
 , default =
@@ -18,5 +19,6 @@
   , filter_policy = None Text
   , id = None Text
   , raw_message_delivery = None Bool
+  , redrive_policy = None Text
   }
 }

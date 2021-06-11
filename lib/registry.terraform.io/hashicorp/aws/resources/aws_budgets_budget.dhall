@@ -1,5 +1,6 @@
 { Type =
     { account_id : Optional Text
+    , arn : Optional Text
     , budget_type : Text
     , cost_filters : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
@@ -40,6 +41,7 @@
     }
 , default =
   { account_id = None Text
+  , arn = None Text
   , cost_filters = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , name = None Text

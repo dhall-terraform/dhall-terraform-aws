@@ -1,6 +1,7 @@
 { Type =
     { arn : Optional Text
     , bgp_asn : Optional Natural
+    , device_name : Optional Text
     , id : Optional Text
     , ip_address : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -10,6 +11,7 @@
 , default =
   { arn = None Text
   , bgp_asn = None Natural
+  , device_name = None Text
   , id = None Text
   , ip_address = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
