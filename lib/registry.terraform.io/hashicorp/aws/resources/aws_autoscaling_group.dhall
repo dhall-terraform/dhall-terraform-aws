@@ -10,6 +10,7 @@
     , id : Optional Text
     , launch_configuration : Optional Text
     , load_balancers : Optional (List Text)
+    , max_instance_lifetime : Optional Natural
     , max_size : Natural
     , metrics_granularity : Optional Text
     , min_elb_capacity : Optional Natural
@@ -70,7 +71,12 @@
                           , version : Optional Text
                           }
                     , override :
-                        Optional (List { instance_type : Optional Text })
+                        Optional
+                          ( List
+                              { instance_type : Optional Text
+                              , weighted_capacity : Optional Text
+                              }
+                          )
                     }
               }
           )
@@ -90,6 +96,7 @@
   , id = None Text
   , launch_configuration = None Text
   , load_balancers = None (List Text)
+  , max_instance_lifetime = None Natural
   , metrics_granularity = None Text
   , min_elb_capacity = None Natural
   , name = None Text
@@ -147,7 +154,13 @@
                         , launch_template_name : Optional Text
                         , version : Optional Text
                         }
-                  , override : Optional (List { instance_type : Optional Text })
+                  , override :
+                      Optional
+                        ( List
+                            { instance_type : Optional Text
+                            , weighted_capacity : Optional Text
+                            }
+                        )
                   }
             }
         )

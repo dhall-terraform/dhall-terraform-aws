@@ -3,6 +3,7 @@
     , arn : Optional Text
     , auto_minor_version_upgrade : Optional Bool
     , availability_zone : Optional Text
+    , ca_cert_identifier : Optional Text
     , cluster_identifier : Text
     , db_subnet_group_name : Optional Text
     , dbi_resource_id : Optional Text
@@ -34,6 +35,7 @@
   , arn = None Text
   , auto_minor_version_upgrade = None Bool
   , availability_zone = None Text
+  , ca_cert_identifier = None Text
   , db_subnet_group_name = None Text
   , dbi_resource_id = None Text
   , endpoint = None Text

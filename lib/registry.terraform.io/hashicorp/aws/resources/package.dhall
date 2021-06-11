@@ -231,6 +231,7 @@
 , aws_eip_association = ./aws_eip_association.dhall
 , aws_eip = ./aws_eip.dhall
 , aws_eks_cluster = ./aws_eks_cluster.dhall
+, aws_eks_fargate_profile = ./aws_eks_fargate_profile.dhall
 , aws_eks_node_group = ./aws_eks_node_group.dhall
 , aws_elasticache_cluster = ./aws_elasticache_cluster.dhall
 , aws_elasticache_parameter_group = ./aws_elasticache_parameter_group.dhall
@@ -332,6 +333,8 @@
 , aws_lambda_function = ./aws_lambda_function.dhall
 , aws_lambda_layer_version = ./aws_lambda_layer_version.dhall
 , aws_lambda_permission = ./aws_lambda_permission.dhall
+, aws_lambda_provisioned_concurrency_config =
+    ./aws_lambda_provisioned_concurrency_config.dhall
 , aws_launch_configuration = ./aws_launch_configuration.dhall
 , aws_launch_template = ./aws_launch_template.dhall
 , aws_lb_cookie_stickiness_policy = ./aws_lb_cookie_stickiness_policy.dhall

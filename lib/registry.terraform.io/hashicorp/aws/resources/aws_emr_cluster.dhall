@@ -1,6 +1,7 @@
 { Type =
     { additional_info : Optional Text
     , applications : Optional (List Text)
+    , arn : Optional Text
     , autoscaling_role : Optional Text
     , cluster_state : Optional Text
     , configurations : Optional Text
@@ -126,6 +127,7 @@
 , default =
   { additional_info = None Text
   , applications = None (List Text)
+  , arn = None Text
   , autoscaling_role = None Text
   , cluster_state = None Text
   , configurations = None Text

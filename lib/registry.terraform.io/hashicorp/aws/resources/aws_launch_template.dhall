@@ -73,7 +73,7 @@
     , network_interfaces :
         Optional
           ( List
-              { associate_public_ip_address : Optional Bool
+              { associate_public_ip_address : Optional Text
               , delete_on_termination : Optional Bool
               , description : Optional Text
               , device_index : Optional Natural
@@ -180,7 +180,7 @@
   , network_interfaces =
       None
         ( List
-            { associate_public_ip_address : Optional Bool
+            { associate_public_ip_address : Optional Text
             , delete_on_termination : Optional Bool
             , description : Optional Text
             , device_index : Optional Natural

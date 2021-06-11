@@ -2,12 +2,14 @@
     { associations :
         Optional
           ( List
-              { main : Bool
+              { gateway_id : Text
+              , main : Bool
               , route_table_association_id : Text
               , route_table_id : Text
               , subnet_id : Text
               }
           )
+    , gateway_id : Optional Text
     , id : Optional Text
     , owner_id : Optional Text
     , route_table_id : Optional Text
@@ -34,12 +36,14 @@
   { associations =
       None
         ( List
-            { main : Bool
+            { gateway_id : Text
+            , main : Bool
             , route_table_association_id : Text
             , route_table_id : Text
             , subnet_id : Text
             }
         )
+  , gateway_id = None Text
   , id = None Text
   , owner_id = None Text
   , route_table_id = None Text
