@@ -35,7 +35,6 @@
     , revoke_rules_on_delete : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_id : Optional Text
-    , timeouts : Optional { create : Optional Text, delete : Optional Text }
     }
 , default =
   { arn = None Text
@@ -74,6 +73,5 @@
   , revoke_rules_on_delete = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
   , vpc_id = None Text
-  , timeouts = None { create : Optional Text, delete : Optional Text }
   }
 }

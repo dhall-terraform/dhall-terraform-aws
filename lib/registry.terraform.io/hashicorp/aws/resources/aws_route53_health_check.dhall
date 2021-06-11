@@ -3,6 +3,7 @@
     , child_healthchecks : Optional (List Text)
     , cloudwatch_alarm_name : Optional Text
     , cloudwatch_alarm_region : Optional Text
+    , disabled : Optional Bool
     , enable_sni : Optional Bool
     , failure_threshold : Optional Natural
     , fqdn : Optional Text
@@ -25,6 +26,7 @@
   , child_healthchecks = None (List Text)
   , cloudwatch_alarm_name = None Text
   , cloudwatch_alarm_region = None Text
+  , disabled = None Bool
   , enable_sni = None Bool
   , failure_threshold = None Natural
   , fqdn = None Text

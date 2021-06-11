@@ -61,7 +61,7 @@
         Optional
           ( List
               { associate_public_ip_address : Text
-              , delete_on_termination : Bool
+              , delete_on_termination : Text
               , description : Text
               , device_index : Natural
               , ipv4_address_count : Natural
@@ -163,7 +163,7 @@
       None
         ( List
             { associate_public_ip_address : Text
-            , delete_on_termination : Bool
+            , delete_on_termination : Text
             , description : Text
             , device_index : Natural
             , ipv4_address_count : Natural

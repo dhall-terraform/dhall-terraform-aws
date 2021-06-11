@@ -15,7 +15,13 @@
     , name : Optional Text
     , security_groups : Optional (List Text)
     , subnet_mapping :
-        Optional (List { allocation_id : Text, subnet_id : Text })
+        Optional
+          ( List
+              { allocation_id : Text
+              , private_ipv4_address : Text
+              , subnet_id : Text
+              }
+          )
     , subnets : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_id : Optional Text
@@ -36,7 +42,14 @@
   , load_balancer_type = None Text
   , name = None Text
   , security_groups = None (List Text)
-  , subnet_mapping = None (List { allocation_id : Text, subnet_id : Text })
+  , subnet_mapping =
+      None
+        ( List
+            { allocation_id : Text
+            , private_ipv4_address : Text
+            , subnet_id : Text
+            }
+        )
   , subnets = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
   , vpc_id = None Text

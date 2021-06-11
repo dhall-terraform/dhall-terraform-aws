@@ -8,6 +8,7 @@
               , device_name : Text
               , encrypted : Bool
               , iops : Natural
+              , no_device : Bool
               , snapshot_id : Text
               , volume_size : Natural
               , volume_type : Text
@@ -50,6 +51,7 @@
             , device_name : Text
             , encrypted : Bool
             , iops : Natural
+            , no_device : Bool
             , snapshot_id : Text
             , volume_size : Natural
             , volume_type : Text
