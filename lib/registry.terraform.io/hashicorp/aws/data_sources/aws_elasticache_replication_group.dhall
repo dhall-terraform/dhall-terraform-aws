@@ -5,6 +5,7 @@
     , configuration_endpoint_address : Optional Text
     , id : Optional Text
     , member_clusters : Optional (List Text)
+    , multi_az_enabled : Optional Bool
     , node_type : Optional Text
     , number_cache_clusters : Optional Natural
     , port : Optional Natural
@@ -22,6 +23,7 @@
   , configuration_endpoint_address = None Text
   , id = None Text
   , member_clusters = None (List Text)
+  , multi_az_enabled = None Bool
   , node_type = None Text
   , number_cache_clusters = None Natural
   , port = None Natural

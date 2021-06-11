@@ -121,6 +121,7 @@
 , aws_imagebuilder_component = ./aws_imagebuilder_component.dhall
 , aws_imagebuilder_distribution_configuration =
     ./aws_imagebuilder_distribution_configuration.dhall
+, aws_imagebuilder_image = ./aws_imagebuilder_image.dhall
 , aws_imagebuilder_image_pipeline = ./aws_imagebuilder_image_pipeline.dhall
 , aws_imagebuilder_image_recipe = ./aws_imagebuilder_image_recipe.dhall
 , aws_imagebuilder_infrastructure_configuration =

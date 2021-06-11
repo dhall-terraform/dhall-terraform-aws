@@ -89,6 +89,7 @@
               , elastictranscoder : Optional Text
               , elb : Optional Text
               , emr : Optional Text
+              , emrcontainers : Optional Text
               , es : Optional Text
               , firehose : Optional Text
               , fms : Optional Text
@@ -281,6 +282,7 @@
             , elastictranscoder : Optional Text
             , elb : Optional Text
             , emr : Optional Text
+            , emrcontainers : Optional Text
             , es : Optional Text
             , firehose : Optional Text
             , fms : Optional Text

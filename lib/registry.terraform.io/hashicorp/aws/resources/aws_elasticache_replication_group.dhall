@@ -15,6 +15,7 @@
     , kms_key_id : Optional Text
     , maintenance_window : Optional Text
     , member_clusters : Optional (List Text)
+    , multi_az_enabled : Optional Bool
     , node_type : Optional Text
     , notification_topic_arn : Optional Text
     , number_cache_clusters : Optional Natural
@@ -62,6 +63,7 @@
   , kms_key_id = None Text
   , maintenance_window = None Text
   , member_clusters = None (List Text)
+  , multi_az_enabled = None Bool
   , node_type = None Text
   , notification_topic_arn = None Text
   , number_cache_clusters = None Natural

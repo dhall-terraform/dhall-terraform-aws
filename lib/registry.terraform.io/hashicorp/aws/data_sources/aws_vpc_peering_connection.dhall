@@ -1,9 +1,11 @@
 { Type =
     { accepter : Optional (List { mapKey : Text, mapValue : Bool })
     , cidr_block : Optional Text
+    , cidr_block_set : Optional (List { cidr_block : Text })
     , id : Optional Text
     , owner_id : Optional Text
     , peer_cidr_block : Optional Text
+    , peer_cidr_block_set : Optional (List { cidr_block : Text })
     , peer_owner_id : Optional Text
     , peer_region : Optional Text
     , peer_vpc_id : Optional Text
@@ -17,9 +19,11 @@
 , default =
   { accepter = None (List { mapKey : Text, mapValue : Bool })
   , cidr_block = None Text
+  , cidr_block_set = None (List { cidr_block : Text })
   , id = None Text
   , owner_id = None Text
   , peer_cidr_block = None Text
+  , peer_cidr_block_set = None (List { cidr_block : Text })
   , peer_owner_id = None Text
   , peer_region = None Text
   , peer_vpc_id = None Text

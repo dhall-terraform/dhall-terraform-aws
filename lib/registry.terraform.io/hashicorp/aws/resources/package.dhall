@@ -392,6 +392,7 @@
 , aws_imagebuilder_component = ./aws_imagebuilder_component.dhall
 , aws_imagebuilder_distribution_configuration =
     ./aws_imagebuilder_distribution_configuration.dhall
+, aws_imagebuilder_image = ./aws_imagebuilder_image.dhall
 , aws_imagebuilder_image_pipeline = ./aws_imagebuilder_image_pipeline.dhall
 , aws_imagebuilder_image_recipe = ./aws_imagebuilder_image_recipe.dhall
 , aws_imagebuilder_infrastructure_configuration =
@@ -536,6 +537,7 @@
 , aws_pinpoint_gcm_channel = ./aws_pinpoint_gcm_channel.dhall
 , aws_pinpoint_sms_channel = ./aws_pinpoint_sms_channel.dhall
 , aws_placement_group = ./aws_placement_group.dhall
+, aws_prometheus_workspace = ./aws_prometheus_workspace.dhall
 , aws_proxy_protocol_policy = ./aws_proxy_protocol_policy.dhall
 , aws_qldb_ledger = ./aws_qldb_ledger.dhall
 , aws_quicksight_group = ./aws_quicksight_group.dhall
@@ -598,6 +600,7 @@
     ./aws_s3control_bucket_lifecycle_configuration.dhall
 , aws_s3control_bucket_policy = ./aws_s3control_bucket_policy.dhall
 , aws_s3outposts_endpoint = ./aws_s3outposts_endpoint.dhall
+, aws_sagemaker_app_image_config = ./aws_sagemaker_app_image_config.dhall
 , aws_sagemaker_code_repository = ./aws_sagemaker_code_repository.dhall
 , aws_sagemaker_domain = ./aws_sagemaker_domain.dhall
 , aws_sagemaker_endpoint_configuration =

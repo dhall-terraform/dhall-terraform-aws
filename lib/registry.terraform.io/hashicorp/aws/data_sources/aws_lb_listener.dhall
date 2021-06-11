@@ -37,6 +37,11 @@
                     , message_body : Text
                     , status_code : Text
                     }
+              , forward :
+                  List
+                    { stickiness : List { duration : Natural, enabled : Bool }
+                    , target_group : List { arn : Text, weight : Natural }
+                    }
               , order : Natural
               , redirect :
                   List
@@ -95,6 +100,11 @@
                   { content_type : Text
                   , message_body : Text
                   , status_code : Text
+                  }
+            , forward :
+                List
+                  { stickiness : List { duration : Natural, enabled : Bool }
+                  , target_group : List { arn : Text, weight : Natural }
                   }
             , order : Natural
             , redirect :
