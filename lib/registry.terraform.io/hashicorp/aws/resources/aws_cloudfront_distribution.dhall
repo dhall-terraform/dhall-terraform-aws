@@ -1,12 +1,6 @@
 { Type =
     { active_trusted_signers :
-        Optional
-          ( List
-              { enabled : Bool
-              , items :
-                  List { aws_account_number : Text, key_pair_ids : List Text }
-              }
-          )
+        Optional (List { mapKey : Text, mapValue : Text })
     , aliases : Optional (List Text)
     , arn : Optional Text
     , caller_reference : Optional Text
@@ -191,14 +185,7 @@
           }
     }
 , default =
-  { active_trusted_signers =
-      None
-        ( List
-            { enabled : Bool
-            , items :
-                List { aws_account_number : Text, key_pair_ids : List Text }
-            }
-        )
+  { active_trusted_signers = None (List { mapKey : Text, mapValue : Text })
   , aliases = None (List Text)
   , arn = None Text
   , caller_reference = None Text
