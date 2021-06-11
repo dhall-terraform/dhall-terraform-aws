@@ -180,6 +180,7 @@
 , aws_waf_rule = ./aws_waf_rule.dhall
 , aws_wafv2_ip_set = ./aws_wafv2_ip_set.dhall
 , aws_wafv2_regex_pattern_set = ./aws_wafv2_regex_pattern_set.dhall
+, aws_wafv2_rule_group = ./aws_wafv2_rule_group.dhall
 , aws_waf_web_acl = ./aws_waf_web_acl.dhall
 , aws_workspaces_bundle = ./aws_workspaces_bundle.dhall
 }
