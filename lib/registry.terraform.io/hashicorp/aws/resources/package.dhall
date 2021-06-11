@@ -222,6 +222,7 @@
 , aws_ecr_lifecycle_policy = ./aws_ecr_lifecycle_policy.dhall
 , aws_ecr_repository = ./aws_ecr_repository.dhall
 , aws_ecr_repository_policy = ./aws_ecr_repository_policy.dhall
+, aws_ecs_capacity_provider = ./aws_ecs_capacity_provider.dhall
 , aws_ecs_cluster = ./aws_ecs_cluster.dhall
 , aws_ecs_service = ./aws_ecs_service.dhall
 , aws_ecs_task_definition = ./aws_ecs_task_definition.dhall
@@ -362,6 +363,7 @@
     ./aws_macie_member_account_association.dhall
 , aws_macie_s3_bucket_association = ./aws_macie_s3_bucket_association.dhall
 , aws_main_route_table_association = ./aws_main_route_table_association.dhall
+, aws_media_convert_queue = ./aws_media_convert_queue.dhall
 , aws_media_package_channel = ./aws_media_package_channel.dhall
 , aws_media_store_container = ./aws_media_store_container.dhall
 , aws_media_store_container_policy = ./aws_media_store_container_policy.dhall
@@ -603,5 +605,6 @@
 , aws_worklink_fleet = ./aws_worklink_fleet.dhall
 , aws_worklink_website_certificate_authority_association =
     ./aws_worklink_website_certificate_authority_association.dhall
+, aws_workspaces_ip_group = ./aws_workspaces_ip_group.dhall
 , aws_xray_sampling_rule = ./aws_xray_sampling_rule.dhall
 }

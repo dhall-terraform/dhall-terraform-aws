@@ -14,6 +14,14 @@
     , scheduling_strategy : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , task_definition : Text
+    , capacity_provider_strategy :
+        Optional
+          ( List
+              { base : Optional Natural
+              , capacity_provider : Text
+              , weight : Optional Natural
+              }
+          )
     , deployment_controller : Optional (List { type : Optional Text })
     , load_balancer :
         Optional
@@ -62,6 +70,14 @@
   , propagate_tags = None Text
   , scheduling_strategy = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , capacity_provider_strategy =
+      None
+        ( List
+            { base : Optional Natural
+            , capacity_provider : Text
+            , weight : Optional Natural
+            }
+        )
   , deployment_controller = None (List { type : Optional Text })
   , load_balancer =
       None

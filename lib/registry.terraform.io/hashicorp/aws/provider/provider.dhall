@@ -29,7 +29,8 @@
     , endpoints :
         Optional
           ( List
-              { acm : Optional Text
+              { accessanalyzer : Optional Text
+              , acm : Optional Text
               , acmpca : Optional Text
               , amplify : Optional Text
               , apigateway : Optional Text
@@ -61,6 +62,7 @@
               , cognitoidp : Optional Text
               , configservice : Optional Text
               , cur : Optional Text
+              , dataexchange : Optional Text
               , datapipeline : Optional Text
               , datasync : Optional Text
               , dax : Optional Text
@@ -93,6 +95,7 @@
               , greengrass : Optional Text
               , guardduty : Optional Text
               , iam : Optional Text
+              , imagebuilder : Optional Text
               , inspector : Optional Text
               , iot : Optional Text
               , iotanalytics : Optional Text
@@ -110,6 +113,7 @@
               , lightsail : Optional Text
               , macie : Optional Text
               , managedblockchain : Optional Text
+              , marketplacecatalog : Optional Text
               , mediaconnect : Optional Text
               , mediaconvert : Optional Text
               , medialive : Optional Text
@@ -190,7 +194,8 @@
   , endpoints =
       None
         ( List
-            { acm : Optional Text
+            { accessanalyzer : Optional Text
+            , acm : Optional Text
             , acmpca : Optional Text
             , amplify : Optional Text
             , apigateway : Optional Text
@@ -222,6 +227,7 @@
             , cognitoidp : Optional Text
             , configservice : Optional Text
             , cur : Optional Text
+            , dataexchange : Optional Text
             , datapipeline : Optional Text
             , datasync : Optional Text
             , dax : Optional Text
@@ -254,6 +260,7 @@
             , greengrass : Optional Text
             , guardduty : Optional Text
             , iam : Optional Text
+            , imagebuilder : Optional Text
             , inspector : Optional Text
             , iot : Optional Text
             , iotanalytics : Optional Text
@@ -271,6 +278,7 @@
             , lightsail : Optional Text
             , macie : Optional Text
             , managedblockchain : Optional Text
+            , marketplacecatalog : Optional Text
             , mediaconnect : Optional Text
             , mediaconvert : Optional Text
             , medialive : Optional Text

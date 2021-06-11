@@ -59,7 +59,18 @@
                     }
                 )
           }
-    , condition : List { field : Optional Text, values : Optional (List Text) }
+    , condition :
+        List
+          { field : Optional Text
+          , values : Optional (List Text)
+          , host_header : Optional (List { values : Optional (List Text) })
+          , http_header :
+              Optional (List { http_header_name : Text, values : List Text })
+          , http_request_method : Optional (List { values : List Text })
+          , path_pattern : Optional (List { values : Optional (List Text) })
+          , query_string : Optional (List { key : Optional Text, value : Text })
+          , source_ip : Optional (List { values : List Text })
+          }
     }
 , default = { arn = None Text, id = None Text, priority = None Natural }
 }
