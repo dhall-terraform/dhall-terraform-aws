@@ -79,6 +79,7 @@
 , aws_backup_plan = ./aws_backup_plan.dhall
 , aws_backup_selection = ./aws_backup_selection.dhall
 , aws_backup_vault = ./aws_backup_vault.dhall
+, aws_backup_vault_notifications = ./aws_backup_vault_notifications.dhall
 , aws_batch_compute_environment = ./aws_batch_compute_environment.dhall
 , aws_batch_job_definition = ./aws_batch_job_definition.dhall
 , aws_batch_job_queue = ./aws_batch_job_queue.dhall
@@ -110,6 +111,10 @@
 , aws_cloudwatch_log_subscription_filter =
     ./aws_cloudwatch_log_subscription_filter.dhall
 , aws_cloudwatch_metric_alarm = ./aws_cloudwatch_metric_alarm.dhall
+, aws_codeartifact_domain = ./aws_codeartifact_domain.dhall
+, aws_codeartifact_domain_permissions_policy =
+    ./aws_codeartifact_domain_permissions_policy.dhall
+, aws_codeartifact_repository = ./aws_codeartifact_repository.dhall
 , aws_codebuild_project = ./aws_codebuild_project.dhall
 , aws_codebuild_report_group = ./aws_codebuild_report_group.dhall
 , aws_codebuild_source_credential = ./aws_codebuild_source_credential.dhall
@@ -169,6 +174,7 @@
 , aws_db_parameter_group = ./aws_db_parameter_group.dhall
 , aws_db_proxy_default_target_group = ./aws_db_proxy_default_target_group.dhall
 , aws_db_proxy = ./aws_db_proxy.dhall
+, aws_db_proxy_target = ./aws_db_proxy_target.dhall
 , aws_db_security_group = ./aws_db_security_group.dhall
 , aws_db_snapshot = ./aws_db_snapshot.dhall
 , aws_db_subnet_group = ./aws_db_subnet_group.dhall
@@ -319,7 +325,11 @@
 , aws_glue_classifier = ./aws_glue_classifier.dhall
 , aws_glue_connection = ./aws_glue_connection.dhall
 , aws_glue_crawler = ./aws_glue_crawler.dhall
+, aws_glue_data_catalog_encryption_settings =
+    ./aws_glue_data_catalog_encryption_settings.dhall
 , aws_glue_job = ./aws_glue_job.dhall
+, aws_glue_ml_transform = ./aws_glue_ml_transform.dhall
+, aws_glue_partition = ./aws_glue_partition.dhall
 , aws_glue_security_configuration = ./aws_glue_security_configuration.dhall
 , aws_glue_trigger = ./aws_glue_trigger.dhall
 , aws_glue_user_defined_function = ./aws_glue_user_defined_function.dhall
@@ -403,6 +413,8 @@
 , aws_lb_ssl_negotiation_policy = ./aws_lb_ssl_negotiation_policy.dhall
 , aws_lb_target_group_attachment = ./aws_lb_target_group_attachment.dhall
 , aws_lb_target_group = ./aws_lb_target_group.dhall
+, aws_lex_bot = ./aws_lex_bot.dhall
+, aws_lex_intent = ./aws_lex_intent.dhall
 , aws_lex_slot_type = ./aws_lex_slot_type.dhall
 , aws_licensemanager_association = ./aws_licensemanager_association.dhall
 , aws_licensemanager_license_configuration =

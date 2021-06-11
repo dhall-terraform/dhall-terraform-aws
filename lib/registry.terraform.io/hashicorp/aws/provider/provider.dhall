@@ -116,6 +116,7 @@
               , licensemanager : Optional Text
               , lightsail : Optional Text
               , macie : Optional Text
+              , macie2 : Optional Text
               , managedblockchain : Optional Text
               , marketplacecatalog : Optional Text
               , mediaconnect : Optional Text
@@ -299,6 +300,7 @@
             , licensemanager : Optional Text
             , lightsail : Optional Text
             , macie : Optional Text
+            , macie2 : Optional Text
             , managedblockchain : Optional Text
             , marketplacecatalog : Optional Text
             , mediaconnect : Optional Text

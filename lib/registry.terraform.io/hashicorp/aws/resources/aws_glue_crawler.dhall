@@ -30,7 +30,13 @@
               }
           )
     , s3_target :
-        Optional (List { exclusions : Optional (List Text), path : Text })
+        Optional
+          ( List
+              { connection_name : Optional Text
+              , exclusions : Optional (List Text)
+              , path : Text
+              }
+          )
     , schema_change_policy :
         Optional
           ( List
@@ -66,7 +72,14 @@
             , path : Text
             }
         )
-  , s3_target = None (List { exclusions : Optional (List Text), path : Text })
+  , s3_target =
+      None
+        ( List
+            { connection_name : Optional Text
+            , exclusions : Optional (List Text)
+            , path : Text
+            }
+        )
   , schema_change_policy =
       None
         ( List

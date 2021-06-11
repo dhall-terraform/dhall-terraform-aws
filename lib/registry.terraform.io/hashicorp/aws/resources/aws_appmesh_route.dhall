@@ -12,6 +12,104 @@
     , spec :
         List
           { priority : Optional Natural
+          , grpc_route :
+              Optional
+                ( List
+                    { action :
+                        List
+                          { weighted_target :
+                              List { virtual_node : Text, weight : Natural }
+                          }
+                    , match :
+                        List
+                          { method_name : Optional Text
+                          , service_name : Optional Text
+                          , metadata :
+                              Optional
+                                ( List
+                                    { invert : Optional Bool
+                                    , name : Text
+                                    , match :
+                                        Optional
+                                          ( List
+                                              { exact : Optional Text
+                                              , prefix : Optional Text
+                                              , regex : Optional Text
+                                              , suffix : Optional Text
+                                              , range :
+                                                  Optional
+                                                    ( List
+                                                        { end : Natural
+                                                        , start : Natural
+                                                        }
+                                                    )
+                                              }
+                                          )
+                                    }
+                                )
+                          }
+                    , retry_policy :
+                        Optional
+                          ( List
+                              { grpc_retry_events : Optional (List Text)
+                              , http_retry_events : Optional (List Text)
+                              , max_retries : Natural
+                              , tcp_retry_events : Optional (List Text)
+                              , per_retry_timeout :
+                                  List { unit : Text, value : Natural }
+                              }
+                          )
+                    }
+                )
+          , http2_route :
+              Optional
+                ( List
+                    { action :
+                        List
+                          { weighted_target :
+                              List { virtual_node : Text, weight : Natural }
+                          }
+                    , match :
+                        List
+                          { method : Optional Text
+                          , prefix : Text
+                          , scheme : Optional Text
+                          , header :
+                              Optional
+                                ( List
+                                    { invert : Optional Bool
+                                    , name : Text
+                                    , match :
+                                        Optional
+                                          ( List
+                                              { exact : Optional Text
+                                              , prefix : Optional Text
+                                              , regex : Optional Text
+                                              , suffix : Optional Text
+                                              , range :
+                                                  Optional
+                                                    ( List
+                                                        { end : Natural
+                                                        , start : Natural
+                                                        }
+                                                    )
+                                              }
+                                          )
+                                    }
+                                )
+                          }
+                    , retry_policy :
+                        Optional
+                          ( List
+                              { http_retry_events : Optional (List Text)
+                              , max_retries : Natural
+                              , tcp_retry_events : Optional (List Text)
+                              , per_retry_timeout :
+                                  List { unit : Text, value : Natural }
+                              }
+                          )
+                    }
+                )
           , http_route :
               Optional
                 ( List
@@ -49,6 +147,16 @@
                                     }
                                 )
                           }
+                    , retry_policy :
+                        Optional
+                          ( List
+                              { http_retry_events : Optional (List Text)
+                              , max_retries : Natural
+                              , tcp_retry_events : Optional (List Text)
+                              , per_retry_timeout :
+                                  List { unit : Text, value : Natural }
+                              }
+                          )
                     }
                 )
           , tcp_route :

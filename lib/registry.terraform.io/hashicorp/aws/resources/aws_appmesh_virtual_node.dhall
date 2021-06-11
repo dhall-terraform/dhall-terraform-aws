@@ -13,7 +13,81 @@
           { backend :
               Optional
                 ( List
-                    { virtual_service : List { virtual_service_name : Text } }
+                    { virtual_service :
+                        List
+                          { virtual_service_name : Text
+                          , client_policy :
+                              Optional
+                                ( List
+                                    { tls :
+                                        Optional
+                                          ( List
+                                              { enforce : Optional Bool
+                                              , ports : Optional (List Natural)
+                                              , validation :
+                                                  List
+                                                    { trust :
+                                                        List
+                                                          { acm :
+                                                              Optional
+                                                                ( List
+                                                                    { certificate_authority_arns :
+                                                                        List
+                                                                          Text
+                                                                    }
+                                                                )
+                                                          , file :
+                                                              Optional
+                                                                ( List
+                                                                    { certificate_chain :
+                                                                        Text
+                                                                    }
+                                                                )
+                                                          }
+                                                    }
+                                              }
+                                          )
+                                    }
+                                )
+                          }
+                    }
+                )
+          , backend_defaults :
+              Optional
+                ( List
+                    { client_policy :
+                        Optional
+                          ( List
+                              { tls :
+                                  Optional
+                                    ( List
+                                        { enforce : Optional Bool
+                                        , ports : Optional (List Natural)
+                                        , validation :
+                                            List
+                                              { trust :
+                                                  List
+                                                    { acm :
+                                                        Optional
+                                                          ( List
+                                                              { certificate_authority_arns :
+                                                                  List Text
+                                                              }
+                                                          )
+                                                    , file :
+                                                        Optional
+                                                          ( List
+                                                              { certificate_chain :
+                                                                  Text
+                                                              }
+                                                          )
+                                                    }
+                                              }
+                                        }
+                                    )
+                              }
+                          )
+                    }
                 )
           , listener :
               Optional
@@ -31,6 +105,25 @@
                               }
                           )
                     , port_mapping : List { port : Natural, protocol : Text }
+                    , tls :
+                        Optional
+                          ( List
+                              { mode : Text
+                              , certificate :
+                                  List
+                                    { acm :
+                                        Optional
+                                          (List { certificate_arn : Text })
+                                    , file :
+                                        Optional
+                                          ( List
+                                              { certificate_chain : Text
+                                              , private_key : Text
+                                              }
+                                          )
+                                    }
+                              }
+                          )
                     }
                 )
           , logging :
