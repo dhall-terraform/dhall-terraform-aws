@@ -9,10 +9,14 @@
     , content_language : Optional Text
     , content_type : Optional Text
     , etag : Optional Text
+    , force_destroy : Optional Bool
     , id : Optional Text
     , key : Text
     , kms_key_id : Optional Text
     , metadata : Optional (List { mapKey : Text, mapValue : Text })
+    , object_lock_legal_hold_status : Optional Text
+    , object_lock_mode : Optional Text
+    , object_lock_retain_until_date : Optional Text
     , server_side_encryption : Optional Text
     , source : Optional Text
     , storage_class : Optional Text
@@ -30,9 +34,13 @@
   , content_language = None Text
   , content_type = None Text
   , etag = None Text
+  , force_destroy = None Bool
   , id = None Text
   , kms_key_id = None Text
   , metadata = None (List { mapKey : Text, mapValue : Text })
+  , object_lock_legal_hold_status = None Text
+  , object_lock_mode = None Text
+  , object_lock_retain_until_date = None Text
   , server_side_encryption = None Text
   , source = None Text
   , storage_class = None Text

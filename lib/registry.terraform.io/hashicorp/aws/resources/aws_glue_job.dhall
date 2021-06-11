@@ -10,7 +10,12 @@
     , role_arn : Text
     , security_configuration : Optional Text
     , timeout : Optional Natural
-    , command : List { name : Optional Text, script_location : Text }
+    , command :
+        List
+          { name : Optional Text
+          , python_version : Optional Text
+          , script_location : Text
+          }
     , execution_property :
         Optional (List { max_concurrent_runs : Optional Natural })
     }
