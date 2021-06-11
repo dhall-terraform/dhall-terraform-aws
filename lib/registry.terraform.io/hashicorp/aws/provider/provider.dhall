@@ -79,6 +79,7 @@
               , dynamodb : Optional Text
               , ec2 : Optional Text
               , ecr : Optional Text
+              , ecrpublic : Optional Text
               , ecs : Optional Text
               , efs : Optional Text
               , eks : Optional Text
@@ -127,6 +128,7 @@
               , mediastore : Optional Text
               , mediastoredata : Optional Text
               , mq : Optional Text
+              , mwaa : Optional Text
               , neptune : Optional Text
               , networkfirewall : Optional Text
               , networkmanager : Optional Text
@@ -268,6 +270,7 @@
             , dynamodb : Optional Text
             , ec2 : Optional Text
             , ecr : Optional Text
+            , ecrpublic : Optional Text
             , ecs : Optional Text
             , efs : Optional Text
             , eks : Optional Text
@@ -316,6 +319,7 @@
             , mediastore : Optional Text
             , mediastoredata : Optional Text
             , mq : Optional Text
+            , mwaa : Optional Text
             , neptune : Optional Text
             , networkfirewall : Optional Text
             , networkmanager : Optional Text

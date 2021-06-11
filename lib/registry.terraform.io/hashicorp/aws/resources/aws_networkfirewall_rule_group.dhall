@@ -47,12 +47,12 @@
                               { action : Text
                               , header :
                                   List
-                                    { destination : Optional Text
-                                    , destination_port : Optional Text
+                                    { destination : Text
+                                    , destination_port : Text
                                     , direction : Text
-                                    , protocol : Optional Text
-                                    , source : Optional Text
-                                    , source_port : Optional Text
+                                    , protocol : Text
+                                    , source : Text
+                                    , source_port : Text
                                     }
                               , rule_option :
                                   List
@@ -92,7 +92,7 @@
                                                     Optional
                                                       ( List
                                                           { address_definition :
-                                                              Optional Text
+                                                              Text
                                                           }
                                                       )
                                                 , destination_port :
@@ -107,7 +107,7 @@
                                                     Optional
                                                       ( List
                                                           { address_definition :
-                                                              Optional Text
+                                                              Text
                                                           }
                                                       )
                                                 , source_port :
@@ -182,12 +182,12 @@
                             { action : Text
                             , header :
                                 List
-                                  { destination : Optional Text
-                                  , destination_port : Optional Text
+                                  { destination : Text
+                                  , destination_port : Text
                                   , direction : Text
-                                  , protocol : Optional Text
-                                  , source : Optional Text
-                                  , source_port : Optional Text
+                                  , protocol : Text
+                                  , source : Text
+                                  , source_port : Text
                                   }
                             , rule_option :
                                 List
@@ -227,7 +227,7 @@
                                                   Optional
                                                     ( List
                                                         { address_definition :
-                                                            Optional Text
+                                                            Text
                                                         }
                                                     )
                                               , destination_port :
@@ -242,7 +242,7 @@
                                                   Optional
                                                     ( List
                                                         { address_definition :
-                                                            Optional Text
+                                                            Text
                                                         }
                                                     )
                                               , source_port :
