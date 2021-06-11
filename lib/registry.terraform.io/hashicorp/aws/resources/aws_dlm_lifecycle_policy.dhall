@@ -1,8 +1,10 @@
 { Type =
-    { description : Text
+    { arn : Optional Text
+    , description : Text
     , execution_role_arn : Text
     , id : Optional Text
     , state : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , policy_details :
         List
           { resource_types : List Text
@@ -23,5 +25,10 @@
                 }
           }
     }
-, default = { id = None Text, state = None Text }
+, default =
+  { arn = None Text
+  , id = None Text
+  , state = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
+  }
 }

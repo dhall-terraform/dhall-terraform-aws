@@ -1,5 +1,6 @@
 { Type =
-    { id : Optional Text
+    { arn : Optional Text
+    , id : Optional Text
     , name : Text
     , regex_match_tuple :
         Optional
@@ -11,7 +12,8 @@
           )
     }
 , default =
-  { id = None Text
+  { arn = None Text
+  , id = None Text
   , regex_match_tuple =
       None
         ( List

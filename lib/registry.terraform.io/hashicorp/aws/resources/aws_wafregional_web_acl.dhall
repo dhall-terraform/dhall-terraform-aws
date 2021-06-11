@@ -3,6 +3,7 @@
     , id : Optional Text
     , metric_name : Text
     , name : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , default_action : List { type : Text }
     , logging_configuration :
         Optional
@@ -31,6 +32,7 @@
 , default =
   { arn = None Text
   , id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , logging_configuration =
       None
         ( List

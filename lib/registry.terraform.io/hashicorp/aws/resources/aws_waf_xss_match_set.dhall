@@ -1,5 +1,6 @@
 { Type =
-    { id : Optional Text
+    { arn : Optional Text
+    , id : Optional Text
     , name : Text
     , xss_match_tuples :
         Optional
@@ -10,7 +11,8 @@
           )
     }
 , default =
-  { id = None Text
+  { arn = None Text
+  , id = None Text
   , xss_match_tuples =
       None
         ( List

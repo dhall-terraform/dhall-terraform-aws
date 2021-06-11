@@ -10,6 +10,7 @@
     , schedule : Optional Text
     , security_configuration : Optional Text
     , table_prefix : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , catalog_target :
         Optional (List { database_name : Text, tables : List Text })
     , dynamodb_target : Optional (List { path : Text })
@@ -40,6 +41,7 @@
   , schedule = None Text
   , security_configuration = None Text
   , table_prefix = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , catalog_target = None (List { database_name : Text, tables : List Text })
   , dynamodb_target = None (List { path : Text })
   , jdbc_target =

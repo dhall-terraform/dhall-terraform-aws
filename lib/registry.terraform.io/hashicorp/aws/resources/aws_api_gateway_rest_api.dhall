@@ -1,5 +1,6 @@
 { Type =
     { api_key_source : Optional Text
+    , arn : Optional Text
     , binary_media_types : Optional (List Text)
     , body : Optional Text
     , created_date : Optional Text
@@ -10,10 +11,12 @@
     , name : Text
     , policy : Optional Text
     , root_resource_id : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , endpoint_configuration : Optional (List { types : List Text })
     }
 , default =
   { api_key_source = None Text
+  , arn = None Text
   , binary_media_types = None (List Text)
   , body = None Text
   , created_date = None Text
@@ -23,6 +26,7 @@
   , minimum_compression_size = None Natural
   , policy = None Text
   , root_resource_id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , endpoint_configuration = None (List { types : List Text })
   }
 }

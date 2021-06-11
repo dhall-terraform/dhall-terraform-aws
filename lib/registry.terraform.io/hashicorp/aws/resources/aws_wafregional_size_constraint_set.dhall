@@ -1,5 +1,6 @@
 { Type =
-    { id : Optional Text
+    { arn : Optional Text
+    , id : Optional Text
     , name : Text
     , size_constraints :
         Optional
@@ -12,7 +13,8 @@
           )
     }
 , default =
-  { id = None Text
+  { arn = None Text
+  , id = None Text
   , size_constraints =
       None
         ( List

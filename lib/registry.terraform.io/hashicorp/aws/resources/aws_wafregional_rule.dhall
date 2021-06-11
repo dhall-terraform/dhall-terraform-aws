@@ -1,12 +1,16 @@
 { Type =
-    { id : Optional Text
+    { arn : Optional Text
+    , id : Optional Text
     , metric_name : Text
     , name : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , predicate :
         Optional (List { data_id : Text, negated : Bool, type : Text })
     }
 , default =
-  { id = None Text
+  { arn = None Text
+  , id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , predicate = None (List { data_id : Text, negated : Bool, type : Text })
   }
 }

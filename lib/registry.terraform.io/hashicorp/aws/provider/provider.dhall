@@ -90,6 +90,7 @@
               , glacier : Optional Text
               , globalaccelerator : Optional Text
               , glue : Optional Text
+              , greengrass : Optional Text
               , guardduty : Optional Text
               , iam : Optional Text
               , inspector : Optional Text
@@ -250,6 +251,7 @@
             , glacier : Optional Text
             , globalaccelerator : Optional Text
             , glue : Optional Text
+            , greengrass : Optional Text
             , guardduty : Optional Text
             , iam : Optional Text
             , inspector : Optional Text
