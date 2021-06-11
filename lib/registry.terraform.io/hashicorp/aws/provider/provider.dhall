@@ -28,6 +28,9 @@
               , transitive_tag_keys : Optional (List Text)
               }
           )
+    , default_tags :
+        Optional
+          (List { tags : Optional (List { mapKey : Text, mapValue : Text }) })
     , endpoints :
         Optional
           ( List
@@ -42,6 +45,7 @@
               , appstream : Optional Text
               , appsync : Optional Text
               , athena : Optional Text
+              , auditmanager : Optional Text
               , autoscaling : Optional Text
               , autoscalingplans : Optional Text
               , backup : Optional Text
@@ -221,6 +225,8 @@
             , transitive_tag_keys : Optional (List Text)
             }
         )
+  , default_tags =
+      None (List { tags : Optional (List { mapKey : Text, mapValue : Text }) })
   , endpoints =
       None
         ( List
@@ -235,6 +241,7 @@
             , appstream : Optional Text
             , appsync : Optional Text
             , athena : Optional Text
+            , auditmanager : Optional Text
             , autoscaling : Optional Text
             , autoscalingplans : Optional Text
             , backup : Optional Text

@@ -16,6 +16,7 @@
     , host_environment : Optional Text
     , id : Optional Text
     , medium_changer_type : Optional Text
+    , smb_file_share_visibility : Optional Bool
     , smb_guest_password : Optional Text
     , smb_security_strategy : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -50,6 +51,7 @@
   , host_environment = None Text
   , id = None Text
   , medium_changer_type = None Text
+  , smb_file_share_visibility = None Bool
   , smb_guest_password = None Text
   , smb_security_strategy = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })

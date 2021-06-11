@@ -84,6 +84,8 @@
     ./aws_ec2_transit_gateway_peering_attachment.dhall
 , aws_ec2_transit_gateway_route_table =
     ./aws_ec2_transit_gateway_route_table.dhall
+, aws_ec2_transit_gateway_route_tables =
+    ./aws_ec2_transit_gateway_route_tables.dhall
 , aws_ec2_transit_gateway_vpc_attachment =
     ./aws_ec2_transit_gateway_vpc_attachment.dhall
 , aws_ec2_transit_gateway_vpn_attachment =
@@ -138,6 +140,7 @@
 , aws_internet_gateway = ./aws_internet_gateway.dhall
 , aws_iot_endpoint = ./aws_iot_endpoint.dhall
 , aws_ip_ranges = ./aws_ip_ranges.dhall
+, aws_kinesis_stream_consumer = ./aws_kinesis_stream_consumer.dhall
 , aws_kinesis_stream = ./aws_kinesis_stream.dhall
 , aws_kms_alias = ./aws_kms_alias.dhall
 , aws_kms_ciphertext = ./aws_kms_ciphertext.dhall

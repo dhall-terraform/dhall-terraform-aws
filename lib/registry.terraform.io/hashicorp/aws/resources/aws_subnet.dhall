@@ -13,6 +13,7 @@
     , outpost_arn : Optional Text
     , owner_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_id : Text
     , timeouts : Optional { create : Optional Text, delete : Optional Text }
     }
@@ -30,6 +31,7 @@
   , outpost_arn = None Text
   , owner_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , timeouts = None { create : Optional Text, delete : Optional Text }
   }
 }

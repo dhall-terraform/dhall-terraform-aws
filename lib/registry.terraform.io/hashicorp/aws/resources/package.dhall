@@ -434,6 +434,7 @@
     ./aws_kinesisanalyticsv2_application.dhall
 , aws_kinesis_firehose_delivery_stream =
     ./aws_kinesis_firehose_delivery_stream.dhall
+, aws_kinesis_stream_consumer = ./aws_kinesis_stream_consumer.dhall
 , aws_kinesis_stream = ./aws_kinesis_stream.dhall
 , aws_kinesis_video_stream = ./aws_kinesis_video_stream.dhall
 , aws_kms_alias = ./aws_kms_alias.dhall
