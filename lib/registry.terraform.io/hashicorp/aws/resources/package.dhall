@@ -211,6 +211,11 @@
 , aws_ec2_client_vpn_network_association =
     ./aws_ec2_client_vpn_network_association.dhall
 , aws_ec2_fleet = ./aws_ec2_fleet.dhall
+, aws_ec2_traffic_mirror_filter = ./aws_ec2_traffic_mirror_filter.dhall
+, aws_ec2_traffic_mirror_filter_rule =
+    ./aws_ec2_traffic_mirror_filter_rule.dhall
+, aws_ec2_traffic_mirror_session = ./aws_ec2_traffic_mirror_session.dhall
+, aws_ec2_traffic_mirror_target = ./aws_ec2_traffic_mirror_target.dhall
 , aws_ec2_transit_gateway = ./aws_ec2_transit_gateway.dhall
 , aws_ec2_transit_gateway_route = ./aws_ec2_transit_gateway_route.dhall
 , aws_ec2_transit_gateway_route_table_association =
@@ -464,6 +469,7 @@
 , aws_route = ./aws_route.dhall
 , aws_route_table_association = ./aws_route_table_association.dhall
 , aws_route_table = ./aws_route_table.dhall
+, aws_s3_access_point = ./aws_s3_access_point.dhall
 , aws_s3_account_public_access_block =
     ./aws_s3_account_public_access_block.dhall
 , aws_s3_bucket_analytics_configuration =

@@ -40,6 +40,18 @@
                     )
               }
           )
+    , open_monitoring :
+        Optional
+          ( List
+              { prometheus :
+                  List
+                    { jmx_exporter :
+                        Optional (List { enabled_in_broker : Bool })
+                    , node_exporter :
+                        Optional (List { enabled_in_broker : Bool })
+                    }
+              }
+          )
     }
 , default =
   { arn = None Text
@@ -70,6 +82,16 @@
                       , in_cluster : Optional Bool
                       }
                   )
+            }
+        )
+  , open_monitoring =
+      None
+        ( List
+            { prometheus :
+                List
+                  { jmx_exporter : Optional (List { enabled_in_broker : Bool })
+                  , node_exporter : Optional (List { enabled_in_broker : Bool })
+                  }
             }
         )
   }

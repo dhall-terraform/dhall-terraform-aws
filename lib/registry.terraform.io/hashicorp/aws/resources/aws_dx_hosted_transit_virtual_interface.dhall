@@ -1,6 +1,7 @@
 { Type =
     { address_family : Text
     , amazon_address : Optional Text
+    , amazon_side_asn : Optional Text
     , arn : Optional Text
     , aws_device : Optional Text
     , bgp_asn : Natural
@@ -22,6 +23,7 @@
     }
 , default =
   { amazon_address = None Text
+  , amazon_side_asn = None Text
   , arn = None Text
   , aws_device = None Text
   , bgp_auth_key = None Text

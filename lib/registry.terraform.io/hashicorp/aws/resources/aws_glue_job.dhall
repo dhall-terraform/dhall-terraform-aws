@@ -23,6 +23,8 @@
           }
     , execution_property :
         Optional (List { max_concurrent_runs : Optional Natural })
+    , notification_property :
+        Optional (List { notify_delay_after : Optional Natural })
     }
 , default =
   { allocated_capacity = None Natural
@@ -40,5 +42,7 @@
   , timeout = None Natural
   , worker_type = None Text
   , execution_property = None (List { max_concurrent_runs : Optional Natural })
+  , notification_property =
+      None (List { notify_delay_after : Optional Natural })
   }
 }
