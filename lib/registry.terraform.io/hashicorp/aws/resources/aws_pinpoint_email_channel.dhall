@@ -6,12 +6,13 @@
     , id : Optional Text
     , identity : Text
     , messages_per_second : Optional Natural
-    , role_arn : Text
+    , role_arn : Optional Text
     }
 , default =
   { configuration_set = None Text
   , enabled = None Bool
   , id = None Text
   , messages_per_second = None Natural
+  , role_arn = None Text
   }
 }

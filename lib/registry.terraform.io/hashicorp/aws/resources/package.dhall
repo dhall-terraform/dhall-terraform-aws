@@ -68,6 +68,12 @@
 , aws_appmesh_virtual_node = ./aws_appmesh_virtual_node.dhall
 , aws_appmesh_virtual_router = ./aws_appmesh_virtual_router.dhall
 , aws_appmesh_virtual_service = ./aws_appmesh_virtual_service.dhall
+, aws_apprunner_auto_scaling_configuration_version =
+    ./aws_apprunner_auto_scaling_configuration_version.dhall
+, aws_apprunner_connection = ./aws_apprunner_connection.dhall
+, aws_apprunner_custom_domain_association =
+    ./aws_apprunner_custom_domain_association.dhall
+, aws_apprunner_service = ./aws_apprunner_service.dhall
 , aws_appsync_api_key = ./aws_appsync_api_key.dhall
 , aws_appsync_datasource = ./aws_appsync_datasource.dhall
 , aws_appsync_function = ./aws_appsync_function.dhall
@@ -102,6 +108,7 @@
 , aws_cloudformation_type = ./aws_cloudformation_type.dhall
 , aws_cloudfront_cache_policy = ./aws_cloudfront_cache_policy.dhall
 , aws_cloudfront_distribution = ./aws_cloudfront_distribution.dhall
+, aws_cloudfront_function = ./aws_cloudfront_function.dhall
 , aws_cloudfront_key_group = ./aws_cloudfront_key_group.dhall
 , aws_cloudfront_origin_access_identity =
     ./aws_cloudfront_origin_access_identity.dhall
@@ -501,6 +508,10 @@
 , aws_macie2_classification_job = ./aws_macie2_classification_job.dhall
 , aws_macie2_custom_data_identifier = ./aws_macie2_custom_data_identifier.dhall
 , aws_macie2_findings_filter = ./aws_macie2_findings_filter.dhall
+, aws_macie2_invitation_accepter = ./aws_macie2_invitation_accepter.dhall
+, aws_macie2_member = ./aws_macie2_member.dhall
+, aws_macie2_organization_admin_account =
+    ./aws_macie2_organization_admin_account.dhall
 , aws_macie_member_account_association =
     ./aws_macie_member_account_association.dhall
 , aws_macie_s3_bucket_association = ./aws_macie_s3_bucket_association.dhall
@@ -555,6 +566,8 @@
 , aws_opsworks_static_web_layer = ./aws_opsworks_static_web_layer.dhall
 , aws_opsworks_user_profile = ./aws_opsworks_user_profile.dhall
 , aws_organizations_account = ./aws_organizations_account.dhall
+, aws_organizations_delegated_administrator =
+    ./aws_organizations_delegated_administrator.dhall
 , aws_organizations_organizational_unit =
     ./aws_organizations_organizational_unit.dhall
 , aws_organizations_organization = ./aws_organizations_organization.dhall
@@ -684,7 +697,11 @@
     ./aws_securityhub_standards_subscription.dhall
 , aws_serverlessapplicationrepository_cloudformation_stack =
     ./aws_serverlessapplicationrepository_cloudformation_stack.dhall
+, aws_servicecatalog_organizations_access =
+    ./aws_servicecatalog_organizations_access.dhall
 , aws_servicecatalog_portfolio = ./aws_servicecatalog_portfolio.dhall
+, aws_servicecatalog_portfolio_share =
+    ./aws_servicecatalog_portfolio_share.dhall
 , aws_servicecatalog_product = ./aws_servicecatalog_product.dhall
 , aws_servicecatalog_tag_option = ./aws_servicecatalog_tag_option.dhall
 , aws_service_discovery_http_namespace =

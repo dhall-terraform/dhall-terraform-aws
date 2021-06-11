@@ -4,6 +4,7 @@
     , availability_zone_id : Optional Text
     , id : Optional Text
     , ids : Optional (List Text)
+    , owner_id : Optional Text
     , site_id : Optional Text
     }
 , default =
@@ -12,6 +13,7 @@
   , availability_zone_id = None Text
   , id = None Text
   , ids = None (List Text)
+  , owner_id = None Text
   , site_id = None Text
   }
 }

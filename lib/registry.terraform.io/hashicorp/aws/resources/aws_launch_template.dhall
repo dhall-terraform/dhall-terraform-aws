@@ -98,6 +98,7 @@
               , delete_on_termination : Optional Text
               , description : Optional Text
               , device_index : Optional Natural
+              , interface_type : Optional Text
               , ipv4_address_count : Optional Natural
               , ipv4_addresses : Optional (List Text)
               , ipv6_address_count : Optional Natural
@@ -228,6 +229,7 @@
             , delete_on_termination : Optional Text
             , description : Optional Text
             , device_index : Optional Natural
+            , interface_type : Optional Text
             , ipv4_address_count : Optional Natural
             , ipv4_addresses : Optional (List Text)
             , ipv6_address_count : Optional Natural

@@ -80,6 +80,8 @@
                   Optional (List { column : Text, sort_order : Natural })
               }
           )
+    , target_table :
+        Optional (List { catalog_id : Text, database_name : Text, name : Text })
     }
 , default =
   { arn = None Text
@@ -160,5 +162,7 @@
                 Optional (List { column : Text, sort_order : Natural })
             }
         )
+  , target_table =
+      None (List { catalog_id : Text, database_name : Text, name : Text })
   }
 }

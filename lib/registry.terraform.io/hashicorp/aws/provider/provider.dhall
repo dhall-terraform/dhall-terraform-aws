@@ -43,6 +43,7 @@
               , applicationautoscaling : Optional Text
               , applicationinsights : Optional Text
               , appmesh : Optional Text
+              , apprunner : Optional Text
               , appstream : Optional Text
               , appsync : Optional Text
               , athena : Optional Text
@@ -241,6 +242,7 @@
             , applicationautoscaling : Optional Text
             , applicationinsights : Optional Text
             , appmesh : Optional Text
+            , apprunner : Optional Text
             , appstream : Optional Text
             , appsync : Optional Text
             , athena : Optional Text

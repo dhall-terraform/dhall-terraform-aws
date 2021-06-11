@@ -74,6 +74,8 @@
                           }
                     }
                 )
+          , function_association :
+              Optional (List { event_type : Text, function_arn : Text })
           , lambda_function_association :
               Optional
                 ( List
@@ -123,6 +125,8 @@
                               }
                         }
                     )
+              , function_association :
+                  Optional (List { event_type : Text, function_arn : Text })
               , lambda_function_association :
                   Optional
                     ( List
@@ -259,6 +263,8 @@
                             }
                       }
                   )
+            , function_association :
+                Optional (List { event_type : Text, function_arn : Text })
             , lambda_function_association :
                 Optional
                   ( List

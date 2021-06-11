@@ -31,6 +31,7 @@
 , aws_cloudformation_type = ./aws_cloudformation_type.dhall
 , aws_cloudfront_cache_policy = ./aws_cloudfront_cache_policy.dhall
 , aws_cloudfront_distribution = ./aws_cloudfront_distribution.dhall
+, aws_cloudfront_function = ./aws_cloudfront_function.dhall
 , aws_cloudfront_origin_request_policy =
     ./aws_cloudfront_origin_request_policy.dhall
 , aws_cloudhsm_v2_cluster = ./aws_cloudhsm_v2_cluster.dhall
@@ -119,6 +120,9 @@
 , aws_elb = ./aws_elb.dhall
 , aws_elb_hosted_zone_id = ./aws_elb_hosted_zone_id.dhall
 , aws_elb_service_account = ./aws_elb_service_account.dhall
+, aws_glue_connection = ./aws_glue_connection.dhall
+, aws_glue_data_catalog_encryption_settings =
+    ./aws_glue_data_catalog_encryption_settings.dhall
 , aws_glue_script = ./aws_glue_script.dhall
 , aws_guardduty_detector = ./aws_guardduty_detector.dhall
 , aws_iam_account_alias = ./aws_iam_account_alias.dhall
@@ -180,6 +184,10 @@
 , aws_network_acls = ./aws_network_acls.dhall
 , aws_network_interface = ./aws_network_interface.dhall
 , aws_network_interfaces = ./aws_network_interfaces.dhall
+, aws_organizations_delegated_administrators =
+    ./aws_organizations_delegated_administrators.dhall
+, aws_organizations_delegated_services =
+    ./aws_organizations_delegated_services.dhall
 , aws_organizations_organizational_units =
     ./aws_organizations_organizational_units.dhall
 , aws_organizations_organization = ./aws_organizations_organization.dhall

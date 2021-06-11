@@ -1,6 +1,7 @@
 { Type =
     { description : Optional Text
     , id : Optional Text
+    , interface_type : Optional Text
     , ipv6_address_count : Optional Natural
     , ipv6_addresses : Optional (List Text)
     , mac_address : Optional Text
@@ -26,6 +27,7 @@
 , default =
   { description = None Text
   , id = None Text
+  , interface_type = None Text
   , ipv6_address_count = None Natural
   , ipv6_addresses = None (List Text)
   , mac_address = None Text
