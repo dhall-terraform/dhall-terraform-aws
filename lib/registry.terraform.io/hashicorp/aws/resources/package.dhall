@@ -136,6 +136,7 @@
 , aws_datasync_location_efs = ./aws_datasync_location_efs.dhall
 , aws_datasync_location_nfs = ./aws_datasync_location_nfs.dhall
 , aws_datasync_location_s3 = ./aws_datasync_location_s3.dhall
+, aws_datasync_location_smb = ./aws_datasync_location_smb.dhall
 , aws_datasync_task = ./aws_datasync_task.dhall
 , aws_dax_cluster = ./aws_dax_cluster.dhall
 , aws_dax_parameter_group = ./aws_dax_parameter_group.dhall

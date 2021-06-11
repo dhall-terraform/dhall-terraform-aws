@@ -9,6 +9,7 @@
     , name : Text
     , queued_timeout : Optional Natural
     , service_role : Text
+    , source_version : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , artifacts :
         List
@@ -90,6 +91,8 @@
               , source_identifier : Text
               , type : Text
               , auth : Optional (List { resource : Optional Text, type : Text })
+              , git_submodules_config :
+                  Optional (List { fetch_submodules : Bool })
               }
           )
     , source :
@@ -101,6 +104,7 @@
           , report_build_status : Optional Bool
           , type : Text
           , auth : Optional (List { resource : Optional Text, type : Text })
+          , git_submodules_config : Optional (List { fetch_submodules : Bool })
           }
     , vpc_config :
         Optional
@@ -120,6 +124,7 @@
   , encryption_key = None Text
   , id = None Text
   , queued_timeout = None Natural
+  , source_version = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , cache =
       None
@@ -175,6 +180,8 @@
             , source_identifier : Text
             , type : Text
             , auth : Optional (List { resource : Optional Text, type : Text })
+            , git_submodules_config :
+                Optional (List { fetch_submodules : Bool })
             }
         )
   , vpc_config =

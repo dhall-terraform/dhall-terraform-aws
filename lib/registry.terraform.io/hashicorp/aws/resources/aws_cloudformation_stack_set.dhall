@@ -11,6 +11,7 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , template_body : Optional Text
     , template_url : Optional Text
+    , timeouts : Optional { update : Optional Text }
     }
 , default =
   { arn = None Text
@@ -23,5 +24,6 @@
   , tags = None (List { mapKey : Text, mapValue : Text })
   , template_body = None Text
   , template_url = None Text
+  , timeouts = None { update : Optional Text }
   }
 }

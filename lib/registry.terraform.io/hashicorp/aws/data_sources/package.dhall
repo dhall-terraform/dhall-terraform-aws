@@ -139,6 +139,7 @@
 , aws_sqs_queue = ./aws_sqs_queue.dhall
 , aws_ssm_document = ./aws_ssm_document.dhall
 , aws_ssm_parameter = ./aws_ssm_parameter.dhall
+, aws_ssm_patch_baseline = ./aws_ssm_patch_baseline.dhall
 , aws_storagegateway_local_disk = ./aws_storagegateway_local_disk.dhall
 , aws_subnet = ./aws_subnet.dhall
 , aws_subnet_ids = ./aws_subnet_ids.dhall

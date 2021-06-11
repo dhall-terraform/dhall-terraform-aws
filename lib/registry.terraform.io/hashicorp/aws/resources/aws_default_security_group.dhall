@@ -1,5 +1,6 @@
 { Type =
     { arn : Optional Text
+    , description : Optional Text
     , egress :
         Optional
           ( List
@@ -38,6 +39,7 @@
     }
 , default =
   { arn = None Text
+  , description = None Text
   , egress =
       None
         ( List
