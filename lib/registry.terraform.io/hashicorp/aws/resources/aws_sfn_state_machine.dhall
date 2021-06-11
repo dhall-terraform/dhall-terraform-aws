@@ -17,6 +17,7 @@
               , log_destination : Optional Text
               }
           )
+    , tracing_configuration : Optional (List { enabled : Optional Bool })
     }
 , default =
   { arn = None Text
@@ -34,5 +35,6 @@
             , log_destination : Optional Text
             }
         )
+  , tracing_configuration = None (List { enabled : Optional Bool })
   }
 }

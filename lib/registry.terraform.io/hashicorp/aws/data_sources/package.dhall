@@ -35,6 +35,7 @@
     ./aws_cloudfront_origin_request_policy.dhall
 , aws_cloudhsm_v2_cluster = ./aws_cloudhsm_v2_cluster.dhall
 , aws_cloudtrail_service_account = ./aws_cloudtrail_service_account.dhall
+, aws_cloudwatch_event_source = ./aws_cloudwatch_event_source.dhall
 , aws_cloudwatch_log_group = ./aws_cloudwatch_log_group.dhall
 , aws_codeartifact_authorization_token =
     ./aws_codeartifact_authorization_token.dhall

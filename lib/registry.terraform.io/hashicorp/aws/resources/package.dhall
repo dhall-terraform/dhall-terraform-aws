@@ -256,6 +256,8 @@
 , aws_dx_public_virtual_interface = ./aws_dx_public_virtual_interface.dhall
 , aws_dx_transit_virtual_interface = ./aws_dx_transit_virtual_interface.dhall
 , aws_dynamodb_global_table = ./aws_dynamodb_global_table.dhall
+, aws_dynamodb_kinesis_streaming_destination =
+    ./aws_dynamodb_kinesis_streaming_destination.dhall
 , aws_dynamodb_table = ./aws_dynamodb_table.dhall
 , aws_dynamodb_table_item = ./aws_dynamodb_table_item.dhall
 , aws_ebs_default_kms_key = ./aws_ebs_default_kms_key.dhall
@@ -496,6 +498,7 @@
 , aws_load_balancer_listener_policy = ./aws_load_balancer_listener_policy.dhall
 , aws_load_balancer_policy = ./aws_load_balancer_policy.dhall
 , aws_macie2_account = ./aws_macie2_account.dhall
+, aws_macie2_classification_job = ./aws_macie2_classification_job.dhall
 , aws_macie_member_account_association =
     ./aws_macie_member_account_association.dhall
 , aws_macie_s3_bucket_association = ./aws_macie_s3_bucket_association.dhall

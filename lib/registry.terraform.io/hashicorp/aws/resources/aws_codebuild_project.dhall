@@ -62,6 +62,16 @@
           , registry_credential :
               Optional (List { credential : Text, credential_provider : Text })
           }
+    , file_system_locations :
+        Optional
+          ( List
+              { identifier : Optional Text
+              , location : Optional Text
+              , mount_options : Optional Text
+              , mount_point : Optional Text
+              , type : Optional Text
+              }
+          )
     , logs_config :
         Optional
           ( List
@@ -173,6 +183,16 @@
         ( List
             { location : Optional Text
             , modes : Optional (List Text)
+            , type : Optional Text
+            }
+        )
+  , file_system_locations =
+      None
+        ( List
+            { identifier : Optional Text
+            , location : Optional Text
+            , mount_options : Optional Text
+            , mount_point : Optional Text
             , type : Optional Text
             }
         )

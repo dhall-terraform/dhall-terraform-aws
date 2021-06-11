@@ -1,5 +1,6 @@
 { Type =
-    { allow_unauthenticated_identities : Optional Bool
+    { allow_classic_flow : Optional Bool
+    , allow_unauthenticated_identities : Optional Bool
     , arn : Optional Text
     , developer_provider_name : Optional Text
     , id : Optional Text
@@ -20,7 +21,8 @@
           )
     }
 , default =
-  { allow_unauthenticated_identities = None Bool
+  { allow_classic_flow = None Bool
+  , allow_unauthenticated_identities = None Bool
   , arn = None Text
   , developer_provider_name = None Text
   , id = None Text

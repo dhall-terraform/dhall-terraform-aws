@@ -24,6 +24,7 @@
               , database_name : Text
               , excluded_column_names : Optional (List Text)
               , name : Text
+              , wildcard : Optional Bool
               }
           )
     }
@@ -52,6 +53,7 @@
             , database_name : Text
             , excluded_column_names : Optional (List Text)
             , name : Text
+            , wildcard : Optional Bool
             }
         )
   }
