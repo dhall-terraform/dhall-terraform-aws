@@ -164,6 +164,7 @@
 , aws_pricing_product = ./aws_pricing_product.dhall
 , aws_qldb_ledger = ./aws_qldb_ledger.dhall
 , aws_ram_resource_share = ./aws_ram_resource_share.dhall
+, aws_rds_certificate = ./aws_rds_certificate.dhall
 , aws_rds_cluster = ./aws_rds_cluster.dhall
 , aws_rds_engine_version = ./aws_rds_engine_version.dhall
 , aws_rds_orderable_db_instance = ./aws_rds_orderable_db_instance.dhall

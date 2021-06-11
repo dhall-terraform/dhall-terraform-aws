@@ -4,16 +4,16 @@
     , description : Optional Text
     , domain : Text
     , domain_owner : Optional Text
+    , id : Optional Text
+    , repository : Text
     , external_connections :
         Optional
           ( List
               { external_connection_name : Text
-              , package_format : Text
-              , status : Text
+              , package_format : Optional Text
+              , status : Optional Text
               }
           )
-    , id : Optional Text
-    , repository : Text
     , upstream : Optional (List { repository_name : Text })
     }
 , default =
@@ -21,15 +21,15 @@
   , arn = None Text
   , description = None Text
   , domain_owner = None Text
+  , id = None Text
   , external_connections =
       None
         ( List
             { external_connection_name : Text
-            , package_format : Text
-            , status : Text
+            , package_format : Optional Text
+            , status : Optional Text
             }
         )
-  , id = None Text
   , upstream = None (List { repository_name : Text })
   }
 }

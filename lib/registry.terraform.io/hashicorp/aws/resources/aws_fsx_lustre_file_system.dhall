@@ -2,6 +2,7 @@
     { arn : Optional Text
     , auto_import_policy : Optional Text
     , automatic_backup_retention_days : Optional Natural
+    , copy_tags_to_backups : Optional Bool
     , daily_automatic_backup_start_time : Optional Text
     , deployment_type : Optional Text
     , dns_name : Optional Text
@@ -28,6 +29,7 @@
   { arn = None Text
   , auto_import_policy = None Text
   , automatic_backup_retention_days = None Natural
+  , copy_tags_to_backups = None Bool
   , daily_automatic_backup_start_time = None Text
   , deployment_type = None Text
   , dns_name = None Text

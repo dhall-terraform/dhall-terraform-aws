@@ -1,6 +1,8 @@
 { Type =
     { description : Optional Text
     , id : Optional Text
+    , ipv6_address_count : Optional Natural
+    , ipv6_addresses : Optional (List Text)
     , mac_address : Optional Text
     , outpost_arn : Optional Text
     , private_dns_name : Optional Text
@@ -23,6 +25,8 @@
 , default =
   { description = None Text
   , id = None Text
+  , ipv6_address_count = None Natural
+  , ipv6_addresses = None (List Text)
   , mac_address = None Text
   , outpost_arn = None Text
   , private_dns_name = None Text

@@ -76,6 +76,7 @@
 , aws_autoscaling_group = ./aws_autoscaling_group.dhall
 , aws_autoscaling_lifecycle_hook = ./aws_autoscaling_lifecycle_hook.dhall
 , aws_autoscaling_notification = ./aws_autoscaling_notification.dhall
+, aws_autoscalingplans_scaling_plan = ./aws_autoscalingplans_scaling_plan.dhall
 , aws_autoscaling_policy = ./aws_autoscaling_policy.dhall
 , aws_autoscaling_schedule = ./aws_autoscaling_schedule.dhall
 , aws_backup_plan = ./aws_backup_plan.dhall
@@ -99,6 +100,7 @@
 , aws_cloudhsm_v2_hsm = ./aws_cloudhsm_v2_hsm.dhall
 , aws_cloudtrail = ./aws_cloudtrail.dhall
 , aws_cloudwatch_dashboard = ./aws_cloudwatch_dashboard.dhall
+, aws_cloudwatch_event_bus = ./aws_cloudwatch_event_bus.dhall
 , aws_cloudwatch_event_permission = ./aws_cloudwatch_event_permission.dhall
 , aws_cloudwatch_event_rule = ./aws_cloudwatch_event_rule.dhall
 , aws_cloudwatch_event_target = ./aws_cloudwatch_event_target.dhall
@@ -389,6 +391,8 @@
 , aws_iot_topic_rule = ./aws_iot_topic_rule.dhall
 , aws_key_pair = ./aws_key_pair.dhall
 , aws_kinesis_analytics_application = ./aws_kinesis_analytics_application.dhall
+, aws_kinesisanalyticsv2_application =
+    ./aws_kinesisanalyticsv2_application.dhall
 , aws_kinesis_firehose_delivery_stream =
     ./aws_kinesis_firehose_delivery_stream.dhall
 , aws_kinesis_stream = ./aws_kinesis_stream.dhall
@@ -629,6 +633,8 @@
 , aws_storagegateway_gateway = ./aws_storagegateway_gateway.dhall
 , aws_storagegateway_nfs_file_share = ./aws_storagegateway_nfs_file_share.dhall
 , aws_storagegateway_smb_file_share = ./aws_storagegateway_smb_file_share.dhall
+, aws_storagegateway_stored_iscsi_volume =
+    ./aws_storagegateway_stored_iscsi_volume.dhall
 , aws_storagegateway_upload_buffer = ./aws_storagegateway_upload_buffer.dhall
 , aws_storagegateway_working_storage =
     ./aws_storagegateway_working_storage.dhall
