@@ -127,6 +127,7 @@
               , lexmodels : Optional Text
               , licensemanager : Optional Text
               , lightsail : Optional Text
+              , location : Optional Text
               , macie : Optional Text
               , macie2 : Optional Text
               , managedblockchain : Optional Text
@@ -328,6 +329,7 @@
             , lexmodels : Optional Text
             , licensemanager : Optional Text
             , lightsail : Optional Text
+            , location : Optional Text
             , macie : Optional Text
             , macie2 : Optional Text
             , managedblockchain : Optional Text

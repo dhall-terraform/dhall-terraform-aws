@@ -6,6 +6,7 @@
     , metric_transformation :
         List
           { default_value : Optional Text
+          , dimensions : Optional (List { mapKey : Text, mapValue : Text })
           , name : Text
           , namespace : Text
           , value : Text

@@ -44,6 +44,7 @@
                         , enabled : Optional Bool
                         , expiration_in_days : Natural
                         , s3_bucket_name : Optional Text
+                        , s3_object_acl : Optional Text
                         }
                     )
               }
@@ -75,6 +76,7 @@
                       , enabled : Optional Bool
                       , expiration_in_days : Natural
                       , s3_bucket_name : Optional Text
+                      , s3_object_acl : Optional Text
                       }
                   )
             }
