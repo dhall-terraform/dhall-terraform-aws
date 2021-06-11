@@ -25,6 +25,7 @@
               , nat_gateway_id : Text
               , network_interface_id : Text
               , transit_gateway_id : Text
+              , vpc_endpoint_id : Text
               , vpc_peering_connection_id : Text
               }
           )
@@ -60,6 +61,7 @@
             , nat_gateway_id : Text
             , network_interface_id : Text
             , transit_gateway_id : Text
+            , vpc_endpoint_id : Text
             , vpc_peering_connection_id : Text
             }
         )

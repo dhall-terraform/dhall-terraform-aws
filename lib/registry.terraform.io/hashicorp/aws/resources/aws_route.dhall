@@ -14,6 +14,7 @@
     , route_table_id : Text
     , state : Optional Text
     , transit_gateway_id : Optional Text
+    , vpc_endpoint_id : Optional Text
     , vpc_peering_connection_id : Optional Text
     , timeouts : Optional { create : Optional Text, delete : Optional Text }
     }
@@ -32,6 +33,7 @@
   , origin = None Text
   , state = None Text
   , transit_gateway_id = None Text
+  , vpc_endpoint_id = None Text
   , vpc_peering_connection_id = None Text
   , timeouts = None { create : Optional Text, delete : Optional Text }
   }

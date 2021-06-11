@@ -204,6 +204,54 @@
                     )
               }
           )
+    , http_endpoint_configuration :
+        Optional
+          ( List
+              { access_key : Optional Text
+              , buffering_interval : Optional Natural
+              , buffering_size : Optional Natural
+              , name : Optional Text
+              , retry_duration : Optional Natural
+              , role_arn : Optional Text
+              , s3_backup_mode : Optional Text
+              , url : Text
+              , cloudwatch_logging_options :
+                  Optional
+                    ( List
+                        { enabled : Optional Bool
+                        , log_group_name : Optional Text
+                        , log_stream_name : Optional Text
+                        }
+                    )
+              , processing_configuration :
+                  Optional
+                    ( List
+                        { enabled : Optional Bool
+                        , processors :
+                            Optional
+                              ( List
+                                  { type : Text
+                                  , parameters :
+                                      Optional
+                                        ( List
+                                            { parameter_name : Text
+                                            , parameter_value : Text
+                                            }
+                                        )
+                                  }
+                              )
+                        }
+                    )
+              , request_configuration :
+                  Optional
+                    ( List
+                        { content_encoding : Optional Text
+                        , common_attributes :
+                            Optional (List { name : Text, value : Text })
+                        }
+                    )
+              }
+          )
     , kinesis_source_configuration :
         Optional (List { kinesis_stream_arn : Text, role_arn : Text })
     , redshift_configuration :
@@ -533,6 +581,54 @@
                                 , log_stream_name : Optional Text
                                 }
                             )
+                      }
+                  )
+            }
+        )
+  , http_endpoint_configuration =
+      None
+        ( List
+            { access_key : Optional Text
+            , buffering_interval : Optional Natural
+            , buffering_size : Optional Natural
+            , name : Optional Text
+            , retry_duration : Optional Natural
+            , role_arn : Optional Text
+            , s3_backup_mode : Optional Text
+            , url : Text
+            , cloudwatch_logging_options :
+                Optional
+                  ( List
+                      { enabled : Optional Bool
+                      , log_group_name : Optional Text
+                      , log_stream_name : Optional Text
+                      }
+                  )
+            , processing_configuration :
+                Optional
+                  ( List
+                      { enabled : Optional Bool
+                      , processors :
+                          Optional
+                            ( List
+                                { type : Text
+                                , parameters :
+                                    Optional
+                                      ( List
+                                          { parameter_name : Text
+                                          , parameter_value : Text
+                                          }
+                                      )
+                                }
+                            )
+                      }
+                  )
+            , request_configuration :
+                Optional
+                  ( List
+                      { content_encoding : Optional Text
+                      , common_attributes :
+                          Optional (List { name : Text, value : Text })
                       }
                   )
             }

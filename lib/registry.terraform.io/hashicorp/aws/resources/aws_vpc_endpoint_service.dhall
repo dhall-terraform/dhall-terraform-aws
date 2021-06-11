@@ -4,9 +4,10 @@
     , arn : Optional Text
     , availability_zones : Optional (List Text)
     , base_endpoint_dns_names : Optional (List Text)
+    , gateway_load_balancer_arns : Optional (List Text)
     , id : Optional Text
     , manages_vpc_endpoints : Optional Bool
-    , network_load_balancer_arns : List Text
+    , network_load_balancer_arns : Optional (List Text)
     , private_dns_name : Optional Text
     , service_name : Optional Text
     , service_type : Optional Text
@@ -18,8 +19,10 @@
   , arn = None Text
   , availability_zones = None (List Text)
   , base_endpoint_dns_names = None (List Text)
+  , gateway_load_balancer_arns = None (List Text)
   , id = None Text
   , manages_vpc_endpoints = None Bool
+  , network_load_balancer_arns = None (List Text)
   , private_dns_name = None Text
   , service_name = None Text
   , service_type = None Text

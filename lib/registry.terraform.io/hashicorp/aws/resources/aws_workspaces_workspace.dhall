@@ -10,6 +10,12 @@
     , user_name : Text
     , user_volume_encryption_enabled : Optional Bool
     , volume_encryption_key : Optional Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , update : Optional Text
+          }
     , workspace_properties :
         Optional
           ( List
@@ -30,6 +36,12 @@
   , tags = None (List { mapKey : Text, mapValue : Text })
   , user_volume_encryption_enabled = None Bool
   , volume_encryption_key = None Text
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , update : Optional Text
+        }
   , workspace_properties =
       None
         ( List

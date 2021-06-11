@@ -40,6 +40,15 @@
     , storage_encrypted : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_security_group_ids : Optional (List Text)
+    , restore_to_point_in_time :
+        Optional
+          ( List
+              { restore_to_time : Optional Text
+              , restore_type : Optional Text
+              , source_cluster_identifier : Text
+              , use_latest_restorable_time : Optional Bool
+              }
+          )
     , s3_import :
         Optional
           ( List
@@ -109,6 +118,15 @@
   , storage_encrypted = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
   , vpc_security_group_ids = None (List Text)
+  , restore_to_point_in_time =
+      None
+        ( List
+            { restore_to_time : Optional Text
+            , restore_type : Optional Text
+            , source_cluster_identifier : Text
+            , use_latest_restorable_time : Optional Bool
+            }
+        )
   , s3_import =
       None
         ( List

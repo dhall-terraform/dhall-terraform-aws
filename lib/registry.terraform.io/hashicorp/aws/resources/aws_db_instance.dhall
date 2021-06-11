@@ -29,6 +29,7 @@
     , instance_class : Text
     , iops : Optional Natural
     , kms_key_id : Optional Text
+    , latest_restorable_time : Optional Text
     , license_model : Optional Text
     , maintenance_window : Optional Text
     , max_allocated_storage : Optional Natural
@@ -57,6 +58,15 @@
     , timezone : Optional Text
     , username : Optional Text
     , vpc_security_group_ids : Optional (List Text)
+    , restore_to_point_in_time :
+        Optional
+          ( List
+              { restore_time : Optional Text
+              , source_db_instance_identifier : Optional Text
+              , source_dbi_resource_id : Optional Text
+              , use_latest_restorable_time : Optional Bool
+              }
+          )
     , s3_import :
         Optional
           ( List
@@ -104,6 +114,7 @@
   , identifier_prefix = None Text
   , iops = None Natural
   , kms_key_id = None Text
+  , latest_restorable_time = None Text
   , license_model = None Text
   , maintenance_window = None Text
   , max_allocated_storage = None Natural
@@ -132,6 +143,15 @@
   , timezone = None Text
   , username = None Text
   , vpc_security_group_ids = None (List Text)
+  , restore_to_point_in_time =
+      None
+        ( List
+            { restore_time : Optional Text
+            , source_db_instance_identifier : Optional Text
+            , source_dbi_resource_id : Optional Text
+            , use_latest_restorable_time : Optional Bool
+            }
+        )
   , s3_import =
       None
         ( List
