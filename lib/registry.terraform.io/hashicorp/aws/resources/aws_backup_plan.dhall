@@ -7,9 +7,8 @@
     , advanced_backup_setting :
         Optional
           ( List
-              { backup_options :
-                  Optional (List { mapKey : Text, mapValue : Text })
-              , resource_type : Optional Text
+              { backup_options : List { mapKey : Text, mapValue : Text }
+              , resource_type : Text
               }
           )
     , rule :
@@ -51,9 +50,8 @@
   , advanced_backup_setting =
       None
         ( List
-            { backup_options :
-                Optional (List { mapKey : Text, mapValue : Text })
-            , resource_type : Optional Text
+            { backup_options : List { mapKey : Text, mapValue : Text }
+            , resource_type : Text
             }
         )
   }

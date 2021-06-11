@@ -5,6 +5,7 @@
     , id : Optional Text
     , name : Text
     , schedule : Optional Text
+    , state : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , type : Text
     , workflow_name : Optional Text
@@ -40,6 +41,7 @@
   , enabled = None Bool
   , id = None Text
   , schedule = None Text
+  , state = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , workflow_name = None Text
   , predicate =

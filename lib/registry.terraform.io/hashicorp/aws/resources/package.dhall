@@ -156,6 +156,8 @@
 , aws_cognito_user_pool_client = ./aws_cognito_user_pool_client.dhall
 , aws_cognito_user_pool = ./aws_cognito_user_pool.dhall
 , aws_cognito_user_pool_domain = ./aws_cognito_user_pool_domain.dhall
+, aws_cognito_user_pool_ui_customization =
+    ./aws_cognito_user_pool_ui_customization.dhall
 , aws_config_aggregate_authorization =
     ./aws_config_aggregate_authorization.dhall
 , aws_config_config_rule = ./aws_config_config_rule.dhall
@@ -292,6 +294,7 @@
 , aws_ec2_transit_gateway_vpc_attachment =
     ./aws_ec2_transit_gateway_vpc_attachment.dhall
 , aws_ecr_lifecycle_policy = ./aws_ecr_lifecycle_policy.dhall
+, aws_ecrpublic_repository = ./aws_ecrpublic_repository.dhall
 , aws_ecr_repository = ./aws_ecr_repository.dhall
 , aws_ecr_repository_policy = ./aws_ecr_repository_policy.dhall
 , aws_ecs_capacity_provider = ./aws_ecs_capacity_provider.dhall
@@ -613,6 +616,7 @@
 , aws_s3control_bucket_policy = ./aws_s3control_bucket_policy.dhall
 , aws_s3_object_copy = ./aws_s3_object_copy.dhall
 , aws_s3outposts_endpoint = ./aws_s3outposts_endpoint.dhall
+, aws_sagemaker_app = ./aws_sagemaker_app.dhall
 , aws_sagemaker_app_image_config = ./aws_sagemaker_app_image_config.dhall
 , aws_sagemaker_code_repository = ./aws_sagemaker_code_repository.dhall
 , aws_sagemaker_domain = ./aws_sagemaker_domain.dhall

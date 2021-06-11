@@ -90,6 +90,14 @@
                           ( List
                               { instance_type : Optional Text
                               , weighted_capacity : Optional Text
+                              , launch_template_specification :
+                                  Optional
+                                    ( List
+                                        { launch_template_id : Optional Text
+                                        , launch_template_name : Optional Text
+                                        , version : Optional Text
+                                        }
+                                    )
                               }
                           )
                     }
@@ -189,6 +197,14 @@
                         ( List
                             { instance_type : Optional Text
                             , weighted_capacity : Optional Text
+                            , launch_template_specification :
+                                Optional
+                                  ( List
+                                      { launch_template_id : Optional Text
+                                      , launch_template_name : Optional Text
+                                      , version : Optional Text
+                                      }
+                                  )
                             }
                         )
                   }

@@ -19,10 +19,12 @@
               Optional
                 ( List
                     { default_resource_spec :
-                        List
-                          { instance_type : Optional Text
-                          , sagemaker_image_arn : Optional Text
-                          }
+                        Optional
+                          ( List
+                              { instance_type : Optional Text
+                              , sagemaker_image_arn : Optional Text
+                              }
+                          )
                     }
                 )
           , kernel_gateway_app_settings :
@@ -37,10 +39,12 @@
                               }
                           )
                     , default_resource_spec :
-                        List
-                          { instance_type : Optional Text
-                          , sagemaker_image_arn : Optional Text
-                          }
+                        Optional
+                          ( List
+                              { instance_type : Optional Text
+                              , sagemaker_image_arn : Optional Text
+                              }
+                          )
                     }
                 )
           , sharing_settings :
@@ -55,10 +59,12 @@
               Optional
                 ( List
                     { default_resource_spec :
-                        List
-                          { instance_type : Optional Text
-                          , sagemaker_image_arn : Optional Text
-                          }
+                        Optional
+                          ( List
+                              { instance_type : Optional Text
+                              , sagemaker_image_arn : Optional Text
+                              }
+                          )
                     }
                 )
           }
