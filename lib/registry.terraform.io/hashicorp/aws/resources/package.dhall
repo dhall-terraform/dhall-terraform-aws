@@ -577,6 +577,7 @@
 , aws_resourcegroups_group = ./aws_resourcegroups_group.dhall
 , aws_route53_delegation_set = ./aws_route53_delegation_set.dhall
 , aws_route53_health_check = ./aws_route53_health_check.dhall
+, aws_route53_hosted_zone_dnssec = ./aws_route53_hosted_zone_dnssec.dhall
 , aws_route53_key_signing_key = ./aws_route53_key_signing_key.dhall
 , aws_route53_query_log = ./aws_route53_query_log.dhall
 , aws_route53_record = ./aws_route53_record.dhall
