@@ -10,6 +10,7 @@
     , cname : Optional Text
     , cname_prefix : Optional Text
     , description : Optional Text
+    , endpoint_url : Optional Text
     , id : Optional Text
     , instances : Optional (List Text)
     , launch_configurations : Optional (List Text)
@@ -44,6 +45,7 @@
   , cname = None Text
   , cname_prefix = None Text
   , description = None Text
+  , endpoint_url = None Text
   , id = None Text
   , instances = None (List Text)
   , launch_configurations = None (List Text)
