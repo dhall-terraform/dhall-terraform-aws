@@ -8,6 +8,7 @@
     , disable_api_termination : Optional Bool
     , ebs_optimized : Optional Bool
     , get_password_data : Optional Bool
+    , hibernation : Optional Bool
     , host_id : Optional Text
     , iam_instance_profile : Optional Text
     , id : Optional Text
@@ -94,6 +95,7 @@
   , disable_api_termination = None Bool
   , ebs_optimized = None Bool
   , get_password_data = None Bool
+  , hibernation = None Bool
   , host_id = None Text
   , iam_instance_profile = None Text
   , id = None Text

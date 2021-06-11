@@ -160,6 +160,7 @@
               , wafregional : Optional Text
               , wafv2 : Optional Text
               , worklink : Optional Text
+              , workmail : Optional Text
               , workspaces : Optional Text
               , xray : Optional Text
               }
@@ -326,6 +327,7 @@
             , wafregional : Optional Text
             , wafv2 : Optional Text
             , worklink : Optional Text
+            , workmail : Optional Text
             , workspaces : Optional Text
             , xray : Optional Text
             }

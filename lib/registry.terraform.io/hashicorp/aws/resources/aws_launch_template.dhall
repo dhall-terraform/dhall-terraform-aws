@@ -46,6 +46,13 @@
                   Optional (List { capacity_reservation_id : Optional Text })
               }
           )
+    , cpu_options :
+        Optional
+          ( List
+              { core_count : Optional Natural
+              , threads_per_core : Optional Natural
+              }
+          )
     , credit_specification : Optional (List { cpu_credits : Optional Text })
     , elastic_gpu_specifications : Optional (List { type : Text })
     , elastic_inference_accelerator : Optional (List { type : Text })
@@ -152,6 +159,13 @@
             { capacity_reservation_preference : Optional Text
             , capacity_reservation_target :
                 Optional (List { capacity_reservation_id : Optional Text })
+            }
+        )
+  , cpu_options =
+      None
+        ( List
+            { core_count : Optional Natural
+            , threads_per_core : Optional Natural
             }
         )
   , credit_specification = None (List { cpu_credits : Optional Text })

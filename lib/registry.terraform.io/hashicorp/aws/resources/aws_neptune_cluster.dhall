@@ -7,6 +7,8 @@
     , cluster_identifier_prefix : Optional Text
     , cluster_members : Optional (List Text)
     , cluster_resource_id : Optional Text
+    , deletion_protection : Optional Bool
+    , enable_cloudwatch_logs_exports : Optional (List Text)
     , endpoint : Optional Text
     , engine : Optional Text
     , engine_version : Optional Text
@@ -44,6 +46,8 @@
   , cluster_identifier_prefix = None Text
   , cluster_members = None (List Text)
   , cluster_resource_id = None Text
+  , deletion_protection = None Bool
+  , enable_cloudwatch_logs_exports = None (List Text)
   , endpoint = None Text
   , engine = None Text
   , engine_version = None Text

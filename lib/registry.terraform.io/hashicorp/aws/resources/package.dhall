@@ -107,6 +107,8 @@
 , aws_codedeploy_deployment_group = ./aws_codedeploy_deployment_group.dhall
 , aws_codepipeline = ./aws_codepipeline.dhall
 , aws_codepipeline_webhook = ./aws_codepipeline_webhook.dhall
+, aws_codestarnotifications_notification_rule =
+    ./aws_codestarnotifications_notification_rule.dhall
 , aws_cognito_identity_pool = ./aws_cognito_identity_pool.dhall
 , aws_cognito_identity_pool_roles_attachment =
     ./aws_cognito_identity_pool_roles_attachment.dhall
@@ -464,6 +466,8 @@
 , aws_route_table = ./aws_route_table.dhall
 , aws_s3_account_public_access_block =
     ./aws_s3_account_public_access_block.dhall
+, aws_s3_bucket_analytics_configuration =
+    ./aws_s3_bucket_analytics_configuration.dhall
 , aws_s3_bucket = ./aws_s3_bucket.dhall
 , aws_s3_bucket_inventory = ./aws_s3_bucket_inventory.dhall
 , aws_s3_bucket_metric = ./aws_s3_bucket_metric.dhall

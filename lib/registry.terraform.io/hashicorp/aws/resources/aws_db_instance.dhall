@@ -12,6 +12,7 @@
     , character_set_name : Optional Text
     , copy_tags_to_snapshot : Optional Bool
     , db_subnet_group_name : Optional Text
+    , delete_automated_backups : Optional Bool
     , deletion_protection : Optional Bool
     , domain : Optional Text
     , domain_iam_role_name : Optional Text
@@ -87,6 +88,7 @@
   , character_set_name = None Text
   , copy_tags_to_snapshot = None Bool
   , db_subnet_group_name = None Text
+  , delete_automated_backups = None Bool
   , deletion_protection = None Bool
   , domain = None Text
   , domain_iam_role_name = None Text
