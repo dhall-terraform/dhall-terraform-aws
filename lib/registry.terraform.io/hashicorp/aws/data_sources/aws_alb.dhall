@@ -9,6 +9,7 @@
     , id : Optional Text
     , idle_timeout : Optional Natural
     , internal : Optional Bool
+    , ip_address_type : Optional Text
     , load_balancer_type : Optional Text
     , name : Optional Text
     , security_groups : Optional (List Text)
@@ -29,6 +30,7 @@
   , id = None Text
   , idle_timeout = None Natural
   , internal = None Bool
+  , ip_address_type = None Text
   , load_balancer_type = None Text
   , name = None Text
   , security_groups = None (List Text)

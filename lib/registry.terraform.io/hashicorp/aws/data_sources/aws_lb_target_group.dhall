@@ -18,6 +18,7 @@
           )
     , id : Optional Text
     , lambda_multi_value_headers_enabled : Optional Bool
+    , load_balancing_algorithm_type : Optional Text
     , name : Optional Text
     , port : Optional Natural
     , protocol : Optional Text
@@ -50,6 +51,7 @@
         )
   , id = None Text
   , lambda_multi_value_headers_enabled = None Bool
+  , load_balancing_algorithm_type = None Text
   , name = None Text
   , port = None Natural
   , protocol = None Text

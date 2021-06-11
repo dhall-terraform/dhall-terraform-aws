@@ -6,6 +6,7 @@
     , name : Text
     , sql : Text
     , sql_version : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , cloudwatch_alarm :
         Optional
           ( List
@@ -100,6 +101,7 @@
   { arn = None Text
   , description = None Text
   , id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , cloudwatch_alarm =
       None
         ( List

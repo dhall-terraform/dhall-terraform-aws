@@ -1,6 +1,7 @@
 { Type =
     { arn : Optional Text
     , availability_zones : Optional (List Text)
+    , backtrack_window : Optional Natural
     , backup_retention_period : Optional Natural
     , cluster_identifier : Text
     , cluster_members : Optional (List Text)
@@ -31,6 +32,7 @@
 , default =
   { arn = None Text
   , availability_zones = None (List Text)
+  , backtrack_window = None Natural
   , backup_retention_period = None Natural
   , cluster_members = None (List Text)
   , cluster_resource_id = None Text

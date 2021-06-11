@@ -2,7 +2,7 @@
     { activation_code : Optional Text
     , description : Optional Text
     , expiration_date : Optional Text
-    , expired : Optional Text
+    , expired : Optional Bool
     , iam_role : Text
     , id : Optional Text
     , name : Optional Text
@@ -14,7 +14,7 @@
   { activation_code = None Text
   , description = None Text
   , expiration_date = None Text
-  , expired = None Text
+  , expired = None Bool
   , id = None Text
   , name = None Text
   , registration_count = None Natural

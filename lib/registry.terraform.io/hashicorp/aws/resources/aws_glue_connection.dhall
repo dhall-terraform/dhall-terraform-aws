@@ -1,5 +1,6 @@
 { Type =
-    { catalog_id : Optional Text
+    { arn : Optional Text
+    , catalog_id : Optional Text
     , connection_properties : List { mapKey : Text, mapValue : Text }
     , connection_type : Optional Text
     , description : Optional Text
@@ -16,7 +17,8 @@
           )
     }
 , default =
-  { catalog_id = None Text
+  { arn = None Text
+  , catalog_id = None Text
   , connection_type = None Text
   , description = None Text
   , id = None Text

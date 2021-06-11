@@ -3,6 +3,7 @@
     , arn : Optional Text
     , cluster_name : Text
     , disk_size : Optional Natural
+    , force_update_version : Optional Bool
     , id : Optional Text
     , instance_types : Optional (List Text)
     , labels : Optional (List { mapKey : Text, mapValue : Text })
@@ -40,6 +41,7 @@
   { ami_type = None Text
   , arn = None Text
   , disk_size = None Natural
+  , force_update_version = None Bool
   , id = None Text
   , instance_types = None (List Text)
   , labels = None (List { mapKey : Text, mapValue : Text })

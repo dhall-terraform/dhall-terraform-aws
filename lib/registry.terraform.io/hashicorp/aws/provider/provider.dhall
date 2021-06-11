@@ -156,6 +156,7 @@
               , storagegateway : Optional Text
               , sts : Optional Text
               , swf : Optional Text
+              , synthetics : Optional Text
               , transfer : Optional Text
               , waf : Optional Text
               , wafregional : Optional Text
@@ -331,6 +332,7 @@
             , storagegateway : Optional Text
             , sts : Optional Text
             , swf : Optional Text
+            , synthetics : Optional Text
             , transfer : Optional Text
             , waf : Optional Text
             , wafregional : Optional Text

@@ -6,6 +6,7 @@
     , description : Optional Text
     , document_format : Optional Text
     , document_type : Text
+    , document_version : Optional Text
     , hash : Optional Text
     , hash_type : Optional Text
     , id : Optional Text
@@ -36,6 +37,7 @@
   , default_version = None Text
   , description = None Text
   , document_format = None Text
+  , document_version = None Text
   , hash = None Text
   , hash_type = None Text
   , id = None Text

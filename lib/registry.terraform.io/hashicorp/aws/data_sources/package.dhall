@@ -70,6 +70,7 @@
 , aws_ecs_container_definition = ./aws_ecs_container_definition.dhall
 , aws_ecs_service = ./aws_ecs_service.dhall
 , aws_ecs_task_definition = ./aws_ecs_task_definition.dhall
+, aws_efs_access_point = ./aws_efs_access_point.dhall
 , aws_efs_file_system = ./aws_efs_file_system.dhall
 , aws_efs_mount_target = ./aws_efs_mount_target.dhall
 , aws_eip = ./aws_eip.dhall
@@ -177,6 +178,8 @@
 , aws_wafregional_rule = ./aws_wafregional_rule.dhall
 , aws_wafregional_web_acl = ./aws_wafregional_web_acl.dhall
 , aws_waf_rule = ./aws_waf_rule.dhall
+, aws_wafv2_ip_set = ./aws_wafv2_ip_set.dhall
+, aws_wafv2_regex_pattern_set = ./aws_wafv2_regex_pattern_set.dhall
 , aws_waf_web_acl = ./aws_waf_web_acl.dhall
 , aws_workspaces_bundle = ./aws_workspaces_bundle.dhall
 }
