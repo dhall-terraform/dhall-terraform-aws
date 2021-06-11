@@ -315,6 +315,7 @@
 , aws_egress_only_internet_gateway = ./aws_egress_only_internet_gateway.dhall
 , aws_eip_association = ./aws_eip_association.dhall
 , aws_eip = ./aws_eip.dhall
+, aws_eks_addon = ./aws_eks_addon.dhall
 , aws_eks_cluster = ./aws_eks_cluster.dhall
 , aws_eks_fargate_profile = ./aws_eks_fargate_profile.dhall
 , aws_eks_node_group = ./aws_eks_node_group.dhall
@@ -597,6 +598,8 @@
 , aws_route53_resolver_dnssec_config =
     ./aws_route53_resolver_dnssec_config.dhall
 , aws_route53_resolver_endpoint = ./aws_route53_resolver_endpoint.dhall
+, aws_route53_resolver_firewall_domain_list =
+    ./aws_route53_resolver_firewall_domain_list.dhall
 , aws_route53_resolver_firewall_rule_group =
     ./aws_route53_resolver_firewall_rule_group.dhall
 , aws_route53_resolver_query_log_config_association =
@@ -657,6 +660,7 @@
 , aws_security_group_rule = ./aws_security_group_rule.dhall
 , aws_securityhub_account = ./aws_securityhub_account.dhall
 , aws_securityhub_action_target = ./aws_securityhub_action_target.dhall
+, aws_securityhub_insight = ./aws_securityhub_insight.dhall
 , aws_securityhub_invite_accepter = ./aws_securityhub_invite_accepter.dhall
 , aws_securityhub_member = ./aws_securityhub_member.dhall
 , aws_securityhub_organization_admin_account =

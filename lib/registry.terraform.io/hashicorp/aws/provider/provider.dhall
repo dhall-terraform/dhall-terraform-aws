@@ -75,6 +75,7 @@
               , datapipeline : Optional Text
               , datasync : Optional Text
               , dax : Optional Text
+              , detective : Optional Text
               , devicefarm : Optional Text
               , directconnect : Optional Text
               , dlm : Optional Text
@@ -271,6 +272,7 @@
             , datapipeline : Optional Text
             , datasync : Optional Text
             , dax : Optional Text
+            , detective : Optional Text
             , devicefarm : Optional Text
             , directconnect : Optional Text
             , dlm : Optional Text

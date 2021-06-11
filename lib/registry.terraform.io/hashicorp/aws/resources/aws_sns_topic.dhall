@@ -3,8 +3,10 @@
     , application_success_feedback_role_arn : Optional Text
     , application_success_feedback_sample_rate : Optional Natural
     , arn : Optional Text
+    , content_based_deduplication : Optional Bool
     , delivery_policy : Optional Text
     , display_name : Optional Text
+    , fifo_topic : Optional Bool
     , http_failure_feedback_role_arn : Optional Text
     , http_success_feedback_role_arn : Optional Text
     , http_success_feedback_sample_rate : Optional Natural
@@ -26,8 +28,10 @@
   , application_success_feedback_role_arn = None Text
   , application_success_feedback_sample_rate = None Natural
   , arn = None Text
+  , content_based_deduplication = None Bool
   , delivery_policy = None Text
   , display_name = None Text
+  , fifo_topic = None Bool
   , http_failure_feedback_role_arn = None Text
   , http_success_feedback_role_arn = None Text
   , http_success_feedback_sample_rate = None Natural

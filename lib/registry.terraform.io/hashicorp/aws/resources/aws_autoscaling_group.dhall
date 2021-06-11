@@ -6,6 +6,7 @@
     , desired_capacity : Optional Natural
     , enabled_metrics : Optional (List Text)
     , force_delete : Optional Bool
+    , force_delete_warm_pool : Optional Bool
     , health_check_grace_period : Optional Natural
     , health_check_type : Optional Text
     , id : Optional Text
@@ -106,6 +107,14 @@
     , tag :
         Optional (List { key : Text, propagate_at_launch : Bool, value : Text })
     , timeouts : Optional { delete : Optional Text }
+    , warm_pool :
+        Optional
+          ( List
+              { max_group_prepared_capacity : Optional Natural
+              , min_size : Optional Natural
+              , pool_state : Optional Text
+              }
+          )
     }
 , default =
   { arn = None Text
@@ -115,6 +124,7 @@
   , desired_capacity = None Natural
   , enabled_metrics = None (List Text)
   , force_delete = None Bool
+  , force_delete_warm_pool = None Bool
   , health_check_grace_period = None Natural
   , health_check_type = None Text
   , id = None Text
@@ -212,5 +222,13 @@
         )
   , tag = None (List { key : Text, propagate_at_launch : Bool, value : Text })
   , timeouts = None { delete : Optional Text }
+  , warm_pool =
+      None
+        ( List
+            { max_group_prepared_capacity : Optional Natural
+            , min_size : Optional Natural
+            , pool_state : Optional Text
+            }
+        )
   }
 }

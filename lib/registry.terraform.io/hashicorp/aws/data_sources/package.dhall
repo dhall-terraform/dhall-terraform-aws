@@ -104,6 +104,7 @@
 , aws_efs_file_system = ./aws_efs_file_system.dhall
 , aws_efs_mount_target = ./aws_efs_mount_target.dhall
 , aws_eip = ./aws_eip.dhall
+, aws_eks_addon = ./aws_eks_addon.dhall
 , aws_eks_cluster_auth = ./aws_eks_cluster_auth.dhall
 , aws_eks_cluster = ./aws_eks_cluster.dhall
 , aws_elasticache_cluster = ./aws_elasticache_cluster.dhall

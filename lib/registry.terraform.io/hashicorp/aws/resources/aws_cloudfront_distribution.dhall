@@ -17,6 +17,13 @@
     , retain_on_delete : Optional Bool
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , trusted_key_groups :
+        Optional
+          ( List
+              { enabled : Bool
+              , items : List { key_group_id : Text, key_pair_ids : List Text }
+              }
+          )
     , trusted_signers :
         Optional
           ( List
@@ -50,6 +57,7 @@
           , realtime_log_config_arn : Optional Text
           , smooth_streaming : Optional Bool
           , target_origin_id : Text
+          , trusted_key_groups : Optional (List Text)
           , trusted_signers : Optional (List Text)
           , viewer_protocol_policy : Text
           , forwarded_values :
@@ -98,6 +106,7 @@
               , realtime_log_config_arn : Optional Text
               , smooth_streaming : Optional Bool
               , target_origin_id : Text
+              , trusted_key_groups : Optional (List Text)
               , trusted_signers : Optional (List Text)
               , viewer_protocol_policy : Text
               , forwarded_values :
@@ -182,6 +191,13 @@
   , retain_on_delete = None Bool
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , trusted_key_groups =
+      None
+        ( List
+            { enabled : Bool
+            , items : List { key_group_id : Text, key_pair_ids : List Text }
+            }
+        )
   , trusted_signers =
       None
         ( List
@@ -225,6 +241,7 @@
             , realtime_log_config_arn : Optional Text
             , smooth_streaming : Optional Bool
             , target_origin_id : Text
+            , trusted_key_groups : Optional (List Text)
             , trusted_signers : Optional (List Text)
             , viewer_protocol_policy : Text
             , forwarded_values :

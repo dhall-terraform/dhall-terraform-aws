@@ -126,6 +126,7 @@
               , key_name : Optional Text
               , service_access_security_group : Optional Text
               , subnet_id : Optional Text
+              , subnet_ids : Optional (List Text)
               }
           )
     , kerberos_attributes :
@@ -337,6 +338,7 @@
             , key_name : Optional Text
             , service_access_security_group : Optional Text
             , subnet_id : Optional Text
+            , subnet_ids : Optional (List Text)
             }
         )
   , kerberos_attributes =

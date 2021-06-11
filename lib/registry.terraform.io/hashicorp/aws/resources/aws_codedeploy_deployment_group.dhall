@@ -1,10 +1,14 @@
 { Type =
     { app_name : Text
+    , arn : Optional Text
     , autoscaling_groups : Optional (List Text)
+    , compute_platform : Optional Text
     , deployment_config_name : Optional Text
+    , deployment_group_id : Optional Text
     , deployment_group_name : Text
     , id : Optional Text
     , service_role_arn : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , alarm_configuration :
         Optional
           ( List
@@ -101,9 +105,13 @@
           )
     }
 , default =
-  { autoscaling_groups = None (List Text)
+  { arn = None Text
+  , autoscaling_groups = None (List Text)
+  , compute_platform = None Text
   , deployment_config_name = None Text
+  , deployment_group_id = None Text
   , id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , alarm_configuration =
       None
         ( List
