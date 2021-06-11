@@ -1,5 +1,6 @@
 { Type =
     { arn : Text
+    , event_bus_name : Optional Text
     , id : Optional Text
     , input : Optional Text
     , input_path : Optional Text
@@ -45,7 +46,8 @@
     , sqs_target : Optional (List { message_group_id : Optional Text })
     }
 , default =
-  { id = None Text
+  { event_bus_name = None Text
+  , id = None Text
   , input = None Text
   , input_path = None Text
   , role_arn = None Text

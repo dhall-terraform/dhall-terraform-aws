@@ -24,7 +24,7 @@
                   Optional (List { resource_arn : Text, role_arn : Text })
               , kinesis_stream :
                   Optional (List { resource_arn : Text, role_arn : Text })
-              , parallelism : Optional (List { count : Natural })
+              , parallelism : Optional (List { count : Optional Natural })
               , processing_configuration :
                   Optional
                     ( List
@@ -139,7 +139,7 @@
                 Optional (List { resource_arn : Text, role_arn : Text })
             , kinesis_stream :
                 Optional (List { resource_arn : Text, role_arn : Text })
-            , parallelism : Optional (List { count : Natural })
+            , parallelism : Optional (List { count : Optional Natural })
             , processing_configuration :
                 Optional
                   ( List

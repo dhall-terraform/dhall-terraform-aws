@@ -13,6 +13,7 @@
               , image : Text
               , mode : Optional Text
               , model_data_url : Optional Text
+              , image_config : Optional (List { repository_access_mode : Text })
               }
           )
     , primary_container :
@@ -23,6 +24,7 @@
               , image : Text
               , mode : Optional Text
               , model_data_url : Optional Text
+              , image_config : Optional (List { repository_access_mode : Text })
               }
           )
     , vpc_config :
@@ -42,6 +44,7 @@
             , image : Text
             , mode : Optional Text
             , model_data_url : Optional Text
+            , image_config : Optional (List { repository_access_mode : Text })
             }
         )
   , primary_container =
@@ -52,6 +55,7 @@
             , image : Text
             , mode : Optional Text
             , model_data_url : Optional Text
+            , image_config : Optional (List { repository_access_mode : Text })
             }
         )
   , vpc_config =

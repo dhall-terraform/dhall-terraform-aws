@@ -7,6 +7,7 @@
     , domain : Optional Text
     , id : Optional Text
     , instance : Optional Text
+    , network_border_group : Optional Text
     , network_interface : Optional Text
     , private_dns : Optional Text
     , private_ip : Optional Text
@@ -31,6 +32,7 @@
   , domain = None Text
   , id = None Text
   , instance = None Text
+  , network_border_group = None Text
   , network_interface = None Text
   , private_dns = None Text
   , private_ip = None Text

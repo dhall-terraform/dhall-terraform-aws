@@ -29,6 +29,11 @@
               , path : Text
               }
           )
+    , mongodb_target :
+        Optional
+          ( List
+              { connection_name : Text, path : Text, scan_all : Optional Bool }
+          )
     , s3_target :
         Optional
           ( List
@@ -72,6 +77,9 @@
             , path : Text
             }
         )
+  , mongodb_target =
+      None
+        (List { connection_name : Text, path : Text, scan_all : Optional Bool })
   , s3_target =
       None
         ( List

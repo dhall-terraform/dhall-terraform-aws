@@ -174,6 +174,7 @@
 , aws_region = ./aws_region.dhall
 , aws_regions = ./aws_regions.dhall
 , aws_route53_delegation_set = ./aws_route53_delegation_set.dhall
+, aws_route53_resolver_endpoint = ./aws_route53_resolver_endpoint.dhall
 , aws_route53_resolver_rule = ./aws_route53_resolver_rule.dhall
 , aws_route53_resolver_rules = ./aws_route53_resolver_rules.dhall
 , aws_route53_zone = ./aws_route53_zone.dhall
@@ -183,6 +184,7 @@
 , aws_s3_bucket = ./aws_s3_bucket.dhall
 , aws_s3_bucket_object = ./aws_s3_bucket_object.dhall
 , aws_s3_bucket_objects = ./aws_s3_bucket_objects.dhall
+, aws_sagemaker_prebuilt_ecr_image = ./aws_sagemaker_prebuilt_ecr_image.dhall
 , aws_secretsmanager_secret = ./aws_secretsmanager_secret.dhall
 , aws_secretsmanager_secret_rotation =
     ./aws_secretsmanager_secret_rotation.dhall
@@ -225,4 +227,5 @@
 , aws_workspaces_bundle = ./aws_workspaces_bundle.dhall
 , aws_workspaces_directory = ./aws_workspaces_directory.dhall
 , aws_workspaces_image = ./aws_workspaces_image.dhall
+, aws_workspaces_workspace = ./aws_workspaces_workspace.dhall
 }

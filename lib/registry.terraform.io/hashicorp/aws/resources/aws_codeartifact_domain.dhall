@@ -7,6 +7,7 @@
     , id : Optional Text
     , owner : Optional Text
     , repository_count : Optional Natural
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { arn = None Text
@@ -15,5 +16,6 @@
   , id = None Text
   , owner = None Text
   , repository_count = None Natural
+  , tags = None (List { mapKey : Text, mapValue : Text })
   }
 }

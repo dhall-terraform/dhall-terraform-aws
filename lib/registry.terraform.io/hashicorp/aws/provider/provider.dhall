@@ -61,6 +61,7 @@
               , codecommit : Optional Text
               , codedeploy : Optional Text
               , codepipeline : Optional Text
+              , codestarconnections : Optional Text
               , cognitoidentity : Optional Text
               , cognitoidp : Optional Text
               , configservice : Optional Text
@@ -247,6 +248,7 @@
             , codecommit : Optional Text
             , codedeploy : Optional Text
             , codepipeline : Optional Text
+            , codestarconnections : Optional Text
             , cognitoidentity : Optional Text
             , cognitoidp : Optional Text
             , configservice : Optional Text

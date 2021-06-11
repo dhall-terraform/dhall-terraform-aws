@@ -571,6 +571,7 @@
 , aws_sagemaker_notebook_instance_lifecycle_configuration =
     ./aws_sagemaker_notebook_instance_lifecycle_configuration.dhall
 , aws_secretsmanager_secret = ./aws_secretsmanager_secret.dhall
+, aws_secretsmanager_secret_policy = ./aws_secretsmanager_secret_policy.dhall
 , aws_secretsmanager_secret_rotation =
     ./aws_secretsmanager_secret_rotation.dhall
 , aws_secretsmanager_secret_version = ./aws_secretsmanager_secret_version.dhall

@@ -13,7 +13,10 @@
           { arguments : Optional (List { mapKey : Text, mapValue : Text })
           , crawler_name : Optional Text
           , job_name : Optional Text
+          , security_configuration : Optional Text
           , timeout : Optional Natural
+          , notification_property :
+              Optional (List { notify_delay_after : Optional Natural })
           }
     , predicate :
         Optional
