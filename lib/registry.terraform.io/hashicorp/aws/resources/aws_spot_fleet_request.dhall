@@ -19,51 +19,75 @@
     , valid_until : Optional Text
     , wait_for_fulfillment : Optional Bool
     , launch_specification :
-        List
-          { ami : Text
-          , associate_public_ip_address : Optional Bool
-          , availability_zone : Optional Text
-          , ebs_optimized : Optional Bool
-          , iam_instance_profile : Optional Text
-          , iam_instance_profile_arn : Optional Text
-          , instance_type : Text
-          , key_name : Optional Text
-          , monitoring : Optional Bool
-          , placement_group : Optional Text
-          , placement_tenancy : Optional Text
-          , spot_price : Optional Text
-          , subnet_id : Optional Text
-          , tags : Optional (List { mapKey : Text, mapValue : Text })
-          , user_data : Optional Text
-          , vpc_security_group_ids : Optional (List Text)
-          , weighted_capacity : Optional Text
-          , ebs_block_device :
-              Optional
-                ( List
-                    { delete_on_termination : Optional Bool
-                    , device_name : Text
-                    , encrypted : Optional Bool
-                    , iops : Optional Natural
-                    , kms_key_id : Optional Text
-                    , snapshot_id : Optional Text
-                    , volume_size : Optional Natural
-                    , volume_type : Optional Text
+        Optional
+          ( List
+              { ami : Text
+              , associate_public_ip_address : Optional Bool
+              , availability_zone : Optional Text
+              , ebs_optimized : Optional Bool
+              , iam_instance_profile : Optional Text
+              , iam_instance_profile_arn : Optional Text
+              , instance_type : Text
+              , key_name : Optional Text
+              , monitoring : Optional Bool
+              , placement_group : Optional Text
+              , placement_tenancy : Optional Text
+              , spot_price : Optional Text
+              , subnet_id : Optional Text
+              , tags : Optional (List { mapKey : Text, mapValue : Text })
+              , user_data : Optional Text
+              , vpc_security_group_ids : Optional (List Text)
+              , weighted_capacity : Optional Text
+              , ebs_block_device :
+                  Optional
+                    ( List
+                        { delete_on_termination : Optional Bool
+                        , device_name : Text
+                        , encrypted : Optional Bool
+                        , iops : Optional Natural
+                        , kms_key_id : Optional Text
+                        , snapshot_id : Optional Text
+                        , volume_size : Optional Natural
+                        , volume_type : Optional Text
+                        }
+                    )
+              , ephemeral_block_device :
+                  Optional (List { device_name : Text, virtual_name : Text })
+              , root_block_device :
+                  Optional
+                    ( List
+                        { delete_on_termination : Optional Bool
+                        , encrypted : Optional Bool
+                        , iops : Optional Natural
+                        , kms_key_id : Optional Text
+                        , volume_size : Optional Natural
+                        , volume_type : Optional Text
+                        }
+                    )
+              }
+          )
+    , launch_template_config :
+        Optional
+          ( List
+              { launch_template_specification :
+                  List
+                    { id : Optional Text
+                    , name : Optional Text
+                    , version : Optional Text
                     }
-                )
-          , ephemeral_block_device :
-              Optional (List { device_name : Text, virtual_name : Text })
-          , root_block_device :
-              Optional
-                ( List
-                    { delete_on_termination : Optional Bool
-                    , encrypted : Optional Bool
-                    , iops : Optional Natural
-                    , kms_key_id : Optional Text
-                    , volume_size : Optional Natural
-                    , volume_type : Optional Text
-                    }
-                )
-          }
+              , overrides :
+                  Optional
+                    ( List
+                        { availability_zone : Optional Text
+                        , instance_type : Optional Text
+                        , priority : Optional Natural
+                        , spot_price : Optional Text
+                        , subnet_id : Optional Text
+                        , weighted_capacity : Optional Natural
+                        }
+                    )
+              }
+          )
     , timeouts : Optional { create : Optional Text, delete : Optional Text }
     }
 , default =
@@ -84,6 +108,76 @@
   , valid_from = None Text
   , valid_until = None Text
   , wait_for_fulfillment = None Bool
+  , launch_specification =
+      None
+        ( List
+            { ami : Text
+            , associate_public_ip_address : Optional Bool
+            , availability_zone : Optional Text
+            , ebs_optimized : Optional Bool
+            , iam_instance_profile : Optional Text
+            , iam_instance_profile_arn : Optional Text
+            , instance_type : Text
+            , key_name : Optional Text
+            , monitoring : Optional Bool
+            , placement_group : Optional Text
+            , placement_tenancy : Optional Text
+            , spot_price : Optional Text
+            , subnet_id : Optional Text
+            , tags : Optional (List { mapKey : Text, mapValue : Text })
+            , user_data : Optional Text
+            , vpc_security_group_ids : Optional (List Text)
+            , weighted_capacity : Optional Text
+            , ebs_block_device :
+                Optional
+                  ( List
+                      { delete_on_termination : Optional Bool
+                      , device_name : Text
+                      , encrypted : Optional Bool
+                      , iops : Optional Natural
+                      , kms_key_id : Optional Text
+                      , snapshot_id : Optional Text
+                      , volume_size : Optional Natural
+                      , volume_type : Optional Text
+                      }
+                  )
+            , ephemeral_block_device :
+                Optional (List { device_name : Text, virtual_name : Text })
+            , root_block_device :
+                Optional
+                  ( List
+                      { delete_on_termination : Optional Bool
+                      , encrypted : Optional Bool
+                      , iops : Optional Natural
+                      , kms_key_id : Optional Text
+                      , volume_size : Optional Natural
+                      , volume_type : Optional Text
+                      }
+                  )
+            }
+        )
+  , launch_template_config =
+      None
+        ( List
+            { launch_template_specification :
+                List
+                  { id : Optional Text
+                  , name : Optional Text
+                  , version : Optional Text
+                  }
+            , overrides :
+                Optional
+                  ( List
+                      { availability_zone : Optional Text
+                      , instance_type : Optional Text
+                      , priority : Optional Natural
+                      , spot_price : Optional Text
+                      , subnet_id : Optional Text
+                      , weighted_capacity : Optional Natural
+                      }
+                  )
+            }
+        )
   , timeouts = None { create : Optional Text, delete : Optional Text }
   }
 }

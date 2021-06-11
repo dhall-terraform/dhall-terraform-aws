@@ -5,6 +5,7 @@
     , id : Optional Text
     , iops : Optional Natural
     , kms_key_id : Optional Text
+    , outpost_arn : Optional Text
     , size : Optional Natural
     , snapshot_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -16,6 +17,7 @@
   , id = None Text
   , iops = None Natural
   , kms_key_id = None Text
+  , outpost_arn = None Text
   , size = None Natural
   , snapshot_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })

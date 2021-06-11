@@ -232,6 +232,8 @@
 , aws_ec2_traffic_mirror_session = ./aws_ec2_traffic_mirror_session.dhall
 , aws_ec2_traffic_mirror_target = ./aws_ec2_traffic_mirror_target.dhall
 , aws_ec2_transit_gateway = ./aws_ec2_transit_gateway.dhall
+, aws_ec2_transit_gateway_peering_attachment =
+    ./aws_ec2_transit_gateway_peering_attachment.dhall
 , aws_ec2_transit_gateway_route = ./aws_ec2_transit_gateway_route.dhall
 , aws_ec2_transit_gateway_route_table_association =
     ./aws_ec2_transit_gateway_route_table_association.dhall
@@ -305,6 +307,10 @@
 , aws_guardduty_invite_accepter = ./aws_guardduty_invite_accepter.dhall
 , aws_guardduty_ipset = ./aws_guardduty_ipset.dhall
 , aws_guardduty_member = ./aws_guardduty_member.dhall
+, aws_guardduty_organization_admin_account =
+    ./aws_guardduty_organization_admin_account.dhall
+, aws_guardduty_organization_configuration =
+    ./aws_guardduty_organization_configuration.dhall
 , aws_guardduty_threatintelset = ./aws_guardduty_threatintelset.dhall
 , aws_iam_access_key = ./aws_iam_access_key.dhall
 , aws_iam_account_alias = ./aws_iam_account_alias.dhall

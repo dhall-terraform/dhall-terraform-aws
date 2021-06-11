@@ -11,6 +11,7 @@
     , kms_key_arn : Optional Text
     , location_arn : Text
     , object_acl : Optional Text
+    , path : Optional Text
     , read_only : Optional Bool
     , requester_pays : Optional Bool
     , role_arn : Text
@@ -34,6 +35,7 @@
   , kms_encrypted = None Bool
   , kms_key_arn = None Text
   , object_acl = None Text
+  , path = None Text
   , read_only = None Bool
   , requester_pays = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })

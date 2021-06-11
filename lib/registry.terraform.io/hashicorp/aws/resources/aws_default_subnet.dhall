@@ -8,6 +8,7 @@
     , ipv6_cidr_block : Optional Text
     , ipv6_cidr_block_association_id : Optional Text
     , map_public_ip_on_launch : Optional Bool
+    , outpost_arn : Optional Text
     , owner_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_id : Optional Text
@@ -22,6 +23,7 @@
   , ipv6_cidr_block = None Text
   , ipv6_cidr_block_association_id = None Text
   , map_public_ip_on_launch = None Bool
+  , outpost_arn = None Text
   , owner_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , vpc_id = None Text

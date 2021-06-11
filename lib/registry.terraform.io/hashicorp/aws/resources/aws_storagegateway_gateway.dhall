@@ -7,6 +7,7 @@
     , gateway_name : Text
     , gateway_timezone : Text
     , gateway_type : Optional Text
+    , gateway_vpc_endpoint : Optional Text
     , id : Optional Text
     , medium_changer_type : Optional Text
     , smb_guest_password : Optional Text
@@ -23,6 +24,7 @@
   , gateway_id = None Text
   , gateway_ip_address = None Text
   , gateway_type = None Text
+  , gateway_vpc_endpoint = None Text
   , id = None Text
   , medium_changer_type = None Text
   , smb_guest_password = None Text

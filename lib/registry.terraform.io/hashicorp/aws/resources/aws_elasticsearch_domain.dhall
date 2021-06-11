@@ -56,6 +56,7 @@
     , node_to_node_encryption : Optional (List { enabled : Bool })
     , snapshot_options :
         Optional (List { automated_snapshot_start_hour : Natural })
+    , timeouts : Optional { update : Optional Text }
     , vpc_options :
         Optional
           ( List
@@ -120,6 +121,7 @@
         )
   , node_to_node_encryption = None (List { enabled : Bool })
   , snapshot_options = None (List { automated_snapshot_start_hour : Natural })
+  , timeouts = None { update : Optional Text }
   , vpc_options =
       None
         ( List

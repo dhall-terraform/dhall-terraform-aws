@@ -14,6 +14,9 @@
 , aws_autoscaling_groups = ./aws_autoscaling_groups.dhall
 , aws_availability_zone = ./aws_availability_zone.dhall
 , aws_availability_zones = ./aws_availability_zones.dhall
+, aws_backup_plan = ./aws_backup_plan.dhall
+, aws_backup_selection = ./aws_backup_selection.dhall
+, aws_backup_vault = ./aws_backup_vault.dhall
 , aws_batch_compute_environment = ./aws_batch_compute_environment.dhall
 , aws_batch_job_queue = ./aws_batch_job_queue.dhall
 , aws_billing_service_account = ./aws_billing_service_account.dhall
@@ -46,6 +49,8 @@
 , aws_ec2_transit_gateway = ./aws_ec2_transit_gateway.dhall
 , aws_ec2_transit_gateway_dx_gateway_attachment =
     ./aws_ec2_transit_gateway_dx_gateway_attachment.dhall
+, aws_ec2_transit_gateway_peering_attachment =
+    ./aws_ec2_transit_gateway_peering_attachment.dhall
 , aws_ec2_transit_gateway_route_table =
     ./aws_ec2_transit_gateway_route_table.dhall
 , aws_ec2_transit_gateway_vpc_attachment =

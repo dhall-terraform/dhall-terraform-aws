@@ -23,6 +23,7 @@
     , launch_group : Optional Text
     , monitoring : Optional Bool
     , network_interface_id : Optional Text
+    , outpost_arn : Optional Text
     , password_data : Optional Text
     , placement_group : Optional Text
     , primary_network_interface_id : Optional Text
@@ -124,6 +125,7 @@
   , launch_group = None Text
   , monitoring = None Bool
   , network_interface_id = None Text
+  , outpost_arn = None Text
   , password_data = None Text
   , placement_group = None Text
   , primary_network_interface_id = None Text

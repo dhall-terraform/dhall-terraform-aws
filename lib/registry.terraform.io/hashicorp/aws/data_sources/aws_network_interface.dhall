@@ -24,6 +24,7 @@
     , interface_type : Optional Text
     , ipv6_addresses : Optional (List Text)
     , mac_address : Optional Text
+    , outpost_arn : Optional Text
     , owner_id : Optional Text
     , private_dns_name : Optional Text
     , private_ip : Optional Text
@@ -61,6 +62,7 @@
   , interface_type = None Text
   , ipv6_addresses = None (List Text)
   , mac_address = None Text
+  , outpost_arn = None Text
   , owner_id = None Text
   , private_dns_name = None Text
   , private_ip = None Text

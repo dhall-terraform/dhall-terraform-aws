@@ -24,6 +24,7 @@
               , service_access_role_arn : Text
               }
           )
+    , kafka_settings : Optional (List { broker : Text, topic : Optional Text })
     , kinesis_settings :
         Optional
           ( List
@@ -79,6 +80,7 @@
             , service_access_role_arn : Text
             }
         )
+  , kafka_settings = None (List { broker : Text, topic : Optional Text })
   , kinesis_settings =
       None
         ( List
