@@ -1,5 +1,6 @@
 { Type =
-    { cache_cluster_enabled : Optional Bool
+    { arn : Optional Text
+    , cache_cluster_enabled : Optional Bool
     , cache_cluster_size : Optional Text
     , client_certificate_id : Optional Text
     , deployment_id : Text
@@ -17,7 +18,8 @@
         Optional (List { destination_arn : Text, format : Text })
     }
 , default =
-  { cache_cluster_enabled = None Bool
+  { arn = None Text
+  , cache_cluster_enabled = None Bool
   , cache_cluster_size = None Text
   , client_certificate_id = None Text
   , description = None Text
