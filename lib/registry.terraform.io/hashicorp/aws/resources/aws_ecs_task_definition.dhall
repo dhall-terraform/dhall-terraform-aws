@@ -40,6 +40,13 @@
                         , scope : Optional Text
                         }
                     )
+              , efs_volume_configuration :
+                  Optional
+                    ( List
+                        { file_system_id : Text
+                        , root_directory : Optional Text
+                        }
+                    )
               }
           )
     }
@@ -82,6 +89,11 @@
                           Optional (List { mapKey : Text, mapValue : Text })
                       , scope : Optional Text
                       }
+                  )
+            , efs_volume_configuration :
+                Optional
+                  ( List
+                      { file_system_id : Text, root_directory : Optional Text }
                   )
             }
         )

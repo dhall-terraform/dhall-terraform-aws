@@ -7,6 +7,7 @@
     , excluded_members : Optional (List Text)
     , id : Optional Text
     , static_members : Optional (List Text)
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { arn = None Text
@@ -14,5 +15,6 @@
   , excluded_members = None (List Text)
   , id = None Text
   , static_members = None (List Text)
+  , tags = None (List { mapKey : Text, mapValue : Text })
   }
 }

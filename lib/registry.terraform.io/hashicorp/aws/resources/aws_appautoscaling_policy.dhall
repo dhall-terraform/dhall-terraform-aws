@@ -1,6 +1,5 @@
 { Type =
     { adjustment_type : Optional Text
-    , alarms : Optional (List Text)
     , arn : Optional Text
     , cooldown : Optional Natural
     , id : Optional Text
@@ -66,7 +65,6 @@
     }
 , default =
   { adjustment_type = None Text
-  , alarms = None (List Text)
   , arn = None Text
   , cooldown = None Natural
   , id = None Text

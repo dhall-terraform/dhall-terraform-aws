@@ -1,6 +1,14 @@
 { Type =
     { accounts :
-        Optional (List { arn : Text, email : Text, id : Text, name : Text })
+        Optional
+          ( List
+              { arn : Text
+              , email : Text
+              , id : Text
+              , name : Text
+              , status : Text
+              }
+          )
     , arn : Optional Text
     , aws_service_access_principals : Optional (List Text)
     , enabled_policy_types : Optional (List Text)
@@ -10,7 +18,15 @@
     , master_account_email : Optional Text
     , master_account_id : Optional Text
     , non_master_accounts :
-        Optional (List { arn : Text, email : Text, id : Text, name : Text })
+        Optional
+          ( List
+              { arn : Text
+              , email : Text
+              , id : Text
+              , name : Text
+              , status : Text
+              }
+          )
     , roots :
         Optional
           ( List
@@ -22,7 +38,11 @@
           )
     }
 , default =
-  { accounts = None (List { arn : Text, email : Text, id : Text, name : Text })
+  { accounts =
+      None
+        ( List
+            { arn : Text, email : Text, id : Text, name : Text, status : Text }
+        )
   , arn = None Text
   , aws_service_access_principals = None (List Text)
   , enabled_policy_types = None (List Text)
@@ -32,7 +52,10 @@
   , master_account_email = None Text
   , master_account_id = None Text
   , non_master_accounts =
-      None (List { arn : Text, email : Text, id : Text, name : Text })
+      None
+        ( List
+            { arn : Text, email : Text, id : Text, name : Text, status : Text }
+        )
   , roots =
       None
         ( List

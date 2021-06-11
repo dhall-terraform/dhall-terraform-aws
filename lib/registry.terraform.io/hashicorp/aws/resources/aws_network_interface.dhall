@@ -1,6 +1,7 @@
 { Type =
     { description : Optional Text
     , id : Optional Text
+    , mac_address : Optional Text
     , private_dns_name : Optional Text
     , private_ip : Optional Text
     , private_ips : Optional (List Text)
@@ -21,6 +22,7 @@
 , default =
   { description = None Text
   , id = None Text
+  , mac_address = None Text
   , private_dns_name = None Text
   , private_ip = None Text
   , private_ips = None (List Text)
