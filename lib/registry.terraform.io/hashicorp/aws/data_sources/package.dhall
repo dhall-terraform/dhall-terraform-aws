@@ -106,6 +106,8 @@
 , aws_network_acls = ./aws_network_acls.dhall
 , aws_network_interface = ./aws_network_interface.dhall
 , aws_network_interfaces = ./aws_network_interfaces.dhall
+, aws_organizations_organizational_units =
+    ./aws_organizations_organizational_units.dhall
 , aws_organizations_organization = ./aws_organizations_organization.dhall
 , aws_partition = ./aws_partition.dhall
 , aws_prefix_list = ./aws_prefix_list.dhall

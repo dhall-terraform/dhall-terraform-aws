@@ -27,7 +27,8 @@
     , ebs_volume :
         Optional
           ( List
-              { iops : Optional Natural
+              { encrypted : Optional Bool
+              , iops : Optional Natural
               , mount_point : Text
               , number_of_disks : Natural
               , raid_level : Optional Text
@@ -64,7 +65,8 @@
   , ebs_volume =
       None
         ( List
-            { iops : Optional Natural
+            { encrypted : Optional Bool
+            , iops : Optional Natural
             , mount_point : Text
             , number_of_disks : Natural
             , raid_level : Optional Text

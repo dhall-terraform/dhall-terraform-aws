@@ -7,6 +7,7 @@
     , encryption_key : Optional Text
     , id : Optional Text
     , name : Text
+    , queued_timeout : Optional Natural
     , service_role : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , artifacts :
@@ -118,6 +119,7 @@
   , description = None Text
   , encryption_key = None Text
   , id = None Text
+  , queued_timeout = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
   , cache =
       None

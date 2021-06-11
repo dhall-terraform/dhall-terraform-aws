@@ -8,6 +8,7 @@
               , interval : Natural
               }
           )
+    , arn : Optional Text
     , availability_zones : Optional (List Text)
     , connection_draining : Optional Bool
     , connection_draining_timeout : Optional Natural
@@ -55,6 +56,7 @@
             , interval : Natural
             }
         )
+  , arn = None Text
   , availability_zones = None (List Text)
   , connection_draining = None Bool
   , connection_draining_timeout = None Natural

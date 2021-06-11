@@ -1,4 +1,5 @@
-{ aws_acm_certificate = ./aws_acm_certificate.dhall
+{ aws_accessanalyzer_analyzer = ./aws_accessanalyzer_analyzer.dhall
+, aws_acm_certificate = ./aws_acm_certificate.dhall
 , aws_acm_certificate_validation = ./aws_acm_certificate_validation.dhall
 , aws_acmpca_certificate_authority = ./aws_acmpca_certificate_authority.dhall
 , aws_alb = ./aws_alb.dhall
@@ -332,6 +333,8 @@
 , aws_lambda_alias = ./aws_lambda_alias.dhall
 , aws_lambda_event_source_mapping = ./aws_lambda_event_source_mapping.dhall
 , aws_lambda_function = ./aws_lambda_function.dhall
+, aws_lambda_function_event_invoke_config =
+    ./aws_lambda_function_event_invoke_config.dhall
 , aws_lambda_layer_version = ./aws_lambda_layer_version.dhall
 , aws_lambda_permission = ./aws_lambda_permission.dhall
 , aws_lambda_provisioned_concurrency_config =
