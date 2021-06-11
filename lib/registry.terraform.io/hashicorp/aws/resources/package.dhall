@@ -124,6 +124,10 @@
 , aws_config_configuration_recorder_status =
     ./aws_config_configuration_recorder_status.dhall
 , aws_config_delivery_channel = ./aws_config_delivery_channel.dhall
+, aws_config_organization_custom_rule =
+    ./aws_config_organization_custom_rule.dhall
+, aws_config_organization_managed_rule =
+    ./aws_config_organization_managed_rule.dhall
 , aws_cur_report_definition = ./aws_cur_report_definition.dhall
 , aws_customer_gateway = ./aws_customer_gateway.dhall
 , aws_datapipeline_pipeline = ./aws_datapipeline_pipeline.dhall
@@ -245,6 +249,8 @@
 , aws_emr_security_configuration = ./aws_emr_security_configuration.dhall
 , aws_flow_log = ./aws_flow_log.dhall
 , aws_fms_admin_account = ./aws_fms_admin_account.dhall
+, aws_fsx_lustre_file_system = ./aws_fsx_lustre_file_system.dhall
+, aws_fsx_windows_file_system = ./aws_fsx_windows_file_system.dhall
 , aws_gamelift_alias = ./aws_gamelift_alias.dhall
 , aws_gamelift_build = ./aws_gamelift_build.dhall
 , aws_gamelift_fleet = ./aws_gamelift_fleet.dhall
@@ -409,6 +415,7 @@
 , aws_quicksight_group = ./aws_quicksight_group.dhall
 , aws_ram_principal_association = ./aws_ram_principal_association.dhall
 , aws_ram_resource_association = ./aws_ram_resource_association.dhall
+, aws_ram_resource_share_accepter = ./aws_ram_resource_share_accepter.dhall
 , aws_ram_resource_share = ./aws_ram_resource_share.dhall
 , aws_rds_cluster = ./aws_rds_cluster.dhall
 , aws_rds_cluster_endpoint = ./aws_rds_cluster_endpoint.dhall

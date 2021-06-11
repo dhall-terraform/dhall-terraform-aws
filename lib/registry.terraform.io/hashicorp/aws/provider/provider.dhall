@@ -95,6 +95,7 @@
               , kinesisanalytics : Optional Text
               , kinesisvideo : Optional Text
               , kms : Optional Text
+              , lakeformation : Optional Text
               , lambda : Optional Text
               , lexmodels : Optional Text
               , licensemanager : Optional Text
@@ -245,6 +246,7 @@
             , kinesisanalytics : Optional Text
             , kinesisvideo : Optional Text
             , kms : Optional Text
+            , lakeformation : Optional Text
             , lambda : Optional Text
             , lexmodels : Optional Text
             , licensemanager : Optional Text

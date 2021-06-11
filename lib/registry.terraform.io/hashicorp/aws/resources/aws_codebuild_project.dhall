@@ -11,7 +11,8 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , artifacts :
         List
-          { encryption_disabled : Optional Bool
+          { artifact_identifier : Optional Text
+          , encryption_disabled : Optional Bool
           , location : Optional Text
           , name : Optional Text
           , namespace_type : Optional Text
