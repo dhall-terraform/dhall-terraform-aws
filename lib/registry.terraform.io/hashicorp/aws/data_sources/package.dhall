@@ -40,6 +40,8 @@
 , aws_ebs_snapshot = ./aws_ebs_snapshot.dhall
 , aws_ebs_snapshot_ids = ./aws_ebs_snapshot_ids.dhall
 , aws_ebs_volume = ./aws_ebs_volume.dhall
+, aws_ec2_instance_type_offering = ./aws_ec2_instance_type_offering.dhall
+, aws_ec2_instance_type_offerings = ./aws_ec2_instance_type_offerings.dhall
 , aws_ec2_transit_gateway = ./aws_ec2_transit_gateway.dhall
 , aws_ec2_transit_gateway_dx_gateway_attachment =
     ./aws_ec2_transit_gateway_dx_gateway_attachment.dhall

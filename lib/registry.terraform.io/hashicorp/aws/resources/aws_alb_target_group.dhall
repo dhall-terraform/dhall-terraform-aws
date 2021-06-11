@@ -4,6 +4,7 @@
     , deregistration_delay : Optional Natural
     , id : Optional Text
     , lambda_multi_value_headers_enabled : Optional Bool
+    , load_balancing_algorithm_type : Optional Text
     , name : Optional Text
     , name_prefix : Optional Text
     , port : Optional Natural
@@ -42,6 +43,7 @@
   , deregistration_delay = None Natural
   , id = None Text
   , lambda_multi_value_headers_enabled = None Bool
+  , load_balancing_algorithm_type = None Text
   , name = None Text
   , name_prefix = None Text
   , port = None Natural

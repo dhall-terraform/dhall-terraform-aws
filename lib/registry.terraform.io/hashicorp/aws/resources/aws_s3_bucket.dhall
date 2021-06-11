@@ -25,6 +25,15 @@
               , max_age_seconds : Optional Natural
               }
           )
+    , grant :
+        Optional
+          ( List
+              { id : Optional Text
+              , permissions : List Text
+              , type : Text
+              , uri : Optional Text
+              }
+          )
     , lifecycle_rule :
         Optional
           ( List
@@ -163,6 +172,15 @@
             , allowed_origins : List Text
             , expose_headers : Optional (List Text)
             , max_age_seconds : Optional Natural
+            }
+        )
+  , grant =
+      None
+        ( List
+            { id : Optional Text
+            , permissions : List Text
+            , type : Text
+            , uri : Optional Text
             }
         )
   , lifecycle_rule =

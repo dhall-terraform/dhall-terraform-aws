@@ -12,6 +12,9 @@
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , version : Optional Text
+    , encryption_config :
+        Optional
+          (List { resources : List Text, provider : List { key_arn : Text } })
     , timeouts :
         Optional
           { create : Optional Text
@@ -41,6 +44,8 @@
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , version = None Text
+  , encryption_config =
+      None (List { resources : List Text, provider : List { key_arn : Text } })
   , timeouts =
       None
         { create : Optional Text
