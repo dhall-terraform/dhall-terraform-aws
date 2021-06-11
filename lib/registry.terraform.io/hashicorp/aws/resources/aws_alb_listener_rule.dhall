@@ -3,6 +3,8 @@
     , id : Optional Text
     , listener_arn : Text
     , priority : Optional Natural
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , action :
         List
           { order : Optional Natural
@@ -80,5 +82,11 @@
           , source_ip : Optional (List { values : List Text })
           }
     }
-, default = { arn = None Text, id = None Text, priority = None Natural }
+, default =
+  { arn = None Text
+  , id = None Text
+  , priority = None Natural
+  , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
+  }
 }

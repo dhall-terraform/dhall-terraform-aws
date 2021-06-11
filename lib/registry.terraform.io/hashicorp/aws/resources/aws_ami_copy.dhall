@@ -2,6 +2,7 @@
     { architecture : Optional Text
     , arn : Optional Text
     , description : Optional Text
+    , destination_outpost_arn : Optional Text
     , ena_support : Optional Bool
     , encrypted : Optional Bool
     , hypervisor : Optional Text
@@ -54,6 +55,7 @@
   { architecture = None Text
   , arn = None Text
   , description = None Text
+  , destination_outpost_arn = None Text
   , ena_support = None Bool
   , encrypted = None Bool
   , hypervisor = None Text

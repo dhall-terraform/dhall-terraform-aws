@@ -499,6 +499,8 @@
 , aws_load_balancer_policy = ./aws_load_balancer_policy.dhall
 , aws_macie2_account = ./aws_macie2_account.dhall
 , aws_macie2_classification_job = ./aws_macie2_classification_job.dhall
+, aws_macie2_custom_data_identifier = ./aws_macie2_custom_data_identifier.dhall
+, aws_macie2_findings_filter = ./aws_macie2_findings_filter.dhall
 , aws_macie_member_account_association =
     ./aws_macie_member_account_association.dhall
 , aws_macie_s3_bucket_association = ./aws_macie_s3_bucket_association.dhall
@@ -684,6 +686,7 @@
     ./aws_serverlessapplicationrepository_cloudformation_stack.dhall
 , aws_servicecatalog_portfolio = ./aws_servicecatalog_portfolio.dhall
 , aws_servicecatalog_product = ./aws_servicecatalog_product.dhall
+, aws_servicecatalog_tag_option = ./aws_servicecatalog_tag_option.dhall
 , aws_service_discovery_http_namespace =
     ./aws_service_discovery_http_namespace.dhall
 , aws_service_discovery_private_dns_namespace =
@@ -759,6 +762,8 @@
 , aws_subnet = ./aws_subnet.dhall
 , aws_swf_domain = ./aws_swf_domain.dhall
 , aws_synthetics_canary = ./aws_synthetics_canary.dhall
+, aws_timestreamwrite_database = ./aws_timestreamwrite_database.dhall
+, aws_timestreamwrite_table = ./aws_timestreamwrite_table.dhall
 , aws_transfer_server = ./aws_transfer_server.dhall
 , aws_transfer_ssh_key = ./aws_transfer_ssh_key.dhall
 , aws_transfer_user = ./aws_transfer_user.dhall

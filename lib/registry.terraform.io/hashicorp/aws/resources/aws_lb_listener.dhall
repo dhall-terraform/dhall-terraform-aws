@@ -7,6 +7,8 @@
     , port : Optional Natural
     , protocol : Optional Text
     , ssl_policy : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , default_action :
         List
           { order : Optional Natural
@@ -83,6 +85,8 @@
   , port = None Natural
   , protocol = None Text
   , ssl_policy = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
+  , tags_all = None (List { mapKey : Text, mapValue : Text })
   , timeouts = None { read : Optional Text }
   }
 }

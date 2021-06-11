@@ -8,7 +8,8 @@
     , id : Optional Text
     , instance_types : Optional (List Text)
     , labels : Optional (List { mapKey : Text, mapValue : Text })
-    , node_group_name : Text
+    , node_group_name : Optional Text
+    , node_group_name_prefix : Optional Text
     , node_role_arn : Text
     , release_version : Optional Text
     , resources :
@@ -51,6 +52,8 @@
   , id = None Text
   , instance_types = None (List Text)
   , labels = None (List { mapKey : Text, mapValue : Text })
+  , node_group_name = None Text
+  , node_group_name_prefix = None Text
   , release_version = None Text
   , resources =
       None

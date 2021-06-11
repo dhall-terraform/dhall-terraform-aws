@@ -62,6 +62,7 @@
     , port : Optional Natural
     , protocol : Optional Text
     , ssl_policy : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { alpn_policy = None Text
@@ -127,5 +128,6 @@
   , port = None Natural
   , protocol = None Text
   , ssl_policy = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   }
 }

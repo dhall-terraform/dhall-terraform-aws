@@ -35,6 +35,16 @@
                     )
               }
           )
+    , http_target :
+        Optional
+          ( List
+              { header_parameters :
+                  Optional (List { mapKey : Text, mapValue : Text })
+              , path_parameter_values : Optional (List Text)
+              , query_string_parameters :
+                  Optional (List { mapKey : Text, mapValue : Text })
+              }
+          )
     , input_transformer :
         Optional
           ( List
@@ -86,6 +96,16 @@
                       , subnets : List Text
                       }
                   )
+            }
+        )
+  , http_target =
+      None
+        ( List
+            { header_parameters :
+                Optional (List { mapKey : Text, mapValue : Text })
+            , path_parameter_values : Optional (List Text)
+            , query_string_parameters :
+                Optional (List { mapKey : Text, mapValue : Text })
             }
         )
   , input_transformer =
