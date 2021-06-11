@@ -120,6 +120,7 @@
 , aws_route_tables = ./aws_route_tables.dhall
 , aws_s3_bucket = ./aws_s3_bucket.dhall
 , aws_s3_bucket_object = ./aws_s3_bucket_object.dhall
+, aws_s3_bucket_objects = ./aws_s3_bucket_objects.dhall
 , aws_secretsmanager_secret = ./aws_secretsmanager_secret.dhall
 , aws_secretsmanager_secret_version = ./aws_secretsmanager_secret_version.dhall
 , aws_security_group = ./aws_security_group.dhall

@@ -1,6 +1,7 @@
 { Type =
     { arn : Optional Text
     , id : Optional Text
+    , image_tag_mutability : Optional Text
     , name : Text
     , registry_id : Optional Text
     , repository_url : Optional Text
@@ -10,6 +11,7 @@
 , default =
   { arn = None Text
   , id = None Text
+  , image_tag_mutability = None Text
   , registry_id = None Text
   , repository_url = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })

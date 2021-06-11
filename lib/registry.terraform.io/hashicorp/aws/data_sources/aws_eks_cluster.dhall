@@ -8,6 +8,7 @@
     , name : Text
     , platform_version : Optional Text
     , role_arn : Optional Text
+    , status : Optional Text
     , version : Optional Text
     , vpc_config :
         Optional
@@ -29,6 +30,7 @@
   , id = None Text
   , platform_version = None Text
   , role_arn = None Text
+  , status = None Text
   , version = None Text
   , vpc_config =
       None

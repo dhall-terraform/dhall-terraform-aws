@@ -1,5 +1,6 @@
 { Type =
     { arn : Optional Text
+    , certificate_authority_arn : Optional Text
     , certificate_body : Optional Text
     , certificate_chain : Optional Text
     , domain_name : Optional Text
@@ -18,9 +19,13 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , validation_emails : Optional (List Text)
     , validation_method : Optional Text
+    , options :
+        Optional
+          (List { certificate_transparency_logging_preference : Optional Text })
     }
 , default =
   { arn = None Text
+  , certificate_authority_arn = None Text
   , certificate_body = None Text
   , certificate_chain = None Text
   , domain_name = None Text
@@ -39,5 +44,8 @@
   , tags = None (List { mapKey : Text, mapValue : Text })
   , validation_emails = None (List Text)
   , validation_method = None Text
+  , options =
+      None
+        (List { certificate_transparency_logging_preference : Optional Text })
   }
 }

@@ -12,6 +12,7 @@
               , device_name : Text
               , encrypted : Bool
               , iops : Natural
+              , kms_key_id : Text
               , snapshot_id : Text
               , volume_id : Text
               , volume_size : Natural
@@ -44,7 +45,9 @@
         Optional
           ( List
               { delete_on_termination : Bool
+              , encrypted : Bool
               , iops : Natural
+              , kms_key_id : Text
               , volume_id : Text
               , volume_size : Natural
               , volume_type : Text
@@ -74,6 +77,7 @@
             , device_name : Text
             , encrypted : Bool
             , iops : Natural
+            , kms_key_id : Text
             , snapshot_id : Text
             , volume_id : Text
             , volume_size : Natural
@@ -105,7 +109,9 @@
       None
         ( List
             { delete_on_termination : Bool
+            , encrypted : Bool
             , iops : Natural
+            , kms_key_id : Text
             , volume_id : Text
             , volume_size : Natural
             , volume_type : Text

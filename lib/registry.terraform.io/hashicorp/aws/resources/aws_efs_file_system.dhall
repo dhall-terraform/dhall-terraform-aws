@@ -10,6 +10,7 @@
     , reference_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , throughput_mode : Optional Text
+    , lifecycle_policy : Optional (List { transition_to_ia : Optional Text })
     }
 , default =
   { arn = None Text
@@ -23,5 +24,6 @@
   , reference_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , throughput_mode = None Text
+  , lifecycle_policy = None (List { transition_to_ia : Optional Text })
   }
 }

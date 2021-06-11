@@ -27,6 +27,7 @@
         Optional
           ( List
               { delete_on_termination : Bool
+              , encrypted : Bool
               , iops : Natural
               , volume_size : Natural
               , volume_type : Text
@@ -66,6 +67,7 @@
       None
         ( List
             { delete_on_termination : Bool
+            , encrypted : Bool
             , iops : Natural
             , volume_size : Natural
             , volume_type : Text

@@ -8,6 +8,7 @@
     , name : Text
     , platform_version : Optional Text
     , role_arn : Text
+    , status : Optional Text
     , version : Optional Text
     , timeouts :
         Optional
@@ -32,6 +33,7 @@
   , endpoint = None Text
   , id = None Text
   , platform_version = None Text
+  , status = None Text
   , version = None Text
   , timeouts =
       None

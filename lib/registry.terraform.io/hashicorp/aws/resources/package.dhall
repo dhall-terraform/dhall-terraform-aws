@@ -185,6 +185,7 @@
 , aws_dx_lag = ./aws_dx_lag.dhall
 , aws_dx_private_virtual_interface = ./aws_dx_private_virtual_interface.dhall
 , aws_dx_public_virtual_interface = ./aws_dx_public_virtual_interface.dhall
+, aws_dx_transit_virtual_interface = ./aws_dx_transit_virtual_interface.dhall
 , aws_dynamodb_global_table = ./aws_dynamodb_global_table.dhall
 , aws_dynamodb_table = ./aws_dynamodb_table.dhall
 , aws_dynamodb_table_item = ./aws_dynamodb_table_item.dhall
@@ -419,6 +420,9 @@
 , aws_redshift_parameter_group = ./aws_redshift_parameter_group.dhall
 , aws_redshift_security_group = ./aws_redshift_security_group.dhall
 , aws_redshift_snapshot_copy_grant = ./aws_redshift_snapshot_copy_grant.dhall
+, aws_redshift_snapshot_schedule_association =
+    ./aws_redshift_snapshot_schedule_association.dhall
+, aws_redshift_snapshot_schedule = ./aws_redshift_snapshot_schedule.dhall
 , aws_redshift_subnet_group = ./aws_redshift_subnet_group.dhall
 , aws_resourcegroups_group = ./aws_resourcegroups_group.dhall
 , aws_route53_delegation_set = ./aws_route53_delegation_set.dhall
