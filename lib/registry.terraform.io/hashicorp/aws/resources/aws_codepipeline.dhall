@@ -7,6 +7,7 @@
     , artifact_store :
         List
           { location : Text
+          , region : Optional Text
           , type : Text
           , encryption_key : Optional (List { id : Text, type : Text })
           }
@@ -23,6 +24,7 @@
                 , output_artifacts : Optional (List Text)
                 , owner : Text
                 , provider : Text
+                , region : Optional Text
                 , role_arn : Optional Text
                 , run_order : Optional Natural
                 , version : Text
