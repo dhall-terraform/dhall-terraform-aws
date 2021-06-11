@@ -227,6 +227,7 @@
 , aws_eip_association = ./aws_eip_association.dhall
 , aws_eip = ./aws_eip.dhall
 , aws_eks_cluster = ./aws_eks_cluster.dhall
+, aws_eks_node_group = ./aws_eks_node_group.dhall
 , aws_elasticache_cluster = ./aws_elasticache_cluster.dhall
 , aws_elasticache_parameter_group = ./aws_elasticache_parameter_group.dhall
 , aws_elasticache_replication_group = ./aws_elasticache_replication_group.dhall
