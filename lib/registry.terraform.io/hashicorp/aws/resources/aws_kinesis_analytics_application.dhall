@@ -6,6 +6,7 @@
     , id : Optional Text
     , last_update_timestamp : Optional Text
     , name : Text
+    , start_application : Optional Bool
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , version : Optional Natural
@@ -17,8 +18,6 @@
           ( List
               { id : Optional Text
               , name_prefix : Text
-              , starting_position_configuration :
-                  Optional (List { starting_position : Text })
               , stream_names : Optional (List Text)
               , kinesis_firehose :
                   Optional (List { resource_arn : Text, role_arn : Text })
@@ -60,6 +59,8 @@
                                 )
                           }
                     }
+              , starting_position_configuration :
+                  Optional (List { starting_position : Optional Text })
               }
           )
     , outputs :
@@ -73,7 +74,7 @@
                   Optional (List { resource_arn : Text, role_arn : Text })
               , lambda :
                   Optional (List { resource_arn : Text, role_arn : Text })
-              , schema : List { record_format_type : Optional Text }
+              , schema : List { record_format_type : Text }
               }
           )
     , reference_data_sources :
@@ -122,6 +123,7 @@
   , description = None Text
   , id = None Text
   , last_update_timestamp = None Text
+  , start_application = None Bool
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , version = None Natural
@@ -132,8 +134,6 @@
         ( List
             { id : Optional Text
             , name_prefix : Text
-            , starting_position_configuration :
-                Optional (List { starting_position : Text })
             , stream_names : Optional (List Text)
             , kinesis_firehose :
                 Optional (List { resource_arn : Text, role_arn : Text })
@@ -173,6 +173,8 @@
                               )
                         }
                   }
+            , starting_position_configuration :
+                Optional (List { starting_position : Optional Text })
             }
         )
   , outputs =
@@ -185,7 +187,7 @@
             , kinesis_stream :
                 Optional (List { resource_arn : Text, role_arn : Text })
             , lambda : Optional (List { resource_arn : Text, role_arn : Text })
-            , schema : List { record_format_type : Optional Text }
+            , schema : List { record_format_type : Text }
             }
         )
   , reference_data_sources =

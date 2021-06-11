@@ -4,29 +4,19 @@
     , id : Optional Text
     , name : Text
     , resource_id : Text
-    , scalable_dimension : Optional Text
-    , schedule : Optional Text
+    , scalable_dimension : Text
+    , schedule : Text
     , service_namespace : Text
     , start_time : Optional Text
+    , timezone : Optional Text
     , scalable_target_action :
-        Optional
-          ( List
-              { max_capacity : Optional Natural
-              , min_capacity : Optional Natural
-              }
-          )
+        List { max_capacity : Optional Text, min_capacity : Optional Text }
     }
 , default =
   { arn = None Text
   , end_time = None Text
   , id = None Text
-  , scalable_dimension = None Text
-  , schedule = None Text
   , start_time = None Text
-  , scalable_target_action =
-      None
-        ( List
-            { max_capacity : Optional Natural, min_capacity : Optional Natural }
-        )
+  , timezone = None Text
   }
 }

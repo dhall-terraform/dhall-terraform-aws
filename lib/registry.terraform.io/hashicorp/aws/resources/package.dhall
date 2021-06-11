@@ -1,7 +1,10 @@
 { aws_accessanalyzer_analyzer = ./aws_accessanalyzer_analyzer.dhall
 , aws_acm_certificate = ./aws_acm_certificate.dhall
 , aws_acm_certificate_validation = ./aws_acm_certificate_validation.dhall
+, aws_acmpca_certificate_authority_certificate =
+    ./aws_acmpca_certificate_authority_certificate.dhall
 , aws_acmpca_certificate_authority = ./aws_acmpca_certificate_authority.dhall
+, aws_acmpca_certificate = ./aws_acmpca_certificate.dhall
 , aws_alb = ./aws_alb.dhall
 , aws_alb_listener_certificate = ./aws_alb_listener_certificate.dhall
 , aws_alb_listener = ./aws_alb_listener.dhall

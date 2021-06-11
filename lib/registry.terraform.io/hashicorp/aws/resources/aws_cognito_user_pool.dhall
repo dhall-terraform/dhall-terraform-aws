@@ -43,7 +43,8 @@
     , email_configuration :
         Optional
           ( List
-              { email_sending_account : Optional Text
+              { configuration_set : Optional Text
+              , email_sending_account : Optional Text
               , from_email_address : Optional Text
               , reply_to_email_address : Optional Text
               , source_arn : Optional Text
@@ -156,7 +157,8 @@
   , email_configuration =
       None
         ( List
-            { email_sending_account : Optional Text
+            { configuration_set : Optional Text
+            , email_sending_account : Optional Text
             , from_email_address : Optional Text
             , reply_to_email_address : Optional Text
             , source_arn : Optional Text

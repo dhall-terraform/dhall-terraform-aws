@@ -1,5 +1,6 @@
 { aws_acm_certificate = ./aws_acm_certificate.dhall
 , aws_acmpca_certificate_authority = ./aws_acmpca_certificate_authority.dhall
+, aws_acmpca_certificate = ./aws_acmpca_certificate.dhall
 , aws_alb = ./aws_alb.dhall
 , aws_alb_listener = ./aws_alb_listener.dhall
 , aws_alb_target_group = ./aws_alb_target_group.dhall

@@ -1,5 +1,6 @@
 { Type =
     { arn : Optional Text
+    , authentication_strategy : Optional Text
     , auto_minor_version_upgrade : Optional Bool
     , broker_id : Optional Text
     , broker_name : Optional Text
@@ -16,11 +17,28 @@
           ( List
               { console_url : Text, endpoints : List Text, ip_address : Text }
           )
+    , ldap_server_metadata :
+        Optional
+          ( List
+              { hosts : List Text
+              , role_base : Text
+              , role_name : Text
+              , role_search_matching : Text
+              , role_search_subtree : Bool
+              , service_account_password : Text
+              , service_account_username : Text
+              , user_base : Text
+              , user_role_name : Text
+              , user_search_matching : Text
+              , user_search_subtree : Bool
+              }
+          )
     , maintenance_window_start_time :
         Optional
           (List { day_of_week : Text, time_of_day : Text, time_zone : Text })
     , publicly_accessible : Optional Bool
     , security_groups : Optional (List Text)
+    , storage_type : Optional Text
     , subnet_ids : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , user :
@@ -30,6 +48,7 @@
     }
 , default =
   { arn = None Text
+  , authentication_strategy = None Text
   , auto_minor_version_upgrade = None Bool
   , broker_id = None Text
   , broker_name = None Text
@@ -44,10 +63,27 @@
   , instances =
       None
         (List { console_url : Text, endpoints : List Text, ip_address : Text })
+  , ldap_server_metadata =
+      None
+        ( List
+            { hosts : List Text
+            , role_base : Text
+            , role_name : Text
+            , role_search_matching : Text
+            , role_search_subtree : Bool
+            , service_account_password : Text
+            , service_account_username : Text
+            , user_base : Text
+            , user_role_name : Text
+            , user_search_matching : Text
+            , user_search_subtree : Bool
+            }
+        )
   , maintenance_window_start_time =
       None (List { day_of_week : Text, time_of_day : Text, time_zone : Text })
   , publicly_accessible = None Bool
   , security_groups = None (List Text)
+  , storage_type = None Text
   , subnet_ids = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
   , user =
