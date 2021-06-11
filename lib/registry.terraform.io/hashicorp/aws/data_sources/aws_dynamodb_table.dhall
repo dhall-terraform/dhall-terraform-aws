@@ -29,6 +29,7 @@
     , point_in_time_recovery : Optional (List { enabled : Bool })
     , range_key : Optional Text
     , read_capacity : Optional Natural
+    , replica : Optional (List { region_name : Text })
     , stream_arn : Optional Text
     , stream_enabled : Optional Bool
     , stream_label : Optional Text
@@ -69,6 +70,7 @@
   , point_in_time_recovery = None (List { enabled : Bool })
   , range_key = None Text
   , read_capacity = None Natural
+  , replica = None (List { region_name : Text })
   , stream_arn = None Text
   , stream_enabled = None Bool
   , stream_label = None Text

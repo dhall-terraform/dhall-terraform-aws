@@ -133,6 +133,7 @@
               , redshift : Optional Text
               , resourcegroups : Optional Text
               , route53 : Optional Text
+              , route53domains : Optional Text
               , route53resolver : Optional Text
               , s3 : Optional Text
               , s3control : Optional Text
@@ -305,6 +306,7 @@
             , redshift : Optional Text
             , resourcegroups : Optional Text
             , route53 : Optional Text
+            , route53domains : Optional Text
             , route53resolver : Optional Text
             , s3 : Optional Text
             , s3control : Optional Text

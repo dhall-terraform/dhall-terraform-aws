@@ -35,6 +35,7 @@
               }
           )
     , point_in_time_recovery : Optional (List { enabled : Bool })
+    , replica : Optional (List { region_name : Text })
     , server_side_encryption :
         Optional (List { enabled : Bool, kms_key_arn : Optional Text })
     , timeouts :
@@ -79,6 +80,7 @@
             }
         )
   , point_in_time_recovery = None (List { enabled : Bool })
+  , replica = None (List { region_name : Text })
   , server_side_encryption =
       None (List { enabled : Bool, kms_key_arn : Optional Text })
   , timeouts =

@@ -40,8 +40,15 @@
 , aws_api_gateway_usage_plan_key = ./aws_api_gateway_usage_plan_key.dhall
 , aws_apigatewayv2_api = ./aws_apigatewayv2_api.dhall
 , aws_apigatewayv2_authorizer = ./aws_apigatewayv2_authorizer.dhall
+, aws_apigatewayv2_deployment = ./aws_apigatewayv2_deployment.dhall
+, aws_apigatewayv2_domain_name = ./aws_apigatewayv2_domain_name.dhall
 , aws_apigatewayv2_integration = ./aws_apigatewayv2_integration.dhall
+, aws_apigatewayv2_integration_response =
+    ./aws_apigatewayv2_integration_response.dhall
 , aws_apigatewayv2_model = ./aws_apigatewayv2_model.dhall
+, aws_apigatewayv2_route = ./aws_apigatewayv2_route.dhall
+, aws_apigatewayv2_route_response = ./aws_apigatewayv2_route_response.dhall
+, aws_apigatewayv2_stage = ./aws_apigatewayv2_stage.dhall
 , aws_api_gateway_vpc_link = ./aws_api_gateway_vpc_link.dhall
 , aws_appautoscaling_policy = ./aws_appautoscaling_policy.dhall
 , aws_appautoscaling_scheduled_action =
@@ -171,6 +178,7 @@
 , aws_dlm_lifecycle_policy = ./aws_dlm_lifecycle_policy.dhall
 , aws_dms_certificate = ./aws_dms_certificate.dhall
 , aws_dms_endpoint = ./aws_dms_endpoint.dhall
+, aws_dms_event_subscription = ./aws_dms_event_subscription.dhall
 , aws_dms_replication_instance = ./aws_dms_replication_instance.dhall
 , aws_dms_replication_subnet_group = ./aws_dms_replication_subnet_group.dhall
 , aws_dms_replication_task = ./aws_dms_replication_task.dhall

@@ -123,6 +123,7 @@
 , aws_redshift_cluster = ./aws_redshift_cluster.dhall
 , aws_redshift_service_account = ./aws_redshift_service_account.dhall
 , aws_region = ./aws_region.dhall
+, aws_regions = ./aws_regions.dhall
 , aws_route53_delegation_set = ./aws_route53_delegation_set.dhall
 , aws_route53_resolver_rule = ./aws_route53_resolver_rule.dhall
 , aws_route53_resolver_rules = ./aws_route53_resolver_rules.dhall

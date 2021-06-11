@@ -13,6 +13,19 @@
           , schedule : Optional Text
           , start_window : Optional Natural
           , target_vault_name : Text
+          , copy_action :
+              Optional
+                ( List
+                    { destination_vault_arn : Text
+                    , lifecycle :
+                        Optional
+                          ( List
+                              { cold_storage_after : Optional Natural
+                              , delete_after : Optional Natural
+                              }
+                          )
+                    }
+                )
           , lifecycle :
               Optional
                 ( List

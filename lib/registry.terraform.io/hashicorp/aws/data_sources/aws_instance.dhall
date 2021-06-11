@@ -53,6 +53,7 @@
         Optional
           ( List
               { delete_on_termination : Bool
+              , device_name : Text
               , encrypted : Bool
               , iops : Natural
               , kms_key_id : Text
@@ -125,6 +126,7 @@
       None
         ( List
             { delete_on_termination : Bool
+            , device_name : Text
             , encrypted : Bool
             , iops : Natural
             , kms_key_id : Text

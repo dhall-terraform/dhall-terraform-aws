@@ -90,6 +90,7 @@
         Optional
           ( List
               { delete_on_termination : Optional Bool
+              , device_name : Optional Text
               , encrypted : Optional Bool
               , iops : Optional Natural
               , kms_key_id : Optional Text
@@ -190,6 +191,7 @@
       None
         ( List
             { delete_on_termination : Optional Bool
+            , device_name : Optional Text
             , encrypted : Optional Bool
             , iops : Optional Natural
             , kms_key_id : Optional Text

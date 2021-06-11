@@ -15,6 +15,23 @@
     , ssl_mode : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , username : Optional Text
+    , elasticsearch_settings :
+        Optional
+          ( List
+              { endpoint_uri : Text
+              , error_retry_duration : Optional Natural
+              , full_load_error_percentage : Optional Natural
+              , service_access_role_arn : Text
+              }
+          )
+    , kinesis_settings :
+        Optional
+          ( List
+              { message_format : Optional Text
+              , service_access_role_arn : Optional Text
+              , stream_arn : Optional Text
+              }
+          )
     , mongodb_settings :
         Optional
           ( List
@@ -53,6 +70,23 @@
   , ssl_mode = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , username = None Text
+  , elasticsearch_settings =
+      None
+        ( List
+            { endpoint_uri : Text
+            , error_retry_duration : Optional Natural
+            , full_load_error_percentage : Optional Natural
+            , service_access_role_arn : Text
+            }
+        )
+  , kinesis_settings =
+      None
+        ( List
+            { message_format : Optional Text
+            , service_access_role_arn : Optional Text
+            , stream_arn : Optional Text
+            }
+        )
   , mongodb_settings =
       None
         ( List
