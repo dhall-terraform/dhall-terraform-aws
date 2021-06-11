@@ -7,6 +7,15 @@
     , role_arn : Text
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , type : Optional Text
+    , logging_configuration :
+        Optional
+          ( List
+              { include_execution_data : Optional Bool
+              , level : Optional Text
+              , log_destination : Optional Text
+              }
+          )
     }
 , default =
   { arn = None Text
@@ -14,5 +23,14 @@
   , id = None Text
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , type = None Text
+  , logging_configuration =
+      None
+        ( List
+            { include_execution_data : Optional Bool
+            , level : Optional Text
+            , log_destination : Optional Text
+            }
+        )
   }
 }

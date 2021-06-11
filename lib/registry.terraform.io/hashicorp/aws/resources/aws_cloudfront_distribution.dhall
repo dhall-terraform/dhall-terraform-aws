@@ -45,6 +45,7 @@
           , field_level_encryption_id : Optional Text
           , max_ttl : Optional Natural
           , min_ttl : Optional Natural
+          , origin_request_policy_id : Optional Text
           , smooth_streaming : Optional Bool
           , target_origin_id : Text
           , trusted_signers : Optional (List Text)
@@ -87,6 +88,7 @@
               , field_level_encryption_id : Optional Text
               , max_ttl : Optional Natural
               , min_ttl : Optional Natural
+              , origin_request_policy_id : Optional Text
               , path_pattern : Text
               , smooth_streaming : Optional Bool
               , target_origin_id : Text
@@ -209,6 +211,7 @@
             , field_level_encryption_id : Optional Text
             , max_ttl : Optional Natural
             , min_ttl : Optional Natural
+            , origin_request_policy_id : Optional Text
             , path_pattern : Text
             , smooth_streaming : Optional Bool
             , target_origin_id : Text

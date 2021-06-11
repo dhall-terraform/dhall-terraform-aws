@@ -43,6 +43,21 @@
                         , type : Optional Text
                         }
                     )
+              , schema_reference :
+                  Optional
+                    ( List
+                        { schema_version_id : Optional Text
+                        , schema_version_number : Natural
+                        , schema_id :
+                            Optional
+                              ( List
+                                  { registry_name : Optional Text
+                                  , schema_arn : Optional Text
+                                  , schema_name : Optional Text
+                                  }
+                              )
+                        }
+                    )
               , ser_de_info :
                   Optional
                     ( List
@@ -106,6 +121,21 @@
                       , parameters :
                           Optional (List { mapKey : Text, mapValue : Text })
                       , type : Optional Text
+                      }
+                  )
+            , schema_reference :
+                Optional
+                  ( List
+                      { schema_version_id : Optional Text
+                      , schema_version_number : Natural
+                      , schema_id :
+                          Optional
+                            ( List
+                                { registry_name : Optional Text
+                                , schema_arn : Optional Text
+                                , schema_name : Optional Text
+                                }
+                            )
                       }
                   )
             , ser_de_info :

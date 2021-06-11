@@ -1,5 +1,6 @@
 { Type =
-    { encrypted_secret : Optional Text
+    { create_date : Optional Text
+    , encrypted_secret : Optional Text
     , id : Optional Text
     , key_fingerprint : Optional Text
     , pgp_key : Optional Text
@@ -9,7 +10,8 @@
     , user : Text
     }
 , default =
-  { encrypted_secret = None Text
+  { create_date = None Text
+  , encrypted_secret = None Text
   , id = None Text
   , key_fingerprint = None Text
   , pgp_key = None Text

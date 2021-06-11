@@ -22,6 +22,7 @@
     , name : Optional Text
     , port : Optional Natural
     , protocol : Optional Text
+    , protocol_version : Optional Text
     , proxy_protocol_v2 : Optional Bool
     , slow_start : Optional Natural
     , stickiness :
@@ -55,6 +56,7 @@
   , name = None Text
   , port = None Natural
   , protocol = None Text
+  , protocol_version = None Text
   , proxy_protocol_v2 = None Bool
   , slow_start = None Natural
   , stickiness =

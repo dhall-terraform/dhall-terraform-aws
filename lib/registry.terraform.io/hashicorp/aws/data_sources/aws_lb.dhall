@@ -19,6 +19,7 @@
         Optional
           ( List
               { allocation_id : Text
+              , ipv6_address : Text
               , outpost_id : Text
               , private_ipv4_address : Text
               , subnet_id : Text
@@ -49,6 +50,7 @@
       None
         ( List
             { allocation_id : Text
+            , ipv6_address : Text
             , outpost_id : Text
             , private_ipv4_address : Text
             , subnet_id : Text

@@ -99,6 +99,8 @@
 , aws_cloudfront_distribution = ./aws_cloudfront_distribution.dhall
 , aws_cloudfront_origin_access_identity =
     ./aws_cloudfront_origin_access_identity.dhall
+, aws_cloudfront_origin_request_policy =
+    ./aws_cloudfront_origin_request_policy.dhall
 , aws_cloudfront_public_key = ./aws_cloudfront_public_key.dhall
 , aws_cloudhsm_v2_cluster = ./aws_cloudhsm_v2_cluster.dhall
 , aws_cloudhsm_v2_hsm = ./aws_cloudhsm_v2_hsm.dhall
@@ -271,6 +273,8 @@
     ./aws_ec2_transit_gateway_peering_attachment_accepter.dhall
 , aws_ec2_transit_gateway_peering_attachment =
     ./aws_ec2_transit_gateway_peering_attachment.dhall
+, aws_ec2_transit_gateway_prefix_list_reference =
+    ./aws_ec2_transit_gateway_prefix_list_reference.dhall
 , aws_ec2_transit_gateway_route = ./aws_ec2_transit_gateway_route.dhall
 , aws_ec2_transit_gateway_route_table_association =
     ./aws_ec2_transit_gateway_route_table_association.dhall
@@ -563,6 +567,7 @@
 , aws_resourcegroups_group = ./aws_resourcegroups_group.dhall
 , aws_route53_delegation_set = ./aws_route53_delegation_set.dhall
 , aws_route53_health_check = ./aws_route53_health_check.dhall
+, aws_route53_key_signing_key = ./aws_route53_key_signing_key.dhall
 , aws_route53_query_log = ./aws_route53_query_log.dhall
 , aws_route53_record = ./aws_route53_record.dhall
 , aws_route53_resolver_dnssec_config =
