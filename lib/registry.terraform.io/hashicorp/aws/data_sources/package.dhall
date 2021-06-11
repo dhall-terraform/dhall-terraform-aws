@@ -70,6 +70,7 @@
 , aws_elb_hosted_zone_id = ./aws_elb_hosted_zone_id.dhall
 , aws_elb_service_account = ./aws_elb_service_account.dhall
 , aws_glue_script = ./aws_glue_script.dhall
+, aws_guardduty_detector = ./aws_guardduty_detector.dhall
 , aws_iam_account_alias = ./aws_iam_account_alias.dhall
 , aws_iam_group = ./aws_iam_group.dhall
 , aws_iam_instance_profile = ./aws_iam_instance_profile.dhall

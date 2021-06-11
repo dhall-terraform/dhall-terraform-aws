@@ -270,6 +270,7 @@
 , aws_glue_job = ./aws_glue_job.dhall
 , aws_glue_security_configuration = ./aws_glue_security_configuration.dhall
 , aws_glue_trigger = ./aws_glue_trigger.dhall
+, aws_glue_workflow = ./aws_glue_workflow.dhall
 , aws_guardduty_detector = ./aws_guardduty_detector.dhall
 , aws_guardduty_invite_accepter = ./aws_guardduty_invite_accepter.dhall
 , aws_guardduty_ipset = ./aws_guardduty_ipset.dhall

@@ -7,6 +7,7 @@
     , id : Optional Text
     , last_modified : Optional Text
     , last_processing_result : Optional Text
+    , maximum_batching_window_in_seconds : Optional Natural
     , starting_position : Optional Text
     , starting_position_timestamp : Optional Text
     , state : Optional Text
@@ -20,6 +21,7 @@
   , id = None Text
   , last_modified = None Text
   , last_processing_result = None Text
+  , maximum_batching_window_in_seconds = None Natural
   , starting_position = None Text
   , starting_position_timestamp = None Text
   , state = None Text

@@ -1,5 +1,6 @@
 { Type =
     { allocated_capacity : Optional Natural
+    , arn : Optional Text
     , connections : Optional (List Text)
     , default_arguments : Optional (List { mapKey : Text, mapValue : Text })
     , description : Optional Text
@@ -8,9 +9,12 @@
     , max_capacity : Optional Natural
     , max_retries : Optional Natural
     , name : Text
+    , number_of_workers : Optional Natural
     , role_arn : Text
     , security_configuration : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , timeout : Optional Natural
+    , worker_type : Optional Text
     , command :
         List
           { name : Optional Text
@@ -22,6 +26,7 @@
     }
 , default =
   { allocated_capacity = None Natural
+  , arn = None Text
   , connections = None (List Text)
   , default_arguments = None (List { mapKey : Text, mapValue : Text })
   , description = None Text
@@ -29,8 +34,11 @@
   , id = None Text
   , max_capacity = None Natural
   , max_retries = None Natural
+  , number_of_workers = None Natural
   , security_configuration = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , timeout = None Natural
+  , worker_type = None Text
   , execution_property = None (List { max_concurrent_runs : Optional Natural })
   }
 }

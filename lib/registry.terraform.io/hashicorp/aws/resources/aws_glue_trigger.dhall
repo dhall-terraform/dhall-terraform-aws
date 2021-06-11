@@ -1,14 +1,18 @@
 { Type =
-    { description : Optional Text
+    { arn : Optional Text
+    , description : Optional Text
     , enabled : Optional Bool
     , id : Optional Text
     , name : Text
     , schedule : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , type : Text
+    , workflow_name : Optional Text
     , actions :
         List
           { arguments : Optional (List { mapKey : Text, mapValue : Text })
-          , job_name : Text
+          , crawler_name : Optional Text
+          , job_name : Optional Text
           , timeout : Optional Natural
           }
     , predicate :
@@ -17,28 +21,35 @@
               { logical : Optional Text
               , conditions :
                   List
-                    { job_name : Text
+                    { crawl_state : Optional Text
+                    , crawler_name : Optional Text
+                    , job_name : Optional Text
                     , logical_operator : Optional Text
-                    , state : Text
+                    , state : Optional Text
                     }
               }
           )
     , timeouts : Optional { create : Optional Text, delete : Optional Text }
     }
 , default =
-  { description = None Text
+  { arn = None Text
+  , description = None Text
   , enabled = None Bool
   , id = None Text
   , schedule = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
+  , workflow_name = None Text
   , predicate =
       None
         ( List
             { logical : Optional Text
             , conditions :
                 List
-                  { job_name : Text
+                  { crawl_state : Optional Text
+                  , crawler_name : Optional Text
+                  , job_name : Optional Text
                   , logical_operator : Optional Text
-                  , state : Text
+                  , state : Optional Text
                   }
             }
         )
