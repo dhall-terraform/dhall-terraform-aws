@@ -8,6 +8,9 @@
     , request_template : Text
     , response_template : Text
     , type : Text
+    , caching_config :
+        Optional
+          (List { caching_keys : Optional (List Text), ttl : Optional Natural })
     , pipeline_config : Optional (List { functions : Optional (List Text) })
     }
 , default =
@@ -15,6 +18,9 @@
   , data_source = None Text
   , id = None Text
   , kind = None Text
+  , caching_config =
+      None
+        (List { caching_keys : Optional (List Text), ttl : Optional Natural })
   , pipeline_config = None (List { functions : Optional (List Text) })
   }
 }

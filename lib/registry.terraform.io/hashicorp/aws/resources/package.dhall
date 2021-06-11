@@ -646,5 +646,6 @@
     ./aws_worklink_website_certificate_authority_association.dhall
 , aws_workspaces_directory = ./aws_workspaces_directory.dhall
 , aws_workspaces_ip_group = ./aws_workspaces_ip_group.dhall
+, aws_workspaces_workspace = ./aws_workspaces_workspace.dhall
 , aws_xray_sampling_rule = ./aws_xray_sampling_rule.dhall
 }

@@ -32,12 +32,20 @@
               { hash_key_field : Text
               , hash_key_type : Optional Text
               , hash_key_value : Text
+              , operation : Optional Text
               , payload_field : Optional Text
               , range_key_field : Optional Text
               , range_key_type : Optional Text
               , range_key_value : Optional Text
               , role_arn : Text
               , table_name : Text
+              }
+          )
+    , dynamodbv2 :
+        Optional
+          ( List
+              { role_arn : Text
+              , put_item : Optional (List { table_name : Text })
               }
           )
     , elasticsearch :
@@ -58,6 +66,12 @@
               , separator : Optional Text
               }
           )
+    , iot_analytics : Optional (List { channel_name : Text, role_arn : Text })
+    , iot_events :
+        Optional
+          ( List
+              { input_name : Text, message_id : Optional Text, role_arn : Text }
+          )
     , kinesis :
         Optional
           ( List
@@ -67,7 +81,9 @@
               }
           )
     , lambda : Optional (List { function_arn : Text })
-    , republish : Optional (List { role_arn : Text, topic : Text })
+    , republish :
+        Optional
+          (List { qos : Optional Natural, role_arn : Text, topic : Text })
     , s3 : Optional (List { bucket_name : Text, key : Text, role_arn : Text })
     , sns :
         Optional
@@ -110,12 +126,20 @@
             { hash_key_field : Text
             , hash_key_type : Optional Text
             , hash_key_value : Text
+            , operation : Optional Text
             , payload_field : Optional Text
             , range_key_field : Optional Text
             , range_key_type : Optional Text
             , range_key_value : Optional Text
             , role_arn : Text
             , table_name : Text
+            }
+        )
+  , dynamodbv2 =
+      None
+        ( List
+            { role_arn : Text
+            , put_item : Optional (List { table_name : Text })
             }
         )
   , elasticsearch =
@@ -136,6 +160,12 @@
             , separator : Optional Text
             }
         )
+  , iot_analytics = None (List { channel_name : Text, role_arn : Text })
+  , iot_events =
+      None
+        ( List
+            { input_name : Text, message_id : Optional Text, role_arn : Text }
+        )
   , kinesis =
       None
         ( List
@@ -145,7 +175,8 @@
             }
         )
   , lambda = None (List { function_arn : Text })
-  , republish = None (List { role_arn : Text, topic : Text })
+  , republish =
+      None (List { qos : Optional Natural, role_arn : Text, topic : Text })
   , s3 = None (List { bucket_name : Text, key : Text, role_arn : Text })
   , sns =
       None
