@@ -80,6 +80,7 @@
 , aws_autoscalingplans_scaling_plan = ./aws_autoscalingplans_scaling_plan.dhall
 , aws_autoscaling_policy = ./aws_autoscaling_policy.dhall
 , aws_autoscaling_schedule = ./aws_autoscaling_schedule.dhall
+, aws_backup_global_settings = ./aws_backup_global_settings.dhall
 , aws_backup_plan = ./aws_backup_plan.dhall
 , aws_backup_region_settings = ./aws_backup_region_settings.dhall
 , aws_backup_selection = ./aws_backup_selection.dhall
@@ -602,11 +603,14 @@
 , aws_sagemaker_endpoint_configuration =
     ./aws_sagemaker_endpoint_configuration.dhall
 , aws_sagemaker_endpoint = ./aws_sagemaker_endpoint.dhall
+, aws_sagemaker_feature_group = ./aws_sagemaker_feature_group.dhall
 , aws_sagemaker_image = ./aws_sagemaker_image.dhall
+, aws_sagemaker_image_version = ./aws_sagemaker_image_version.dhall
 , aws_sagemaker_model = ./aws_sagemaker_model.dhall
 , aws_sagemaker_notebook_instance = ./aws_sagemaker_notebook_instance.dhall
 , aws_sagemaker_notebook_instance_lifecycle_configuration =
     ./aws_sagemaker_notebook_instance_lifecycle_configuration.dhall
+, aws_sagemaker_user_profile = ./aws_sagemaker_user_profile.dhall
 , aws_secretsmanager_secret = ./aws_secretsmanager_secret.dhall
 , aws_secretsmanager_secret_policy = ./aws_secretsmanager_secret_policy.dhall
 , aws_secretsmanager_secret_rotation =

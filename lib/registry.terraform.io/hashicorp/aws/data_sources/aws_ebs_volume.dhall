@@ -11,6 +11,7 @@
     , size : Optional Natural
     , snapshot_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , throughput : Optional Natural
     , volume_id : Optional Text
     , volume_type : Optional Text
     , filter : Optional (List { name : Text, values : List Text })
@@ -28,6 +29,7 @@
   , size = None Natural
   , snapshot_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , throughput = None Natural
   , volume_id = None Text
   , volume_type = None Text
   , filter = None (List { name : Text, values : List Text })

@@ -1,5 +1,6 @@
 { Type =
     { apply_immediately : Optional Bool
+    , arn : Optional Text
     , at_rest_encryption_enabled : Optional Bool
     , auth_token : Optional Text
     , auto_minor_version_upgrade : Optional Bool
@@ -46,6 +47,7 @@
     }
 , default =
   { apply_immediately = None Bool
+  , arn = None Text
   , at_rest_encryption_enabled = None Bool
   , auth_token = None Text
   , auto_minor_version_upgrade = None Bool

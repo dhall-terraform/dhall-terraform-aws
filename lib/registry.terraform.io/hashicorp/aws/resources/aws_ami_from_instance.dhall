@@ -24,6 +24,7 @@
               , encrypted : Optional Bool
               , iops : Optional Natural
               , snapshot_id : Optional Text
+              , throughput : Optional Natural
               , volume_size : Optional Natural
               , volume_type : Optional Text
               }
@@ -62,6 +63,7 @@
             , encrypted : Optional Bool
             , iops : Optional Natural
             , snapshot_id : Optional Text
+            , throughput : Optional Natural
             , volume_size : Optional Natural
             , volume_type : Optional Text
             }

@@ -1,5 +1,6 @@
 { Type =
-    { auth_token_enabled : Optional Bool
+    { arn : Optional Text
+    , auth_token_enabled : Optional Bool
     , automatic_failover_enabled : Optional Bool
     , configuration_endpoint_address : Optional Text
     , id : Optional Text
@@ -15,7 +16,8 @@
     , snapshot_window : Optional Text
     }
 , default =
-  { auth_token_enabled = None Bool
+  { arn = None Text
+  , auth_token_enabled = None Bool
   , automatic_failover_enabled = None Bool
   , configuration_endpoint_address = None Text
   , id = None Text

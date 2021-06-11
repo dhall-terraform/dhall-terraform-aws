@@ -7,6 +7,7 @@
     , created_at : Optional Text
     , id : Optional Text
     , ipv6_address : Optional Text
+    , ipv6_addresses : Optional (List Text)
     , is_static_ip : Optional Bool
     , key_pair_name : Optional Text
     , name : Text
@@ -23,6 +24,7 @@
   , created_at = None Text
   , id = None Text
   , ipv6_address = None Text
+  , ipv6_addresses = None (List Text)
   , is_static_ip = None Bool
   , key_pair_name = None Text
   , private_ip_address = None Text
