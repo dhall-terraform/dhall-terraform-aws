@@ -36,6 +36,8 @@
           )
     , scaling_config :
         List { desired_size : Natural, max_size : Natural, min_size : Natural }
+    , taint :
+        Optional (List { effect : Text, key : Text, value : Optional Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -75,6 +77,7 @@
             , source_security_group_ids : Optional (List Text)
             }
         )
+  , taint = None (List { effect : Text, key : Text, value : Optional Text })
   , timeouts =
       None
         { create : Optional Text

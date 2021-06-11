@@ -67,6 +67,7 @@
               , delete_on_termination : Text
               , description : Text
               , device_index : Natural
+              , interface_type : Text
               , ipv4_address_count : Natural
               , ipv4_addresses : List Text
               , ipv6_address_count : Natural
@@ -173,6 +174,7 @@
             , delete_on_termination : Text
             , description : Text
             , device_index : Natural
+            , interface_type : Text
             , ipv4_address_count : Natural
             , ipv4_addresses : List Text
             , ipv6_address_count : Natural

@@ -15,9 +15,46 @@
               , priority : Natural
               , action :
                   List
-                    { allow : Optional (List {})
-                    , block : Optional (List {})
-                    , count : Optional (List {})
+                    { allow :
+                        Optional
+                          ( List
+                              { custom_request_handling :
+                                  Optional
+                                    ( List
+                                        { insert_header :
+                                            List { name : Text, value : Text }
+                                        }
+                                    )
+                              }
+                          )
+                    , block :
+                        Optional
+                          ( List
+                              { custom_response :
+                                  Optional
+                                    ( List
+                                        { response_code : Natural
+                                        , response_header :
+                                            Optional
+                                              ( List
+                                                  { name : Text, value : Text }
+                                              )
+                                        }
+                                    )
+                              }
+                          )
+                    , count :
+                        Optional
+                          ( List
+                              { custom_request_handling :
+                                  Optional
+                                    ( List
+                                        { insert_header :
+                                            List { name : Text, value : Text }
+                                        }
+                                    )
+                              }
+                          )
                     }
               , statement :
                   List
@@ -3835,9 +3872,44 @@
             , priority : Natural
             , action :
                 List
-                  { allow : Optional (List {})
-                  , block : Optional (List {})
-                  , count : Optional (List {})
+                  { allow :
+                      Optional
+                        ( List
+                            { custom_request_handling :
+                                Optional
+                                  ( List
+                                      { insert_header :
+                                          List { name : Text, value : Text }
+                                      }
+                                  )
+                            }
+                        )
+                  , block :
+                      Optional
+                        ( List
+                            { custom_response :
+                                Optional
+                                  ( List
+                                      { response_code : Natural
+                                      , response_header :
+                                          Optional
+                                            (List { name : Text, value : Text })
+                                      }
+                                  )
+                            }
+                        )
+                  , count :
+                      Optional
+                        ( List
+                            { custom_request_handling :
+                                Optional
+                                  ( List
+                                      { insert_header :
+                                          List { name : Text, value : Text }
+                                      }
+                                  )
+                            }
+                        )
                   }
             , statement :
                 List

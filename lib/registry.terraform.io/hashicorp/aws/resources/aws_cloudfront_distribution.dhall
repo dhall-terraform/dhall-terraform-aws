@@ -139,7 +139,9 @@
           )
     , origin :
         List
-          { domain_name : Text
+          { connection_attempts : Optional Natural
+          , connection_timeout : Optional Natural
+          , domain_name : Text
           , origin_id : Text
           , origin_path : Optional Text
           , custom_header : Optional (List { name : Text, value : Text })
@@ -154,6 +156,8 @@
                     , origin_ssl_protocols : List Text
                     }
                 )
+          , origin_shield :
+              Optional (List { enabled : Bool, origin_shield_region : Text })
           , s3_origin_config : Optional (List { origin_access_identity : Text })
           }
     , origin_group :

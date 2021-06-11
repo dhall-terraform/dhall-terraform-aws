@@ -53,6 +53,7 @@
               , backup : Optional Text
               , batch : Optional Text
               , budgets : Optional Text
+              , chime : Optional Text
               , cloud9 : Optional Text
               , cloudformation : Optional Text
               , cloudfront : Optional Text
@@ -161,6 +162,7 @@
               , s3control : Optional Text
               , s3outposts : Optional Text
               , sagemaker : Optional Text
+              , schemas : Optional Text
               , sdb : Optional Text
               , secretsmanager : Optional Text
               , securityhub : Optional Text
@@ -252,6 +254,7 @@
             , backup : Optional Text
             , batch : Optional Text
             , budgets : Optional Text
+            , chime : Optional Text
             , cloud9 : Optional Text
             , cloudformation : Optional Text
             , cloudfront : Optional Text
@@ -360,6 +363,7 @@
             , s3control : Optional Text
             , s3outposts : Optional Text
             , sagemaker : Optional Text
+            , schemas : Optional Text
             , sdb : Optional Text
             , secretsmanager : Optional Text
             , securityhub : Optional Text

@@ -1,17 +1,17 @@
 { Type =
     { arn : Optional Text
+    , connection_arn : Text
     , description : Optional Text
+    , http_method : Text
     , id : Optional Text
-    , kafka_versions : Optional (List Text)
-    , latest_revision : Optional Natural
+    , invocation_endpoint : Text
+    , invocation_rate_limit_per_second : Optional Natural
     , name : Text
-    , server_properties : Text
     }
 , default =
   { arn = None Text
   , description = None Text
   , id = None Text
-  , kafka_versions = None (List Text)
-  , latest_revision = None Natural
+  , invocation_rate_limit_per_second = None Natural
   }
 }

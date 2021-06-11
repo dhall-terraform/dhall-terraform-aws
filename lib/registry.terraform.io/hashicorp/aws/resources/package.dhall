@@ -15,6 +15,8 @@
 , aws_ami = ./aws_ami.dhall
 , aws_ami_from_instance = ./aws_ami_from_instance.dhall
 , aws_ami_launch_permission = ./aws_ami_launch_permission.dhall
+, aws_amplify_app = ./aws_amplify_app.dhall
+, aws_amplify_backend_environment = ./aws_amplify_backend_environment.dhall
 , aws_api_gateway_account = ./aws_api_gateway_account.dhall
 , aws_api_gateway_api_key = ./aws_api_gateway_api_key.dhall
 , aws_api_gateway_authorizer = ./aws_api_gateway_authorizer.dhall
@@ -122,8 +124,11 @@
 , aws_cloudtrail = ./aws_cloudtrail.dhall
 , aws_cloudwatch_composite_alarm = ./aws_cloudwatch_composite_alarm.dhall
 , aws_cloudwatch_dashboard = ./aws_cloudwatch_dashboard.dhall
+, aws_cloudwatch_event_api_destination =
+    ./aws_cloudwatch_event_api_destination.dhall
 , aws_cloudwatch_event_archive = ./aws_cloudwatch_event_archive.dhall
 , aws_cloudwatch_event_bus = ./aws_cloudwatch_event_bus.dhall
+, aws_cloudwatch_event_connection = ./aws_cloudwatch_event_connection.dhall
 , aws_cloudwatch_event_permission = ./aws_cloudwatch_event_permission.dhall
 , aws_cloudwatch_event_rule = ./aws_cloudwatch_event_rule.dhall
 , aws_cloudwatch_event_target = ./aws_cloudwatch_event_target.dhall
@@ -678,6 +683,9 @@
 , aws_sagemaker_notebook_instance_lifecycle_configuration =
     ./aws_sagemaker_notebook_instance_lifecycle_configuration.dhall
 , aws_sagemaker_user_profile = ./aws_sagemaker_user_profile.dhall
+, aws_schemas_discoverer = ./aws_schemas_discoverer.dhall
+, aws_schemas_registry = ./aws_schemas_registry.dhall
+, aws_schemas_schema = ./aws_schemas_schema.dhall
 , aws_secretsmanager_secret = ./aws_secretsmanager_secret.dhall
 , aws_secretsmanager_secret_policy = ./aws_secretsmanager_secret_policy.dhall
 , aws_secretsmanager_secret_rotation =
@@ -698,6 +706,8 @@
     ./aws_securityhub_standards_subscription.dhall
 , aws_serverlessapplicationrepository_cloudformation_stack =
     ./aws_serverlessapplicationrepository_cloudformation_stack.dhall
+, aws_servicecatalog_budget_resource_association =
+    ./aws_servicecatalog_budget_resource_association.dhall
 , aws_servicecatalog_constraint = ./aws_servicecatalog_constraint.dhall
 , aws_servicecatalog_organizations_access =
     ./aws_servicecatalog_organizations_access.dhall
@@ -707,8 +717,12 @@
 , aws_servicecatalog_product = ./aws_servicecatalog_product.dhall
 , aws_servicecatalog_product_portfolio_association =
     ./aws_servicecatalog_product_portfolio_association.dhall
+, aws_servicecatalog_provisioning_artifact =
+    ./aws_servicecatalog_provisioning_artifact.dhall
 , aws_servicecatalog_service_action = ./aws_servicecatalog_service_action.dhall
 , aws_servicecatalog_tag_option = ./aws_servicecatalog_tag_option.dhall
+, aws_servicecatalog_tag_option_resource_association =
+    ./aws_servicecatalog_tag_option_resource_association.dhall
 , aws_service_discovery_http_namespace =
     ./aws_service_discovery_http_namespace.dhall
 , aws_service_discovery_private_dns_namespace =

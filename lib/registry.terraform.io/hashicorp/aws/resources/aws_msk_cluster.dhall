@@ -1,6 +1,7 @@
 { Type =
     { arn : Optional Text
     , bootstrap_brokers : Optional Text
+    , bootstrap_brokers_sasl_iam : Optional Text
     , bootstrap_brokers_sasl_scram : Optional Text
     , bootstrap_brokers_tls : Optional Text
     , cluster_name : Text
@@ -23,7 +24,8 @@
     , client_authentication :
         Optional
           ( List
-              { sasl : Optional (List { scram : Optional Bool })
+              { sasl :
+                  Optional (List { iam : Optional Bool, scram : Optional Bool })
               , tls :
                   Optional
                     (List { certificate_authority_arns : Optional (List Text) })
@@ -81,10 +83,17 @@
                     }
               }
           )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { arn = None Text
   , bootstrap_brokers = None Text
+  , bootstrap_brokers_sasl_iam = None Text
   , bootstrap_brokers_sasl_scram = None Text
   , bootstrap_brokers_tls = None Text
   , current_version = None Text
@@ -96,7 +105,8 @@
   , client_authentication =
       None
         ( List
-            { sasl : Optional (List { scram : Optional Bool })
+            { sasl :
+                Optional (List { iam : Optional Bool, scram : Optional Bool })
             , tls :
                 Optional
                   (List { certificate_authority_arns : Optional (List Text) })
@@ -150,5 +160,11 @@
                   }
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , update : Optional Text
+        }
   }
 }

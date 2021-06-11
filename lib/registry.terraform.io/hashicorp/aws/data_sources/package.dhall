@@ -36,6 +36,7 @@
     ./aws_cloudfront_origin_request_policy.dhall
 , aws_cloudhsm_v2_cluster = ./aws_cloudhsm_v2_cluster.dhall
 , aws_cloudtrail_service_account = ./aws_cloudtrail_service_account.dhall
+, aws_cloudwatch_event_connection = ./aws_cloudwatch_event_connection.dhall
 , aws_cloudwatch_event_source = ./aws_cloudwatch_event_source.dhall
 , aws_cloudwatch_log_group = ./aws_cloudwatch_log_group.dhall
 , aws_codeartifact_authorization_token =
@@ -53,6 +54,7 @@
 , aws_db_instance = ./aws_db_instance.dhall
 , aws_db_snapshot = ./aws_db_snapshot.dhall
 , aws_db_subnet_group = ./aws_db_subnet_group.dhall
+, aws_default_tags = ./aws_default_tags.dhall
 , aws_directory_service_directory = ./aws_directory_service_directory.dhall
 , aws_docdb_engine_version = ./aws_docdb_engine_version.dhall
 , aws_docdb_orderable_db_instance = ./aws_docdb_orderable_db_instance.dhall
@@ -235,6 +237,7 @@
 , aws_security_groups = ./aws_security_groups.dhall
 , aws_serverlessapplicationrepository_application =
     ./aws_serverlessapplicationrepository_application.dhall
+, aws_servicecatalog_constraint = ./aws_servicecatalog_constraint.dhall
 , aws_service_discovery_dns_namespace =
     ./aws_service_discovery_dns_namespace.dhall
 , aws_servicequotas_service = ./aws_servicequotas_service.dhall

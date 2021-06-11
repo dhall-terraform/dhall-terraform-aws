@@ -1,19 +1,25 @@
 { Type =
     { arn : Optional Text
+    , content : Text
     , description : Optional Text
-    , family : Text
     , id : Optional Text
+    , last_modified : Optional Text
     , name : Text
+    , registry_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , tags_all : Optional (List { mapKey : Text, mapValue : Text })
-    , parameter : Optional (List { name : Text, value : Text })
+    , type : Text
+    , version : Optional Text
+    , version_created_date : Optional Text
     }
 , default =
   { arn = None Text
   , description = None Text
   , id = None Text
+  , last_modified = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , tags_all = None (List { mapKey : Text, mapValue : Text })
-  , parameter = None (List { name : Text, value : Text })
+  , version = None Text
+  , version_created_date = None Text
   }
 }

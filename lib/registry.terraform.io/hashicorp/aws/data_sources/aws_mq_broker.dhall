@@ -33,6 +33,7 @@
               , user_search_subtree : Bool
               }
           )
+    , logs : Optional (List { audit : Text, general : Bool })
     , maintenance_window_start_time :
         Optional
           (List { day_of_week : Text, time_of_day : Text, time_zone : Text })
@@ -44,7 +45,6 @@
     , user :
         Optional
           (List { console_access : Bool, groups : List Text, username : Text })
-    , logs : Optional (List { audit : Optional Bool, general : Optional Bool })
     }
 , default =
   { arn = None Text
@@ -79,6 +79,7 @@
             , user_search_subtree : Bool
             }
         )
+  , logs = None (List { audit : Text, general : Bool })
   , maintenance_window_start_time =
       None (List { day_of_week : Text, time_of_day : Text, time_zone : Text })
   , publicly_accessible = None Bool
@@ -88,6 +89,5 @@
   , tags = None (List { mapKey : Text, mapValue : Text })
   , user =
       None (List { console_access : Bool, groups : List Text, username : Text })
-  , logs = None (List { audit : Optional Bool, general : Optional Bool })
   }
 }

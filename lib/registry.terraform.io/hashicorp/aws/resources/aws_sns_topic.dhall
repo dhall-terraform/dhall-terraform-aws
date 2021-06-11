@@ -7,6 +7,9 @@
     , delivery_policy : Optional Text
     , display_name : Optional Text
     , fifo_topic : Optional Bool
+    , firehose_failure_feedback_role_arn : Optional Text
+    , firehose_success_feedback_role_arn : Optional Text
+    , firehose_success_feedback_sample_rate : Optional Natural
     , http_failure_feedback_role_arn : Optional Text
     , http_success_feedback_role_arn : Optional Text
     , http_success_feedback_sample_rate : Optional Natural
@@ -17,6 +20,7 @@
     , lambda_success_feedback_sample_rate : Optional Natural
     , name : Optional Text
     , name_prefix : Optional Text
+    , owner : Optional Text
     , policy : Optional Text
     , sqs_failure_feedback_role_arn : Optional Text
     , sqs_success_feedback_role_arn : Optional Text
@@ -33,6 +37,9 @@
   , delivery_policy = None Text
   , display_name = None Text
   , fifo_topic = None Bool
+  , firehose_failure_feedback_role_arn = None Text
+  , firehose_success_feedback_role_arn = None Text
+  , firehose_success_feedback_sample_rate = None Natural
   , http_failure_feedback_role_arn = None Text
   , http_success_feedback_role_arn = None Text
   , http_success_feedback_sample_rate = None Natural
@@ -43,6 +50,7 @@
   , lambda_success_feedback_sample_rate = None Natural
   , name = None Text
   , name_prefix = None Text
+  , owner = None Text
   , policy = None Text
   , sqs_failure_feedback_role_arn = None Text
   , sqs_success_feedback_role_arn = None Text

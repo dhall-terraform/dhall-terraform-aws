@@ -9,7 +9,33 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , tags_all : Optional (List { mapKey : Text, mapValue : Text })
     , default_action :
-        List { allow : Optional (List {}), block : Optional (List {}) }
+        List
+          { allow :
+              Optional
+                ( List
+                    { custom_request_handling :
+                        Optional
+                          ( List
+                              { insert_header :
+                                  List { name : Text, value : Text }
+                              }
+                          )
+                    }
+                )
+          , block :
+              Optional
+                ( List
+                    { custom_response :
+                        Optional
+                          ( List
+                              { response_code : Natural
+                              , response_header :
+                                  Optional (List { name : Text, value : Text })
+                              }
+                          )
+                    }
+                )
+          }
     , rule :
         Optional
           ( List
@@ -18,9 +44,50 @@
               , action :
                   Optional
                     ( List
-                        { allow : Optional (List {})
-                        , block : Optional (List {})
-                        , count : Optional (List {})
+                        { allow :
+                            Optional
+                              ( List
+                                  { custom_request_handling :
+                                      Optional
+                                        ( List
+                                            { insert_header :
+                                                List
+                                                  { name : Text, value : Text }
+                                            }
+                                        )
+                                  }
+                              )
+                        , block :
+                            Optional
+                              ( List
+                                  { custom_response :
+                                      Optional
+                                        ( List
+                                            { response_code : Natural
+                                            , response_header :
+                                                Optional
+                                                  ( List
+                                                      { name : Text
+                                                      , value : Text
+                                                      }
+                                                  )
+                                            }
+                                        )
+                                  }
+                              )
+                        , count :
+                            Optional
+                              ( List
+                                  { custom_request_handling :
+                                      Optional
+                                        ( List
+                                            { insert_header :
+                                                List
+                                                  { name : Text, value : Text }
+                                            }
+                                        )
+                                  }
+                              )
                         }
                     )
               , override_action :
@@ -17114,9 +17181,48 @@
             , action :
                 Optional
                   ( List
-                      { allow : Optional (List {})
-                      , block : Optional (List {})
-                      , count : Optional (List {})
+                      { allow :
+                          Optional
+                            ( List
+                                { custom_request_handling :
+                                    Optional
+                                      ( List
+                                          { insert_header :
+                                              List { name : Text, value : Text }
+                                          }
+                                      )
+                                }
+                            )
+                      , block :
+                          Optional
+                            ( List
+                                { custom_response :
+                                    Optional
+                                      ( List
+                                          { response_code : Natural
+                                          , response_header :
+                                              Optional
+                                                ( List
+                                                    { name : Text
+                                                    , value : Text
+                                                    }
+                                                )
+                                          }
+                                      )
+                                }
+                            )
+                      , count :
+                          Optional
+                            ( List
+                                { custom_request_handling :
+                                    Optional
+                                      ( List
+                                          { insert_header :
+                                              List { name : Text, value : Text }
+                                          }
+                                      )
+                                }
+                            )
                       }
                   )
             , override_action :
