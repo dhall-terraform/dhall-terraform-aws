@@ -145,6 +145,8 @@
     ./aws_config_organization_custom_rule.dhall
 , aws_config_organization_managed_rule =
     ./aws_config_organization_managed_rule.dhall
+, aws_config_remediation_configuration =
+    ./aws_config_remediation_configuration.dhall
 , aws_cur_report_definition = ./aws_cur_report_definition.dhall
 , aws_customer_gateway = ./aws_customer_gateway.dhall
 , aws_datapipeline_pipeline = ./aws_datapipeline_pipeline.dhall

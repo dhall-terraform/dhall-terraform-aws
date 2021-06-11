@@ -287,7 +287,14 @@
                     )
               }
           )
-    , server_side_encryption : Optional (List { enabled : Optional Bool })
+    , server_side_encryption :
+        Optional
+          ( List
+              { enabled : Optional Bool
+              , key_arn : Optional Text
+              , key_type : Optional Text
+              }
+          )
     , splunk_configuration :
         Optional
           ( List
@@ -613,7 +620,14 @@
                   )
             }
         )
-  , server_side_encryption = None (List { enabled : Optional Bool })
+  , server_side_encryption =
+      None
+        ( List
+            { enabled : Optional Bool
+            , key_arn : Optional Text
+            , key_type : Optional Text
+            }
+        )
   , splunk_configuration =
       None
         ( List

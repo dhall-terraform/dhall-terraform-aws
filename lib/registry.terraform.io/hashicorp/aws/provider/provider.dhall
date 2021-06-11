@@ -98,6 +98,7 @@
               , greengrass : Optional Text
               , guardduty : Optional Text
               , iam : Optional Text
+              , identitystore : Optional Text
               , imagebuilder : Optional Text
               , inspector : Optional Text
               , iot : Optional Text
@@ -157,6 +158,7 @@
               , sns : Optional Text
               , sqs : Optional Text
               , ssm : Optional Text
+              , ssoadmin : Optional Text
               , stepfunctions : Optional Text
               , storagegateway : Optional Text
               , sts : Optional Text
@@ -279,6 +281,7 @@
             , greengrass : Optional Text
             , guardduty : Optional Text
             , iam : Optional Text
+            , identitystore : Optional Text
             , imagebuilder : Optional Text
             , inspector : Optional Text
             , iot : Optional Text
@@ -338,6 +341,7 @@
             , sns : Optional Text
             , sqs : Optional Text
             , ssm : Optional Text
+            , ssoadmin : Optional Text
             , stepfunctions : Optional Text
             , storagegateway : Optional Text
             , sts : Optional Text
