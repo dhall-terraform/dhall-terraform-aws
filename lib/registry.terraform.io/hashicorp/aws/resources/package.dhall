@@ -222,9 +222,12 @@
 , aws_ebs_volume = ./aws_ebs_volume.dhall
 , aws_ec2_availability_zone_group = ./aws_ec2_availability_zone_group.dhall
 , aws_ec2_capacity_reservation = ./aws_ec2_capacity_reservation.dhall
+, aws_ec2_client_vpn_authorization_rule =
+    ./aws_ec2_client_vpn_authorization_rule.dhall
 , aws_ec2_client_vpn_endpoint = ./aws_ec2_client_vpn_endpoint.dhall
 , aws_ec2_client_vpn_network_association =
     ./aws_ec2_client_vpn_network_association.dhall
+, aws_ec2_client_vpn_route = ./aws_ec2_client_vpn_route.dhall
 , aws_ec2_fleet = ./aws_ec2_fleet.dhall
 , aws_ec2_local_gateway_route = ./aws_ec2_local_gateway_route.dhall
 , aws_ec2_local_gateway_route_table_vpc_association =
