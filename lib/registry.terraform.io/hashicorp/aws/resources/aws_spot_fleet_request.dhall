@@ -11,6 +11,7 @@
     , replace_unhealthy_instances : Optional Bool
     , spot_price : Optional Text
     , spot_request_state : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , target_capacity : Natural
     , target_group_arns : Optional (List Text)
     , terminate_instances_with_expiration : Optional Bool
@@ -77,6 +78,7 @@
   , replace_unhealthy_instances = None Bool
   , spot_price = None Text
   , spot_request_state = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , target_group_arns = None (List Text)
   , terminate_instances_with_expiration = None Bool
   , valid_from = None Text

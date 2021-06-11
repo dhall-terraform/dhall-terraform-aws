@@ -9,6 +9,7 @@
     , cluster_resource_id : Optional Text
     , db_cluster_parameter_group_name : Optional Text
     , db_subnet_group_name : Optional Text
+    , deletion_protection : Optional Bool
     , enabled_cloudwatch_logs_exports : Optional (List Text)
     , endpoint : Optional Text
     , engine : Optional Text
@@ -46,6 +47,7 @@
   , cluster_resource_id = None Text
   , db_cluster_parameter_group_name = None Text
   , db_subnet_group_name = None Text
+  , deletion_protection = None Bool
   , enabled_cloudwatch_logs_exports = None (List Text)
   , endpoint = None Text
   , engine = None Text

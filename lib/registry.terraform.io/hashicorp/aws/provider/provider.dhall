@@ -2,8 +2,6 @@
     { access_key : Optional Text
     , allowed_account_ids : Optional (List Text)
     , forbidden_account_ids : Optional (List Text)
-    , ignore_tag_prefixes : Optional (List Text)
-    , ignore_tags : Optional (List Text)
     , insecure : Optional Bool
     , max_retries : Optional Natural
     , profile : Optional Text
@@ -165,13 +163,18 @@
               , xray : Optional Text
               }
           )
+    , ignore_tags :
+        Optional
+          ( List
+              { key_prefixes : Optional (List Text)
+              , keys : Optional (List Text)
+              }
+          )
     }
 , default =
   { access_key = None Text
   , allowed_account_ids = None (List Text)
   , forbidden_account_ids = None (List Text)
-  , ignore_tag_prefixes = None (List Text)
-  , ignore_tags = None (List Text)
   , insecure = None Bool
   , max_retries = None Natural
   , profile = None Text
@@ -331,6 +334,11 @@
             , workspaces : Optional Text
             , xray : Optional Text
             }
+        )
+  , ignore_tags =
+      None
+        ( List
+            { key_prefixes : Optional (List Text), keys : Optional (List Text) }
         )
   }
 }

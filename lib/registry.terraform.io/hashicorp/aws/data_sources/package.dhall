@@ -21,6 +21,7 @@
 , aws_canonical_user_id = ./aws_canonical_user_id.dhall
 , aws_cloudformation_export = ./aws_cloudformation_export.dhall
 , aws_cloudformation_stack = ./aws_cloudformation_stack.dhall
+, aws_cloudfront_distribution = ./aws_cloudfront_distribution.dhall
 , aws_cloudhsm_v2_cluster = ./aws_cloudhsm_v2_cluster.dhall
 , aws_cloudtrail_service_account = ./aws_cloudtrail_service_account.dhall
 , aws_cloudwatch_log_group = ./aws_cloudwatch_log_group.dhall
