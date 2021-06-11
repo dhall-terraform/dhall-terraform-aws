@@ -207,6 +207,7 @@
 , aws_ebs_snapshot_copy = ./aws_ebs_snapshot_copy.dhall
 , aws_ebs_snapshot = ./aws_ebs_snapshot.dhall
 , aws_ebs_volume = ./aws_ebs_volume.dhall
+, aws_ec2_availability_zone_group = ./aws_ec2_availability_zone_group.dhall
 , aws_ec2_capacity_reservation = ./aws_ec2_capacity_reservation.dhall
 , aws_ec2_client_vpn_endpoint = ./aws_ec2_client_vpn_endpoint.dhall
 , aws_ec2_client_vpn_network_association =

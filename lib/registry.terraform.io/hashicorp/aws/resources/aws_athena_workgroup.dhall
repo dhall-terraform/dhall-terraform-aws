@@ -1,6 +1,7 @@
 { Type =
     { arn : Optional Text
     , description : Optional Text
+    , force_destroy : Optional Bool
     , id : Optional Text
     , name : Text
     , state : Optional Text
@@ -30,6 +31,7 @@
 , default =
   { arn = None Text
   , description = None Text
+  , force_destroy = None Bool
   , id = None Text
   , state = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })

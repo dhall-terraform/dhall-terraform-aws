@@ -6,6 +6,7 @@
     , log_destination_type : Optional Text
     , log_format : Optional Text
     , log_group_name : Optional Text
+    , max_aggregation_interval : Optional Natural
     , subnet_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , traffic_type : Text
@@ -19,6 +20,7 @@
   , log_destination_type = None Text
   , log_format = None Text
   , log_group_name = None Text
+  , max_aggregation_interval = None Natural
   , subnet_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , vpc_id = None Text

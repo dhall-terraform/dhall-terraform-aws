@@ -76,6 +76,14 @@
           )
     , license_specification :
         Optional (List { license_configuration_arn : Text })
+    , metadata_options :
+        Optional
+          ( List
+              { http_endpoint : Optional Text
+              , http_put_response_hop_limit : Optional Natural
+              , http_tokens : Optional Text
+              }
+          )
     , monitoring : Optional (List { enabled : Optional Bool })
     , network_interfaces :
         Optional
@@ -190,6 +198,14 @@
             }
         )
   , license_specification = None (List { license_configuration_arn : Text })
+  , metadata_options =
+      None
+        ( List
+            { http_endpoint : Optional Text
+            , http_put_response_hop_limit : Optional Natural
+            , http_tokens : Optional Text
+            }
+        )
   , monitoring = None (List { enabled : Optional Bool })
   , network_interfaces =
       None

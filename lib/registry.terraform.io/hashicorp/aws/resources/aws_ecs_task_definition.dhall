@@ -13,6 +13,8 @@
     , revision : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , task_role_arn : Optional Text
+    , inference_accelerator :
+        Optional (List { device_name : Text, device_type : Text })
     , placement_constraints :
         Optional (List { expression : Optional Text, type : Text })
     , proxy_configuration :
@@ -63,6 +65,8 @@
   , revision = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
   , task_role_arn = None Text
+  , inference_accelerator =
+      None (List { device_name : Text, device_type : Text })
   , placement_constraints =
       None (List { expression : Optional Text, type : Text })
   , proxy_configuration =

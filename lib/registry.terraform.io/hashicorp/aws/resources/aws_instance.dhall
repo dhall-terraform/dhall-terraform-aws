@@ -59,6 +59,14 @@
               , virtual_name : Optional Text
               }
           )
+    , metadata_options :
+        Optional
+          ( List
+              { http_endpoint : Optional Text
+              , http_put_response_hop_limit : Optional Natural
+              , http_tokens : Optional Text
+              }
+          )
     , network_interface :
         Optional
           ( List
@@ -143,6 +151,14 @@
             { device_name : Text
             , no_device : Optional Bool
             , virtual_name : Optional Text
+            }
+        )
+  , metadata_options =
+      None
+        ( List
+            { http_endpoint : Optional Text
+            , http_put_response_hop_limit : Optional Natural
+            , http_tokens : Optional Text
             }
         )
   , network_interface =

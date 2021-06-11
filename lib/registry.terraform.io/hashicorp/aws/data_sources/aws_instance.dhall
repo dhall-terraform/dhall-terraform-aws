@@ -33,6 +33,14 @@
     , instance_tags : Optional (List { mapKey : Text, mapValue : Text })
     , instance_type : Optional Text
     , key_name : Optional Text
+    , metadata_options :
+        Optional
+          ( List
+              { http_endpoint : Text
+              , http_put_response_hop_limit : Natural
+              , http_tokens : Text
+              }
+          )
     , monitoring : Optional Bool
     , network_interface_id : Optional Text
     , password_data : Optional Text
@@ -97,6 +105,14 @@
   , instance_tags = None (List { mapKey : Text, mapValue : Text })
   , instance_type = None Text
   , key_name = None Text
+  , metadata_options =
+      None
+        ( List
+            { http_endpoint : Text
+            , http_put_response_hop_limit : Natural
+            , http_tokens : Text
+            }
+        )
   , monitoring = None Bool
   , network_interface_id = None Text
   , password_data = None Text

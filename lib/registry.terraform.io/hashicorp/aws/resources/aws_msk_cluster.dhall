@@ -40,6 +40,32 @@
                     )
               }
           )
+    , logging_info :
+        Optional
+          ( List
+              { broker_logs :
+                  List
+                    { cloudwatch_logs :
+                        Optional
+                          (List { enabled : Bool, log_group : Optional Text })
+                    , firehose :
+                        Optional
+                          ( List
+                              { delivery_stream : Optional Text
+                              , enabled : Bool
+                              }
+                          )
+                    , s3 :
+                        Optional
+                          ( List
+                              { bucket : Optional Text
+                              , enabled : Bool
+                              , prefix : Optional Text
+                              }
+                          )
+                    }
+              }
+          )
     , open_monitoring :
         Optional
           ( List
@@ -82,6 +108,30 @@
                       , in_cluster : Optional Bool
                       }
                   )
+            }
+        )
+  , logging_info =
+      None
+        ( List
+            { broker_logs :
+                List
+                  { cloudwatch_logs :
+                      Optional
+                        (List { enabled : Bool, log_group : Optional Text })
+                  , firehose :
+                      Optional
+                        ( List
+                            { delivery_stream : Optional Text, enabled : Bool }
+                        )
+                  , s3 :
+                      Optional
+                        ( List
+                            { bucket : Optional Text
+                            , enabled : Bool
+                            , prefix : Optional Text
+                            }
+                        )
+                  }
             }
         )
   , open_monitoring =

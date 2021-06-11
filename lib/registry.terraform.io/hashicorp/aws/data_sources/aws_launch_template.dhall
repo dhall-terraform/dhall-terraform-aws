@@ -46,8 +46,16 @@
     , kernel_id : Optional Text
     , key_name : Optional Text
     , latest_version : Optional Natural
+    , metadata_options :
+        Optional
+          ( List
+              { http_endpoint : Text
+              , http_put_response_hop_limit : Natural
+              , http_tokens : Text
+              }
+          )
     , monitoring : Optional (List { enabled : Bool })
-    , name : Text
+    , name : Optional Text
     , network_interfaces :
         Optional
           ( List
@@ -88,6 +96,7 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , user_data : Optional Text
     , vpc_security_group_ids : Optional (List Text)
+    , filter : Optional (List { name : Text, values : List Text })
     }
 , default =
   { arn = None Text
@@ -137,7 +146,16 @@
   , kernel_id = None Text
   , key_name = None Text
   , latest_version = None Natural
+  , metadata_options =
+      None
+        ( List
+            { http_endpoint : Text
+            , http_put_response_hop_limit : Natural
+            , http_tokens : Text
+            }
+        )
   , monitoring = None (List { enabled : Bool })
+  , name = None Text
   , network_interfaces =
       None
         ( List
@@ -178,5 +196,6 @@
   , tags = None (List { mapKey : Text, mapValue : Text })
   , user_data = None Text
   , vpc_security_group_ids = None (List Text)
+  , filter = None (List { name : Text, values : List Text })
   }
 }

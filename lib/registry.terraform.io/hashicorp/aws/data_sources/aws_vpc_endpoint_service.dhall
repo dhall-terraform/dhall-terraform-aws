@@ -12,6 +12,7 @@
     , service_type : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_endpoint_policy_supported : Optional Bool
+    , filter : Optional (List { name : Text, values : List Text })
     }
 , default =
   { acceptance_required = None Bool
@@ -27,5 +28,6 @@
   , service_type = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , vpc_endpoint_policy_supported = None Bool
+  , filter = None (List { name : Text, values : List Text })
   }
 }
