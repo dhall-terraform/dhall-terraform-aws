@@ -14,6 +14,7 @@
     , read_only : Optional Bool
     , requester_pays : Optional Bool
     , role_arn : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , valid_user_list : Optional (List Text)
     , timeouts :
         Optional
@@ -35,6 +36,7 @@
   , object_acl = None Text
   , read_only = None Bool
   , requester_pays = None Bool
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , valid_user_list = None (List Text)
   , timeouts =
       None

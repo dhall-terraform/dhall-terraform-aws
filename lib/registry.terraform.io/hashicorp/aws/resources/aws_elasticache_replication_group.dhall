@@ -9,6 +9,7 @@
     , engine : Optional Text
     , engine_version : Optional Text
     , id : Optional Text
+    , kms_key_id : Optional Text
     , maintenance_window : Optional Text
     , member_clusters : Optional (List Text)
     , node_type : Optional Text
@@ -51,6 +52,7 @@
   , engine = None Text
   , engine_version = None Text
   , id = None Text
+  , kms_key_id = None Text
   , maintenance_window = None Text
   , member_clusters = None (List Text)
   , node_type = None Text

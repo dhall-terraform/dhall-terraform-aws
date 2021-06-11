@@ -3,6 +3,7 @@
     , connections : Optional (List Text)
     , default_arguments : Optional (List { mapKey : Text, mapValue : Text })
     , description : Optional Text
+    , glue_version : Optional Text
     , id : Optional Text
     , max_capacity : Optional Natural
     , max_retries : Optional Natural
@@ -24,6 +25,7 @@
   , connections = None (List Text)
   , default_arguments = None (List { mapKey : Text, mapValue : Text })
   , description = None Text
+  , glue_version = None Text
   , id = None Text
   , max_capacity = None Natural
   , max_retries = None Natural
