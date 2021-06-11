@@ -16,7 +16,8 @@
     , connect_settings :
         Optional
           ( List
-              { customer_dns_ips : List Text
+              { connect_ips : Optional (List Text)
+              , customer_dns_ips : List Text
               , customer_username : Text
               , subnet_ids : List Text
               , vpc_id : Text
@@ -40,7 +41,8 @@
   , connect_settings =
       None
         ( List
-            { customer_dns_ips : List Text
+            { connect_ips : Optional (List Text)
+            , customer_dns_ips : List Text
             , customer_username : Text
             , subnet_ids : List Text
             , vpc_id : Text

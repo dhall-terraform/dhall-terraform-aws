@@ -51,7 +51,7 @@
               }
           )
     , node_to_node_encryption : Optional (List { enabled : Bool })
-    , processing : Optional Text
+    , processing : Optional Bool
     , snapshot_options :
         Optional (List { automated_snapshot_start_hour : Natural })
     , tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -113,7 +113,7 @@
             { cloudwatch_log_group_arn : Text, enabled : Bool, log_type : Text }
         )
   , node_to_node_encryption = None (List { enabled : Bool })
-  , processing = None Text
+  , processing = None Bool
   , snapshot_options = None (List { automated_snapshot_start_hour : Natural })
   , tags = None (List { mapKey : Text, mapValue : Text })
   , vpc_options =

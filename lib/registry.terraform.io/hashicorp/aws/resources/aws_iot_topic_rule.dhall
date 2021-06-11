@@ -96,6 +96,14 @@
           )
     , sqs :
         Optional (List { queue_url : Text, role_arn : Text, use_base64 : Bool })
+    , step_functions :
+        Optional
+          ( List
+              { execution_name_prefix : Optional Text
+              , role_arn : Text
+              , state_machine_name : Text
+              }
+          )
     }
 , default =
   { arn = None Text
@@ -189,5 +197,13 @@
             }
         )
   , sqs = None (List { queue_url : Text, role_arn : Text, use_base64 : Bool })
+  , step_functions =
+      None
+        ( List
+            { execution_name_prefix : Optional Text
+            , role_arn : Text
+            , state_machine_name : Text
+            }
+        )
   }
 }
