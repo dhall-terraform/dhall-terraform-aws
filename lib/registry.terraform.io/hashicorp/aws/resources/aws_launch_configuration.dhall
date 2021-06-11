@@ -26,6 +26,7 @@
               , iops : Optional Natural
               , no_device : Optional Bool
               , snapshot_id : Optional Text
+              , throughput : Optional Natural
               , volume_size : Optional Natural
               , volume_type : Optional Text
               }
@@ -46,6 +47,7 @@
               { delete_on_termination : Optional Bool
               , encrypted : Optional Bool
               , iops : Optional Natural
+              , throughput : Optional Natural
               , volume_size : Optional Natural
               , volume_type : Optional Text
               }
@@ -77,6 +79,7 @@
             , iops : Optional Natural
             , no_device : Optional Bool
             , snapshot_id : Optional Text
+            , throughput : Optional Natural
             , volume_size : Optional Natural
             , volume_type : Optional Text
             }
@@ -97,6 +100,7 @@
             { delete_on_termination : Optional Bool
             , encrypted : Optional Bool
             , iops : Optional Natural
+            , throughput : Optional Natural
             , volume_size : Optional Natural
             , volume_type : Optional Text
             }

@@ -17,6 +17,9 @@
 , aws_ami_launch_permission = ./aws_ami_launch_permission.dhall
 , aws_amplify_app = ./aws_amplify_app.dhall
 , aws_amplify_backend_environment = ./aws_amplify_backend_environment.dhall
+, aws_amplify_branch = ./aws_amplify_branch.dhall
+, aws_amplify_domain_association = ./aws_amplify_domain_association.dhall
+, aws_amplify_webhook = ./aws_amplify_webhook.dhall
 , aws_api_gateway_account = ./aws_api_gateway_account.dhall
 , aws_api_gateway_api_key = ./aws_api_gateway_api_key.dhall
 , aws_api_gateway_authorizer = ./aws_api_gateway_authorizer.dhall
@@ -714,6 +717,8 @@
 , aws_servicecatalog_portfolio = ./aws_servicecatalog_portfolio.dhall
 , aws_servicecatalog_portfolio_share =
     ./aws_servicecatalog_portfolio_share.dhall
+, aws_servicecatalog_principal_portfolio_association =
+    ./aws_servicecatalog_principal_portfolio_association.dhall
 , aws_servicecatalog_product = ./aws_servicecatalog_product.dhall
 , aws_servicecatalog_product_portfolio_association =
     ./aws_servicecatalog_product_portfolio_association.dhall

@@ -10,6 +10,7 @@
               , iops : Natural
               , no_device : Bool
               , snapshot_id : Text
+              , throughput : Bool
               , volume_size : Natural
               , volume_type : Text
               }
@@ -39,6 +40,7 @@
               { delete_on_termination : Bool
               , encrypted : Bool
               , iops : Natural
+              , throughput : Bool
               , volume_size : Natural
               , volume_type : Text
               }
@@ -61,6 +63,7 @@
             , iops : Natural
             , no_device : Bool
             , snapshot_id : Text
+            , throughput : Bool
             , volume_size : Natural
             , volume_type : Text
             }
@@ -89,6 +92,7 @@
             { delete_on_termination : Bool
             , encrypted : Bool
             , iops : Natural
+            , throughput : Bool
             , volume_size : Natural
             , volume_type : Text
             }
