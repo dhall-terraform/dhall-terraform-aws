@@ -4,7 +4,8 @@
     , connect_settings :
         Optional
           ( List
-              { connect_ips : List Text
+              { availability_zones : List Text
+              , connect_ips : List Text
               , customer_dns_ips : List Text
               , customer_username : Text
               , subnet_ids : List Text
@@ -23,7 +24,14 @@
     , size : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , type : Optional Text
-    , vpc_settings : Optional (List { subnet_ids : List Text, vpc_id : Text })
+    , vpc_settings :
+        Optional
+          ( List
+              { availability_zones : List Text
+              , subnet_ids : List Text
+              , vpc_id : Text
+              }
+          )
     }
 , default =
   { access_url = None Text
@@ -31,7 +39,8 @@
   , connect_settings =
       None
         ( List
-            { connect_ips : List Text
+            { availability_zones : List Text
+            , connect_ips : List Text
             , customer_dns_ips : List Text
             , customer_username : Text
             , subnet_ids : List Text
@@ -49,6 +58,13 @@
   , size = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , type = None Text
-  , vpc_settings = None (List { subnet_ids : List Text, vpc_id : Text })
+  , vpc_settings =
+      None
+        ( List
+            { availability_zones : List Text
+            , subnet_ids : List Text
+            , vpc_id : Text
+            }
+        )
   }
 }

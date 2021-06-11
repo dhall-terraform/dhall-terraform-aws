@@ -1,5 +1,6 @@
 { Type =
-    { client_cidr_block : Text
+    { arn : Optional Text
+    , client_cidr_block : Text
     , description : Optional Text
     , dns_name : Optional Text
     , dns_servers : Optional (List Text)
@@ -23,7 +24,8 @@
           }
     }
 , default =
-  { description = None Text
+  { arn = None Text
+  , description = None Text
   , dns_name = None Text
   , dns_servers = None (List Text)
   , id = None Text

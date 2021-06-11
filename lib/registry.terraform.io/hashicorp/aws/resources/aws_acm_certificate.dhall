@@ -15,6 +15,7 @@
           )
     , id : Optional Text
     , private_key : Optional Text
+    , status : Optional Text
     , subject_alternative_names : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , validation_emails : Optional (List Text)
@@ -40,6 +41,7 @@
         )
   , id = None Text
   , private_key = None Text
+  , status = None Text
   , subject_alternative_names = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
   , validation_emails = None (List Text)

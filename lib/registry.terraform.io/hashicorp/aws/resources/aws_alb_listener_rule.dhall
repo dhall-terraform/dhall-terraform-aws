@@ -47,6 +47,16 @@
                     , status_code : Optional Text
                     }
                 )
+          , forward :
+              Optional
+                ( List
+                    { stickiness :
+                        Optional
+                          (List { duration : Natural, enabled : Optional Bool })
+                    , target_group :
+                        List { arn : Text, weight : Optional Natural }
+                    }
+                )
           , redirect :
               Optional
                 ( List
