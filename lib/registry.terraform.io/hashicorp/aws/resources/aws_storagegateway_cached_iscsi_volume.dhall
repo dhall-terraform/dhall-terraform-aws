@@ -3,6 +3,8 @@
     , chap_enabled : Optional Bool
     , gateway_arn : Text
     , id : Optional Text
+    , kms_encrypted : Optional Bool
+    , kms_key : Optional Text
     , lun_number : Optional Natural
     , network_interface_id : Text
     , network_interface_port : Optional Natural
@@ -19,6 +21,8 @@
   { arn = None Text
   , chap_enabled = None Bool
   , id = None Text
+  , kms_encrypted = None Bool
+  , kms_key = None Text
   , lun_number = None Natural
   , network_interface_port = None Natural
   , snapshot_id = None Text

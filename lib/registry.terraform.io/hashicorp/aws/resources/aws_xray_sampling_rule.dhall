@@ -11,6 +11,7 @@
     , rule_name : Optional Text
     , service_name : Text
     , service_type : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , url_path : Text
     , version : Natural
     }
@@ -19,5 +20,6 @@
   , attributes = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , rule_name = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   }
 }

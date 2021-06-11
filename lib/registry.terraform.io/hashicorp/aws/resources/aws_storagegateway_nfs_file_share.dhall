@@ -16,6 +16,8 @@
     , role_arn : Text
     , squash : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , cache_attributes :
+        Optional (List { cache_stale_timeout_in_seconds : Optional Natural })
     , nfs_file_share_defaults :
         Optional
           ( List
@@ -46,6 +48,8 @@
   , requester_pays = None Bool
   , squash = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , cache_attributes =
+      None (List { cache_stale_timeout_in_seconds : Optional Natural })
   , nfs_file_share_defaults =
       None
         ( List

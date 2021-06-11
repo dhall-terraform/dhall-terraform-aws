@@ -290,6 +290,7 @@
 , aws_elb = ./aws_elb.dhall
 , aws_emr_cluster = ./aws_emr_cluster.dhall
 , aws_emr_instance_group = ./aws_emr_instance_group.dhall
+, aws_emr_managed_scaling_policy = ./aws_emr_managed_scaling_policy.dhall
 , aws_emr_security_configuration = ./aws_emr_security_configuration.dhall
 , aws_flow_log = ./aws_flow_log.dhall
 , aws_fms_admin_account = ./aws_fms_admin_account.dhall
@@ -322,6 +323,8 @@
     ./aws_guardduty_organization_admin_account.dhall
 , aws_guardduty_organization_configuration =
     ./aws_guardduty_organization_configuration.dhall
+, aws_guardduty_publishing_destination =
+    ./aws_guardduty_publishing_destination.dhall
 , aws_guardduty_threatintelset = ./aws_guardduty_threatintelset.dhall
 , aws_iam_access_key = ./aws_iam_access_key.dhall
 , aws_iam_account_alias = ./aws_iam_account_alias.dhall
@@ -530,6 +533,7 @@
 , aws_security_group = ./aws_security_group.dhall
 , aws_security_group_rule = ./aws_security_group_rule.dhall
 , aws_securityhub_account = ./aws_securityhub_account.dhall
+, aws_securityhub_action_target = ./aws_securityhub_action_target.dhall
 , aws_securityhub_member = ./aws_securityhub_member.dhall
 , aws_securityhub_product_subscription =
     ./aws_securityhub_product_subscription.dhall
@@ -667,5 +671,7 @@
 , aws_workspaces_directory = ./aws_workspaces_directory.dhall
 , aws_workspaces_ip_group = ./aws_workspaces_ip_group.dhall
 , aws_workspaces_workspace = ./aws_workspaces_workspace.dhall
+, aws_xray_encryption_config = ./aws_xray_encryption_config.dhall
+, aws_xray_group = ./aws_xray_group.dhall
 , aws_xray_sampling_rule = ./aws_xray_sampling_rule.dhall
 }

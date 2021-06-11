@@ -8,6 +8,7 @@
     , id : Optional Text
     , integration_method : Optional Text
     , integration_response_selection_expression : Optional Text
+    , integration_subtype : Optional Text
     , integration_type : Text
     , integration_uri : Optional Text
     , passthrough_behavior : Optional Text
@@ -27,6 +28,7 @@
   , id = None Text
   , integration_method = None Text
   , integration_response_selection_expression = None Text
+  , integration_subtype = None Text
   , integration_uri = None Text
   , passthrough_behavior = None Text
   , payload_format_version = None Text

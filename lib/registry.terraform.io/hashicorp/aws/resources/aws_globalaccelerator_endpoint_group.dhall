@@ -10,7 +10,12 @@
     , traffic_dial_percentage : Optional Natural
     , endpoint_configuration :
         Optional
-          (List { endpoint_id : Optional Text, weight : Optional Natural })
+          ( List
+              { client_ip_preservation_enabled : Optional Bool
+              , endpoint_id : Optional Text
+              , weight : Optional Natural
+              }
+          )
     }
 , default =
   { endpoint_group_region = None Text
@@ -22,6 +27,12 @@
   , threshold_count = None Natural
   , traffic_dial_percentage = None Natural
   , endpoint_configuration =
-      None (List { endpoint_id : Optional Text, weight : Optional Natural })
+      None
+        ( List
+            { client_ip_preservation_enabled : Optional Bool
+            , endpoint_id : Optional Text
+            , weight : Optional Natural
+            }
+        )
   }
 }

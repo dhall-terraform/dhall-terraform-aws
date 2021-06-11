@@ -1,6 +1,8 @@
 { Type =
     { activation_key : Optional Text
     , arn : Optional Text
+    , average_download_rate_limit_in_bits_per_sec : Optional Natural
+    , average_upload_rate_limit_in_bits_per_sec : Optional Natural
     , cloudwatch_log_group_arn : Optional Text
     , gateway_id : Optional Text
     , gateway_ip_address : Optional Text
@@ -11,6 +13,7 @@
     , id : Optional Text
     , medium_changer_type : Optional Text
     , smb_guest_password : Optional Text
+    , smb_security_strategy : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , tape_drive_type : Optional Text
     , smb_active_directory_settings :
@@ -20,6 +23,8 @@
 , default =
   { activation_key = None Text
   , arn = None Text
+  , average_download_rate_limit_in_bits_per_sec = None Natural
+  , average_upload_rate_limit_in_bits_per_sec = None Natural
   , cloudwatch_log_group_arn = None Text
   , gateway_id = None Text
   , gateway_ip_address = None Text
@@ -28,6 +33,7 @@
   , id = None Text
   , medium_changer_type = None Text
   , smb_guest_password = None Text
+  , smb_security_strategy = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , tape_drive_type = None Text
   , smb_active_directory_settings =

@@ -11,9 +11,7 @@
           { backend :
               Optional
                 ( List
-                    { virtual_service :
-                        Optional (List { virtual_service_name : Text })
-                    }
+                    { virtual_service : List { virtual_service_name : Text } }
                 )
           , listener :
               Optional
