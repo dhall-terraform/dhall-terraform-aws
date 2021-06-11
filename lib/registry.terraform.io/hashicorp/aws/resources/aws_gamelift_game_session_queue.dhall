@@ -3,6 +3,7 @@
     , destinations : Optional (List Text)
     , id : Optional Text
     , name : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , timeout_in_seconds : Optional Natural
     , player_latency_policy :
         Optional
@@ -16,6 +17,7 @@
   { arn = None Text
   , destinations = None (List Text)
   , id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , timeout_in_seconds = None Natural
   , player_latency_policy =
       None

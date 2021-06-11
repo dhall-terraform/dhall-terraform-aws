@@ -1,9 +1,16 @@
 { Type =
-    { id : Optional Text
+    { arn : Optional Text
+    , id : Optional Text
     , name : Text
     , operating_system : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , version : Optional Text
     , storage_location : List { bucket : Text, key : Text, role_arn : Text }
     }
-, default = { id = None Text, version = None Text }
+, default =
+  { arn = None Text
+  , id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
+  , version = None Text
+  }
 }

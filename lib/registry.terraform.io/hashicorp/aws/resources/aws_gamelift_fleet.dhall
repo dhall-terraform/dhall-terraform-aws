@@ -4,6 +4,7 @@
     , description : Optional Text
     , ec2_instance_type : Text
     , id : Optional Text
+    , instance_role_arn : Optional Text
     , log_paths : Optional (List Text)
     , metric_groups : Optional (List Text)
     , name : Text
@@ -46,6 +47,7 @@
   { arn = None Text
   , description = None Text
   , id = None Text
+  , instance_role_arn = None Text
   , log_paths = None (List Text)
   , metric_groups = None (List Text)
   , new_game_session_protection_policy = None Text
