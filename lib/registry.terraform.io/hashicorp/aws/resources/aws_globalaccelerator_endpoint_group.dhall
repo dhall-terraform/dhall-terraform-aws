@@ -19,6 +19,12 @@
           )
     , port_override :
         Optional (List { endpoint_port : Natural, listener_port : Natural })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { arn = None Text
@@ -40,5 +46,11 @@
         )
   , port_override =
       None (List { endpoint_port : Natural, listener_port : Natural })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , update : Optional Text
+        }
   }
 }

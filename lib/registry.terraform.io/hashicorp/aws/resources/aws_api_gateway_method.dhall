@@ -5,6 +5,7 @@
     , authorizer_id : Optional Text
     , http_method : Text
     , id : Optional Text
+    , operation_name : Optional Text
     , request_models : Optional (List { mapKey : Text, mapValue : Text })
     , request_parameters : Optional (List { mapKey : Text, mapValue : Bool })
     , request_validator_id : Optional Text
@@ -16,6 +17,7 @@
   , authorization_scopes = None (List Text)
   , authorizer_id = None Text
   , id = None Text
+  , operation_name = None Text
   , request_models = None (List { mapKey : Text, mapValue : Text })
   , request_parameters = None (List { mapKey : Text, mapValue : Bool })
   , request_validator_id = None Text

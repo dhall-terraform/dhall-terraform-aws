@@ -21,17 +21,29 @@
           )
     , subnet_ids : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
-    , workspace_security_group_id : Optional Text
+    , workspace_access_properties :
+        Optional
+          ( List
+              { device_type_android : Text
+              , device_type_chromeos : Text
+              , device_type_ios : Text
+              , device_type_osx : Text
+              , device_type_web : Text
+              , device_type_windows : Text
+              , device_type_zeroclient : Text
+              }
+          )
     , workspace_creation_properties :
         Optional
           ( List
-              { custom_security_group_id : Optional Text
-              , default_ou : Optional Text
-              , enable_internet_access : Optional Bool
-              , enable_maintenance_mode : Optional Bool
-              , user_enabled_as_local_administrator : Optional Bool
+              { custom_security_group_id : Text
+              , default_ou : Text
+              , enable_internet_access : Bool
+              , enable_maintenance_mode : Bool
+              , user_enabled_as_local_administrator : Bool
               }
           )
+    , workspace_security_group_id : Optional Text
     }
 , default =
   { alias = None Text
@@ -55,16 +67,28 @@
         )
   , subnet_ids = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
-  , workspace_security_group_id = None Text
+  , workspace_access_properties =
+      None
+        ( List
+            { device_type_android : Text
+            , device_type_chromeos : Text
+            , device_type_ios : Text
+            , device_type_osx : Text
+            , device_type_web : Text
+            , device_type_windows : Text
+            , device_type_zeroclient : Text
+            }
+        )
   , workspace_creation_properties =
       None
         ( List
-            { custom_security_group_id : Optional Text
-            , default_ou : Optional Text
-            , enable_internet_access : Optional Bool
-            , enable_maintenance_mode : Optional Bool
-            , user_enabled_as_local_administrator : Optional Bool
+            { custom_security_group_id : Text
+            , default_ou : Text
+            , enable_internet_access : Bool
+            , enable_maintenance_mode : Bool
+            , user_enabled_as_local_administrator : Bool
             }
         )
+  , workspace_security_group_id = None Text
   }
 }

@@ -102,6 +102,7 @@
 , aws_cloudhsm_v2_cluster = ./aws_cloudhsm_v2_cluster.dhall
 , aws_cloudhsm_v2_hsm = ./aws_cloudhsm_v2_hsm.dhall
 , aws_cloudtrail = ./aws_cloudtrail.dhall
+, aws_cloudwatch_composite_alarm = ./aws_cloudwatch_composite_alarm.dhall
 , aws_cloudwatch_dashboard = ./aws_cloudwatch_dashboard.dhall
 , aws_cloudwatch_event_bus = ./aws_cloudwatch_event_bus.dhall
 , aws_cloudwatch_event_permission = ./aws_cloudwatch_event_permission.dhall
@@ -321,6 +322,7 @@
 , aws_emr_security_configuration = ./aws_emr_security_configuration.dhall
 , aws_flow_log = ./aws_flow_log.dhall
 , aws_fms_admin_account = ./aws_fms_admin_account.dhall
+, aws_fms_policy = ./aws_fms_policy.dhall
 , aws_fsx_lustre_file_system = ./aws_fsx_lustre_file_system.dhall
 , aws_fsx_windows_file_system = ./aws_fsx_windows_file_system.dhall
 , aws_gamelift_alias = ./aws_gamelift_alias.dhall
@@ -560,6 +562,8 @@
 , aws_route53_health_check = ./aws_route53_health_check.dhall
 , aws_route53_query_log = ./aws_route53_query_log.dhall
 , aws_route53_record = ./aws_route53_record.dhall
+, aws_route53_resolver_dnssec_config =
+    ./aws_route53_resolver_dnssec_config.dhall
 , aws_route53_resolver_endpoint = ./aws_route53_resolver_endpoint.dhall
 , aws_route53_resolver_query_log_config_association =
     ./aws_route53_resolver_query_log_config_association.dhall
@@ -594,6 +598,7 @@
 , aws_s3control_bucket_policy = ./aws_s3control_bucket_policy.dhall
 , aws_s3outposts_endpoint = ./aws_s3outposts_endpoint.dhall
 , aws_sagemaker_code_repository = ./aws_sagemaker_code_repository.dhall
+, aws_sagemaker_domain = ./aws_sagemaker_domain.dhall
 , aws_sagemaker_endpoint_configuration =
     ./aws_sagemaker_endpoint_configuration.dhall
 , aws_sagemaker_endpoint = ./aws_sagemaker_endpoint.dhall
@@ -673,6 +678,7 @@
 , aws_ssm_patch_baseline = ./aws_ssm_patch_baseline.dhall
 , aws_ssm_patch_group = ./aws_ssm_patch_group.dhall
 , aws_ssm_resource_data_sync = ./aws_ssm_resource_data_sync.dhall
+, aws_ssoadmin_account_assignment = ./aws_ssoadmin_account_assignment.dhall
 , aws_ssoadmin_managed_policy_attachment =
     ./aws_ssoadmin_managed_policy_attachment.dhall
 , aws_ssoadmin_permission_set = ./aws_ssoadmin_permission_set.dhall

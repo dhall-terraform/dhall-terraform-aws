@@ -15,6 +15,7 @@
               , flow_logs_s3_prefix : Optional Text
               }
           )
+    , timeouts : Optional { create : Optional Text, update : Optional Text }
     }
 , default =
   { dns_name = None Text
@@ -32,5 +33,6 @@
             , flow_logs_s3_prefix : Optional Text
             }
         )
+  , timeouts = None { create : Optional Text, update : Optional Text }
   }
 }

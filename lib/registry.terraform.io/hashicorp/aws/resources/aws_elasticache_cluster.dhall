@@ -17,6 +17,7 @@
     , configuration_endpoint : Optional Text
     , engine : Optional Text
     , engine_version : Optional Text
+    , final_snapshot_identifier : Optional Text
     , id : Optional Text
     , maintenance_window : Optional Text
     , node_type : Optional Text
@@ -53,6 +54,7 @@
   , configuration_endpoint = None Text
   , engine = None Text
   , engine_version = None Text
+  , final_snapshot_identifier = None Text
   , id = None Text
   , maintenance_window = None Text
   , node_type = None Text

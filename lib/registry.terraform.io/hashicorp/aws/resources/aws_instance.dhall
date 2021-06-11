@@ -47,6 +47,7 @@
               , iops : Optional Natural
               , kms_key_id : Optional Text
               , snapshot_id : Optional Text
+              , tags : Optional (List { mapKey : Text, mapValue : Text })
               , throughput : Optional Natural
               , volume_id : Optional Text
               , volume_size : Optional Natural
@@ -86,6 +87,7 @@
               , encrypted : Optional Bool
               , iops : Optional Natural
               , kms_key_id : Optional Text
+              , tags : Optional (List { mapKey : Text, mapValue : Text })
               , throughput : Optional Natural
               , volume_id : Optional Text
               , volume_size : Optional Natural
@@ -146,6 +148,7 @@
             , iops : Optional Natural
             , kms_key_id : Optional Text
             , snapshot_id : Optional Text
+            , tags : Optional (List { mapKey : Text, mapValue : Text })
             , throughput : Optional Natural
             , volume_id : Optional Text
             , volume_size : Optional Natural
@@ -185,6 +188,7 @@
             , encrypted : Optional Bool
             , iops : Optional Natural
             , kms_key_id : Optional Text
+            , tags : Optional (List { mapKey : Text, mapValue : Text })
             , throughput : Optional Natural
             , volume_id : Optional Text
             , volume_size : Optional Natural

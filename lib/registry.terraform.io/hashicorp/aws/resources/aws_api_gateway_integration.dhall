@@ -16,6 +16,8 @@
     , timeout_milliseconds : Optional Natural
     , type : Text
     , uri : Optional Text
+    , tls_config :
+        Optional (List { insecure_skip_verification : Optional Bool })
     }
 , default =
   { cache_key_parameters = None (List Text)
@@ -31,5 +33,6 @@
   , request_templates = None (List { mapKey : Text, mapValue : Text })
   , timeout_milliseconds = None Natural
   , uri = None Text
+  , tls_config = None (List { insecure_skip_verification : Optional Bool })
   }
 }

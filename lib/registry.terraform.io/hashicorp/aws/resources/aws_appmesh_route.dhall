@@ -21,34 +21,36 @@
                               List { virtual_node : Text, weight : Natural }
                           }
                     , match :
-                        List
-                          { method_name : Optional Text
-                          , prefix : Optional Text
-                          , service_name : Optional Text
-                          , metadata :
-                              Optional
-                                ( List
-                                    { invert : Optional Bool
-                                    , name : Text
-                                    , match :
-                                        Optional
-                                          ( List
-                                              { exact : Optional Text
-                                              , prefix : Optional Text
-                                              , regex : Optional Text
-                                              , suffix : Optional Text
-                                              , range :
-                                                  Optional
-                                                    ( List
-                                                        { end : Natural
-                                                        , start : Natural
-                                                        }
-                                                    )
-                                              }
-                                          )
-                                    }
-                                )
-                          }
+                        Optional
+                          ( List
+                              { method_name : Optional Text
+                              , prefix : Optional Text
+                              , service_name : Optional Text
+                              , metadata :
+                                  Optional
+                                    ( List
+                                        { invert : Optional Bool
+                                        , name : Text
+                                        , match :
+                                            Optional
+                                              ( List
+                                                  { exact : Optional Text
+                                                  , prefix : Optional Text
+                                                  , regex : Optional Text
+                                                  , suffix : Optional Text
+                                                  , range :
+                                                      Optional
+                                                        ( List
+                                                            { end : Natural
+                                                            , start : Natural
+                                                            }
+                                                        )
+                                                  }
+                                              )
+                                        }
+                                    )
+                              }
+                          )
                     , retry_policy :
                         Optional
                           ( List

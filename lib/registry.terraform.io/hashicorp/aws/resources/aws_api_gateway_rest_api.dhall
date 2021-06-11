@@ -5,10 +5,12 @@
     , body : Optional Text
     , created_date : Optional Text
     , description : Optional Text
+    , disable_execute_api_endpoint : Optional Bool
     , execution_arn : Optional Text
     , id : Optional Text
     , minimum_compression_size : Optional Natural
     , name : Text
+    , parameters : Optional (List { mapKey : Text, mapValue : Text })
     , policy : Optional Text
     , root_resource_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -23,9 +25,11 @@
   , body = None Text
   , created_date = None Text
   , description = None Text
+  , disable_execute_api_endpoint = None Bool
   , execution_arn = None Text
   , id = None Text
   , minimum_compression_size = None Natural
+  , parameters = None (List { mapKey : Text, mapValue : Text })
   , policy = None Text
   , root_resource_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })

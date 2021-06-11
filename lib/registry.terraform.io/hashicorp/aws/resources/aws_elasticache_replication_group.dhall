@@ -9,6 +9,7 @@
     , configuration_endpoint_address : Optional Text
     , engine : Optional Text
     , engine_version : Optional Text
+    , final_snapshot_identifier : Optional Text
     , id : Optional Text
     , kms_key_id : Optional Text
     , maintenance_window : Optional Text
@@ -54,6 +55,7 @@
   , configuration_endpoint_address = None Text
   , engine = None Text
   , engine_version = None Text
+  , final_snapshot_identifier = None Text
   , id = None Text
   , kms_key_id = None Text
   , maintenance_window = None Text

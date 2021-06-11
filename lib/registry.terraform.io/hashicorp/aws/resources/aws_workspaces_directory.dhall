@@ -22,6 +22,18 @@
               , switch_running_mode : Optional Bool
               }
           )
+    , workspace_access_properties :
+        Optional
+          ( List
+              { device_type_android : Optional Text
+              , device_type_chromeos : Optional Text
+              , device_type_ios : Optional Text
+              , device_type_osx : Optional Text
+              , device_type_web : Optional Text
+              , device_type_windows : Optional Text
+              , device_type_zeroclient : Optional Text
+              }
+          )
     , workspace_creation_properties :
         Optional
           ( List
@@ -54,6 +66,18 @@
             , rebuild_workspace : Optional Bool
             , restart_workspace : Optional Bool
             , switch_running_mode : Optional Bool
+            }
+        )
+  , workspace_access_properties =
+      None
+        ( List
+            { device_type_android : Optional Text
+            , device_type_chromeos : Optional Text
+            , device_type_ios : Optional Text
+            , device_type_osx : Optional Text
+            , device_type_web : Optional Text
+            , device_type_windows : Optional Text
+            , device_type_zeroclient : Optional Text
             }
         )
   , workspace_creation_properties =

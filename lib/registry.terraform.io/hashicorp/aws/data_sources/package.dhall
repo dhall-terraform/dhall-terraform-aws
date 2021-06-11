@@ -6,6 +6,7 @@
 , aws_ami = ./aws_ami.dhall
 , aws_ami_ids = ./aws_ami_ids.dhall
 , aws_api_gateway_api_key = ./aws_api_gateway_api_key.dhall
+, aws_api_gateway_domain_name = ./aws_api_gateway_domain_name.dhall
 , aws_api_gateway_resource = ./aws_api_gateway_resource.dhall
 , aws_api_gateway_rest_api = ./aws_api_gateway_rest_api.dhall
 , aws_api_gateway_vpc_link = ./aws_api_gateway_vpc_link.dhall
@@ -115,6 +116,8 @@
 , aws_iam_role = ./aws_iam_role.dhall
 , aws_iam_server_certificate = ./aws_iam_server_certificate.dhall
 , aws_iam_user = ./aws_iam_user.dhall
+, aws_identitystore_group = ./aws_identitystore_group.dhall
+, aws_identitystore_user = ./aws_identitystore_user.dhall
 , aws_imagebuilder_component = ./aws_imagebuilder_component.dhall
 , aws_imagebuilder_distribution_configuration =
     ./aws_imagebuilder_distribution_configuration.dhall

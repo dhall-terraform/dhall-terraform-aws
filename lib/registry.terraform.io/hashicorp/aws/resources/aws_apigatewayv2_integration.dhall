@@ -17,6 +17,13 @@
     , request_templates : Optional (List { mapKey : Text, mapValue : Text })
     , template_selection_expression : Optional Text
     , timeout_milliseconds : Optional Natural
+    , response_parameters :
+        Optional
+          ( List
+              { mappings : List { mapKey : Text, mapValue : Text }
+              , status_code : Text
+              }
+          )
     , tls_config : Optional (List { server_name_to_verify : Optional Text })
     }
 , default =
@@ -36,6 +43,13 @@
   , request_templates = None (List { mapKey : Text, mapValue : Text })
   , template_selection_expression = None Text
   , timeout_milliseconds = None Natural
+  , response_parameters =
+      None
+        ( List
+            { mappings : List { mapKey : Text, mapValue : Text }
+            , status_code : Text
+            }
+        )
   , tls_config = None (List { server_name_to_verify : Optional Text })
   }
 }

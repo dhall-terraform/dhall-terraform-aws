@@ -52,6 +52,7 @@
               , compression_type : Optional Text
               , csv_delimiter : Optional Text
               , csv_row_delimiter : Optional Text
+              , date_partition_enabled : Optional Bool
               , external_table_definition : Optional Text
               , service_access_role_arn : Optional Text
               }
@@ -108,6 +109,7 @@
             , compression_type : Optional Text
             , csv_delimiter : Optional Text
             , csv_row_delimiter : Optional Text
+            , date_partition_enabled : Optional Bool
             , external_table_definition : Optional Text
             , service_access_role_arn : Optional Text
             }
