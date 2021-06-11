@@ -4,6 +4,7 @@
     , deployment_minimum_healthy_percent : Optional Natural
     , desired_count : Optional Natural
     , enable_ecs_managed_tags : Optional Bool
+    , enable_execute_command : Optional Bool
     , force_new_deployment : Optional Bool
     , health_check_grace_period_seconds : Optional Natural
     , iam_role : Optional Text
@@ -63,6 +64,7 @@
   , deployment_minimum_healthy_percent = None Natural
   , desired_count = None Natural
   , enable_ecs_managed_tags = None Bool
+  , enable_execute_command = None Bool
   , force_new_deployment = None Bool
   , health_check_grace_period_seconds = None Natural
   , iam_role = None Text

@@ -475,6 +475,8 @@
     ./aws_licensemanager_license_configuration.dhall
 , aws_lightsail_domain = ./aws_lightsail_domain.dhall
 , aws_lightsail_instance = ./aws_lightsail_instance.dhall
+, aws_lightsail_instance_public_ports =
+    ./aws_lightsail_instance_public_ports.dhall
 , aws_lightsail_key_pair = ./aws_lightsail_key_pair.dhall
 , aws_lightsail_static_ip_attachment =
     ./aws_lightsail_static_ip_attachment.dhall

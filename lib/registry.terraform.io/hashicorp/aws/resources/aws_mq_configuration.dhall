@@ -1,5 +1,6 @@
 { Type =
     { arn : Optional Text
+    , authentication_strategy : Optional Text
     , data : Text
     , description : Optional Text
     , engine_type : Text
@@ -11,6 +12,7 @@
     }
 , default =
   { arn = None Text
+  , authentication_strategy = None Text
   , description = None Text
   , id = None Text
   , latest_revision = None Natural

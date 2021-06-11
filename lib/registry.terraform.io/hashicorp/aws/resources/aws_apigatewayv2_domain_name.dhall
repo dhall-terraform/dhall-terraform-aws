@@ -15,7 +15,7 @@
     , mutual_tls_authentication :
         Optional
           (List { truststore_uri : Text, truststore_version : Optional Text })
-    , timeouts : Optional { update : Optional Text }
+    , timeouts : Optional { create : Optional Text, update : Optional Text }
     }
 , default =
   { api_mapping_selection_expression = None Text
@@ -24,6 +24,6 @@
   , tags = None (List { mapKey : Text, mapValue : Text })
   , mutual_tls_authentication =
       None (List { truststore_uri : Text, truststore_version : Optional Text })
-  , timeouts = None { update : Optional Text }
+  , timeouts = None { create : Optional Text, update : Optional Text }
   }
 }

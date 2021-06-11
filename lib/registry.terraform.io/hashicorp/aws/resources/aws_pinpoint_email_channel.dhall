@@ -1,5 +1,6 @@
 { Type =
     { application_id : Text
+    , configuration_set : Optional Text
     , enabled : Optional Bool
     , from_address : Text
     , id : Optional Text
@@ -8,5 +9,9 @@
     , role_arn : Text
     }
 , default =
-  { enabled = None Bool, id = None Text, messages_per_second = None Natural }
+  { configuration_set = None Text
+  , enabled = None Bool
+  , id = None Text
+  , messages_per_second = None Natural
+  }
 }

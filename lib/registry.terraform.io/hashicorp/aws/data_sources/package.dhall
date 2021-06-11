@@ -40,6 +40,8 @@
 , aws_codeartifact_repository_endpoint =
     ./aws_codeartifact_repository_endpoint.dhall
 , aws_codecommit_repository = ./aws_codecommit_repository.dhall
+, aws_codestarconnections_connection =
+    ./aws_codestarconnections_connection.dhall
 , aws_cognito_user_pools = ./aws_cognito_user_pools.dhall
 , aws_cur_report_definition = ./aws_cur_report_definition.dhall
 , aws_customer_gateway = ./aws_customer_gateway.dhall

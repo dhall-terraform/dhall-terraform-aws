@@ -6,6 +6,7 @@
     , name_prefix : Optional Text
     , path : Optional Text
     , role : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , unique_id : Optional Text
     }
 , default =
@@ -16,6 +17,7 @@
   , name_prefix = None Text
   , path = None Text
   , role = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , unique_id = None Text
   }
 }
