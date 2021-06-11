@@ -159,6 +159,7 @@
               , servicequotas : Optional Text
               , ses : Optional Text
               , shield : Optional Text
+              , signer : Optional Text
               , sns : Optional Text
               , sqs : Optional Text
               , ssm : Optional Text
@@ -347,6 +348,7 @@
             , servicequotas : Optional Text
             , ses : Optional Text
             , shield : Optional Text
+            , signer : Optional Text
             , sns : Optional Text
             , sqs : Optional Text
             , ssm : Optional Text

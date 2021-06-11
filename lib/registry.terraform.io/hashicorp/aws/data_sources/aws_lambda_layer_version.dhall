@@ -8,6 +8,8 @@
     , layer_arn : Optional Text
     , layer_name : Text
     , license_info : Optional Text
+    , signing_job_arn : Optional Text
+    , signing_profile_version_arn : Optional Text
     , source_code_hash : Optional Text
     , source_code_size : Optional Natural
     , version : Optional Natural
@@ -21,6 +23,8 @@
   , id = None Text
   , layer_arn = None Text
   , license_info = None Text
+  , signing_job_arn = None Text
+  , signing_profile_version_arn = None Text
   , source_code_hash = None Text
   , source_code_size = None Natural
   , version = None Natural

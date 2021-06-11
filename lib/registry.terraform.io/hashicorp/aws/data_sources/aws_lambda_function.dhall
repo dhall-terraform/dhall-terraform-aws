@@ -1,5 +1,6 @@
 { Type =
     { arn : Optional Text
+    , code_signing_config_arn : Optional Text
     , dead_letter_config : Optional (List { target_arn : Text })
     , description : Optional Text
     , environment :
@@ -19,6 +20,8 @@
     , reserved_concurrent_executions : Optional Natural
     , role : Optional Text
     , runtime : Optional Text
+    , signing_job_arn : Optional Text
+    , signing_profile_version_arn : Optional Text
     , source_code_hash : Optional Text
     , source_code_size : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -36,6 +39,7 @@
     }
 , default =
   { arn = None Text
+  , code_signing_config_arn = None Text
   , dead_letter_config = None (List { target_arn : Text })
   , description = None Text
   , environment =
@@ -53,6 +57,8 @@
   , reserved_concurrent_executions = None Natural
   , role = None Text
   , runtime = None Text
+  , signing_job_arn = None Text
+  , signing_profile_version_arn = None Text
   , source_code_hash = None Text
   , source_code_size = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })

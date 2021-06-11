@@ -412,6 +412,7 @@
 , aws_kms_grant = ./aws_kms_grant.dhall
 , aws_kms_key = ./aws_kms_key.dhall
 , aws_lambda_alias = ./aws_lambda_alias.dhall
+, aws_lambda_code_signing_config = ./aws_lambda_code_signing_config.dhall
 , aws_lambda_event_source_mapping = ./aws_lambda_event_source_mapping.dhall
 , aws_lambda_function = ./aws_lambda_function.dhall
 , aws_lambda_function_event_invoke_config =
@@ -626,6 +627,10 @@
 , aws_sfn_activity = ./aws_sfn_activity.dhall
 , aws_sfn_state_machine = ./aws_sfn_state_machine.dhall
 , aws_shield_protection = ./aws_shield_protection.dhall
+, aws_signer_signing_job = ./aws_signer_signing_job.dhall
+, aws_signer_signing_profile = ./aws_signer_signing_profile.dhall
+, aws_signer_signing_profile_permission =
+    ./aws_signer_signing_profile_permission.dhall
 , aws_simpledb_domain = ./aws_simpledb_domain.dhall
 , aws_snapshot_create_volume_permission =
     ./aws_snapshot_create_volume_permission.dhall

@@ -11,6 +11,8 @@
     , s3_bucket : Optional Text
     , s3_key : Optional Text
     , s3_object_version : Optional Text
+    , signing_job_arn : Optional Text
+    , signing_profile_version_arn : Optional Text
     , source_code_hash : Optional Text
     , source_code_size : Optional Natural
     , version : Optional Text
@@ -27,6 +29,8 @@
   , s3_bucket = None Text
   , s3_key = None Text
   , s3_object_version = None Text
+  , signing_job_arn = None Text
+  , signing_profile_version_arn = None Text
   , source_code_hash = None Text
   , source_code_size = None Natural
   , version = None Text

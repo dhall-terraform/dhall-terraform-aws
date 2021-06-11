@@ -10,6 +10,7 @@
     , kms_encrypted : Optional Bool
     , kms_key_arn : Optional Text
     , location_arn : Text
+    , notification_policy : Optional Text
     , object_acl : Optional Text
     , path : Optional Text
     , read_only : Optional Bool
@@ -24,8 +25,8 @@
           ( List
               { directory_mode : Optional Text
               , file_mode : Optional Text
-              , group_id : Optional Natural
-              , owner_id : Optional Natural
+              , group_id : Optional Text
+              , owner_id : Optional Text
               }
           )
     , timeouts :
@@ -44,6 +45,7 @@
   , id = None Text
   , kms_encrypted = None Bool
   , kms_key_arn = None Text
+  , notification_policy = None Text
   , object_acl = None Text
   , path = None Text
   , read_only = None Bool
@@ -57,8 +59,8 @@
         ( List
             { directory_mode : Optional Text
             , file_mode : Optional Text
-            , group_id : Optional Natural
-            , owner_id : Optional Natural
+            , group_id : Optional Text
+            , owner_id : Optional Text
             }
         )
   , timeouts =

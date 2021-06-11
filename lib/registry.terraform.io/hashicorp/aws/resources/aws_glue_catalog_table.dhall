@@ -11,6 +11,14 @@
     , table_type : Optional Text
     , view_expanded_text : Optional Text
     , view_original_text : Optional Text
+    , partition_index :
+        Optional
+          ( List
+              { index_name : Text
+              , index_status : Optional Text
+              , keys : List Text
+              }
+          )
     , partition_keys :
         Optional
           (List { comment : Optional Text, name : Text, type : Optional Text })
@@ -69,6 +77,14 @@
   , table_type = None Text
   , view_expanded_text = None Text
   , view_original_text = None Text
+  , partition_index =
+      None
+        ( List
+            { index_name : Text
+            , index_status : Optional Text
+            , keys : List Text
+            }
+        )
   , partition_keys =
       None (List { comment : Optional Text, name : Text, type : Optional Text })
   , storage_descriptor =
