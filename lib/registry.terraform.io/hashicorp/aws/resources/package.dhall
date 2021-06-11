@@ -186,6 +186,10 @@
     ./aws_dx_hosted_public_virtual_interface_accepter.dhall
 , aws_dx_hosted_public_virtual_interface =
     ./aws_dx_hosted_public_virtual_interface.dhall
+, aws_dx_hosted_transit_virtual_interface_accepter =
+    ./aws_dx_hosted_transit_virtual_interface_accepter.dhall
+, aws_dx_hosted_transit_virtual_interface =
+    ./aws_dx_hosted_transit_virtual_interface.dhall
 , aws_dx_lag = ./aws_dx_lag.dhall
 , aws_dx_private_virtual_interface = ./aws_dx_private_virtual_interface.dhall
 , aws_dx_public_virtual_interface = ./aws_dx_public_virtual_interface.dhall
