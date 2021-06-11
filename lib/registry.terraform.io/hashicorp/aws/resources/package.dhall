@@ -152,6 +152,8 @@
 , aws_datapipeline_pipeline = ./aws_datapipeline_pipeline.dhall
 , aws_datasync_agent = ./aws_datasync_agent.dhall
 , aws_datasync_location_efs = ./aws_datasync_location_efs.dhall
+, aws_datasync_location_fsx_windows_file_system =
+    ./aws_datasync_location_fsx_windows_file_system.dhall
 , aws_datasync_location_nfs = ./aws_datasync_location_nfs.dhall
 , aws_datasync_location_s3 = ./aws_datasync_location_s3.dhall
 , aws_datasync_location_smb = ./aws_datasync_location_smb.dhall
@@ -506,6 +508,10 @@
 , aws_route53_query_log = ./aws_route53_query_log.dhall
 , aws_route53_record = ./aws_route53_record.dhall
 , aws_route53_resolver_endpoint = ./aws_route53_resolver_endpoint.dhall
+, aws_route53_resolver_query_log_config_association =
+    ./aws_route53_resolver_query_log_config_association.dhall
+, aws_route53_resolver_query_log_config =
+    ./aws_route53_resolver_query_log_config.dhall
 , aws_route53_resolver_rule_association =
     ./aws_route53_resolver_rule_association.dhall
 , aws_route53_resolver_rule = ./aws_route53_resolver_rule.dhall

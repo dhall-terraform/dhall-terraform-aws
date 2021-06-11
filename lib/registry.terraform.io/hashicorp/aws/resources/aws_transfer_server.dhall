@@ -11,7 +11,15 @@
     , logging_role : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , url : Optional Text
-    , endpoint_details : Optional (List { vpc_endpoint_id : Text })
+    , endpoint_details :
+        Optional
+          ( List
+              { address_allocation_ids : Optional (List Text)
+              , subnet_ids : Optional (List Text)
+              , vpc_endpoint_id : Optional Text
+              , vpc_id : Optional Text
+              }
+          )
     }
 , default =
   { arn = None Text
@@ -26,6 +34,14 @@
   , logging_role = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , url = None Text
-  , endpoint_details = None (List { vpc_endpoint_id : Text })
+  , endpoint_details =
+      None
+        ( List
+            { address_allocation_ids : Optional (List Text)
+            , subnet_ids : Optional (List Text)
+            , vpc_endpoint_id : Optional Text
+            , vpc_id : Optional Text
+            }
+        )
   }
 }

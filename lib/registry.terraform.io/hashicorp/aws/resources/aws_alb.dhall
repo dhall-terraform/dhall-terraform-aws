@@ -1,6 +1,7 @@
 { Type =
     { arn : Optional Text
     , arn_suffix : Optional Text
+    , customer_owned_ipv4_pool : Optional Text
     , dns_name : Optional Text
     , drop_invalid_header_fields : Optional Bool
     , enable_cross_zone_load_balancing : Optional Bool
@@ -27,6 +28,7 @@
         Optional
           ( List
               { allocation_id : Optional Text
+              , outpost_id : Optional Text
               , private_ipv4_address : Optional Text
               , subnet_id : Text
               }
@@ -41,6 +43,7 @@
 , default =
   { arn = None Text
   , arn_suffix = None Text
+  , customer_owned_ipv4_pool = None Text
   , dns_name = None Text
   , drop_invalid_header_fields = None Bool
   , enable_cross_zone_load_balancing = None Bool
@@ -67,6 +70,7 @@
       None
         ( List
             { allocation_id : Optional Text
+            , outpost_id : Optional Text
             , private_ipv4_address : Optional Text
             , subnet_id : Text
             }

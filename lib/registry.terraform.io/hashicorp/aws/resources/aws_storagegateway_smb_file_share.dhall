@@ -1,5 +1,6 @@
 { Type =
-    { arn : Optional Text
+    { admin_user_list : Optional (List Text)
+    , arn : Optional Text
     , audit_destination_arn : Optional Text
     , authentication : Optional Text
     , case_sensitivity : Optional Text
@@ -30,7 +31,8 @@
           }
     }
 , default =
-  { arn = None Text
+  { admin_user_list = None (List Text)
+  , arn = None Text
   , audit_destination_arn = None Text
   , authentication = None Text
   , case_sensitivity = None Text

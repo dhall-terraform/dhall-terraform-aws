@@ -5,6 +5,7 @@
     , body : Optional Text
     , credentials_arn : Optional Text
     , description : Optional Text
+    , disable_execute_api_endpoint : Optional Bool
     , execution_arn : Optional Text
     , id : Optional Text
     , name : Text
@@ -33,6 +34,7 @@
   , body = None Text
   , credentials_arn = None Text
   , description = None Text
+  , disable_execute_api_endpoint = None Bool
   , execution_arn = None Text
   , id = None Text
   , route_key = None Text

@@ -1,6 +1,6 @@
 { Type =
     { availability_zones : Optional (List Text)
-    , engine : Text
+    , engine : Optional Text
     , engine_version : Optional Text
     , id : Optional Text
     , instance_class : Optional Text
@@ -24,6 +24,7 @@
     }
 , default =
   { availability_zones = None (List Text)
+  , engine = None Text
   , engine_version = None Text
   , id = None Text
   , instance_class = None Text

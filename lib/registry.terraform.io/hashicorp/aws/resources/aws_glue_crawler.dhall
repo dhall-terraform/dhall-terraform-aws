@@ -13,7 +13,14 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , catalog_target :
         Optional (List { database_name : Text, tables : List Text })
-    , dynamodb_target : Optional (List { path : Text })
+    , dynamodb_target :
+        Optional
+          ( List
+              { path : Text
+              , scan_all : Optional Bool
+              , scan_rate : Optional Natural
+              }
+          )
     , jdbc_target :
         Optional
           ( List
@@ -43,7 +50,14 @@
   , table_prefix = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , catalog_target = None (List { database_name : Text, tables : List Text })
-  , dynamodb_target = None (List { path : Text })
+  , dynamodb_target =
+      None
+        ( List
+            { path : Text
+            , scan_all : Optional Bool
+            , scan_rate : Optional Natural
+            }
+        )
   , jdbc_target =
       None
         ( List

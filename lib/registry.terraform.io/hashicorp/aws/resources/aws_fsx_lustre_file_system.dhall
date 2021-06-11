@@ -1,11 +1,14 @@
 { Type =
     { arn : Optional Text
+    , automatic_backup_retention_days : Optional Natural
     , deployment_type : Optional Text
     , dns_name : Optional Text
     , export_path : Optional Text
     , id : Optional Text
     , import_path : Optional Text
     , imported_file_chunk_size : Optional Natural
+    , kms_key_id : Optional Text
+    , mount_name : Optional Text
     , network_interface_ids : Optional (List Text)
     , owner_id : Optional Text
     , per_unit_storage_throughput : Optional Natural
@@ -19,12 +22,15 @@
     }
 , default =
   { arn = None Text
+  , automatic_backup_retention_days = None Natural
   , deployment_type = None Text
   , dns_name = None Text
   , export_path = None Text
   , id = None Text
   , import_path = None Text
   , imported_file_chunk_size = None Natural
+  , kms_key_id = None Text
+  , mount_name = None Text
   , network_interface_ids = None (List Text)
   , owner_id = None Text
   , per_unit_storage_throughput = None Natural

@@ -1,5 +1,6 @@
 { Type =
-    { apply_immediately : Optional Bool
+    { allow_major_version_upgrade : Optional Bool
+    , apply_immediately : Optional Bool
     , arn : Optional Text
     , availability_zones : Optional (List Text)
     , backtrack_window : Optional Natural
@@ -67,7 +68,8 @@
           }
     }
 , default =
-  { apply_immediately = None Bool
+  { allow_major_version_upgrade = None Bool
+  , apply_immediately = None Bool
   , arn = None Text
   , availability_zones = None (List Text)
   , backtrack_window = None Natural

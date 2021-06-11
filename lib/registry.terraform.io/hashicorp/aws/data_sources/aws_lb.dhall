@@ -3,6 +3,7 @@
         Optional (List { bucket : Text, enabled : Bool, prefix : Text })
     , arn : Optional Text
     , arn_suffix : Optional Text
+    , customer_owned_ipv4_pool : Optional Text
     , dns_name : Optional Text
     , drop_invalid_header_fields : Optional Bool
     , enable_deletion_protection : Optional Bool
@@ -18,6 +19,7 @@
         Optional
           ( List
               { allocation_id : Text
+              , outpost_id : Text
               , private_ipv4_address : Text
               , subnet_id : Text
               }
@@ -31,6 +33,7 @@
   { access_logs = None (List { bucket : Text, enabled : Bool, prefix : Text })
   , arn = None Text
   , arn_suffix = None Text
+  , customer_owned_ipv4_pool = None Text
   , dns_name = None Text
   , drop_invalid_header_fields = None Bool
   , enable_deletion_protection = None Bool
@@ -46,6 +49,7 @@
       None
         ( List
             { allocation_id : Text
+            , outpost_id : Text
             , private_ipv4_address : Text
             , subnet_id : Text
             }

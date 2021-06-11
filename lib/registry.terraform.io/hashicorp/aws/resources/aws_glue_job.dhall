@@ -8,6 +8,8 @@
     , max_capacity : Optional Natural
     , max_retries : Optional Natural
     , name : Text
+    , non_overridable_arguments :
+        Optional (List { mapKey : Text, mapValue : Text })
     , number_of_workers : Optional Natural
     , role_arn : Text
     , security_configuration : Optional Text
@@ -34,6 +36,7 @@
   , id = None Text
   , max_capacity = None Natural
   , max_retries = None Natural
+  , non_overridable_arguments = None (List { mapKey : Text, mapValue : Text })
   , number_of_workers = None Natural
   , security_configuration = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
