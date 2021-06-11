@@ -6,8 +6,11 @@
     , file_system_id : Optional Text
     , id : Optional Text
     , kms_key_id : Optional Text
+    , lifecycle_policy : Optional (List { transition_to_ia : Text })
     , performance_mode : Optional Text
+    , provisioned_throughput_in_mibps : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , throughput_mode : Optional Text
     }
 , default =
   { arn = None Text
@@ -17,7 +20,10 @@
   , file_system_id = None Text
   , id = None Text
   , kms_key_id = None Text
+  , lifecycle_policy = None (List { transition_to_ia : Text })
   , performance_mode = None Text
+  , provisioned_throughput_in_mibps = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , throughput_mode = None Text
   }
 }

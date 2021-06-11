@@ -26,6 +26,7 @@
     , schema_version : Optional Text
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , target_type : Optional Text
     , attachments_source :
         Optional (List { key : Text, name : Optional Text, values : List Text })
     }
@@ -54,6 +55,7 @@
   , schema_version = None Text
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , target_type = None Text
   , attachments_source =
       None (List { key : Text, name : Optional Text, values : List Text })
   }

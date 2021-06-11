@@ -1,5 +1,6 @@
 { Type =
     { arn : Optional Text
+    , direct_internet_access : Optional Text
     , id : Optional Text
     , instance_type : Text
     , kms_key_id : Optional Text
@@ -12,6 +13,7 @@
     }
 , default =
   { arn = None Text
+  , direct_internet_access = None Text
   , id = None Text
   , kms_key_id = None Text
   , lifecycle_config_name = None Text

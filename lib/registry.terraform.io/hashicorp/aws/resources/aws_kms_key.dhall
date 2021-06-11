@@ -1,5 +1,6 @@
 { Type =
     { arn : Optional Text
+    , customer_master_key_spec : Optional Text
     , deletion_window_in_days : Optional Natural
     , description : Optional Text
     , enable_key_rotation : Optional Bool
@@ -12,6 +13,7 @@
     }
 , default =
   { arn = None Text
+  , customer_master_key_spec = None Text
   , deletion_window_in_days = None Natural
   , description = None Text
   , enable_key_rotation = None Bool

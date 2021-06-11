@@ -1,6 +1,7 @@
 { Type =
     { allow_unassociated_targets : Optional Bool
     , cutoff : Natural
+    , description : Optional Text
     , duration : Natural
     , enabled : Optional Bool
     , end_date : Optional Text
@@ -13,6 +14,7 @@
     }
 , default =
   { allow_unassociated_targets = None Bool
+  , description = None Text
   , enabled = None Bool
   , end_date = None Text
   , id = None Text

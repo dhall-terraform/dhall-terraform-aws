@@ -31,6 +31,9 @@
               , user_pool_id : Text
               }
           )
+    , domain_endpoint_options :
+        Optional
+          (List { enforce_https : Bool, tls_security_policy : Optional Text })
     , ebs_options :
         Optional
           ( List
@@ -95,6 +98,8 @@
             , user_pool_id : Text
             }
         )
+  , domain_endpoint_options =
+      None (List { enforce_https : Bool, tls_security_policy : Optional Text })
   , ebs_options =
       None
         ( List

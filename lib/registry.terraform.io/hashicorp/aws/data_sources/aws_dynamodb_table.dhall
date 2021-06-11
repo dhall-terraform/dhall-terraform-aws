@@ -36,7 +36,8 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , ttl : Optional (List { attribute_name : Text, enabled : Bool })
     , write_capacity : Optional Natural
-    , server_side_encryption : Optional (List { enabled : Optional Bool })
+    , server_side_encryption :
+        Optional (List { enabled : Optional Bool, kms_key_arn : Optional Text })
     }
 , default =
   { arn = None Text
@@ -75,6 +76,7 @@
   , tags = None (List { mapKey : Text, mapValue : Text })
   , ttl = None (List { attribute_name : Text, enabled : Bool })
   , write_capacity = None Natural
-  , server_side_encryption = None (List { enabled : Optional Bool })
+  , server_side_encryption =
+      None (List { enabled : Optional Bool, kms_key_arn : Optional Text })
   }
 }

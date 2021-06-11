@@ -3,6 +3,7 @@
     , build_id : Text
     , description : Optional Text
     , ec2_instance_type : Text
+    , fleet_type : Optional Text
     , id : Optional Text
     , instance_role_arn : Optional Text
     , log_paths : Optional (List Text)
@@ -46,6 +47,7 @@
 , default =
   { arn = None Text
   , description = None Text
+  , fleet_type = None Text
   , id = None Text
   , instance_role_arn = None Text
   , log_paths = None (List Text)

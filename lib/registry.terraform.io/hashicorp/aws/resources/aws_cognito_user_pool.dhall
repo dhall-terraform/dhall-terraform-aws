@@ -67,6 +67,7 @@
               , require_numbers : Optional Bool
               , require_symbols : Optional Bool
               , require_uppercase : Optional Bool
+              , temporary_password_validity_days : Optional Natural
               }
           )
     , schema :
@@ -174,6 +175,7 @@
             , require_numbers : Optional Bool
             , require_symbols : Optional Bool
             , require_uppercase : Optional Bool
+            , temporary_password_validity_days : Optional Natural
             }
         )
   , schema =

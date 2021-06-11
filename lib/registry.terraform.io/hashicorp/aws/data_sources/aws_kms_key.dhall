@@ -2,6 +2,7 @@
     { arn : Optional Text
     , aws_account_id : Optional Text
     , creation_date : Optional Text
+    , customer_master_key_spec : Optional Text
     , deletion_date : Optional Text
     , description : Optional Text
     , enabled : Optional Bool
@@ -19,6 +20,7 @@
   { arn = None Text
   , aws_account_id = None Text
   , creation_date = None Text
+  , customer_master_key_spec = None Text
   , deletion_date = None Text
   , description = None Text
   , enabled = None Bool

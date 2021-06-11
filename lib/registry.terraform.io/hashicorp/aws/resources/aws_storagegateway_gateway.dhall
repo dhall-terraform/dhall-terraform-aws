@@ -1,6 +1,7 @@
 { Type =
     { activation_key : Optional Text
     , arn : Optional Text
+    , cloudwatch_log_group_arn : Optional Text
     , gateway_id : Optional Text
     , gateway_ip_address : Optional Text
     , gateway_name : Text
@@ -18,6 +19,7 @@
 , default =
   { activation_key = None Text
   , arn = None Text
+  , cloudwatch_log_group_arn = None Text
   , gateway_id = None Text
   , gateway_ip_address = None Text
   , gateway_type = None Text

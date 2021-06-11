@@ -1,6 +1,7 @@
 { Type =
     { association_id : Optional Text
     , association_name : Optional Text
+    , automation_target_parameter_name : Optional Text
     , compliance_severity : Optional Text
     , document_version : Optional Text
     , id : Optional Text
@@ -17,6 +18,7 @@
 , default =
   { association_id = None Text
   , association_name = None Text
+  , automation_target_parameter_name = None Text
   , compliance_severity = None Text
   , document_version = None Text
   , id = None Text
