@@ -8,6 +8,7 @@
     , id : Optional Text
     , name : Text
     , schedule : Text
+    , schedule_offset : Optional Natural
     , schedule_timezone : Optional Text
     , start_date : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -18,6 +19,7 @@
   , enabled = None Bool
   , end_date = None Text
   , id = None Text
+  , schedule_offset = None Natural
   , schedule_timezone = None Text
   , start_date = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })

@@ -244,6 +244,7 @@
 , aws_ebs_volume = ./aws_ebs_volume.dhall
 , aws_ec2_availability_zone_group = ./aws_ec2_availability_zone_group.dhall
 , aws_ec2_capacity_reservation = ./aws_ec2_capacity_reservation.dhall
+, aws_ec2_carrier_gateway = ./aws_ec2_carrier_gateway.dhall
 , aws_ec2_client_vpn_authorization_rule =
     ./aws_ec2_client_vpn_authorization_rule.dhall
 , aws_ec2_client_vpn_endpoint = ./aws_ec2_client_vpn_endpoint.dhall
@@ -342,6 +343,7 @@
 , aws_glue_partition = ./aws_glue_partition.dhall
 , aws_glue_registry = ./aws_glue_registry.dhall
 , aws_glue_resource_policy = ./aws_glue_resource_policy.dhall
+, aws_glue_schema = ./aws_glue_schema.dhall
 , aws_glue_security_configuration = ./aws_glue_security_configuration.dhall
 , aws_glue_trigger = ./aws_glue_trigger.dhall
 , aws_glue_user_defined_function = ./aws_glue_user_defined_function.dhall

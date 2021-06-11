@@ -92,7 +92,26 @@
           , listener :
               Optional
                 ( List
-                    { health_check :
+                    { connection_pool :
+                        Optional
+                          ( List
+                              { grpc :
+                                  Optional (List { max_requests : Natural })
+                              , http :
+                                  Optional
+                                    ( List
+                                        { max_connections : Natural
+                                        , max_pending_requests :
+                                            Optional Natural
+                                        }
+                                    )
+                              , http2 :
+                                  Optional (List { max_requests : Natural })
+                              , tcp :
+                                  Optional (List { max_connections : Natural })
+                              }
+                          )
+                    , health_check :
                         Optional
                           ( List
                               { healthy_threshold : Natural
@@ -102,6 +121,16 @@
                               , protocol : Text
                               , timeout_millis : Natural
                               , unhealthy_threshold : Natural
+                              }
+                          )
+                    , outlier_detection :
+                        Optional
+                          ( List
+                              { max_ejection_percent : Natural
+                              , max_server_errors : Natural
+                              , base_ejection_duration :
+                                  List { unit : Text, value : Natural }
+                              , interval : List { unit : Text, value : Natural }
                               }
                           )
                     , port_mapping : List { port : Natural, protocol : Text }

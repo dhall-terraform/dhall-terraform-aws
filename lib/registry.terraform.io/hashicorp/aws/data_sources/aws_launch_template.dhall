@@ -11,6 +11,7 @@
                     , iops : Natural
                     , kms_key_id : Text
                     , snapshot_id : Text
+                    , throughput : Natural
                     , volume_size : Natural
                     , volume_type : Text
                     }
@@ -60,7 +61,8 @@
     , network_interfaces :
         Optional
           ( List
-              { associate_public_ip_address : Text
+              { associate_carrier_ip_address : Text
+              , associate_public_ip_address : Text
               , delete_on_termination : Text
               , description : Text
               , device_index : Natural
@@ -113,6 +115,7 @@
                   , iops : Natural
                   , kms_key_id : Text
                   , snapshot_id : Text
+                  , throughput : Natural
                   , volume_size : Natural
                   , volume_type : Text
                   }
@@ -162,7 +165,8 @@
   , network_interfaces =
       None
         ( List
-            { associate_public_ip_address : Text
+            { associate_carrier_ip_address : Text
+            , associate_public_ip_address : Text
             , delete_on_termination : Text
             , description : Text
             , device_index : Natural

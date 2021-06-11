@@ -47,6 +47,7 @@
                         , iops : Optional Natural
                         , kms_key_id : Optional Text
                         , snapshot_id : Optional Text
+                        , throughput : Optional Natural
                         , volume_size : Optional Natural
                         , volume_type : Optional Text
                         }
@@ -60,6 +61,7 @@
                         , encrypted : Optional Bool
                         , iops : Optional Natural
                         , kms_key_id : Optional Text
+                        , throughput : Optional Natural
                         , volume_size : Optional Natural
                         , volume_type : Optional Text
                         }
@@ -144,6 +146,7 @@
                       , iops : Optional Natural
                       , kms_key_id : Optional Text
                       , snapshot_id : Optional Text
+                      , throughput : Optional Natural
                       , volume_size : Optional Natural
                       , volume_type : Optional Text
                       }
@@ -157,6 +160,7 @@
                       , encrypted : Optional Bool
                       , iops : Optional Natural
                       , kms_key_id : Optional Text
+                      , throughput : Optional Natural
                       , volume_size : Optional Natural
                       , volume_type : Optional Text
                       }
