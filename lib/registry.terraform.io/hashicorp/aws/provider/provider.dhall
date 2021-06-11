@@ -65,6 +65,7 @@
               , cognitoidentity : Optional Text
               , cognitoidp : Optional Text
               , configservice : Optional Text
+              , connect : Optional Text
               , cur : Optional Text
               , dataexchange : Optional Text
               , datapipeline : Optional Text
@@ -256,6 +257,7 @@
             , cognitoidentity : Optional Text
             , cognitoidp : Optional Text
             , configservice : Optional Text
+            , connect : Optional Text
             , cur : Optional Text
             , dataexchange : Optional Text
             , datapipeline : Optional Text

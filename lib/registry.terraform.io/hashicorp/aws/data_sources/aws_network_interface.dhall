@@ -4,6 +4,8 @@
           ( List
               { allocation_id : Text
               , association_id : Text
+              , carrier_ip : Text
+              , customer_owned_ip : Text
               , ip_owner_id : Text
               , public_dns_name : Text
               , public_ip : Text
@@ -42,6 +44,8 @@
         ( List
             { allocation_id : Text
             , association_id : Text
+            , carrier_ip : Text
+            , customer_owned_ip : Text
             , ip_owner_id : Text
             , public_dns_name : Text
             , public_ip : Text

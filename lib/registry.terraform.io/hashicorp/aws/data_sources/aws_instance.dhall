@@ -14,12 +14,14 @@
               , iops : Natural
               , kms_key_id : Text
               , snapshot_id : Text
+              , throughput : Natural
               , volume_id : Text
               , volume_size : Natural
               , volume_type : Text
               }
           )
     , ebs_optimized : Optional Bool
+    , enclave_options : Optional (List { enabled : Bool })
     , ephemeral_block_device :
         Optional
           (List { device_name : Text, no_device : Bool, virtual_name : Text })
@@ -58,6 +60,7 @@
               , encrypted : Bool
               , iops : Natural
               , kms_key_id : Text
+              , throughput : Natural
               , volume_id : Text
               , volume_size : Natural
               , volume_type : Text
@@ -90,12 +93,14 @@
             , iops : Natural
             , kms_key_id : Text
             , snapshot_id : Text
+            , throughput : Natural
             , volume_id : Text
             , volume_size : Natural
             , volume_type : Text
             }
         )
   , ebs_optimized = None Bool
+  , enclave_options = None (List { enabled : Bool })
   , ephemeral_block_device =
       None (List { device_name : Text, no_device : Bool, virtual_name : Text })
   , get_password_data = None Bool
@@ -133,6 +138,7 @@
             , encrypted : Bool
             , iops : Natural
             , kms_key_id : Text
+            , throughput : Natural
             , volume_id : Text
             , volume_size : Natural
             , volume_type : Text

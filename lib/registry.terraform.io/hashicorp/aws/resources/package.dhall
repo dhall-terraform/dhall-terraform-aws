@@ -135,6 +135,8 @@
 , aws_codedeploy_deployment_group = ./aws_codedeploy_deployment_group.dhall
 , aws_codepipeline = ./aws_codepipeline.dhall
 , aws_codepipeline_webhook = ./aws_codepipeline_webhook.dhall
+, aws_codestarconnections_connection =
+    ./aws_codestarconnections_connection.dhall
 , aws_codestarnotifications_notification_rule =
     ./aws_codestarnotifications_notification_rule.dhall
 , aws_cognito_identity_pool = ./aws_cognito_identity_pool.dhall
@@ -255,6 +257,7 @@
 , aws_ec2_local_gateway_route = ./aws_ec2_local_gateway_route.dhall
 , aws_ec2_local_gateway_route_table_vpc_association =
     ./aws_ec2_local_gateway_route_table_vpc_association.dhall
+, aws_ec2_managed_prefix_list = ./aws_ec2_managed_prefix_list.dhall
 , aws_ec2_tag = ./aws_ec2_tag.dhall
 , aws_ec2_traffic_mirror_filter = ./aws_ec2_traffic_mirror_filter.dhall
 , aws_ec2_traffic_mirror_filter_rule =
@@ -417,6 +420,10 @@
 , aws_kms_external_key = ./aws_kms_external_key.dhall
 , aws_kms_grant = ./aws_kms_grant.dhall
 , aws_kms_key = ./aws_kms_key.dhall
+, aws_lakeformation_data_lake_settings =
+    ./aws_lakeformation_data_lake_settings.dhall
+, aws_lakeformation_permissions = ./aws_lakeformation_permissions.dhall
+, aws_lakeformation_resource = ./aws_lakeformation_resource.dhall
 , aws_lambda_alias = ./aws_lambda_alias.dhall
 , aws_lambda_code_signing_config = ./aws_lambda_code_signing_config.dhall
 , aws_lambda_event_source_mapping = ./aws_lambda_event_source_mapping.dhall

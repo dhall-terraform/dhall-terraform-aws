@@ -32,6 +32,14 @@
           )
     , ephemeral_block_device :
         Optional (List { device_name : Text, virtual_name : Text })
+    , metadata_options :
+        Optional
+          ( List
+              { http_endpoint : Optional Text
+              , http_put_response_hop_limit : Optional Natural
+              , http_tokens : Optional Text
+              }
+          )
     , root_block_device :
         Optional
           ( List
@@ -75,6 +83,14 @@
         )
   , ephemeral_block_device =
       None (List { device_name : Text, virtual_name : Text })
+  , metadata_options =
+      None
+        ( List
+            { http_endpoint : Optional Text
+            , http_put_response_hop_limit : Optional Natural
+            , http_tokens : Optional Text
+            }
+        )
   , root_block_device =
       None
         ( List

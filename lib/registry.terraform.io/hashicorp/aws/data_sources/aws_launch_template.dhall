@@ -25,6 +25,7 @@
     , disable_api_termination : Optional Bool
     , ebs_optimized : Optional Text
     , elastic_gpu_specifications : Optional (List { type : Text })
+    , enclave_options : Optional (List { enabled : Bool })
     , hibernation_options : Optional (List { configured : Bool })
     , iam_instance_profile : Optional (List { arn : Text, name : Text })
     , id : Optional Text
@@ -129,6 +130,7 @@
   , disable_api_termination = None Bool
   , ebs_optimized = None Text
   , elastic_gpu_specifications = None (List { type : Text })
+  , enclave_options = None (List { enabled : Bool })
   , hibernation_options = None (List { configured : Bool })
   , iam_instance_profile = None (List { arn : Text, name : Text })
   , id = None Text

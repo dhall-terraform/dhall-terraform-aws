@@ -68,6 +68,7 @@
     ./aws_ec2_local_gateway_virtual_interface_group.dhall
 , aws_ec2_local_gateway_virtual_interface_groups =
     ./aws_ec2_local_gateway_virtual_interface_groups.dhall
+, aws_ec2_managed_prefix_list = ./aws_ec2_managed_prefix_list.dhall
 , aws_ec2_spot_price = ./aws_ec2_spot_price.dhall
 , aws_ec2_transit_gateway = ./aws_ec2_transit_gateway.dhall
 , aws_ec2_transit_gateway_dx_gateway_attachment =
@@ -133,6 +134,10 @@
 , aws_kms_key = ./aws_kms_key.dhall
 , aws_kms_secret = ./aws_kms_secret.dhall
 , aws_kms_secrets = ./aws_kms_secrets.dhall
+, aws_lakeformation_data_lake_settings =
+    ./aws_lakeformation_data_lake_settings.dhall
+, aws_lakeformation_permissions = ./aws_lakeformation_permissions.dhall
+, aws_lakeformation_resource = ./aws_lakeformation_resource.dhall
 , aws_lambda_alias = ./aws_lambda_alias.dhall
 , aws_lambda_code_signing_config = ./aws_lambda_code_signing_config.dhall
 , aws_lambda_function = ./aws_lambda_function.dhall

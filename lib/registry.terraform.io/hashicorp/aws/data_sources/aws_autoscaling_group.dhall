@@ -7,6 +7,8 @@
     , health_check_type : Optional Text
     , id : Optional Text
     , launch_configuration : Optional Text
+    , launch_template :
+        Optional (List { id : Text, name : Text, version : Text })
     , load_balancers : Optional (List Text)
     , max_size : Optional Natural
     , min_size : Optional Natural
@@ -28,6 +30,7 @@
   , health_check_type = None Text
   , id = None Text
   , launch_configuration = None Text
+  , launch_template = None (List { id : Text, name : Text, version : Text })
   , load_balancers = None (List Text)
   , max_size = None Natural
   , min_size = None Natural

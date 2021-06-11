@@ -23,6 +23,14 @@
     , image_id : Optional Text
     , instance_type : Optional Text
     , key_name : Optional Text
+    , metadata_options :
+        Optional
+          ( List
+              { http_endpoint : Text
+              , http_put_response_hop_limit : Natural
+              , http_tokens : Text
+              }
+          )
     , name : Text
     , placement_tenancy : Optional Text
     , root_block_device :
@@ -66,6 +74,14 @@
   , image_id = None Text
   , instance_type = None Text
   , key_name = None Text
+  , metadata_options =
+      None
+        ( List
+            { http_endpoint : Text
+            , http_put_response_hop_limit : Natural
+            , http_tokens : Text
+            }
+        )
   , placement_tenancy = None Text
   , root_block_device =
       None

@@ -40,6 +40,20 @@
               , role_arn : Optional Text
               }
           )
+    , instance_refresh :
+        Optional
+          ( List
+              { strategy : Text
+              , triggers : Optional (List Text)
+              , preferences :
+                  Optional
+                    ( List
+                        { instance_warmup : Optional Text
+                        , min_healthy_percentage : Optional Natural
+                        }
+                    )
+              }
+          )
     , launch_template :
         Optional
           ( List
@@ -123,6 +137,20 @@
             , notification_metadata : Optional Text
             , notification_target_arn : Optional Text
             , role_arn : Optional Text
+            }
+        )
+  , instance_refresh =
+      None
+        ( List
+            { strategy : Text
+            , triggers : Optional (List Text)
+            , preferences :
+                Optional
+                  ( List
+                      { instance_warmup : Optional Text
+                      , min_healthy_percentage : Optional Natural
+                      }
+                  )
             }
         )
   , launch_template =

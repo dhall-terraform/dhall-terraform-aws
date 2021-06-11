@@ -58,6 +58,7 @@
     , credit_specification : Optional (List { cpu_credits : Optional Text })
     , elastic_gpu_specifications : Optional (List { type : Text })
     , elastic_inference_accelerator : Optional (List { type : Text })
+    , enclave_options : Optional (List { enabled : Optional Bool })
     , hibernation_options : Optional (List { configured : Bool })
     , iam_instance_profile :
         Optional (List { arn : Optional Text, name : Optional Text })
@@ -186,6 +187,7 @@
   , credit_specification = None (List { cpu_credits : Optional Text })
   , elastic_gpu_specifications = None (List { type : Text })
   , elastic_inference_accelerator = None (List { type : Text })
+  , enclave_options = None (List { enabled : Optional Bool })
   , hibernation_options = None (List { configured : Bool })
   , iam_instance_profile =
       None (List { arn : Optional Text, name : Optional Text })
