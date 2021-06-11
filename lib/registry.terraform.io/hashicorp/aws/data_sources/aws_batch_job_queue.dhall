@@ -8,6 +8,7 @@
     , state : Optional Text
     , status : Optional Text
     , status_reason : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { arn = None Text
@@ -18,5 +19,6 @@
   , state = None Text
   , status = None Text
   , status_reason = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   }
 }

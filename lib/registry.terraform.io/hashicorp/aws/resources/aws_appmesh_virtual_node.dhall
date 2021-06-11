@@ -105,6 +105,80 @@
                               }
                           )
                     , port_mapping : List { port : Natural, protocol : Text }
+                    , timeout :
+                        Optional
+                          ( List
+                              { grpc :
+                                  Optional
+                                    ( List
+                                        { idle :
+                                            Optional
+                                              ( List
+                                                  { unit : Text
+                                                  , value : Natural
+                                                  }
+                                              )
+                                        , per_request :
+                                            Optional
+                                              ( List
+                                                  { unit : Text
+                                                  , value : Natural
+                                                  }
+                                              )
+                                        }
+                                    )
+                              , http :
+                                  Optional
+                                    ( List
+                                        { idle :
+                                            Optional
+                                              ( List
+                                                  { unit : Text
+                                                  , value : Natural
+                                                  }
+                                              )
+                                        , per_request :
+                                            Optional
+                                              ( List
+                                                  { unit : Text
+                                                  , value : Natural
+                                                  }
+                                              )
+                                        }
+                                    )
+                              , http2 :
+                                  Optional
+                                    ( List
+                                        { idle :
+                                            Optional
+                                              ( List
+                                                  { unit : Text
+                                                  , value : Natural
+                                                  }
+                                              )
+                                        , per_request :
+                                            Optional
+                                              ( List
+                                                  { unit : Text
+                                                  , value : Natural
+                                                  }
+                                              )
+                                        }
+                                    )
+                              , tcp :
+                                  Optional
+                                    ( List
+                                        { idle :
+                                            Optional
+                                              ( List
+                                                  { unit : Text
+                                                  , value : Natural
+                                                  }
+                                              )
+                                        }
+                                    )
+                              }
+                          )
                     , tls :
                         Optional
                           ( List

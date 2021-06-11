@@ -115,6 +115,8 @@
 , aws_codeartifact_domain_permissions_policy =
     ./aws_codeartifact_domain_permissions_policy.dhall
 , aws_codeartifact_repository = ./aws_codeartifact_repository.dhall
+, aws_codeartifact_repository_permissions_policy =
+    ./aws_codeartifact_repository_permissions_policy.dhall
 , aws_codebuild_project = ./aws_codebuild_project.dhall
 , aws_codebuild_report_group = ./aws_codebuild_report_group.dhall
 , aws_codebuild_source_credential = ./aws_codebuild_source_credential.dhall
@@ -413,6 +415,7 @@
 , aws_lb_ssl_negotiation_policy = ./aws_lb_ssl_negotiation_policy.dhall
 , aws_lb_target_group_attachment = ./aws_lb_target_group_attachment.dhall
 , aws_lb_target_group = ./aws_lb_target_group.dhall
+, aws_lex_bot_alias = ./aws_lex_bot_alias.dhall
 , aws_lex_bot = ./aws_lex_bot.dhall
 , aws_lex_intent = ./aws_lex_intent.dhall
 , aws_lex_slot_type = ./aws_lex_slot_type.dhall
@@ -544,6 +547,7 @@
 , aws_s3_bucket_metric = ./aws_s3_bucket_metric.dhall
 , aws_s3_bucket_notification = ./aws_s3_bucket_notification.dhall
 , aws_s3_bucket_object = ./aws_s3_bucket_object.dhall
+, aws_s3_bucket_ownership_controls = ./aws_s3_bucket_ownership_controls.dhall
 , aws_s3_bucket_policy = ./aws_s3_bucket_policy.dhall
 , aws_s3_bucket_public_access_block = ./aws_s3_bucket_public_access_block.dhall
 , aws_sagemaker_endpoint_configuration =

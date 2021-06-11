@@ -8,6 +8,7 @@
     , state : Optional Text
     , status : Optional Text
     , status_reason : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , type : Text
     , compute_resources :
         Optional
@@ -46,6 +47,7 @@
   , state = None Text
   , status = None Text
   , status_reason = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , compute_resources =
       None
         ( List

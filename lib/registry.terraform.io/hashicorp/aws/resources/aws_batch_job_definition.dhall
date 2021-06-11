@@ -5,6 +5,7 @@
     , name : Text
     , parameters : Optional (List { mapKey : Text, mapValue : Text })
     , revision : Optional Natural
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , type : Text
     , retry_strategy : Optional (List { attempts : Optional Natural })
     , timeout : Optional (List { attempt_duration_seconds : Optional Natural })
@@ -15,6 +16,7 @@
   , id = None Text
   , parameters = None (List { mapKey : Text, mapValue : Text })
   , revision = None Natural
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , retry_strategy = None (List { attempts : Optional Natural })
   , timeout = None (List { attempt_duration_seconds : Optional Natural })
   }

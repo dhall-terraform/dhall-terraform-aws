@@ -23,6 +23,7 @@
                     , match :
                         List
                           { method_name : Optional Text
+                          , prefix : Optional Text
                           , service_name : Optional Text
                           , metadata :
                               Optional
@@ -57,6 +58,17 @@
                               , tcp_retry_events : Optional (List Text)
                               , per_retry_timeout :
                                   List { unit : Text, value : Natural }
+                              }
+                          )
+                    , timeout :
+                        Optional
+                          ( List
+                              { idle :
+                                  Optional
+                                    (List { unit : Text, value : Natural })
+                              , per_request :
+                                  Optional
+                                    (List { unit : Text, value : Natural })
                               }
                           )
                     }
@@ -108,6 +120,17 @@
                                   List { unit : Text, value : Natural }
                               }
                           )
+                    , timeout :
+                        Optional
+                          ( List
+                              { idle :
+                                  Optional
+                                    (List { unit : Text, value : Natural })
+                              , per_request :
+                                  Optional
+                                    (List { unit : Text, value : Natural })
+                              }
+                          )
                     }
                 )
           , http_route :
@@ -157,6 +180,17 @@
                                   List { unit : Text, value : Natural }
                               }
                           )
+                    , timeout :
+                        Optional
+                          ( List
+                              { idle :
+                                  Optional
+                                    (List { unit : Text, value : Natural })
+                              , per_request :
+                                  Optional
+                                    (List { unit : Text, value : Natural })
+                              }
+                          )
                     }
                 )
           , tcp_route :
@@ -167,6 +201,14 @@
                           { weighted_target :
                               List { virtual_node : Text, weight : Natural }
                           }
+                    , timeout :
+                        Optional
+                          ( List
+                              { idle :
+                                  Optional
+                                    (List { unit : Text, value : Natural })
+                              }
+                          )
                     }
                 )
           }

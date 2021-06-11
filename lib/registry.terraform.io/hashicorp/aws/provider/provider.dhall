@@ -165,6 +165,7 @@
               , sts : Optional Text
               , swf : Optional Text
               , synthetics : Optional Text
+              , timestreamwrite : Optional Text
               , transfer : Optional Text
               , waf : Optional Text
               , wafregional : Optional Text
@@ -349,6 +350,7 @@
             , sts : Optional Text
             , swf : Optional Text
             , synthetics : Optional Text
+            , timestreamwrite : Optional Text
             , transfer : Optional Text
             , waf : Optional Text
             , wafregional : Optional Text
