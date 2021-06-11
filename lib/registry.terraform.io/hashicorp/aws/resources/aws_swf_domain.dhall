@@ -1,14 +1,18 @@
 { Type =
-    { description : Optional Text
+    { arn : Optional Text
+    , description : Optional Text
     , id : Optional Text
     , name : Optional Text
     , name_prefix : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , workflow_execution_retention_period_in_days : Text
     }
 , default =
-  { description = None Text
+  { arn = None Text
+  , description = None Text
   , id = None Text
   , name = None Text
   , name_prefix = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   }
 }

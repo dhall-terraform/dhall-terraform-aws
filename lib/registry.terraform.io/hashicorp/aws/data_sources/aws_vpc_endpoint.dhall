@@ -16,6 +16,7 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_endpoint_type : Optional Text
     , vpc_id : Optional Text
+    , filter : Optional (List { name : Text, values : List Text })
     }
 , default =
   { cidr_blocks = None (List Text)
@@ -35,5 +36,6 @@
   , tags = None (List { mapKey : Text, mapValue : Text })
   , vpc_endpoint_type = None Text
   , vpc_id = None Text
+  , filter = None (List { name : Text, values : List Text })
   }
 }

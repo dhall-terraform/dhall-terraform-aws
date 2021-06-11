@@ -109,6 +109,7 @@
 , aws_partition = ./aws_partition.dhall
 , aws_prefix_list = ./aws_prefix_list.dhall
 , aws_pricing_product = ./aws_pricing_product.dhall
+, aws_qldb_ledger = ./aws_qldb_ledger.dhall
 , aws_ram_resource_share = ./aws_ram_resource_share.dhall
 , aws_rds_cluster = ./aws_rds_cluster.dhall
 , aws_redshift_cluster = ./aws_redshift_cluster.dhall

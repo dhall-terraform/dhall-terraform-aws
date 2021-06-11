@@ -14,6 +14,7 @@
     , requester_pays : Optional Bool
     , role_arn : Text
     , squash : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , nfs_file_share_defaults :
         Optional
           ( List
@@ -42,6 +43,7 @@
   , read_only = None Bool
   , requester_pays = None Bool
   , squash = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , nfs_file_share_defaults =
       None
         ( List

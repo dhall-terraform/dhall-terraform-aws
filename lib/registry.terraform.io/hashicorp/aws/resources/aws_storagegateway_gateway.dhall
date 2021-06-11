@@ -9,6 +9,7 @@
     , id : Optional Text
     , medium_changer_type : Optional Text
     , smb_guest_password : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , tape_drive_type : Optional Text
     , smb_active_directory_settings :
         Optional (List { domain_name : Text, password : Text, username : Text })
@@ -23,6 +24,7 @@
   , id = None Text
   , medium_changer_type = None Text
   , smb_guest_password = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , tape_drive_type = None Text
   , smb_active_directory_settings =
       None (List { domain_name : Text, password : Text, username : Text })

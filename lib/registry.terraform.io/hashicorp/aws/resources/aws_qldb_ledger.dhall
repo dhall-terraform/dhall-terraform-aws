@@ -1,15 +1,15 @@
 { Type =
     { arn : Optional Text
-    , description : Optional Text
+    , deletion_protection : Optional Bool
     , id : Optional Text
-    , name : Text
+    , name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
-    , target_arns : List Text
     }
 , default =
   { arn = None Text
-  , description = None Text
+  , deletion_protection = None Bool
   , id = None Text
+  , name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   }
 }

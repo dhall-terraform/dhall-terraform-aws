@@ -412,6 +412,7 @@
 , aws_pinpoint_sms_channel = ./aws_pinpoint_sms_channel.dhall
 , aws_placement_group = ./aws_placement_group.dhall
 , aws_proxy_protocol_policy = ./aws_proxy_protocol_policy.dhall
+, aws_qldb_ledger = ./aws_qldb_ledger.dhall
 , aws_quicksight_group = ./aws_quicksight_group.dhall
 , aws_quicksight_user = ./aws_quicksight_user.dhall
 , aws_ram_principal_association = ./aws_ram_principal_association.dhall

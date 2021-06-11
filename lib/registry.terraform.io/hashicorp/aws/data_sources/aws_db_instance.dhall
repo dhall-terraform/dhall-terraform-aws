@@ -36,6 +36,7 @@
     , resource_id : Optional Text
     , storage_encrypted : Optional Bool
     , storage_type : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , timezone : Optional Text
     , vpc_security_groups : Optional (List Text)
     }
@@ -76,6 +77,7 @@
   , resource_id = None Text
   , storage_encrypted = None Bool
   , storage_type = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , timezone = None Text
   , vpc_security_groups = None (List Text)
   }

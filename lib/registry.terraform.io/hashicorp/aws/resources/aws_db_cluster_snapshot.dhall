@@ -14,6 +14,7 @@
     , source_db_cluster_snapshot_arn : Optional Text
     , status : Optional Text
     , storage_encrypted : Optional Bool
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , vpc_id : Optional Text
     , timeouts : Optional { create : Optional Text }
     }
@@ -31,6 +32,7 @@
   , source_db_cluster_snapshot_arn = None Text
   , status = None Text
   , storage_encrypted = None Bool
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , vpc_id = None Text
   , timeouts = None { create : Optional Text }
   }
