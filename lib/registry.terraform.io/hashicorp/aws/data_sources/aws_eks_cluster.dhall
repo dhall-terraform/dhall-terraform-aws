@@ -6,6 +6,7 @@
     , endpoint : Optional Text
     , id : Optional Text
     , identity : Optional (List { oidc : List { issuer : Text } })
+    , kubernetes_network_config : Optional (List { service_ipv4_cidr : Text })
     , name : Text
     , platform_version : Optional Text
     , role_arn : Optional Text
@@ -33,6 +34,7 @@
   , endpoint = None Text
   , id = None Text
   , identity = None (List { oidc : List { issuer : Text } })
+  , kubernetes_network_config = None (List { service_ipv4_cidr : Text })
   , platform_version = None Text
   , role_arn = None Text
   , status = None Text

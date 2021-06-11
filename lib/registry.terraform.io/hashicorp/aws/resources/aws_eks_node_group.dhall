@@ -1,6 +1,7 @@
 { Type =
     { ami_type : Optional Text
     , arn : Optional Text
+    , capacity_type : Optional Text
     , cluster_name : Text
     , disk_size : Optional Natural
     , force_update_version : Optional Bool
@@ -43,6 +44,7 @@
 , default =
   { ami_type = None Text
   , arn = None Text
+  , capacity_type = None Text
   , disk_size = None Natural
   , force_update_version = None Bool
   , id = None Text

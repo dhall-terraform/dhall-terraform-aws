@@ -12,6 +12,9 @@
           , security_policy : Text
           , target_domain_name : Optional Text
           }
+    , mutual_tls_authentication :
+        Optional
+          (List { truststore_uri : Text, truststore_version : Optional Text })
     , timeouts : Optional { update : Optional Text }
     }
 , default =
@@ -19,6 +22,8 @@
   , arn = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , mutual_tls_authentication =
+      None (List { truststore_uri : Text, truststore_version : Optional Text })
   , timeouts = None { update : Optional Text }
   }
 }

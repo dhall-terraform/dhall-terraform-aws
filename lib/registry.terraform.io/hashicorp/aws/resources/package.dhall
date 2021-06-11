@@ -340,6 +340,7 @@
 , aws_glue_job = ./aws_glue_job.dhall
 , aws_glue_ml_transform = ./aws_glue_ml_transform.dhall
 , aws_glue_partition = ./aws_glue_partition.dhall
+, aws_glue_registry = ./aws_glue_registry.dhall
 , aws_glue_resource_policy = ./aws_glue_resource_policy.dhall
 , aws_glue_security_configuration = ./aws_glue_security_configuration.dhall
 , aws_glue_trigger = ./aws_glue_trigger.dhall

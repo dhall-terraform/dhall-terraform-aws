@@ -15,6 +15,8 @@
     , encryption_config :
         Optional
           (List { resources : List Text, provider : List { key_arn : Text } })
+    , kubernetes_network_config :
+        Optional (List { service_ipv4_cidr : Optional Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -46,6 +48,8 @@
   , version = None Text
   , encryption_config =
       None (List { resources : List Text, provider : List { key_arn : Text } })
+  , kubernetes_network_config =
+      None (List { service_ipv4_cidr : Optional Text })
   , timeouts =
       None
         { create : Optional Text

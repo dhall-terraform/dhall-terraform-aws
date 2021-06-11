@@ -33,7 +33,12 @@
               , username : Text
               }
           )
-    , timeouts : Optional { create : Optional Text, delete : Optional Text }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { active_directory_id = None Text
@@ -67,6 +72,11 @@
             , username : Text
             }
         )
-  , timeouts = None { create : Optional Text, delete : Optional Text }
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , update : Optional Text
+        }
   }
 }

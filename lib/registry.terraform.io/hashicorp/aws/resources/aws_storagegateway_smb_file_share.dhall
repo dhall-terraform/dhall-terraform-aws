@@ -1,5 +1,6 @@
 { Type =
-    { admin_user_list : Optional (List Text)
+    { access_based_enumeration : Optional Bool
+    , admin_user_list : Optional (List Text)
     , arn : Optional Text
     , audit_destination_arn : Optional Text
     , authentication : Optional Text
@@ -14,6 +15,7 @@
     , kms_encrypted : Optional Bool
     , kms_key_arn : Optional Text
     , location_arn : Text
+    , notification_policy : Optional Text
     , object_acl : Optional Text
     , path : Optional Text
     , read_only : Optional Bool
@@ -32,7 +34,8 @@
           }
     }
 , default =
-  { admin_user_list = None (List Text)
+  { access_based_enumeration = None Bool
+  , admin_user_list = None (List Text)
   , arn = None Text
   , audit_destination_arn = None Text
   , authentication = None Text
@@ -45,6 +48,7 @@
   , invalid_user_list = None (List Text)
   , kms_encrypted = None Bool
   , kms_key_arn = None Text
+  , notification_policy = None Text
   , object_acl = None Text
   , path = None Text
   , read_only = None Bool

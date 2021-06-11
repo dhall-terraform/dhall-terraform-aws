@@ -49,7 +49,21 @@
                 )
           , listener :
               List
-                { health_check :
+                { connection_pool :
+                    Optional
+                      ( List
+                          { grpc : Optional (List { max_requests : Natural })
+                          , http :
+                              Optional
+                                ( List
+                                    { max_connections : Natural
+                                    , max_pending_requests : Optional Natural
+                                    }
+                                )
+                          , http2 : Optional (List { max_requests : Natural })
+                          }
+                      )
+                , health_check :
                     Optional
                       ( List
                           { healthy_threshold : Natural

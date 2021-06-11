@@ -14,6 +14,11 @@
     , sms_verification_message : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , username_attributes : Optional (List Text)
+    , account_recovery_setting :
+        Optional
+          ( List
+              { recovery_mechanism : List { name : Text, priority : Natural } }
+          )
     , admin_create_user_config :
         Optional
           ( List
@@ -124,6 +129,9 @@
   , sms_verification_message = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , username_attributes = None (List Text)
+  , account_recovery_setting =
+      None
+        (List { recovery_mechanism : List { name : Text, priority : Natural } })
   , admin_create_user_config =
       None
         ( List
