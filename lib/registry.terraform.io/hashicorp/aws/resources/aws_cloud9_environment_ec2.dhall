@@ -7,6 +7,7 @@
     , name : Text
     , owner_arn : Optional Text
     , subnet_id : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , type : Optional Text
     }
 , default =
@@ -16,6 +17,7 @@
   , id = None Text
   , owner_arn = None Text
   , subnet_id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , type = None Text
   }
 }

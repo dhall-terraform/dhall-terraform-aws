@@ -7,6 +7,7 @@
     , log_format : Optional Text
     , log_group_name : Optional Text
     , subnet_id : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , traffic_type : Text
     , vpc_id : Optional Text
     }
@@ -19,6 +20,7 @@
   , log_format = None Text
   , log_group_name = None Text
   , subnet_id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , vpc_id = None Text
   }
 }

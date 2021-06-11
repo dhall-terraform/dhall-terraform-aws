@@ -38,6 +38,7 @@
 , aws_api_gateway_stage = ./aws_api_gateway_stage.dhall
 , aws_api_gateway_usage_plan = ./aws_api_gateway_usage_plan.dhall
 , aws_api_gateway_usage_plan_key = ./aws_api_gateway_usage_plan_key.dhall
+, aws_apigatewayv2_api = ./aws_apigatewayv2_api.dhall
 , aws_api_gateway_vpc_link = ./aws_api_gateway_vpc_link.dhall
 , aws_appautoscaling_policy = ./aws_appautoscaling_policy.dhall
 , aws_appautoscaling_scheduled_action =

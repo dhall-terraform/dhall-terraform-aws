@@ -94,6 +94,7 @@
           )
     , sms_configuration :
         Optional (List { external_id : Text, sns_caller_arn : Text })
+    , software_token_mfa_configuration : Optional (List { enabled : Bool })
     , user_pool_add_ons : Optional (List { advanced_security_mode : Text })
     , verification_message_template :
         Optional
@@ -200,6 +201,7 @@
         )
   , sms_configuration =
       None (List { external_id : Text, sns_caller_arn : Text })
+  , software_token_mfa_configuration = None (List { enabled : Bool })
   , user_pool_add_ons = None (List { advanced_security_mode : Text })
   , verification_message_template =
       None
