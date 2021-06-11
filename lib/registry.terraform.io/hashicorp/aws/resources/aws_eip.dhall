@@ -2,6 +2,8 @@
     { allocation_id : Optional Text
     , associate_with_private_ip : Optional Text
     , association_id : Optional Text
+    , customer_owned_ip : Optional Text
+    , customer_owned_ipv4_pool : Optional Text
     , domain : Optional Text
     , id : Optional Text
     , instance : Optional Text
@@ -24,6 +26,8 @@
   { allocation_id = None Text
   , associate_with_private_ip = None Text
   , association_id = None Text
+  , customer_owned_ip = None Text
+  , customer_owned_ipv4_pool = None Text
   , domain = None Text
   , id = None Text
   , instance = None Text

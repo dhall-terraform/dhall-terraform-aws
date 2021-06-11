@@ -110,6 +110,7 @@
               , availability_zone : Optional Text
               , group_name : Optional Text
               , host_id : Optional Text
+              , partition_number : Optional Natural
               , spread_domain : Optional Text
               , tenancy : Optional Text
               }
@@ -233,6 +234,7 @@
             , availability_zone : Optional Text
             , group_name : Optional Text
             , host_id : Optional Text
+            , partition_number : Optional Natural
             , spread_domain : Optional Text
             , tenancy : Optional Text
             }

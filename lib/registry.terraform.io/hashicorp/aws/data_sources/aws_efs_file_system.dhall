@@ -9,6 +9,7 @@
     , lifecycle_policy : Optional (List { transition_to_ia : Text })
     , performance_mode : Optional Text
     , provisioned_throughput_in_mibps : Optional Natural
+    , size_in_bytes : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , throughput_mode : Optional Text
     }
@@ -23,6 +24,7 @@
   , lifecycle_policy = None (List { transition_to_ia : Text })
   , performance_mode = None Text
   , provisioned_throughput_in_mibps = None Natural
+  , size_in_bytes = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
   , throughput_mode = None Text
   }

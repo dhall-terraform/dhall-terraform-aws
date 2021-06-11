@@ -1,5 +1,7 @@
 { Type =
     { association_id : Optional Text
+    , customer_owned_ip : Optional Text
+    , customer_owned_ipv4_pool : Optional Text
     , domain : Optional Text
     , id : Optional Text
     , instance_id : Optional Text
@@ -15,6 +17,8 @@
     }
 , default =
   { association_id = None Text
+  , customer_owned_ip = None Text
+  , customer_owned_ipv4_pool = None Text
   , domain = None Text
   , id = None Text
   , instance_id = None Text

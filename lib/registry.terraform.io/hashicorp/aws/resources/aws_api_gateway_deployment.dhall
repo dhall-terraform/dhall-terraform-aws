@@ -7,6 +7,7 @@
     , rest_api_id : Text
     , stage_description : Optional Text
     , stage_name : Optional Text
+    , triggers : Optional (List { mapKey : Text, mapValue : Text })
     , variables : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
@@ -17,6 +18,7 @@
   , invoke_url = None Text
   , stage_description = None Text
   , stage_name = None Text
+  , triggers = None (List { mapKey : Text, mapValue : Text })
   , variables = None (List { mapKey : Text, mapValue : Text })
   }
 }

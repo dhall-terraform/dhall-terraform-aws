@@ -232,6 +232,8 @@
 , aws_ec2_traffic_mirror_session = ./aws_ec2_traffic_mirror_session.dhall
 , aws_ec2_traffic_mirror_target = ./aws_ec2_traffic_mirror_target.dhall
 , aws_ec2_transit_gateway = ./aws_ec2_transit_gateway.dhall
+, aws_ec2_transit_gateway_peering_attachment_accepter =
+    ./aws_ec2_transit_gateway_peering_attachment_accepter.dhall
 , aws_ec2_transit_gateway_peering_attachment =
     ./aws_ec2_transit_gateway_peering_attachment.dhall
 , aws_ec2_transit_gateway_route = ./aws_ec2_transit_gateway_route.dhall

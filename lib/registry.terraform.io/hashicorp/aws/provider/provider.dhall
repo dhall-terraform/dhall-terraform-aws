@@ -102,6 +102,7 @@
               , kinesis : Optional Text
               , kinesis_analytics : Optional Text
               , kinesisanalytics : Optional Text
+              , kinesisanalyticsv2 : Optional Text
               , kinesisvideo : Optional Text
               , kms : Optional Text
               , lakeformation : Optional Text
@@ -275,6 +276,7 @@
             , kinesis : Optional Text
             , kinesis_analytics : Optional Text
             , kinesisanalytics : Optional Text
+            , kinesisanalyticsv2 : Optional Text
             , kinesisvideo : Optional Text
             , kms : Optional Text
             , lakeformation : Optional Text
