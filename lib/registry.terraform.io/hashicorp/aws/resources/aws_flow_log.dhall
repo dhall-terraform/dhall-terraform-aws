@@ -1,5 +1,6 @@
 { Type =
-    { eni_id : Optional Text
+    { arn : Optional Text
+    , eni_id : Optional Text
     , iam_role_arn : Optional Text
     , id : Optional Text
     , log_destination : Optional Text
@@ -13,7 +14,8 @@
     , vpc_id : Optional Text
     }
 , default =
-  { eni_id = None Text
+  { arn = None Text
+  , eni_id = None Text
   , iam_role_arn = None Text
   , id = None Text
   , log_destination = None Text

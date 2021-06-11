@@ -4,6 +4,7 @@
     , hosted_zone : Optional Text
     , id : Optional Text
     , name : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , vpc : Text
     }
 , default =
@@ -11,5 +12,6 @@
   , description = None Text
   , hosted_zone = None Text
   , id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   }
 }

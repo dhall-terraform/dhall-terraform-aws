@@ -29,6 +29,8 @@
           ( List
               { variables : Optional (List { mapKey : Text, mapValue : Text }) }
           )
+    , file_system_config :
+        Optional (List { arn : Text, local_mount_path : Text })
     , timeouts : Optional { create : Optional Text }
     , tracing_config : Optional (List { mode : Text })
     , vpc_config :
@@ -67,6 +69,7 @@
         ( List
             { variables : Optional (List { mapKey : Text, mapValue : Text }) }
         )
+  , file_system_config = None (List { arn : Text, local_mount_path : Text })
   , timeouts = None { create : Optional Text }
   , tracing_config = None (List { mode : Text })
   , vpc_config =

@@ -1,5 +1,6 @@
 { Type =
-    { fingerprint : Optional Text
+    { arn : Optional Text
+    , fingerprint : Optional Text
     , id : Optional Text
     , key_name : Optional Text
     , key_name_prefix : Optional Text
@@ -8,7 +9,8 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
-  { fingerprint = None Text
+  { arn = None Text
+  , fingerprint = None Text
   , id = None Text
   , key_name = None Text
   , key_name_prefix = None Text

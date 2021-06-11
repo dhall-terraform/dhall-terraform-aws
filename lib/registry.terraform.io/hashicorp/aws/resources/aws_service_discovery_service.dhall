@@ -4,6 +4,7 @@
     , id : Optional Text
     , name : Text
     , namespace_id : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , dns_config :
         Optional
           ( List
@@ -28,6 +29,7 @@
   , description = None Text
   , id = None Text
   , namespace_id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , dns_config =
       None
         ( List

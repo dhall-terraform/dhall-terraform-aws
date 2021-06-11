@@ -52,6 +52,7 @@
               , cloudwatch : Optional Text
               , cloudwatchevents : Optional Text
               , cloudwatchlogs : Optional Text
+              , codeartifact : Optional Text
               , codebuild : Optional Text
               , codecommit : Optional Text
               , codedeploy : Optional Text
@@ -124,6 +125,7 @@
               , networkmanager : Optional Text
               , opsworks : Optional Text
               , organizations : Optional Text
+              , outposts : Optional Text
               , personalize : Optional Text
               , pinpoint : Optional Text
               , pricing : Optional Text
@@ -228,6 +230,7 @@
             , cloudwatch : Optional Text
             , cloudwatchevents : Optional Text
             , cloudwatchlogs : Optional Text
+            , codeartifact : Optional Text
             , codebuild : Optional Text
             , codecommit : Optional Text
             , codedeploy : Optional Text
@@ -300,6 +303,7 @@
             , networkmanager : Optional Text
             , opsworks : Optional Text
             , organizations : Optional Text
+            , outposts : Optional Text
             , personalize : Optional Text
             , pinpoint : Optional Text
             , pricing : Optional Text

@@ -1,5 +1,6 @@
 { Type =
-    { dhcp_options_id : Optional Text
+    { arn : Optional Text
+    , dhcp_options_id : Optional Text
     , domain_name : Optional Text
     , domain_name_servers : Optional (List Text)
     , id : Optional Text
@@ -11,7 +12,8 @@
     , filter : Optional (List { name : Text, values : List Text })
     }
 , default =
-  { dhcp_options_id = None Text
+  { arn = None Text
+  , dhcp_options_id = None Text
   , domain_name = None Text
   , domain_name_servers = None (List Text)
   , id = None Text

@@ -4,6 +4,8 @@
     , description : Optional Text
     , environment :
         Optional (List { variables : List { mapKey : Text, mapValue : Text } })
+    , file_system_config :
+        Optional (List { arn : Text, local_mount_path : Text })
     , function_name : Text
     , handler : Optional Text
     , id : Optional Text
@@ -38,6 +40,7 @@
   , description = None Text
   , environment =
       None (List { variables : List { mapKey : Text, mapValue : Text } })
+  , file_system_config = None (List { arn : Text, local_mount_path : Text })
   , handler = None Text
   , id = None Text
   , invoke_arn = None Text

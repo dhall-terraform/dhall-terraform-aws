@@ -17,6 +17,9 @@
               , dedicated_master_type : Optional Text
               , instance_count : Optional Natural
               , instance_type : Optional Text
+              , warm_count : Optional Natural
+              , warm_enabled : Optional Bool
+              , warm_type : Optional Text
               , zone_awareness_enabled : Optional Bool
               , zone_awareness_config :
                   Optional (List { availability_zone_count : Optional Natural })
@@ -85,6 +88,9 @@
             , dedicated_master_type : Optional Text
             , instance_count : Optional Natural
             , instance_type : Optional Text
+            , warm_count : Optional Natural
+            , warm_enabled : Optional Bool
+            , warm_type : Optional Text
             , zone_awareness_enabled : Optional Bool
             , zone_awareness_config :
                 Optional (List { availability_zone_count : Optional Natural })

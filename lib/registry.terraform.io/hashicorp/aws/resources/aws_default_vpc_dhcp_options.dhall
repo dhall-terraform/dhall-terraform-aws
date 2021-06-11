@@ -1,5 +1,6 @@
 { Type =
-    { domain_name : Optional Text
+    { arn : Optional Text
+    , domain_name : Optional Text
     , domain_name_servers : Optional Text
     , id : Optional Text
     , netbios_name_servers : Optional (List Text)
@@ -9,7 +10,8 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
-  { domain_name = None Text
+  { arn = None Text
+  , domain_name = None Text
   , domain_name_servers = None Text
   , id = None Text
   , netbios_name_servers = None (List Text)

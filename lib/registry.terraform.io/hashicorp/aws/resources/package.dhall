@@ -226,6 +226,10 @@
 , aws_ec2_client_vpn_network_association =
     ./aws_ec2_client_vpn_network_association.dhall
 , aws_ec2_fleet = ./aws_ec2_fleet.dhall
+, aws_ec2_local_gateway_route = ./aws_ec2_local_gateway_route.dhall
+, aws_ec2_local_gateway_route_table_vpc_association =
+    ./aws_ec2_local_gateway_route_table_vpc_association.dhall
+, aws_ec2_tag = ./aws_ec2_tag.dhall
 , aws_ec2_traffic_mirror_filter = ./aws_ec2_traffic_mirror_filter.dhall
 , aws_ec2_traffic_mirror_filter_rule =
     ./aws_ec2_traffic_mirror_filter_rule.dhall
@@ -515,6 +519,8 @@
 , aws_sagemaker_notebook_instance_lifecycle_configuration =
     ./aws_sagemaker_notebook_instance_lifecycle_configuration.dhall
 , aws_secretsmanager_secret = ./aws_secretsmanager_secret.dhall
+, aws_secretsmanager_secret_rotation =
+    ./aws_secretsmanager_secret_rotation.dhall
 , aws_secretsmanager_secret_version = ./aws_secretsmanager_secret_version.dhall
 , aws_security_group = ./aws_security_group.dhall
 , aws_security_group_rule = ./aws_security_group_rule.dhall
@@ -644,6 +650,8 @@
 , aws_wafv2_ip_set = ./aws_wafv2_ip_set.dhall
 , aws_wafv2_regex_pattern_set = ./aws_wafv2_regex_pattern_set.dhall
 , aws_wafv2_rule_group = ./aws_wafv2_rule_group.dhall
+, aws_wafv2_web_acl_association = ./aws_wafv2_web_acl_association.dhall
+, aws_wafv2_web_acl = ./aws_wafv2_web_acl.dhall
 , aws_waf_web_acl = ./aws_waf_web_acl.dhall
 , aws_waf_xss_match_set = ./aws_waf_xss_match_set.dhall
 , aws_worklink_fleet = ./aws_worklink_fleet.dhall

@@ -1,5 +1,6 @@
 { Type =
-    { catalog_id : Optional Text
+    { arn : Optional Text
+    , catalog_id : Optional Text
     , database_name : Text
     , description : Optional Text
     , id : Optional Text
@@ -56,7 +57,8 @@
           )
     }
 , default =
-  { catalog_id = None Text
+  { arn = None Text
+  , catalog_id = None Text
   , description = None Text
   , id = None Text
   , owner = None Text

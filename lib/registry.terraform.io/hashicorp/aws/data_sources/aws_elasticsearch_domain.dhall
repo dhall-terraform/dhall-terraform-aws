@@ -10,6 +10,9 @@
               , dedicated_master_type : Text
               , instance_count : Natural
               , instance_type : Text
+              , warm_count : Natural
+              , warm_enabled : Bool
+              , warm_type : Text
               , zone_awareness_config :
                   List { availability_zone_count : Natural }
               , zone_awareness_enabled : Bool
@@ -77,6 +80,9 @@
             , dedicated_master_type : Text
             , instance_count : Natural
             , instance_type : Text
+            , warm_count : Natural
+            , warm_enabled : Bool
+            , warm_type : Text
             , zone_awareness_config : List { availability_zone_count : Natural }
             , zone_awareness_enabled : Bool
             }

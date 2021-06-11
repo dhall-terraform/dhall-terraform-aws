@@ -1,5 +1,6 @@
 { Type =
-    { attachments : Optional (List { state : Text, vpc_id : Text })
+    { arn : Optional Text
+    , attachments : Optional (List { state : Text, vpc_id : Text })
     , id : Optional Text
     , internet_gateway_id : Optional Text
     , owner_id : Optional Text
@@ -7,7 +8,8 @@
     , filter : Optional (List { name : Text, values : List Text })
     }
 , default =
-  { attachments = None (List { state : Text, vpc_id : Text })
+  { arn = None Text
+  , attachments = None (List { state : Text, vpc_id : Text })
   , id = None Text
   , internet_gateway_id = None Text
   , owner_id = None Text

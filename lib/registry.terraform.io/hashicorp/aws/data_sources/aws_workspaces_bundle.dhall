@@ -1,5 +1,5 @@
 { Type =
-    { bundle_id : Text
+    { bundle_id : Optional Text
     , compute_type : Optional (List { name : Text })
     , description : Optional Text
     , id : Optional Text
@@ -9,7 +9,8 @@
     , user_storage : Optional (List { capacity : Text })
     }
 , default =
-  { compute_type = None (List { name : Text })
+  { bundle_id = None Text
+  , compute_type = None (List { name : Text })
   , description = None Text
   , id = None Text
   , name = None Text

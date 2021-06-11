@@ -44,6 +44,7 @@
 , aws_ebs_snapshot = ./aws_ebs_snapshot.dhall
 , aws_ebs_snapshot_ids = ./aws_ebs_snapshot_ids.dhall
 , aws_ebs_volume = ./aws_ebs_volume.dhall
+, aws_ebs_volumes = ./aws_ebs_volumes.dhall
 , aws_ec2_coip_pool = ./aws_ec2_coip_pool.dhall
 , aws_ec2_coip_pools = ./aws_ec2_coip_pools.dhall
 , aws_ec2_instance_type_offering = ./aws_ec2_instance_type_offering.dhall
@@ -53,6 +54,12 @@
 , aws_ec2_local_gateway_route_tables =
     ./aws_ec2_local_gateway_route_tables.dhall
 , aws_ec2_local_gateways = ./aws_ec2_local_gateways.dhall
+, aws_ec2_local_gateway_virtual_interface =
+    ./aws_ec2_local_gateway_virtual_interface.dhall
+, aws_ec2_local_gateway_virtual_interface_group =
+    ./aws_ec2_local_gateway_virtual_interface_group.dhall
+, aws_ec2_local_gateway_virtual_interface_groups =
+    ./aws_ec2_local_gateway_virtual_interface_groups.dhall
 , aws_ec2_transit_gateway = ./aws_ec2_transit_gateway.dhall
 , aws_ec2_transit_gateway_dx_gateway_attachment =
     ./aws_ec2_transit_gateway_dx_gateway_attachment.dhall
@@ -64,6 +71,7 @@
     ./aws_ec2_transit_gateway_vpc_attachment.dhall
 , aws_ec2_transit_gateway_vpn_attachment =
     ./aws_ec2_transit_gateway_vpn_attachment.dhall
+, aws_ecr_authorization_token = ./aws_ecr_authorization_token.dhall
 , aws_ecr_image = ./aws_ecr_image.dhall
 , aws_ecr_repository = ./aws_ecr_repository.dhall
 , aws_ecs_cluster = ./aws_ecs_cluster.dhall
@@ -127,6 +135,14 @@
 , aws_organizations_organizational_units =
     ./aws_organizations_organizational_units.dhall
 , aws_organizations_organization = ./aws_organizations_organization.dhall
+, aws_outposts_outpost = ./aws_outposts_outpost.dhall
+, aws_outposts_outpost_instance_type =
+    ./aws_outposts_outpost_instance_type.dhall
+, aws_outposts_outpost_instance_types =
+    ./aws_outposts_outpost_instance_types.dhall
+, aws_outposts_outposts = ./aws_outposts_outposts.dhall
+, aws_outposts_site = ./aws_outposts_site.dhall
+, aws_outposts_sites = ./aws_outposts_sites.dhall
 , aws_partition = ./aws_partition.dhall
 , aws_prefix_list = ./aws_prefix_list.dhall
 , aws_pricing_product = ./aws_pricing_product.dhall
@@ -148,6 +164,8 @@
 , aws_s3_bucket_object = ./aws_s3_bucket_object.dhall
 , aws_s3_bucket_objects = ./aws_s3_bucket_objects.dhall
 , aws_secretsmanager_secret = ./aws_secretsmanager_secret.dhall
+, aws_secretsmanager_secret_rotation =
+    ./aws_secretsmanager_secret_rotation.dhall
 , aws_secretsmanager_secret_version = ./aws_secretsmanager_secret_version.dhall
 , aws_security_group = ./aws_security_group.dhall
 , aws_security_groups = ./aws_security_groups.dhall
@@ -181,6 +199,7 @@
 , aws_wafv2_ip_set = ./aws_wafv2_ip_set.dhall
 , aws_wafv2_regex_pattern_set = ./aws_wafv2_regex_pattern_set.dhall
 , aws_wafv2_rule_group = ./aws_wafv2_rule_group.dhall
+, aws_wafv2_web_acl = ./aws_wafv2_web_acl.dhall
 , aws_waf_web_acl = ./aws_waf_web_acl.dhall
 , aws_workspaces_bundle = ./aws_workspaces_bundle.dhall
 }

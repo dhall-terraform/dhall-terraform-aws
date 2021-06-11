@@ -1,5 +1,6 @@
 { Type =
-    { availability_zone : Text
+    { arn : Optional Text
+    , availability_zone : Text
     , ebs_optimized : Optional Bool
     , end_date : Optional Text
     , end_date_type : Optional Text
@@ -13,7 +14,8 @@
     , tenancy : Optional Text
     }
 , default =
-  { ebs_optimized = None Bool
+  { arn = None Text
+  , ebs_optimized = None Bool
   , end_date = None Text
   , end_date_type = None Text
   , ephemeral_storage = None Bool
