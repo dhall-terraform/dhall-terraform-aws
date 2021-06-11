@@ -24,9 +24,41 @@
                                           ( List
                                               { enforce : Optional Bool
                                               , ports : Optional (List Natural)
+                                              , certificate :
+                                                  Optional
+                                                    ( List
+                                                        { file :
+                                                            Optional
+                                                              ( List
+                                                                  { certificate_chain :
+                                                                      Text
+                                                                  , private_key :
+                                                                      Text
+                                                                  }
+                                                              )
+                                                        , sds :
+                                                            Optional
+                                                              ( List
+                                                                  { secret_name :
+                                                                      Text
+                                                                  }
+                                                              )
+                                                        }
+                                                    )
                                               , validation :
                                                   List
-                                                    { trust :
+                                                    { subject_alternative_names :
+                                                        Optional
+                                                          ( List
+                                                              { match :
+                                                                  List
+                                                                    { exact :
+                                                                        List
+                                                                          Text
+                                                                    }
+                                                              }
+                                                          )
+                                                    , trust :
                                                         List
                                                           { acm :
                                                               Optional
@@ -40,6 +72,13 @@
                                                               Optional
                                                                 ( List
                                                                     { certificate_chain :
+                                                                        Text
+                                                                    }
+                                                                )
+                                                          , sds :
+                                                              Optional
+                                                                ( List
+                                                                    { secret_name :
                                                                         Text
                                                                     }
                                                                 )
@@ -63,9 +102,38 @@
                                     ( List
                                         { enforce : Optional Bool
                                         , ports : Optional (List Natural)
+                                        , certificate :
+                                            Optional
+                                              ( List
+                                                  { file :
+                                                      Optional
+                                                        ( List
+                                                            { certificate_chain :
+                                                                Text
+                                                            , private_key : Text
+                                                            }
+                                                        )
+                                                  , sds :
+                                                      Optional
+                                                        ( List
+                                                            { secret_name : Text
+                                                            }
+                                                        )
+                                                  }
+                                              )
                                         , validation :
                                             List
-                                              { trust :
+                                              { subject_alternative_names :
+                                                  Optional
+                                                    ( List
+                                                        { match :
+                                                            List
+                                                              { exact :
+                                                                  List Text
+                                                              }
+                                                        }
+                                                    )
+                                              , trust :
                                                   List
                                                     { acm :
                                                         Optional
@@ -78,6 +146,13 @@
                                                         Optional
                                                           ( List
                                                               { certificate_chain :
+                                                                  Text
+                                                              }
+                                                          )
+                                                    , sds :
+                                                        Optional
+                                                          ( List
+                                                              { secret_name :
                                                                   Text
                                                               }
                                                           )
@@ -224,7 +299,36 @@
                                               , private_key : Text
                                               }
                                           )
+                                    , sds :
+                                        Optional (List { secret_name : Text })
                                     }
+                              , validation :
+                                  Optional
+                                    ( List
+                                        { subject_alternative_names :
+                                            Optional
+                                              ( List
+                                                  { match :
+                                                      List { exact : List Text }
+                                                  }
+                                              )
+                                        , trust :
+                                            List
+                                              { file :
+                                                  Optional
+                                                    ( List
+                                                        { certificate_chain :
+                                                            Text
+                                                        }
+                                                    )
+                                              , sds :
+                                                  Optional
+                                                    ( List
+                                                        { secret_name : Text }
+                                                    )
+                                              }
+                                        }
+                                    )
                               }
                           )
                     }

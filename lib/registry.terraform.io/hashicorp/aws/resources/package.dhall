@@ -129,6 +129,7 @@
 , aws_cloudwatch_log_subscription_filter =
     ./aws_cloudwatch_log_subscription_filter.dhall
 , aws_cloudwatch_metric_alarm = ./aws_cloudwatch_metric_alarm.dhall
+, aws_cloudwatch_query_definition = ./aws_cloudwatch_query_definition.dhall
 , aws_codeartifact_domain = ./aws_codeartifact_domain.dhall
 , aws_codeartifact_domain_permissions_policy =
     ./aws_codeartifact_domain_permissions_policy.dhall

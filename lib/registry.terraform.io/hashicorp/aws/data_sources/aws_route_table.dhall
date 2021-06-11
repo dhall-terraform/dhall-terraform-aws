@@ -19,6 +19,7 @@
           ( List
               { carrier_gateway_id : Text
               , cidr_block : Text
+              , destination_prefix_list_id : Text
               , egress_only_gateway_id : Text
               , gateway_id : Text
               , instance_id : Text
@@ -57,6 +58,7 @@
         ( List
             { carrier_gateway_id : Text
             , cidr_block : Text
+            , destination_prefix_list_id : Text
             , egress_only_gateway_id : Text
             , gateway_id : Text
             , instance_id : Text

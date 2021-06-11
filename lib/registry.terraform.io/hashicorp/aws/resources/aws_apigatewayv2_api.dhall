@@ -7,6 +7,7 @@
     , description : Optional Text
     , disable_execute_api_endpoint : Optional Bool
     , execution_arn : Optional Text
+    , fail_on_warnings : Optional Bool
     , id : Optional Text
     , name : Text
     , protocol_type : Text
@@ -36,6 +37,7 @@
   , description = None Text
   , disable_execute_api_endpoint = None Bool
   , execution_arn = None Text
+  , fail_on_warnings = None Bool
   , id = None Text
   , route_key = None Text
   , route_selection_expression = None Text

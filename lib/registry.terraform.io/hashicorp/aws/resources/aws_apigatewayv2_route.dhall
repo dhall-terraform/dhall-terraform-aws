@@ -11,6 +11,8 @@
     , route_key : Text
     , route_response_selection_expression : Optional Text
     , target : Optional Text
+    , request_parameter :
+        Optional (List { request_parameter_key : Text, required : Bool })
     }
 , default =
   { api_key_required = None Bool
@@ -23,5 +25,7 @@
   , request_models = None (List { mapKey : Text, mapValue : Text })
   , route_response_selection_expression = None Text
   , target = None Text
+  , request_parameter =
+      None (List { request_parameter_key : Text, required : Bool })
   }
 }

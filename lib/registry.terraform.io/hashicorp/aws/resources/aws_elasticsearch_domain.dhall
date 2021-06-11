@@ -51,7 +51,14 @@
           )
     , domain_endpoint_options :
         Optional
-          (List { enforce_https : Bool, tls_security_policy : Optional Text })
+          ( List
+              { custom_endpoint : Optional Text
+              , custom_endpoint_certificate_arn : Optional Text
+              , custom_endpoint_enabled : Optional Bool
+              , enforce_https : Optional Bool
+              , tls_security_policy : Optional Text
+              }
+          )
     , ebs_options :
         Optional
           ( List
@@ -136,7 +143,15 @@
             }
         )
   , domain_endpoint_options =
-      None (List { enforce_https : Bool, tls_security_policy : Optional Text })
+      None
+        ( List
+            { custom_endpoint : Optional Text
+            , custom_endpoint_certificate_arn : Optional Text
+            , custom_endpoint_enabled : Optional Bool
+            , enforce_https : Optional Bool
+            , tls_security_policy : Optional Text
+            }
+        )
   , ebs_options =
       None
         ( List

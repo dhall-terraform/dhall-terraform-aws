@@ -8,6 +8,7 @@
     , name : Optional Text
     , name_prefix : Optional Text
     , port : Optional Natural
+    , preserve_client_ip : Optional Text
     , protocol : Optional Text
     , protocol_version : Optional Text
     , proxy_protocol_v2 : Optional Bool
@@ -48,6 +49,7 @@
   , name = None Text
   , name_prefix = None Text
   , port = None Natural
+  , preserve_client_ip = None Text
   , protocol = None Text
   , protocol_version = None Text
   , proxy_protocol_v2 = None Bool

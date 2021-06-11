@@ -1,5 +1,7 @@
 { Type =
     { arn : Optional Text
+    , availability_zone_id : Optional Text
+    , availability_zone_name : Optional Text
     , creation_token : Optional Text
     , dns_name : Optional Text
     , encrypted : Optional Bool
@@ -15,6 +17,8 @@
     }
 , default =
   { arn = None Text
+  , availability_zone_id = None Text
+  , availability_zone_name = None Text
   , creation_token = None Text
   , dns_name = None Text
   , encrypted = None Bool

@@ -25,6 +25,8 @@
               , weight : Optional Natural
               }
           )
+    , deployment_circuit_breaker :
+        Optional (List { enable : Bool, rollback : Bool })
     , deployment_controller : Optional (List { type : Optional Text })
     , load_balancer :
         Optional
@@ -84,6 +86,7 @@
             , weight : Optional Natural
             }
         )
+  , deployment_circuit_breaker = None (List { enable : Bool, rollback : Bool })
   , deployment_controller = None (List { type : Optional Text })
   , load_balancer =
       None

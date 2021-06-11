@@ -14,6 +14,7 @@
     , rule :
         List
           { completion_window : Optional Natural
+          , enable_continuous_backup : Optional Bool
           , recovery_point_tags :
               Optional (List { mapKey : Text, mapValue : Text })
           , rule_name : Text

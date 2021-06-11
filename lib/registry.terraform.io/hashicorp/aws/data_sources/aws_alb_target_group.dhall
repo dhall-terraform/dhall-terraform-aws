@@ -21,6 +21,7 @@
     , load_balancing_algorithm_type : Optional Text
     , name : Optional Text
     , port : Optional Natural
+    , preserve_client_ip : Optional Text
     , protocol : Optional Text
     , protocol_version : Optional Text
     , proxy_protocol_v2 : Optional Bool
@@ -55,6 +56,7 @@
   , load_balancing_algorithm_type = None Text
   , name = None Text
   , port = None Natural
+  , preserve_client_ip = None Text
   , protocol = None Text
   , protocol_version = None Text
   , proxy_protocol_v2 = None Bool

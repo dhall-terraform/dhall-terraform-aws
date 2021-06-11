@@ -1,5 +1,6 @@
 { Type =
-    { default_route_table_id : Text
+    { arn : Optional Text
+    , default_route_table_id : Text
     , id : Optional Text
     , owner_id : Optional Text
     , propagating_vgws : Optional (List Text)
@@ -7,6 +8,7 @@
         Optional
           ( List
               { cidr_block : Text
+              , destination_prefix_list_id : Text
               , egress_only_gateway_id : Text
               , gateway_id : Text
               , instance_id : Text
@@ -22,13 +24,15 @@
     , vpc_id : Optional Text
     }
 , default =
-  { id = None Text
+  { arn = None Text
+  , id = None Text
   , owner_id = None Text
   , propagating_vgws = None (List Text)
   , route =
       None
         ( List
             { cidr_block : Text
+            , destination_prefix_list_id : Text
             , egress_only_gateway_id : Text
             , gateway_id : Text
             , instance_id : Text

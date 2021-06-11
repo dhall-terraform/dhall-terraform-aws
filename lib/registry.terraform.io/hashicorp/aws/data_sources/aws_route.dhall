@@ -1,6 +1,8 @@
 { Type =
-    { destination_cidr_block : Optional Text
+    { carrier_gateway_id : Optional Text
+    , destination_cidr_block : Optional Text
     , destination_ipv6_cidr_block : Optional Text
+    , destination_prefix_list_id : Optional Text
     , egress_only_gateway_id : Optional Text
     , gateway_id : Optional Text
     , id : Optional Text
@@ -13,8 +15,10 @@
     , vpc_peering_connection_id : Optional Text
     }
 , default =
-  { destination_cidr_block = None Text
+  { carrier_gateway_id = None Text
+  , destination_cidr_block = None Text
   , destination_ipv6_cidr_block = None Text
+  , destination_prefix_list_id = None Text
   , egress_only_gateway_id = None Text
   , gateway_id = None Text
   , id = None Text

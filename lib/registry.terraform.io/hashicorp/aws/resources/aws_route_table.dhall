@@ -1,11 +1,14 @@
 { Type =
-    { id : Optional Text
+    { arn : Optional Text
+    , id : Optional Text
     , owner_id : Optional Text
     , propagating_vgws : Optional (List Text)
     , route :
         Optional
           ( List
-              { cidr_block : Text
+              { carrier_gateway_id : Text
+              , cidr_block : Text
+              , destination_prefix_list_id : Text
               , egress_only_gateway_id : Text
               , gateway_id : Text
               , instance_id : Text
@@ -22,13 +25,16 @@
     , vpc_id : Text
     }
 , default =
-  { id = None Text
+  { arn = None Text
+  , id = None Text
   , owner_id = None Text
   , propagating_vgws = None (List Text)
   , route =
       None
         ( List
-            { cidr_block : Text
+            { carrier_gateway_id : Text
+            , cidr_block : Text
+            , destination_prefix_list_id : Text
             , egress_only_gateway_id : Text
             , gateway_id : Text
             , instance_id : Text
